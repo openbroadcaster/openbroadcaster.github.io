@@ -1,0 +1,20 @@
+---
+layout: default
+title: home
+---
+
+<h2>Our Projects</h2>
+<p>Our intention is for all projects to be fresh and relevant; therefore, any project that loses activity for six months will be archived.</p>
+
+<div class="row">
+    {% for project in site.data.projects %}
+    <div class="col-sm-12 col-lg-6">
+        <div class="thumbnail">
+            <h4>{{ project.name }}</h4>
+            <p class="brief">{{ project.brief }}</p>
+            <a href="{{ project.github }}" class="btn btn-default col-xs-12" role="button"><i class="fa fa-github"></i> View on GitHub</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

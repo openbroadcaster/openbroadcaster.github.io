@@ -1,0 +1,19 @@
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/openbroadcaster" data-widget-id="708479071877894144">Tweets by @openbroadcaster</a>
+<script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + "://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, "script", "twitter-wjs");
+</script>
+
+<section>
+  <h2>Get In Touch</h2>
+  <p>Have <a href="">feedback </a>you'd like to share with the OpenBroadcaster community?</p>
+<p><a href="mailto:support@openbroadcster.com?subject=Community Feedback">Comments</a> are always welcome!</p>
+</section>
