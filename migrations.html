@@ -1,0 +1,207 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenBroadcaster Community</title>
+  <meta name="description" content="A team of dedicated OpenBroadcaster developers work together to provide tools and resources for media management and distribution.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="OpenBroadcaster" />
+
+  <meta name="og:title" content="OpenBroadcaster" />
+  <meta name="og:description" content="A team of dedicated OpenBroadcaster developers work together to provide tools and resources for media management and distribution." />
+  <meta name="og:image" content="https://www.openbroadcaster.pro/sites/default/files/openbroadcaster_logo.png" />
+  <meta name="og:author" content="OpenBroadcaster" />
+
+  <link rel="icon" type="image/png" href="img/favicon16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/favicon48.png" sizes="48x48">
+
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+  <script src="components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-clear navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="/">OpenBroadcaster</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/Player">Player</a></li>
+        <li><a href="/Server">Server</a></li>
+        <li><a href="migrations.html">Blog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right navbar-social">
+        <li><a href="https://github.com/openbroadcaster" title="OpenBroadcaster on GitHub"><i class="fa fa-github"></i> </a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav><!-- /.navbar -->
+
+
+  
+
+<div class="pane pane-featurettes bg-grey">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4 col-md-offset-4 text-center">
+        <img src="img/openbroadcaster_logo.png" width="100%" class="logo" alt="OpenBroadcaster" />
+      </div>
+      
+    </div>
+  </div><!-- /.container -->
+</div><!-- /.pane -->
+ 
+
+
+
+
+  <div class="pane">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+        <h1 id="migration-guide">Migration Guide</h1>
+
+<p>These are steps you can take to help comply with the Friends Of Cake <a href="requirements.html">project requirements</a>.</p>
+
+<h2 id="continuous-integration-with-travisci">Continuous integration with TravisCI</h2>
+<ul>
+  <li>
+    <p>Add a <code>.travis.yml</code> file to the root of your project and <a href="http://docs.travis-ci.com/user/getting-started/#Step-two%3A-Activate-GitHub-Webhook">activate the GitHub webhook</a>.</p>
+  </li>
+  <li>Ensure your matrix includes the PHP versions from the boarding requirements.</li>
+  <li>Ensure your matrix includes the CakePHP versions from the boarding requirements.</li>
+  <li>Please keep <code>Notifications: email</code> set to <code>false</code> to avoid spamming (<em>perhaps add IRC notifications?</em>).</li>
+</ul>
+
+<p><a href="https://github.com/FriendsOfCake/crud/blob/develop/.travis.yml">Review an example <code>.travis.yml</code></a> from a Friends Of Cake project.</p>
+
+<h2 id="cakephp-code-style-guide">CakePHP code style guide</h2>
+<p><em>phpcs –standard=CakePHP</em> is used to check coding standards. More information is available on GitHub at <a href="https://github.com/cakephp/cakephp-codesniffer">cakephp-codesniffer</a>.</p>
+
+<h2 id="composer-support">Composer support</h2>
+<ul>
+  <li>Add a <code>composer.json</code> file to the root of your project, see http://getcomposer.org/doc/04-schema.md</li>
+  <li>Set the <a href="https://getcomposer.org/doc/04-schema.md#name">vendor part of your name property</a> to <code>friendsofcake</code> (i.e. friendsofcake/yet-another-wonderful-name).</li>
+  <li>Ensure you <a href="https://github.com/composer/installers#custom-install-names">use the <code>installer-name</code> extra</a> as Composer package names don’t allow uppercases, yet CakePHP expects your plugin folder name to be CamelCased.</li>
+</ul>
+
+<p><a href="https://github.com/FriendsOfCake/crud/blob/develop/composer.json">Review an example <code>composer.json</code></a> from a Friends Of Cake project.</p>
+
+<h2 id="code-coverage-with-coveralls">Code coverage with Coveralls</h2>
+<ul>
+  <li>Write tests. 🙇</li>
+  <li>Add a <code>.coveralls.yml</code> file to the root of your project.</li>
+  <li>Ensure Travis handles Coveralls (see Travis example above).</li>
+</ul>
+
+<h2 id="packagist">Packagist</h2>
+<p>Submit the package to <a href="https://packagist.org/">Packagist</a>.</p>
+
+<h2 id="mit-license">MIT license</h2>
+<p>Add a <code>LICENSE.txt</code> file to the root of your project.</p>
+
+<p><a href="https://github.com/FriendsOfCake/crud/blob/develop/LICENSE.txt">Review an example <code>LICENSE.txt</code></a> from a Friends Of Cake project.</p>
+
+<h2 id="documenation">Documenation</h2>
+<ul>
+  <li>Must have well documented code (docblocks, @annotations etc)</li>
+  <li>Must have well documented user guide with examples.</li>
+  <li>GitHub Wiki pages should not be used for documentation. Use gh-pages or README.md.</li>
+</ul>
+
+<h2 id="github-releases">GitHub releases</h2>
+<p><a href="https://help.github.com/articles/about-releases/">Releases</a> and <a href="http://git-scm.com/book/en/v2/Git-Basics-Tagging">Tags</a> must use <a href="http://semver.org/">semantic versioning</a> with descriptive changelogs. Head to GitHub for more <a href="https://help.github.com/articles/creating-releases">information on creating releases</a>.</p>
+
+<h2 id="branching">Branching</h2>
+<ul>
+  <li>Must use <code>master</code> for stable release, <code>develop</code> for integration branch and feature branches for the rest.</li>
+</ul>
+
+        </div>
+        <div class="col-md-4">
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/openbroadcaster" data-widget-id="708479071877894144">Tweets by @openbroadcaster</a>
+<script>
+  ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + "://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, "script", "twitter-wjs");
+</script>
+
+<section>
+  <h2>Get In Touch</h2>
+  <p>Have <a href="">feedback </a>you'd like to share with the OpenBroadcaster community?</p>
+<p><a href="mailto:support@openbroadcaster.com?subject=Community Feedback">Comments</a> are always welcome!</p>
+</section>
+
+        </div>
+      </div><!-- /.row -->
+    </div>
+  </div><!-- /.pane -->
+
+  <hr />
+
+<div class="pane">
+  <div class="container">
+    <div class="row">
+      <footer>
+        <p>
+          <em>Made by Openbroadcaster.</em> </p>
+	  <p style="font-size:.6em;">With ❤ from Friends of Cake 
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<script src="components/jquery/dist/jquery.min.js"></script>
+<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-75150904-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+
+</html>
+
