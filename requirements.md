@@ -1,7 +1,18 @@
 ---
 layout: default
-title: getting
+title: gettingStarted
 ---
+
+# Minimum System Requirements
+
+   | First|Second|Third 
+a|b|c
+   | e|f|g
+
+
+
+
+
 ## Log in
 
 - enter your  `username ` and  `password ` ...

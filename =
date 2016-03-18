@@ -1,0 +1,207 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libatk-bridge2.0-0 is already the newest version.
+libatspi2.0-0 is already the newest version.
+libexttextcat-2.0-0 is already the newest version.
+libexttextcat-2.0-0 set to manually installed.
+libsigc++-2.0-0c2a is already the newest version.
+ruby is already the newest version.
+ruby set to manually installed.
+libtinyxml2-0.0.0 is already the newest version.
+libtinyxml2-0.0.0 set to manually installed.
+libgdk-pixbuf2.0-0 is already the newest version.
+libglib2.0-0 is already the newest version.
+libzeitgeist-2.0-0 is already the newest version.
+libzeitgeist-2.0-0 set to manually installed.
+libgtksourceview2.0-0 is already the newest version.
+The following packages were automatically installed and are no longer required:
+  libassuan0 libgpgme11 linux-headers-3.13.0-32
+  linux-headers-3.13.0-32-generic linux-image-3.13.0-32-generic
+  linux-image-extra-3.13.0-32-generic
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  binfmt-support gtk2-engines-pixbuf icu-devtools libaccounts-glib0
+  libaccounts-qt5-1 libalut-dev libalut0 libbsd-dev libffcall1 libffi-dev
+  libftdi1 libghc-asn1-data-dev libghc-asn1-data-prof libghc-asn1-types-dev
+  libghc-asn1-types-prof libghc-base-unicode-symbols-dev
+  libghc-base-unicode-symbols-prof libghc-base16-bytestring-dev
+  libghc-base16-bytestring-prof libghc-base64-bytestring-dev
+  libghc-base64-bytestring-prof libghc-bifunctors-dev libghc-bifunctors-prof
+  libghc-blaze-builder-dev libghc-blaze-builder-prof libghc-byteable-dev
+  libghc-byteable-prof libghc-case-insensitive-dev
+  libghc-case-insensitive-prof libghc-cereal-dev libghc-cereal-prof
+  libghc-certificate-dev libghc-certificate-prof libghc-cipher-aes-dev
+  libghc-cipher-aes-prof libghc-cipher-rc4-dev libghc-cipher-rc4-prof
+  libghc-comonad-dev libghc-comonad-prof libghc-conduit-dev
+  libghc-conduit-prof libghc-connection-dev libghc-connection-prof
+  libghc-contravariant-dev libghc-contravariant-prof libghc-cookie-dev
+  libghc-cookie-prof libghc-cprng-aes-dev libghc-cprng-aes-prof
+  libghc-crypto-cipher-types-dev libghc-crypto-cipher-types-prof
+  libghc-crypto-numbers-dev libghc-crypto-numbers-prof
+  libghc-crypto-pubkey-dev libghc-crypto-pubkey-prof
+  libghc-crypto-pubkey-types-dev libghc-crypto-pubkey-types-prof
+  libghc-crypto-random-dev libghc-crypto-random-prof libghc-cryptohash-dev
+  libghc-cryptohash-prof libghc-data-default-dev libghc-data-default-prof
+  libghc-distributive-dev libghc-distributive-prof libghc-dlist-dev
+  libghc-dlist-prof libghc-failure-dev libghc-failure-prof libghc-free-dev
+  libghc-free-prof libghc-hashable-dev libghc-hashable-prof
+  libghc-hslogger-dev libghc-hslogger-prof libghc-http-client-dev
+  libghc-http-client-prof libghc-http-types-dev libghc-http-types-prof
+  libghc-hunit-dev libghc-hunit-prof libghc-idna-dev libghc-idna-prof
+  libghc-lifted-base-dev libghc-lifted-base-prof libghc-mmorph-dev
+  libghc-mmorph-prof libghc-monad-control-dev libghc-monad-control-prof
+  libghc-mtl-dev libghc-mtl-prof libghc-nats-dev libghc-nats-prof
+  libghc-objectname-dev libghc-objectname-prof libghc-openal-dev
+  libghc-openal-prof libghc-parsec3-dev libghc-parsec3-prof libghc-pem-dev
+  libghc-pem-prof libghc-pipes-dev libghc-pipes-group-dev
+  libghc-pipes-group-prof libghc-pipes-parse-dev libghc-pipes-parse-prof
+  libghc-pipes-prof libghc-primitive-dev libghc-primitive-prof
+  libghc-profunctors-dev libghc-profunctors-prof libghc-publicsuffixlist-dev
+  libghc-publicsuffixlist-prof libghc-punycode-dev libghc-punycode-prof
+  libghc-random-dev libghc-random-prof libghc-ranges-dev libghc-ranges-prof
+  libghc-regex-base-dev libghc-regex-base-prof libghc-regex-compat-dev
+  libghc-regex-compat-prof libghc-regex-posix-dev libghc-regex-posix-prof
+  libghc-resourcet-dev libghc-resourcet-prof libghc-securemem-dev
+  libghc-securemem-prof libghc-semigroupoids-dev libghc-semigroupoids-prof
+  libghc-semigroups-dev libghc-semigroups-prof libghc-socks-dev
+  libghc-socks-prof libghc-statevar-dev libghc-statevar-prof
+  libghc-stringprep-dev libghc-stringprep-prof libghc-syb-dev libghc-syb-prof
+  libghc-tagged-dev libghc-tagged-prof libghc-tensor-dev libghc-tensor-prof
+  libghc-text-dev libghc-text-icu-dev libghc-text-icu-prof libghc-text-prof
+  libghc-tls-dev libghc-tls-extra-dev libghc-tls-extra-prof libghc-tls-prof
+  libghc-transformers-base-dev libghc-transformers-base-prof
+  libghc-transformers-dev libghc-transformers-prof libghc-type-level-dev
+  libghc-type-level-prof libghc-unordered-containers-dev
+  libghc-unordered-containers-prof libghc-utf8-string-dev
+  libghc-utf8-string-prof libghc-vector-dev libghc-vector-prof libghc-void-dev
+  libghc-void-prof libghc-zlib-bindings-dev libghc-zlib-bindings-prof
+  libghc-zlib-dev libghc-zlib-prof libgmp-dev libgmpxx4ldbl libgtk2.0-bin
+  libgvnc-1.0-0 libicu-dev libllvm3.3 liboauth0 libopenal-dev libqt5core5a
+  libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5 libqt5positioning5
+  libqt5printsupport5 libqt5qml5 libqt5quick5 libqt5sensors5 libqt5sql5
+  libqt5sql5-sqlite libqt5test5 libqt5webkit5 libqt5widgets5 libqt5xml5
+  libsignon-extension1 libsignon-plugins-common1 libsignon-qt5-1 libxcb-icccm4
+  libxcb-image0 libxcb-render-util0 libxcb-xkb1 libxkbcommon-x11-0 libyaz4
+  lirc llvm-3.3 llvm-3.3-dev llvm-3.3-runtime mediascanner2.0 publicsuffix
+  session-migration setserial signon-plugin-password signon-ui signond
+  ubuntuone-client-data ubuntuone-credentials-common
+Suggested packages:
+  clisp-doc clisp-dev slime ghc-doc haskell-doc llvm libghc-alut-doc
+  libghc-asn1-data-doc libghc-asn1-types-doc libghc-base-unicode-symbols-doc
+  libghc-base16-bytestring-doc libghc-base64-bytestring-doc
+  libghc-bifunctors-doc libghc-blaze-builder-doc libghc-byteable-doc
+  libghc-case-insensitive-doc libghc-cereal-doc libghc-certificate-doc
+  libghc-cipher-aes-doc libghc-cipher-rc4-doc libghc-clock-doc
+  libghc-comonad-doc libghc-conduit-doc libghc-connection-doc
+  libghc-contravariant-doc libghc-cookie-doc libghc-cprng-aes-doc
+  libghc-crypto-cipher-types-doc libghc-crypto-numbers-doc
+  libghc-crypto-pubkey-doc libghc-crypto-pubkey-types-doc
+  libghc-crypto-random-doc libghc-cryptohash-doc libghc-data-default-doc
+  libghc-distributive-doc libghc-dlist-doc libghc-erf-doc libghc-failure-doc
+  libghc-free-doc libghc-gitlib-doc libghc-hashable-doc libghc-hslogger-doc
+  libghc-http-client-conduit-doc libghc-http-client-doc
+  libghc-http-client-tls-doc libghc-http-types-doc libghc-hunit-doc
+  libghc-idna-doc libghc-lifted-base-doc libghc-llvm-base-doc libghc-llvm-doc
+  libghc-missingh-doc libghc-mmorph-doc libghc-monad-control-doc
+  libghc-mtl-doc libghc-nats-doc libghc-network-doc libghc-objectname-doc
+  libghc-openal-doc libghc-parsec3-doc libghc-pem-doc
+  libghc-pipes-bytestring-doc libghc-pipes-doc libghc-pipes-group-doc
+  libghc-pipes-parse-doc libghc-primitive-doc libghc-profunctors-doc
+  libghc-publicsuffixlist-doc libghc-punycode-doc libghc-random-doc
+  libghc-ranges-doc libghc-regex-base-doc libghc-regex-compat-doc
+  libghc-regex-posix-doc libghc-resourcet-doc libghc-securemem-doc
+  libghc-semigroupoids-doc libghc-semigroups-doc libghc-socks-doc
+  libghc-statevar-doc libghc-stringprep-doc libghc-syb-doc libghc-tagged-doc
+  libghc-tensor-doc libghc-text-doc libghc-text-icu-doc libghc-tls-doc
+  libghc-tls-extra-doc libghc-transformers-base-doc libghc-transformers-doc
+  libghc-type-level-doc libghc-unordered-containers-doc libghc-utf8-string-doc
+  libghc-vector-doc libghc-void-doc libghc-zlib-bindings-doc libghc-zlib-doc
+  libgmp10-doc libmpfr-dev lirc-x llvm-3.3-doc vdr-plugin-dvbsddevice
+The following NEW packages will be installed:
+  binfmt-support clisp ghc ghc-prof icu-devtools libaccounts-glib0
+  libaccounts-qt5-1 libalut-dev libalut0 libatk-bridge2.0-0-dbg
+  libatspi2.0-0-dbg libbsd-dev libclutter-gst-2.0-0 libffcall1 libffi-dev
+  libftdi1 libgdk-pixbuf2.0-0-dbg libghc-alut-dev libghc-alut-prof
+  libghc-asn1-data-dev libghc-asn1-data-prof libghc-asn1-types-dev
+  libghc-asn1-types-prof libghc-base-unicode-symbols-dev
+  libghc-base-unicode-symbols-prof libghc-base16-bytestring-dev
+  libghc-base16-bytestring-prof libghc-base64-bytestring-dev
+  libghc-base64-bytestring-prof libghc-bifunctors-dev libghc-bifunctors-prof
+  libghc-blaze-builder-dev libghc-blaze-builder-prof libghc-byteable-dev
+  libghc-byteable-prof libghc-case-insensitive-dev
+  libghc-case-insensitive-prof libghc-cereal-dev libghc-cereal-prof
+  libghc-certificate-dev libghc-certificate-prof libghc-cipher-aes-dev
+  libghc-cipher-aes-prof libghc-cipher-rc4-dev libghc-cipher-rc4-prof
+  libghc-clock-dev libghc-clock-prof libghc-comonad-dev libghc-comonad-prof
+  libghc-conduit-dev libghc-conduit-prof libghc-connection-dev
+  libghc-connection-prof libghc-contravariant-dev libghc-contravariant-prof
+  libghc-cookie-dev libghc-cookie-prof libghc-cprng-aes-dev
+  libghc-cprng-aes-prof libghc-crypto-cipher-types-dev
+  libghc-crypto-cipher-types-prof libghc-crypto-numbers-dev
+  libghc-crypto-numbers-prof libghc-crypto-pubkey-dev
+  libghc-crypto-pubkey-prof libghc-crypto-pubkey-types-dev
+  libghc-crypto-pubkey-types-prof libghc-crypto-random-dev
+  libghc-crypto-random-prof libghc-cryptohash-dev libghc-cryptohash-prof
+  libghc-data-default-dev libghc-data-default-prof libghc-distributive-dev
+  libghc-distributive-prof libghc-dlist-dev libghc-dlist-prof libghc-erf-dev
+  libghc-erf-prof libghc-failure-dev libghc-failure-prof libghc-free-dev
+  libghc-free-prof libghc-gitlib-dev libghc-gitlib-prof libghc-hashable-dev
+  libghc-hashable-prof libghc-hslogger-dev libghc-hslogger-prof
+  libghc-http-client-conduit-dev libghc-http-client-conduit-prof
+  libghc-http-client-dev libghc-http-client-prof libghc-http-client-tls-dev
+  libghc-http-client-tls-prof libghc-http-types-dev libghc-http-types-prof
+  libghc-hunit-dev libghc-hunit-prof libghc-idna-dev libghc-idna-prof
+  libghc-lifted-base-dev libghc-lifted-base-prof libghc-llvm-base-dev
+  libghc-llvm-base-prof libghc-llvm-dev libghc-llvm-prof libghc-missingh-dev
+  libghc-missingh-prof libghc-mmorph-dev libghc-mmorph-prof
+  libghc-monad-control-dev libghc-monad-control-prof libghc-mtl-dev
+  libghc-mtl-prof libghc-nats-dev libghc-nats-prof libghc-network-dev
+  libghc-network-prof libghc-objectname-dev libghc-objectname-prof
+  libghc-openal-dev libghc-openal-prof libghc-parsec3-dev libghc-parsec3-prof
+  libghc-pem-dev libghc-pem-prof libghc-pipes-bytestring-dev
+  libghc-pipes-bytestring-prof libghc-pipes-dev libghc-pipes-group-dev
+  libghc-pipes-group-prof libghc-pipes-parse-dev libghc-pipes-parse-prof
+  libghc-pipes-prof libghc-primitive-dev libghc-primitive-prof
+  libghc-profunctors-dev libghc-profunctors-prof libghc-publicsuffixlist-dev
+  libghc-publicsuffixlist-prof libghc-punycode-dev libghc-punycode-prof
+  libghc-random-dev libghc-random-prof libghc-ranges-dev libghc-ranges-prof
+  libghc-regex-base-dev libghc-regex-base-prof libghc-regex-compat-dev
+  libghc-regex-compat-prof libghc-regex-posix-dev libghc-regex-posix-prof
+  libghc-resourcet-dev libghc-resourcet-prof libghc-securemem-dev
+  libghc-securemem-prof libghc-semigroupoids-dev libghc-semigroupoids-prof
+  libghc-semigroups-dev libghc-semigroups-prof libghc-socks-dev
+  libghc-socks-prof libghc-statevar-dev libghc-statevar-prof
+  libghc-stringprep-dev libghc-stringprep-prof libghc-syb-dev libghc-syb-prof
+  libghc-tagged-dev libghc-tagged-prof libghc-tensor-dev libghc-tensor-prof
+  libghc-text-dev libghc-text-icu-dev libghc-text-icu-prof libghc-text-prof
+  libghc-tls-dev libghc-tls-extra-dev libghc-tls-extra-prof libghc-tls-prof
+  libghc-transformers-base-dev libghc-transformers-base-prof
+  libghc-transformers-dev libghc-transformers-prof libghc-type-level-dev
+  libghc-type-level-prof libghc-unordered-containers-dev
+  libghc-unordered-containers-prof libghc-utf8-string-dev
+  libghc-utf8-string-prof libghc-vector-dev libghc-vector-prof libghc-void-dev
+  libghc-void-prof libghc-zlib-bindings-dev libghc-zlib-bindings-prof
+  libghc-zlib-dev libghc-zlib-prof libglib2.0-0-dbg libglib2.0-0-refdbg
+  libgmp-dev libgmpxx4ldbl libgnet2.0-0 libgtk-vnc-2.0-0 libgtk-vnc-2.0-0-dbg
+  libgtk2.0-0-dbg libgvnc-1.0-0 libicu-dev libidzebra-2.0-0 libllvm3.3
+  liblunar-date-2.0-0 libmediascanner-2.0-0 liboauth0 libopenal-dev
+  libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5
+  libqt5positioning5 libqt5printsupport5 libqt5qml5 libqt5quick5
+  libqt5sensors5 libqt5sql5 libqt5sql5-sqlite libqt5test5 libqt5webkit5
+  libqt5widgets5 libqt5xml5 libqtglib-2.0-0 libsdl-ttf2.0-0 libsdl2-2.0-0
+  libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-net-2.0-0 libsdl2-ttf-2.0-0
+  libsignon-extension1 libsignon-plugins-common1 libsignon-qt5-1
+  libubuntuoneauth-2.0-0 libxbase2.0-0 libxcb-icccm4 libxcb-image0
+  libxcb-render-util0 libxcb-xkb1 libxkbcommon-x11-0 libyaz4
+  libzeitgeist-2.0-0-dbg lirc llvm-3.3 llvm-3.3-dev llvm-3.3-runtime
+  mediascanner2.0 publicsuffix session-migration setserial
+  signon-plugin-password signon-ui signond ubuntuone-client-data
+  ubuntuone-credentials-common vdr
+The following packages will be upgraded:
+  gtk2-engines-pixbuf libgraphite2-3 libgtk2.0-0 libgtk2.0-bin
+4 upgraded, 264 newly installed, 0 to remove and 103 not upgraded.
+Need to get 152 MB of archives.
+After this operation, 1,164 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Get:1 http://ca.archive.ubuntu.com/ubuntu/ trusty/main libaccounts-glib0 amd64 1.15+14.04.20131126.2-0ubuntu3 [38.8 kB]
+Get:2 http://ca.archive.ubuntu.com/ubuntu/ trusty-updates/main libqt5core5a amd64 5.2.1+dfsg-1ubuntu14.3 [1,748 kB]
