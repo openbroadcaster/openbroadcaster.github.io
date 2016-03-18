@@ -4,7 +4,7 @@ title: getting
 ---
 ## Log in
 
-- enter your \'username\' and 'password' ...
+- enter your  `username ` and  `password ` ...
 
 ## Upload Some Media
 
