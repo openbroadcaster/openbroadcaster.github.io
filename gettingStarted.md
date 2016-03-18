@@ -22,7 +22,7 @@ Make sure to record the password in a safe place. If you forget or lose the pass
 
 OpenBroadcaster Player is configured to use on-board audio by default (with Pulse audio). To use JACK  instead, open the Dashboard and on the Audio/Visualization tab, select Jack as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using Jack. 
 
-NOTE: There are no input/output controls for Jack audio in the default setup. To override the default connections, save the following script `.jack.plumbing` to your home directory (i.e. /home/obsuser). Reboot. The Jack Volume control on the Desktop (to the left of the clock on the Panel) will now provide control over the audio levels. If there is a test signal or other audio source, the Jack Volume controls will display color bars indicating level for the left and right channels (both source and master output).
+NOTE: There are no input/output controls for Jack audio in the default setup. To override the default connections, save the following script `.jack.plumbing` to your home directory (i.e. /home/obsuser). Reboot. The Jack Volume control on the Desktop (to the left of the clock on the Panel) will now provide control over the audio levels. If there is a test signal or other audio source, the Jack Volume control will display color bars indicating level for the left and right channels (both source and master output).
 
 ~~~~
 ~/.jack.plumbing
