@@ -2,23 +2,23 @@
 layout: default
 title: getting
 ---
-##Log in
+## Log in
 
 - enter your 'username' and 'password' ...
 
-##Upload Some Media
+## Upload Some Media
 
 - drag and drop files...
 
-##Make a Playlist
+## Make a Playlist
 
 - drag and drop media items...
 
-##Schedule a Show
+## Schedule a Show
 
 - use the show scheduler...
 
-##Tune in
+## Tune in
 
 - listening to my station 
 
@@ -26,5 +26,4 @@ title: getting
 ### Optional Requirements
 - Should publish a roadmap
 - Should use [milestones](https://guides.github.com/features/issues/#filtering) for issues
-
 
