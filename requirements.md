@@ -6,8 +6,8 @@ title: gettingStarted
 # Minimum Hardware Platform
 
 | Item | Description |
-|:----------|:------------|
-| Processor | ARM Cortex, Intel Celeron or better |
+|:-----------|:------------|
+| Processor  | ARM Cortex, Intel Celeron or better |
 | Memory | 2 GB RAM |
 | Storage | Minimum 1GB |
 | Display | Minimum 640x480 screen resolution. HDMI for HD content. |
