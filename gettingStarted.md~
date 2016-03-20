@@ -29,13 +29,11 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
 
 Make sure to record the password in a safe place. If you forget or lose the password, you'll need to re-image the computer, and start from this point again.
 
-### Configuring the __Alert Player__
+### Configuring the OpenBroadcaster
 
-The __Alert Player__ starts in the background at boot time. The application controls are available through a simple
-web browser interface. Launch a web browser, navigate to [localhost:23233](http://localhost:23233),  make and save initial
-configuration changes. The application can be restarted from the web interface to apply the new settings. Rebooting is unnecessary, unless changes are made to the Jack configuration (see below).
+The __OpenBroadcaster Player__ is configured through a simple web browser interface, available at [localhost:23233](http://localhost:23233). The tabs on the web page identify the available options. Make changes as required, save and restart the Player from the web interface to apply the new settings. Configuration options will require a reboot when setting up for Jack using external USB2XLR style adapters. Options for media sync will require an authorized connection to an __OpenBroadcaster Server__ instance. 
 
-### Setting SGC Codes
+### Setting SGC Codes(for CAP Alerting)
 The __Alert Player__ is only partially configured at the factory, and further set-up is necessary prior to operation. The __Alert Player__ must be set to filter emergency alert messages for to the district for which broadcast alerts are desired. Districts are defined by a [Standard Geographical Classification](https://en.wikipedia.org/wiki/Standard_Geographical_Classification). Set the [SGC Codes](http://www.statcan.gc.ca) for the desired district, which may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list. For example, Tagish(Yukon) is identified by SGC “6001036”.  Alerts will be filtered to include only those issued for Districts identified by the desired codes. Save any changes (make sure you enable emergency alerts!) and restart the Player. The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
 
 ### Broadcast Intrusive messaging
@@ -43,7 +41,7 @@ Alert messages are only played if the Broadcast Immediate flag is set for that m
 
 ### Using Jack Audio Kit
 
-OpenBroadcaster Player is configured to use on-board audio by default (with Pulse audio). To use JACK  instead, open the Dashboard and on the Audio/Visualization tab, select Jack as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using Jack. 
+OpenBroadcaster Player is configured to use on-board audio by default (with Pulse audio). Other modes are supported, however only Pulse and Jack audio are pre-installed. To use JACK  instead of the default Pulse setup, open the Dashboard and on the Audio/Visualization tab, select Jack as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using Jack. 
 
 NOTE: There are no input/output controls for Jack audio in the default setup. To override the default connections, save the following script `.jack.plumbing` to your home directory (i.e. /home/obsuser). Reboot. The Jack Volume control on the Desktop (to the left of the clock on the Panel) will now provide control over the audio levels. If there is a test signal or other audio source, the Jack Volume control will display color bars indicating level for the left and right channels (both source and master output).
 
