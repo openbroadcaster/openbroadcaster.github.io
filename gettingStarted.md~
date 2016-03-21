@@ -44,7 +44,7 @@ Alert messages are only played if the Broadcast Immediate flag is set for that m
 Pulse audio is disabled in preinstalled configurations. ALSA is used as a default if no  mode is chosen. To enable PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. To enable the Pulse Audio Volume Control(pavucontrol) on the Multimedia menu, edit the file `~/.pulse/client.conf` as shown below:
 
 
-##### ~/.pulse/client.conf 
+#~/.pulse/client.conf 
 
 ~~~~
 #change from this:

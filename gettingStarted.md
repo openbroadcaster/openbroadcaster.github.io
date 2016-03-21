@@ -60,9 +60,10 @@ Pulse audio is disabled in preinstalled configurations. ALSA is used as a defaul
 
 ### Using Jack Audio Kit
 
-__OpenBroadcaster Player__ is configured to use on-board audio by default (with Pulse audio). Other modes are supported, however only Pulse and Jack audio are pre-installed. To use `Jack`  instead of the default Pulse setup, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using `Jack`. 
+__OpenBroadcaster Player__ is configured to use on-board audio by default (with ALSA). To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using `Jack`. 
 
-NOTE: There are no input/output controls for `Jack` audio in the default setup. To override the default connections, save the following script `.jack.plumbing` to your home directory (i.e. /home/obsuser). Reboot. The Jack Volume control on the Desktop (to the left of the clock on the Panel) will now provide control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output).
+NOTE: There are no input/output controls for `Jack` audio in the default setup. To override the default connections, save the following script `.jack.plumbing` to your home directory (i.e. /home/obsuser). Reboot. The Jack Volume control on the Desktop (to the left of the clock on the Panel) will now provide control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
+__NB__ The jack_mixer must be opened manually from the Panel Icon to initiate the control with the correct connections.
 
 ~~~~
 ~/.jack.plumbing
