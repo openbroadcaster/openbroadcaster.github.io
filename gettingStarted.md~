@@ -39,6 +39,25 @@ The __OpenBroadcster Player__ is only partially configured for emergency alertin
 ### Broadcast Intrusive messaging
 Alert messages are only played if the Broadcast Immediate flag is set for that message, or the alert is otherwise identified as a 'severe' warning. Moderately severe alert warnings may also be included for broadcast by setting this option on the Dashboard. Playback of messages can be adjusted to include only the introductory sentences, by using the setting to truncate long alert messages.
 
+### Using Pulse Audio
+
+Pulse audio is disabled in preinstalled configurations. ALSA is used as a default if no  mode is chosen. To enable PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. To enable the Pulse Audio Volume Control(pavucontrol) on the Multimedia menu, edit the file `~/.pulse/client.conf` as shown below:
+
+
+##### ~/.pulse/client.conf 
+
+~~~~
+#change from this:
+    autospawn = no
+    daemon-binary = /usr/bin/true
+~~~~
+
+~~~~
+#to this:
+    autospawn = yes
+    daemon-binary = /usr/bin/pulseaudio
+~~~~
+
 ### Using Jack Audio Kit
 
 __OpenBroadcaster Player__ is configured to use on-board audio by default (with Pulse audio). Other modes are supported, however only Pulse and Jack audio are pre-installed. To use `Jack`  instead of the default Pulse setup, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. Connect any external USB2XLR adapter. Reboot. Audio will now be processed using `Jack`. 
