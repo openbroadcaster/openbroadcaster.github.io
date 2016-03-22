@@ -81,5 +81,19 @@ __NB__ The jack_mixer must be opened manually from the Panel Icon to initiate th
 (connect "jack_mixer:MAIN R" "system:playback_2")
 ~~~~
 
+### Headless Operation
+
+To enable headless operation, edit the grub configuration, update the bootloader and reboot.
+
+First, edit the grub config file : sudo nano(or use your fav. editor) /etc/default/grub
+
+~~~~
+#Use the hash symbol(#) to denote a comment or disable a command. Remove the hashtag to enable a command.
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" # Enable this command to use the GUI, disable for headless operation
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet text" # Enable this command for headless operation. Disable to use the GUI.
+#GRUB_TERMINAL=console #Enable this command for headless operation. Disable to use the GUI
+~~~~
+
+__!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
 
 
