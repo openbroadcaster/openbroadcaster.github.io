@@ -10,6 +10,8 @@
     </div><!-- /.row -->
   </div>
 </div><!-- /.pane-jumbotron -->
-{% endif %}
+{% else %}
 
 {% include featurettes.html %} 
+
+{% endif %}
