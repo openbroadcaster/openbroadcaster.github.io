@@ -8,14 +8,16 @@ This repository holds the source code to the [OpenBroadcaster Support](http://op
 ### Development Notes
 
 #### Setting up a local instance
+The project requires Ruby2.0, and nodejs. If no ruby environment is installed, setup as follows:
+1. `apt-get install ruby2.0 ruby2.0-dev gem bundler zlib1g-dev nodejs`
+2. `gem install RedCloth -v '4.2.9'`
+3. `gem install nokogiri -v '1.6.6.2'
 
-This project is setup to use [Bundler](http://bundler.io/), [Jekyll](http://jekyllrb.com/), and [Bower](http://bower.io/).
 
 After cloning this repository, run:
 
 1. `bundle install` to download dependencies required to build.
-2. `bower install` to download front-end packages into the `./components` directory. (This is not necessary for the `master` branch.)
-3. `jekyll serve` to run locally or `jekyll build` to generate into `./site` directory.
+2. `bundle exec jekyll serve` to run locally or `bundle exec jekyll build` to generate into `./site` directory.
 
 ### Screenshot
 
