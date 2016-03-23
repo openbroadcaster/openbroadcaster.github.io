@@ -64,7 +64,7 @@ The ALSA mixer provides a tool that runs in a terminal window, for adjustment of
 ### Using Pulse Audio
 . To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Enable the PCM2902 Audio Codec and disable the built-in audio on the configuration tab of the PulseAudio Volume Control. Adjust levels as required.
 
-#~/.pulse/client.conf 
+$~/.pulse/client.conf 
 
 ~~~~
 #change from this:
@@ -85,9 +85,9 @@ As noted above, there are no input/output controls for `Jack` audio in the defau
 
 __NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections. Failure to reopen the control may result in inaudible output levels.
 
-~~~~
-~/.jack.plumbing
+$~/.jack.plumbing
 
+~~~~
 #connect Audio Inputs to OpenBroadcaster Inputs
 (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
 (connect "system:capture_2" "openbroadcasterin:in_audiosrc_2")
