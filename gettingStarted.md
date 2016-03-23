@@ -3,7 +3,7 @@ layout: default
 title: gettingStarted
 ---
 
-# Setting up OpenBroadcaster Player
+# Setting up OpenBroadcaster Alert Player
 {:.no_toc}
 
 ## Getting Started
@@ -16,7 +16,7 @@ in RJ45 to a network with a router handing out DHCP IP addresses. Changing the d
 {:toc}
 
 
-### Change the default password
+### Change the default user password
 On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Enter the default password (twice), followed by a new password (twice) to open the Desktop. 
 
 Passwords must be a minimum of 8 characters and contain at least two of the following character types:
@@ -57,11 +57,11 @@ __OpenBroadcaster Player__ defaults to the on-board sound card (PCH) and PulseAu
 ### Setting audio mode
 From the Audio/Visualization tab on the Dashboard, select the desired audio mode (remember to Save any changes). Attach external adapters if required. When changing audio modes, a reboot is recommended. 
 
-### ALSA Mixer (default control)
+### ALSA (default)
 The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control, find the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock), or launch from a commandline in headless mode ('alsamixer'). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out). Use the left-right cursor keys to select the desired control, then up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. 
 
 
-### Using Pulse Audio
+### PulseAudio
 . To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Enable the PCM2902 Audio Codec and disable the built-in audio on the configuration tab of the PulseAudio Volume Control. Adjust levels as required.
 
 $~/.pulse/client.conf 
@@ -78,8 +78,8 @@ $~/.pulse/client.conf
     daemon-binary = /usr/bin/pulseaudio
 ~~~~
 
-### Using Jack Audio Kit
-To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Audio will now be processed using `Jack`. 
+### Jack Audio Kit
+To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. The startup script will automatically start the jackd daemon if Jack is selected as an audio mode.  If using the USB2XLR adapter, ensure it is connected to the Player before rebooting. 
 
 As noted above, there are no input/output controls for `Jack` audio in the default setup. To override the default setup, save the following script `.jack.plumbing` in your home directory (i.e. ~/). Reboot. Find the Jack Volume control on the Panel (hover over icons to the left of the clock) to achieve control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
 
@@ -101,6 +101,15 @@ $~/.jack.plumbing
 (connect "jack_mixer:MAIN R" "system:playback_2")
 ~~~~
 
+
+## Startup Script
+The Session and Startup Settings Menu lists applications that may be run at startup. The Alert Player(OBPlayer) application is configured to start automatically when a new login session is opened (i.e. at boot time).  The item `OBPlayer` in the Application Autostart menu contains the path to the Player startup script (~/.openbroadcaster/startup.py). This script also configures the `jack` daemon, if `jack` is specified in the Dashboard audio mode settings,  according to the installed sound card:
+
++ jackd -r -dalsa -r32000 -p1024 -n2 -D -Chw:PCH -Phw:PCH (built-in audio)
++ jackd -r -dalsa -r32000 -p1024 -n2 -D -Chw:CODEC -Phw:CODEC (USB adapter)
+
+After the Alert Player has been initiated the Dashboard will be available using a web browser at http://localhost:23233. Provide or confirm user/password to gain access the Dashboard (the default is admin/admin).
+
 ## Headless Operation
 
 To enable headless operation, edit the grub configuration, update the bootloader and reboot.
@@ -115,5 +124,4 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" # Enable this command to use the GUI, 
 ~~~~
 
 __!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
-
 
