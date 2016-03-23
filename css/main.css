@@ -11,6 +11,10 @@ p.lead {
   text-shadow: 1px 1px #19494a;
   color: #c54753;
 }
+.buglist {
+  font-size: 0.8em;
+  color:red;
+}
 h2 {
   font-size: 2.4em;
   color: #19494a;
