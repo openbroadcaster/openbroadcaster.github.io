@@ -4,7 +4,7 @@ title: projects
 ---
 
 <h2>Our Projects</h2>
-<p>Our intention is for all projects to be fresh and relevant; therefore, any project that loses activity for six months will be archived.</p>
+<p>The OpenBroadcaster open source platform is released under the __Affero GPLv3__ license. Access to source code repositories at Github is provided below.</p>
 
 <div class="row">
     {% for project in site.data.projects %}
