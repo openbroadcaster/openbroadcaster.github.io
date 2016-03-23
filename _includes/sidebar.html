@@ -1,3 +1,4 @@
+{% if page.title == 'home' %}
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/openbroadcaster" data-widget-id="708479071877894144">Tweets by @openbroadcaster</a>
 <script>
   ! function(d, s, id) {
@@ -11,14 +12,16 @@
     }
   }(document, "script", "twitter-wjs");
 </script>
+{% else %}
 
 <section>
   <h2>Feedback</h2>
   <p>Find a<a href="https://github.com/openbroadcaster/obplayer/issues/new"> bug </a>? Have a <a href="https://github.com/openbroadcaster/obplayer/issues/new">feature request</a>? <br/>We really appreciate your feedback!</p>
-<h3>Open Issues</h3>
-<div id="bugs" name="bugs" class="buglist">
+<h3>Open Server Issues</h3>
+<div id="srv_bugs" name="srv_bugs" class="buglist">
+</div>
+<h3>Open Player Issuses</h3>
+<div id="ply_bugs" name="ply_bugs" class="buglist">
 </div>
 </section>
-
-
-
+{% endif %}
