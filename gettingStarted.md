@@ -6,14 +6,15 @@ title: gettingStarted
 # Setting up OpenBroadcaster Player
 {:.no_toc}
 
-* TOC
-{:toc}
-
-
-### Getting Started
+## Getting Started
+{:.no_toc}
 Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB) Plugin
 headphones or speakers to green audio output or hook up (optional XLR adaptor) to monitors. Plug
 in RJ45 to a network with a router handing out DHCP IP addresses. Changing the default password ('obsuser') on first run is mandatory. After login, the Player may be configured using a browser interface, accessible from an icon of the Desktop. This Dashboard is also secured by a user/password ('admin'/'admin').
+
+* TOC
+{:toc}
+
 
 ### Change the default password
 On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Enter the default password (twice), followed by a new password (twice) to open the Desktop. 
@@ -100,7 +101,7 @@ __NB__ When using jack mixer, the jack volume control must be opened manually fr
 (connect "jack_mixer:MAIN R" "system:playback_2")
 ~~~~
 
-### Headless Operation
+## Headless Operation
 
 To enable headless operation, edit the grub configuration, update the bootloader and reboot.
 
