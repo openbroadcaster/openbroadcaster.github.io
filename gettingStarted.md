@@ -64,7 +64,7 @@ The ALSA mixer provides a tool that runs in a terminal window, for adjustment of
 ### PulseAudio
 . To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Enable the PCM2902 Audio Codec and disable the built-in audio on the configuration tab of the PulseAudio Volume Control. Adjust levels as required.
 
-$~/.pulse/client.conf 
+obsuser:~$ `nano ~/.pulse/client.conf `
 
 ~~~~
 #change from this:
@@ -85,7 +85,7 @@ As noted above, there are no input/output controls for `Jack` audio in the defau
 
 __NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections. Failure to reopen the control may result in inaudible output levels.
 
-$~/.jack.plumbing
+obsuser:~$ `nano ~/.jack.plumbing`
 
 ~~~~
 #connect Audio Inputs to OpenBroadcaster Inputs
@@ -113,14 +113,19 @@ After the Alert Player has been initiated the Dashboard will be available using 
 ## Headless Operation
 
 To enable headless operation, edit the grub configuration, update the bootloader and reboot.
+NOTE: The hash symbol(#) is used to denote a comment or disable a command. Removing the hashtag enables a command.
 
-First, edit the grub config file : sudo nano(or use your fav. editor) /etc/default/grub
+obsuser:~$ `sudo nano /etc/default/grub`
 
 ~~~~
-#Use the hash symbol(#) to denote a comment or disable a command. Remove the hashtag to enable a command.
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" # Enable this command to use the GUI, disable for headless operation
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet text" # Enable this command for headless operation. Disable to use the GUI.
-#GRUB_TERMINAL=console #Enable this command for headless operation. Disable to use the GUI
+#Disable the next line for Headless operation
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" #Enable to use GUI Desktop
+
+#Enable next line for Headless operation
+GRUB_CMDLINE_LINUX_DEFAULT="quiet text" #Disable to use GUI Desktop
+
+#Enable next line for Headless operation
+GRUB_TERMINAL=console #Disable to use GUI Desktop
 ~~~~
 
 __!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
