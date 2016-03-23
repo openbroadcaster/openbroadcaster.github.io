@@ -51,7 +51,7 @@ _NOTE English and French are presently the only supported language for on board 
 
 `Inject` the alert. A Test Alert message will be added to the Active Alert message queue, and a 20 sec. countdown begins to broadcast. Any other incoming message will reset the countdown timer. Once the countdwon reaches 0 secs, queued messages will play through the active audio output.
 
-## Audio Mode Settings
+## Audio Settings
 __OpenBroadcaster Player__ defaults to the on-board sound card (PCH) and PulseAudio using the ALSA framework. This allows for ease of deployment of the Alert Player as a headless unit (no graphic user interface). OpenBroadcaster is easy to reconfigure to enable the use of either Pulse or Jack sound controls on a GUI desktop. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard.
 
 ### Setting audio mode
