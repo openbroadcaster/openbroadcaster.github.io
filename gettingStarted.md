@@ -28,7 +28,7 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
 
 Make sure to record the password in a safe place. If you forget or lose the password, you'll need to re-image the computer, and start from this point again.
 
-### Configuring the OpenBroadcaster
+### Configuring the Dashboard
 The __OpenBroadcaster Player__ is configured through a secure web browser interface, available at [localhost:23233](http://localhost:23233). The default user/password is admin/admin. The admin and read-only user password settings may be changed on the HTTP(s) dashboard tab. Other tabs on the web page identify the available options. Make changes as required, save and restart the Player from the web interface to apply the new settings. Some configuration changes require a reboot (e.g. when changing audio modes to make use of external adapters). Options for media sync require an authorized connection to an __OpenBroadcaster Server__ instance. 
 
 ### Setting SGC Codes(for CAP Alerting)
