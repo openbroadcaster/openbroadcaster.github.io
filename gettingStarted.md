@@ -80,11 +80,11 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 ~~~~
 
 ### Jack Audio Kit
-To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. The startup script will automatically start the jackd daemon if Jack is selected as an audio mode.   Disable PulseAudio (see previous section). If using the USB2XLR adapter, ensure it is connected to the Player before rebooting. 
+To use `Jack`, first  disable PulseAudio (see previous section). Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot.
 
-As noted above, there are no input/output controls for `Jack` audio in the default setup. To override the default setup, save the following script `.jack.plumbing` in your home directory (i.e. ~/). Reboot. Find the Jack Volume control on the Panel (hover over icons to the left of the clock) to achieve control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
+As noted above, only ALSA mixer is available for control in headless mode. For the desktop, a `.jack.plumbing` script in the home directory (i.e. ~/) can be used to incorporate jack_mixer into the Jack setup. Reboot. Then find the Jack Volume control on the Panel (hover over icons to the left of the clock) to achieve control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
 
-__NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections. Failure to reopen the control may result in inaudible output levels.
+__NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections.
 
 obsuser:~$ `nano ~/.jack.plumbing`
 
@@ -104,12 +104,10 @@ obsuser:~$ `nano ~/.jack.plumbing`
 
 
 ## Startup Script
-The Session and Startup Settings Menu lists applications that may be run at startup. The Alert Player(OBPlayer) application is configured to start automatically when a new login session is opened (i.e. at boot time).  The item `OBPlayer` in the Application Autostart menu contains the path to the Player startup script (~/.openbroadcaster/startup.py). This script also configures the `jack` daemon, if `jack` is specified in the Dashboard audio mode settings,  according to the installed sound card:
 
-+ jackd -r -dalsa -r32000 -p1024 -n2 -D -Chw:PCH -Phw:PCH (built-in audio)
-+ jackd -r -dalsa -r32000 -p1024 -n2 -D -Chw:CODEC -Phw:CODEC (USB adapter)
+The Alert Player(OBPlayer) application is configured to start automatically at boot time. The Session and Startup Settings Menu lists applications that run at startup.  The item `OBPlayer` in the Application Autostart menu is used to control the startup script.  
 
-After the Alert Player has been initiated the Dashboard will be available using a web browser at http://localhost:23233. Provide or confirm user/password to gain access the Dashboard (the default is admin/admin).
+After the Alert Player boots up the Dashboard will be available using a web browser at http://localhost:23233. Provide or confirm user/password to gain access the Dashboard (the default is admin/admin).
 
 ## Headless Operation
 
@@ -130,4 +128,4 @@ GRUB_TERMINAL=console #Disable to use GUI Desktop
 ~~~~
 
 __!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
-
+__!IMPORTANT!__ Delete or rename the file .jack.plumbing if used. Otherwise, the audio output will falter.  
