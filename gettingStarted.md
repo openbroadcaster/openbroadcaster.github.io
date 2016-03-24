@@ -52,34 +52,35 @@ _NOTE English and French are presently the only supported language for on board 
 `Inject` the alert. A Test Alert message will be added to the Active Alert message queue, and a 20 sec. countdown begins to broadcast. Any other incoming message will reset the countdown timer. Once the countdwon reaches 0 secs, queued messages will play through the active audio output.
 
 ## Audio Settings
-__OpenBroadcaster Player__ defaults to the on-board sound card (PCH) and PulseAudio using the ALSA framework. This allows for ease of deployment of the Alert Player as a headless unit (no graphic user interface). OpenBroadcaster is easy to reconfigure to enable the use of either Pulse or Jack sound controls on a GUI desktop. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard.
+__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In this configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
+
 
 ### Setting audio mode
 From the Audio/Visualization tab on the Dashboard, select the desired audio mode (remember to Save any changes). Attach external adapters if required. When changing audio modes, a reboot is recommended. 
 
 ### ALSA (default)
-The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control, find the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock), or launch from a commandline in headless mode ('alsamixer'). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out). Use the left-right cursor keys to select the desired control, then up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. 
+The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control in headless mode, type 'alsamixer' at a command line (using ssh to login, for example). On the Desktop, you can find the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out). Use the left-right cursor keys to select the desired control, then up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. 
 
 
 ### PulseAudio
-. To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Enable the PCM2902 Audio Codec and disable the built-in audio on the configuration tab of the PulseAudio Volume Control. Adjust levels as required.
+To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec and disable the built-in audio. Adjust levels as required.
 
 obsuser:~$ `nano ~/.pulse/client.conf `
 
 ~~~~
-#change from this:
+#to disable PulseAudio:
     autospawn = no
     daemon-binary = /usr/bin/true
 ~~~~
 
 ~~~~
-#to this:
+#to enable PulseAudio:
     autospawn = yes
     daemon-binary = /usr/bin/pulseaudio
 ~~~~
 
 ### Jack Audio Kit
-To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. The startup script will automatically start the jackd daemon if Jack is selected as an audio mode.  If using the USB2XLR adapter, ensure it is connected to the Player before rebooting. 
+To use `Jack`, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. The startup script will automatically start the jackd daemon if Jack is selected as an audio mode.   Disable PulseAudio (see previous section). If using the USB2XLR adapter, ensure it is connected to the Player before rebooting. 
 
 As noted above, there are no input/output controls for `Jack` audio in the default setup. To override the default setup, save the following script `.jack.plumbing` in your home directory (i.e. ~/). Reboot. Find the Jack Volume control on the Panel (hover over icons to the left of the clock) to achieve control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
 
