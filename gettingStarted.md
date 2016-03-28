@@ -52,11 +52,10 @@ _NOTE English and French are presently the only supported language for on board 
 `Inject` the alert. A Test Alert message will be added to the Active Alert message queue, and a 20 sec. countdown begins to broadcast. Any other incoming message will reset the countdown timer. Once the countdwon reaches 0 secs, queued messages will play through the active audio output.
 
 ## Audio Settings
-__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In this configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
+__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In the default configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
 
-
-### Setting audio mode
-From the Audio/Visualization tab on the Dashboard, select the desired audio mode (remember to Save any changes). Attach external adapters if required. When changing audio modes, a reboot is recommended. 
+### Setting audio modes
+From the Audio/Visualization tab on the Dashboard, select the desired audio mode. If using the external adapter for audio input from, enable the 'Enable Audio In Source' setting. When changing audio modes, a reboot is recommended. 
 
 ### ALSA (default)
 The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control in headless mode, type 'alsamixer' at a command line (using ssh to login, for example). On the Desktop, you can find the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out). Use the left-right cursor keys to select the desired control, then up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. 
