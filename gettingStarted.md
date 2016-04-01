@@ -20,6 +20,7 @@ __IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio th
 1. Boot.  Change the default password ('obsuser').
 
 ### Set locale and adjust audio levels
+{:.no_toc}
 1. Open Dashboard from desktop icon. Be sure to save changes on each tab before restarting.
 1. On the `Audio Visualization` tab, enable Audio In if passing audio through from an external source. Save changes.
 1. On the `Emergency Alerts` tab, set up SGC codes for your alerting locale. Save changes.
