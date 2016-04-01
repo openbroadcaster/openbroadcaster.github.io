@@ -64,10 +64,10 @@ A GPIO Trigger consists of a RS-232 DTR upon commencement of CAP-CP Alerts. When
 
 ### Testing the Alert Message
 NB: The Test Alert will play through the active output! From the Emergency Alerts tab of the Dashboard, select one of the four sample messages (each one tests a valid CAP message format):
-- Simple Test. Generates an internal CAP-CP formated message and plays using TTS
-- Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
-- External Audio Test. Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
-- Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording. Requires 'Moderately Severe Alerts' to be enabled.
+1. Simple Test. Generates an internal CAP-CP formated message and plays using TTS
+1. Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
+1. External Audio Test. Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
+1. Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording. Requires 'Moderately Severe Alerts' to be enabled.
 
 _NOTE English and French are presently the only supported language for on board testing with Audio and Visual alerting_ 
 
