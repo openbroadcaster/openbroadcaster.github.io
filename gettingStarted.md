@@ -12,12 +12,12 @@ __IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio th
 
 ### Connect the components
 {:.no_toc}
-Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB).
-Plug in headphones or speakers to green audio output to monitor output.
-Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
-Plug in RJ45 to a network with a router handing out DHCP IP addresses.
-The above noted components should be attached before booting up the computer.
-Boot up.  Change the default password ('obsuser').
+1. Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB).
+1. Plug in headphones or speakers to green audio output to monitor output.
+1. Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
+1. Plug in RJ45 to a network with a router handing out DHCP IP addresses.
+1. The above noted components should be attached before booting up the computer.
+1. Boot up.  Change the default password ('obsuser').
 
 ### Set locale and adjust audio levels
 After login, the Player may be configured using a browser interface, accessible from an icon of the Desktop. 
