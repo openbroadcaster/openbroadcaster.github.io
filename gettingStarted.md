@@ -109,7 +109,7 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 
 ### jack_plumbing (jack mixer)
 
-As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), a mixer can be incorprated into the Jack setup to provide control over the audio input. 
+As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. A `.jack.plumbing` script as shown below can be located in the home directory (i.e. ~/), to incorprate  a mixer into the Jack setup. However, if input signals on the USB2XLR cable are "hot", some input attenuation may be necessary to produce satisfactory results.
 
 obsuser:~$ `nano ~/.jack.plumbing`
 
