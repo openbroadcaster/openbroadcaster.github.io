@@ -32,6 +32,8 @@ __NOTE: If source signals are "hot", some form of input signal attentuation may 
  
 
 ## Detailed Setup Instructions
+{:.no_toc}
+
 * TOC
 {:toc}
 
