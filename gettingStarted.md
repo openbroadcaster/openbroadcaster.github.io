@@ -5,13 +5,31 @@ title: gettingStarted
 
 # Setting up OpenBroadcaster Alert Player
 {:.no_toc}
+__IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio through the unit using the USB /XLR adapter, please enable the Audio In mode on the Audio Visualization Tab of the Dashboard.__
 
-## Getting Started
+## Quick Start
 {:.no_toc}
-Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB) Plugin
-headphones or speakers to green audio output or hook up (optional XLR adaptor) to monitors. Plug
-in RJ45 to a network with a router handing out DHCP IP addresses. Changing the default password ('obsuser') on first run is mandatory. After login, the Player may be configured using a browser interface, accessible from an icon of the Desktop. This Dashboard is also secured by a user/password ('admin'/'admin').
 
+### Connect the components
+{:.no_toc}
+Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB).
+Plug in headphones or speakers to green audio output to monitor output.
+Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
+Plug in RJ45 to a network with a router handing out DHCP IP addresses.
+The above noted components should be attached before booting up the computer.
+Boot up.  Change the default password ('obsuser').
+
+### Set locale and adjust audio levels
+After login, the Player may be configured using a browser interface, accessible from an icon of the Desktop. 
+This Dashboard is also secured by a user/password ('admin'/'admin').
+Open the Dashboard, set up SGC codes for your alerting locale.
+Set audio modes, and enable Audio In if passing audio from an external source.
+Restart the Player (using the Restart button on the Dashboard).
+Adjust output levels using alsamixer.
+__NOTE: If source signals are "hot", some form of input signal attentuation may be required.__
+ 
+
+## Detailed Setup Instructions
 * TOC
 {:toc}
 
@@ -45,21 +63,23 @@ NB: The Test Alert will play through the active output! From the Emergency Alert
 - Simple Test. Generates an internal CAP-CP formated message and plays using TTS
 - Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
 - External Audio Test. Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
-- Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording.
+- Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording. Requires 'Moderately Severe Alerts' to be enabled.
 
 _NOTE English and French are presently the only supported language for on board testing with Audio and Visual alerting_ 
 
 `Inject` the alert. A Test Alert message will be added to the Active Alert message queue, and a 20 sec. countdown begins to broadcast. Any other incoming message will reset the countdown timer. Once the countdwon reaches 0 secs, queued messages will play through the active audio output.
 
 ## Audio Settings
-__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In the default configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. For testing purposes, a Test Signal may be enabled from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
+__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In the default configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. If the Test Signal is enabled, it will override the audio-in from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
 
 ### Setting audio modes
 From the Audio/Visualization tab on the Dashboard, select the desired audio mode. To pass thru audio input from an external source, use the 'Enable Audio In Source' setting. When changing audio modes, a reboot is recommended. 
 
-### ALSA (default)
-The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control in headless mode, type 'alsamixer' at a command line (using ssh to login, for example). On the Desktop, you can find the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out). Use the left-right cursor keys to select the desired control, then up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. 
+### alsamixer
+The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control, type 'alsamixer' at a command line (using ssh to login, for example), or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out; HDMI for HDMI audio out). Use the left-right cursor keys to select the desired control, and up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. The ALSA mixer is the only audio control available in headless mode.
 
+### Jack Audio Kit
+JACK is set-up as the default sound processor. To restore `Jack`, disable PulseAudio (see next section). Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
 
 ### PulseAudio
 To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec and disable the built-in audio. Adjust levels as required.
@@ -78,10 +98,9 @@ obsuser:~$ `nano ~/.pulse/client.conf `
     daemon-binary = /usr/bin/pulseaudio
 ~~~~
 
-### Jack Audio Kit
-To use `Jack`, first  disable PulseAudio (see previous section). Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot.
+### jack_mixer
 
-As noted above, only ALSA mixer is available for control in headless mode. For the desktop, a `.jack.plumbing` script in the home directory (i.e. ~/) can be used to incorporate jack_mixer into the Jack setup. Reboot. Then find the Jack Volume control on the Panel (hover over icons to the left of the clock) to achieve control over the audio levels. If there is a test signal or other audio source, the `Jack` Volume control will display color bars indicating level for the left and right channels (both source and master output). 
+As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), JACK audio will incorporate jack\_mixer into the Jack setup. The jack\_mixer control on the Panel (hover over icons to the left of the clock) will then open a display with vertical bars indicating level for the left and right channels (both source and master output) if any signal is present. The jack mixer is only active while the control is displayed. Closing the control reverts to default settings.
 
 __NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections.
 
