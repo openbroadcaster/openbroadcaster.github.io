@@ -84,11 +84,8 @@ From the Audio/Visualization tab on the Dashboard, select the desired audio mode
 The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control, type 'alsamixer' at a command line (using ssh to login, for example), or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out; HDMI for HDMI audio out). Use the left-right cursor keys to select the desired control, and up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. The ALSA mixer is the only audio control available in headless mode.
 
 ### Jack Audio Kit
-JACK is set-up as the default sound processor. To restore `Jack`, disable PulseAudio (see next section). Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
-
-### PulseAudio
-To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec and disable the built-in audio. Adjust levels as required.
-
+JACK is set-up as the default sound processor. To restore `Jack`, disable PulseAudio:
+ 
 obsuser:~$ `nano ~/.pulse/client.conf `
 
 ~~~~
@@ -96,6 +93,13 @@ obsuser:~$ `nano ~/.pulse/client.conf `
     autospawn = no
     daemon-binary = /usr/bin/true
 ~~~~
+
+Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
+
+### PulseAudio
+To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec and disable the built-in audio. Adjust levels as required.
+
+obsuser:~$ `nano ~/.pulse/client.conf `
 
 ~~~~
 #to enable PulseAudio:
@@ -105,9 +109,7 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 
 ### jack_plumbing (jack mixer)
 
-As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), a mixer can be incorprated into the Jack setup to provide control over the audio input. If input signals are too hot though, 
-
-__NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon to initiate the control. If the control is closed, it will no longer have any effect on the audio signal.
+As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), a mixer can be incorprated into the Jack setup to provide control over the audio input. 
 
 obsuser:~$ `nano ~/.jack.plumbing`
 
@@ -125,6 +127,8 @@ obsuser:~$ `nano ~/.jack.plumbing`
 (connect "jack_mixer:MAIN R" "system:playback_2")
 ~~~~
 
+
+__NB__ When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to initiate the control. Once the control is closed, it no longer has any effect on the audio signal.
 
 ## Startup Script
 
