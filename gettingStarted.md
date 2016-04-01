@@ -16,16 +16,15 @@ __IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio th
 1. Plug in headphones or speakers to green audio output to monitor output.
 1. Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
 1. Plug in RJ45 to a network with a router handing out DHCP IP addresses.
-1. The above noted components should be attached before booting up the computer.
-1. Boot up.  Change the default password ('obsuser').
+1. The above noted components must be attached before powering up the computer.
+1. Boot.  Change the default password ('obsuser').
 
 ### Set locale and adjust audio levels
-After login, the Player may be configured using a browser interface, accessible from an icon of the Desktop. 
-This Dashboard is also secured by a user/password ('admin'/'admin').
-Open the Dashboard, set up SGC codes for your alerting locale.
-Set audio modes, and enable Audio In if passing audio from an external source.
-Restart the Player (using the Restart button on the Dashboard).
-Adjust output levels using alsamixer.
+1. Open Dashboard from desktop icon. Be sure to save changes on each tab before restarting.
+1. On the `Audio Visualization` tab, enable Audio In if passing audio through from an external source. Save changes.
+1. On the `Emergency Alerts` tab, set up SGC codes for your alerting locale. Save changes.
+1. Restart the Player (using the Restart button on the Dashboard). If signal is present, the output should be audible.
+1. Adjust output levels using alsamixer.
 __NOTE: If source signals are "hot", some form of input signal attentuation may be required.__
  
 
@@ -98,11 +97,11 @@ obsuser:~$ `nano ~/.pulse/client.conf `
     daemon-binary = /usr/bin/pulseaudio
 ~~~~
 
-### jack_mixer
+### jack_plumbing (jack mixer)
 
-As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), JACK audio will incorporate jack\_mixer into the Jack setup. The jack\_mixer control on the Panel (hover over icons to the left of the clock) will then open a display with vertical bars indicating level for the left and right channels (both source and master output) if any signal is present. The jack mixer is only active while the control is displayed. Closing the control reverts to default settings.
+As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If a `.jack.plumbing` script is located in the home directory (i.e. ~/), a mixer can be incorprated into the Jack setup to provide control over the audio input. If input signals are too hot though, 
 
-__NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon after a reboot to initiate the control with the correct connections.
+__NB__ When using jack mixer, the jack volume control must be opened manually from the Panel Icon to initiate the control. If the control is closed, it will no longer have any effect on the audio signal.
 
 obsuser:~$ `nano ~/.jack.plumbing`
 
