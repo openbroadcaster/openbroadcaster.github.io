@@ -97,7 +97,7 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
 
 ### PulseAudio
-To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec and disable the built-in audio. Adjust levels as required.
+To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec Stereo Duplex mode and disable the built-in audio. Adjust levels as required.
 
 obsuser:~$ `nano ~/.pulse/client.conf `
 
