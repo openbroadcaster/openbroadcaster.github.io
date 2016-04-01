@@ -12,6 +12,7 @@ __IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio th
 
 ### Connect the components
 {:.no_toc}
+
 1. Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB).
 1. Plug in headphones or speakers to green audio output to monitor output.
 1. Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
@@ -21,6 +22,7 @@ __IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio th
 
 ### Set locale and adjust audio levels
 {:.no_toc}
+
 1. Open Dashboard from desktop icon. Be sure to save changes on each tab before restarting.
 1. On the `Audio Visualization` tab, enable Audio In if passing audio through from an external source. Save changes.
 1. On the `Emergency Alerts` tab, set up SGC codes for your alerting locale. Save changes.
