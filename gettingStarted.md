@@ -97,7 +97,9 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
 
 ### PulseAudio
-To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec Stereo Duplex mode and disable the built-in audio. Adjust levels as required.
+To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec Analog input/digital output mode and disable the built-in audio. 
+
+__NB: Pad the input by -10db, and adjust the Latency (Advanced) to +60ms. Set output gain to 0db. Set playback gain to +4db.__
 
 obsuser:~$ `nano ~/.pulse/client.conf `
 
@@ -109,7 +111,13 @@ obsuser:~$ `nano ~/.pulse/client.conf `
 
 ### jack_plumbing (jack mixer)
 
-As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. A `.jack.plumbing` script as shown below can be located in the home directory (i.e. ~/), to incorprate  a mixer into the Jack setup. However, if input signals on the USB2XLR cable are "hot", some input attenuation may be necessary to produce satisfactory results.
+As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If input signals on the USB2XLR cable are "hot", some input attenuation may be necessary to produce satisfactory results. A `.jack.plumbing` script may be used to incorprate  a mixer into the Jack setup. 
+
+First, rename the default configuration file:
+
+obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def`
+
+Then, create a new configuration file in the home directory:
 
 obsuser:~$ `nano ~/.jack.plumbing`
 
@@ -128,7 +136,10 @@ obsuser:~$ `nano ~/.jack.plumbing`
 ~~~~
 
 
-__NB__ When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to initiate the control. Once the control is closed, it no longer has any effect on the audio signal.
+__NB When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible.__
+
+### aj_snapshot
+More details on the use of aj\_snapshot as an alternative to jack\_mixer to follow.
 
 ## Startup Script
 
