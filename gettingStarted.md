@@ -115,7 +115,7 @@ As noted above, the alsamixer provides no control over the input from the USB2XL
 
 First, rename the default configuration file:
 
-obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def`
+obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def` # Note: You will be prompted to confirm your user password
 
 Then, create a new configuration file in the home directory:
 
