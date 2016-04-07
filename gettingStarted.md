@@ -3,67 +3,138 @@ layout: default
 title: gettingStarted
 ---
 
-# Setting up OpenBroadcaster Alert Player
-{:.no_toc}
-__IMPORTANT NOTE: AUDIO IN is DISABLED in the default settings. To pass audio through the unit using the USB /XLR adapter, please enable the Audio In mode on the Audio Visualization Tab of the Dashboard.__
-
-## Quick Start
-{:.no_toc}
-
-### Connect the components
-{:.no_toc}
-
-1. Setup the OBPlayer alerting box with a mouse, keyboard and monitor (HDMI or DSUB).
-1. Plug in headphones or speakers to green audio output to monitor output.
-1. Alternativelty, connect USB2XLR adapter to computer, and connect XLR inputs to source and outputs to transmitter.
-1. Plug in RJ45 to a network with a router handing out DHCP IP addresses.
-1. The above noted components must be attached before powering up the computer.
-1. Boot.  Change the default password ('obsuser').
-
-### Set locale and adjust audio levels
-{:.no_toc}
-
-1. Open Dashboard from desktop icon. Be sure to save changes on each tab before restarting.
-1. On the `Audio Visualization` tab, enable Audio In if passing audio through from an external source. Save changes.
-1. On the `Emergency Alerts` tab, set up SGC codes for your alerting locale. Save changes.
-1. Restart the Player (using the Restart button on the Dashboard). If signal is present, the output should be audible.
-1. Adjust output levels using alsamixer.
-__NOTE: If source signals are "hot", some form of input signal attentuation may be required.__
- 
-
-## Detailed Setup Instructions
+## Quick Start Guide
 {:.no_toc}
 
 * TOC
 {:toc}
 
+## BEFORE YOU BEGIN
+{:toc}
 
-### Change the default user password
-On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Enter the default password (twice), followed by a new password (twice) to open the Desktop. 
+#### 1. Connect the components
+{:.no_toc}
+
+* Setup the computer with a mouse, keyboard and monitor (HDMI or DSUB) and power.
+* Plug in headphones or speakers to green audio output .
+* Connect RJ45 to a network with a router handing out DHCP IP addresses.
+
+#### 2. Boot the computer.
+{:.no_toc}
+
+#### 3. Change the default user password
+{:.no_toc}
+
+On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
+
+Enter the default password 'obsuser' (you will have to re-enter the password), followed by a new password (you will have to re-enter the new password). 
 
 Passwords must be a minimum of 8 characters and contain at least two of the following character types:
 
-- Lowercase Alphabetical (a, b, c, etc.)
-- Uppercase Alphabetical (A, B, C, etc.)
-- Numerics (0, 1, 2, etc.)
-- Special Characters (@, %, !, etc.)
+   - Lowercase Alphabetical (a, b, c, etc.)
+   - Uppercase Alphabetical (A, B, C, etc.)
+   - Numerics (0, 1, 2, etc.)
+   - Special Characters (@, %, !, etc.)
 
-Make sure to record the password in a safe place. If you forget or lose the password, you'll need to re-image the computer, and start from this point again.
 
-### Configuring the Dashboard
-The __OpenBroadcaster Player__ is configured through a secure web browser interface, available at [localhost:23233](http://localhost:23233). The default user/password is admin/admin. The admin and read-only user password settings may be changed on the HTTP(s) dashboard tab. Other tabs on the web page identify the available options. Make changes as required, save and restart the Player from the web interface to apply the new settings. Some configuration changes require a reboot (e.g. when changing audio modes to make use of external adapters). Options for media sync require an authorized connection to an __OpenBroadcaster Server__ instance. 
 
-### Setting SGC Codes(for CAP Alerting)
-The __OpenBroadcaster Player__ is only partially configured for emergency alerting at the factory, and further set-up is necessary prior to operation. The Player Emergency Alerting `Location Geocode` options must be set to filter emergency alert messages for to the district for which broadcast alerts are desired. Districts are defined by a [Standard Geographical Classification](https://en.wikipedia.org/wiki/Standard_Geographical_Classification). Set the [SGC Codes](http://www.statcan.gc.ca) for the desired district, which may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list. For example, all of Yukon Territory may be identified by SGC "60", while the village of Tagish(Yukon) is identified by SGC “6001036”.  Alerts will be filtered to include only those issued for districts identified by the desired codes. Save any changes (make sure you enable emergency alerts!) and restart the Player. The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
+__If you forget or lose the password, you'll need to re-image the unit and start over. Be sure to record the password in a safe place.__ 
 
-### Emergency Alert Message Options
-When Plays per Alert is not limited, Alert Messages will continue to play at the Alert Repeat Interval until the Expiry time for each message has passed. Alert messages are only required to be played if the Broadcast Immediate flag is set for that message, or the alert is otherwise identified as a 'severe' warning. Moderately severe alert warnings may also be included for broadcast by setting this option on the Dashboard. Playback of messages can be adjusted to include only the introductory sentences, by using the setting to truncate long alert messages. 
 
-### RS232 GPIO Trigger
-A GPIO Trigger consists of a RS-232 DTR upon commencement of CAP-CP Alerts. When enabled and a matching CAP-CP message is broadcast, an alert cycle starts, the serial port will be opened and the DTR control signal (positive pin voltage) will be transmitted. After the alert cycle has completed, the DTR signal will drop (negative pin voltage). 
+#  OpenBroadcaster Alert Player (Basic Setup)
+{:toc}
+ 
+_(Basic setup: Output Only)_
+
+The __OpenBroadcaster Player__ is configured using a secure web browser Dashboard interface, available at [http://localhost:23233](http://localhost:23233). The default user/password is admin/admin. The admin and read-only user password settings may be changed on the HTTP(s) Dashboard tab.
+
+Open the [Dashboard](#dash), set the Alerting locale, test audio output.
+
+### Set Alerting Locale
+{:toc}
+
+1. Open [Dashboard](#dash) from desktop icon.
+1. Ensure Emergency Alerts are enabled on the __Emergency Alerts__ tab.
+1. Enter [SGC code(s)](/player.html#alerts) for your alerting locale as a comma separated. 
+1. Save changes. Restart the Player (using the Restart button on the Dashboard). 
+ 
+###  Test audio output
+{:toc}
+1. On the __Emergency Alerts__ tab, select one of the test alerts.
+1. Click *Inject Alert* to place the Test Alert in a 20 sec countdown queue.
+1. Monitor the log output and output metering on the __Status__ tab.
+1. Audio output levels can be controlled using [alsamixer](#alsa).
+
+__IMPORTANT NOTE: AUDIO IN is DISABLED in the Basic settings.__
+
+
+### Headless Operation
+{:toc}
+
+To enable headless operation (i.e. no video output):
+The hash symbol(#) is used to denote a comment or disable a command. Removing the hashtag enables a command. 
+
+NOTE: `sudo` requires confirmation of your user password. 
+
+obsuser:~$ `sudo nano /etc/default/grub`
+
+~~~~
+#Disable the next line for Headless operation
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" 
+
+#Enable next line for Headless operation
+GRUB_CMDLINE_LINUX_DEFAULT="quiet text" 
+
+#Enable next line for Headless operation
+GRUB_TERMINAL=console 
+~~~~
+
+__!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
+The computer should now boot successfully without a monitor attached. To control output, SSH to the computer (ssh obsuser@ip_address) and run [alsamixer](#alsa) at the command line.
+
+#  OpenBroadcaster Alert Player (Advanced Setup)
+
+Tabs on the web page group the available options. If changes are made on any Tab, save them before moving to another Tab or Restarting the Player. Some configuration changes require a reboot (e.g. when changing audio modes that make use of external adapters).
+
+### __Admin Tab__
+The __Admin__ Tab is visible to the Admin user only. 
+
+This Tab controls visibility of Tabs for Read Only user access.
+
+The local scheduling and media database may be deleted to allow the Player to re-sync with an [Openbroadcaster Server](/server). Configuration settings may be exported for backup or diagnostics. A saved settings file may be imported to restore a previous configuration. 
+<a name="sync"></a>
+
+### __Sync/Media Tab__
+Media sync requires a valid Device ID, password and sync URL for an [OpenBroadcaster Server](/server) instance on the __Admin__ Tab. The *Sync URL* should be in the format `http://server_ip_address/remote.php` or `https://server_ip_address/remote.php`.
+
+<a name="alerts"></a>
+
+### __Emergency Alerts Tab__
+*Enable Emergency Alerts* to receive and broadcast Alert Messages.
+
+#### Location Geocode
+{:.no_toc}
+ Alerting Districts are defined by a [Standard Geographical Classification](http://www.statcan.gc.ca/eng/subjects/standard/sgc/2011/index). A web search for 'SGC code my_place_name' should reveal the codes for the desired district. The SGC may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list. For example, all of Yukon Territory may be identified by SGC "60", while the village of Tagish(Yukon) is identified by SGC “6001036”.  Alerts will be filtered to include only those match, contain, or are contained by the set Alerting District. 
+
+The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
+
+#### Language Options
+{:.no_toc}
+Text-To-Speech (TTS) conversion uses the eSpeak engine and a selection of mbrola voice synthesizers. Choose from available language and voice for both primary and secondary voices.
+
+#### Message Options
+{:.no_toc}
+Alert Messages will continue to play at the Alert Repeat Interval until the Expiry time for each message has passed, unless a specific repeat value is set. Playback of messages can be adjusted to include only the introductory sentences, by using the setting to truncate long alert messages. Only those messages with a Broadcast Immediate flag will be played, unless the *Play Moderately Severe Alerts* setting is enabled.
+
+<a name="gpio"></a>
+
+#### Advanced Settings
+{:.no_toc}
+A GPIO Trigger may be used to issue a DTR serial signal upon commencement of CAP-CP Alerts. When enabled and a matching CAP-CP message is broadcast, an alert cycle starts, the serial port will be opened and the DTR control signal (positive pin voltage) will be transmitted. After the alert cycle has completed, the DTR signal will drop (negative pin voltage). Lead-in Delay timings may be adjusted to prevent 'clipping' of messages. 
 
 ### Testing the Alert Message
-NB: The Test Alert will play through the active output! From the Emergency Alerts tab of the Dashboard, select one of the four sample messages (each one tests a valid CAP message format):
+{:.no_toc}
+To test Emergency Alerting output, select one of the four sample messages (each one tests a valid CAP message format):
 
 1. Simple Test. Generates an internal CAP-CP formated message and plays using TTS
 1. Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
@@ -74,52 +145,50 @@ _NOTE English and French are presently the only supported language for on board 
 
 `Inject` the alert. A Test Alert message will be added to the Active Alert message queue, and a 20 sec. countdown begins to broadcast. Any other incoming message will reset the countdown timer. Once the countdwon reaches 0 secs, queued messages will play through the active audio output.
 
-## Audio Settings
-__OpenBroadcaster Alerting Player__ comes setup for using Jack Audio, with or without a USB to XLR adapter. In the default configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop).  On the GUI, users have access to Pulse or Jack volume controls. In headless mode, only the ALSA mixer is available for volume control. If the Test Signal is enabled, it will override the audio-in from the Audio/Visualization dashboard. Generating test alert messages is recommended to confirm output levels.
 
-### Setting audio modes
-From the Audio/Visualization tab on the Dashboard, select the desired audio mode. To pass thru audio input from an external source, use the 'Enable Audio In Source' setting. When changing audio modes, a reboot is recommended. 
+<a name="audio"></a>
 
-### alsamixer
-The ALSA mixer provides a tool that runs in a terminal window, for adjustment of input and output levels. To launch the ALSA mixer control, type 'alsamixer' at a command line (using ssh to login, for example), or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). In the Mixer console, press F6 to select the desired sound card from the available sound cards (PCH for on-board audio, 1/8" audio out; CODEC for USB Audio,  USB2XLR audio out; HDMI for HDMI audio out). Use the left-right cursor keys to select the desired control, and up-down cursor keys to adjust the level. Press 'm' to toggle mute for the selected control. Press 'esc' to close the control window. The ALSA mixer is the only audio control available in headless mode.
+### __Audio/Visualization Tab__
 
-### Jack Audio Kit
-JACK is set-up as the default sound processor. To restore `Jack`, disable PulseAudio:
- 
-obsuser:~$ `nano ~/.pulse/client.conf `
+The Alerting Player comes setup for using Jack Audio, with or without a USB to XLR adapter. In the default configuration, the Alert Player can function out-of-the-box as either a headless unit or with a graphic user interface (GUI desktop). Generating a test signal and testing alert messages is recommended to confirm output levels.
 
-~~~~
-#to disable PulseAudio:
-    autospawn = no
-    daemon-binary = /usr/bin/true
-~~~~
 
-Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
+<a name="modes"></a>
 
-### PulseAudio
-To use PulseAudio, select Pulse as the Audio Mode settings on the Player Dashboard. Edit the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec Analog input/digital output mode and disable the built-in audio. 
+#### Setting audio modes
+{:.no_toc}
+From the Audio/Visualization tab on the Dashboard, select the desired audio mode. 
 
-__NB: Pad the input by -10db, and adjust the Latency (Advanced) to +60ms. Set output gain to 0db. Set playback gain to +4db.__
+The 'Enable Audio In Source' allows the Player to pass audio from an external source, while allowing interruption of the source to inject Alert Messages as necessary. Note that  __USB2XLR__ adapters are designed to handle input of __-10dbV__. When passing source signals of __+4dbV__ through the adapter,  ~15 db of attentuation should be applied to input signal upstream of the XLR adapter.
 
-obsuser:~$ `nano ~/.pulse/client.conf `
+<a name="alsa"></a>
 
-~~~~
-#to enable PulseAudio:
-    autospawn = yes
-    daemon-binary = /usr/bin/pulseaudio
-~~~~
+__ALSAmixer__ is the default tool for adjustment of input and output levels. To launch the ALSA mixer control, type 'alsamixer' at a command line (using ssh to login, for example), or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). __ALSAmixer__ may also be used in a text console.
 
-### jack_plumbing (jack mixer)
+    # ALSA Mixer controls
+    F6 - select the desired sound card from the available sound cards
+    Left-right cursor keys - select the desired control
+    up-down cursor keys - adjust the level
+    'm' - toggle mute for the selected control
+    'esc' - close the control window. 
 
-As noted above, the alsamixer provides no control over the input from the USB2XLR adapter. If input signals on the USB2XLR cable are "hot", some input attenuation may be necessary to produce satisfactory results. A `.jack.plumbing` script may be used to incorprate  a mixer into the Jack setup. 
+
+The following sections describe additional configuration steps for Jack Audio or PulseAudio modes. 
+
+
+<a name="jack"></a>
+
+##### __Jack Audio Connection Kit__
+{:.no_toc}
+The default sound processor, with [Alsamixer](#alsa) as the default output control. To control input level with Jack, it is necessary to include a jack_mixer in the jack.plumbing configuration.
 
 First, rename the default configuration file:
 
-obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def`
+`obsuser:~$ sudo mv /etc/jack.plumbing /etc/jack.default`
 
 Then, create a new configuration file in the home directory:
 
-obsuser:~$ `nano ~/.jack.plumbing`
+`obsuser:~$ nano ~/.jack.plumbing`
 
 ~~~~
 #connect Audio Inputs to OpenBroadcaster Inputs
@@ -135,35 +204,36 @@ obsuser:~$ `nano ~/.jack.plumbing`
 (connect "jack_mixer:MAIN R" "system:playback_2")
 ~~~~
 
+__NB:__ *When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible.*
 
-__NB When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible.__
-
-### aj_snapshot
-More details on the use of aj\_snapshot as an alternative to jack\_mixer to follow.
-
-## Startup Script
-
-The Alert Player(OBPlayer) application is configured to start automatically at boot time. The Session and Startup Settings Menu lists applications that run at startup.  The item `OBPlayer` in the Application Autostart menu is used to control the startup script.  
-
-After the Alert Player boots up the Dashboard will be available using a web browser at http://localhost:23233. Provide or confirm user/password to gain access the Dashboard (the default is admin/admin).
-
-## Headless Operation
-
-To enable headless operation, edit the grub configuration, update the bootloader and reboot.
-NOTE: The hash symbol(#) is used to denote a comment or disable a command. Removing the hashtag enables a command.
-
-obsuser:~$ `sudo nano /etc/default/grub`
+To restore `Jack`, disable [PulseAudio](#pulse):
+ 
+`obsuser:~$ nano ~/.pulse/client.conf `
 
 ~~~~
-#Disable the next line for Headless operation
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" #Enable to use GUI Desktop
-
-#Enable next line for Headless operation
-GRUB_CMDLINE_LINUX_DEFAULT="quiet text" #Disable to use GUI Desktop
-
-#Enable next line for Headless operation
-GRUB_TERMINAL=console #Disable to use GUI Desktop
+#to disable PulseAudio:
+    autospawn = no
+    daemon-binary = /usr/bin/true
 ~~~~
 
-__!IMPORTANT!__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
-__!IMPORTANT!__ Delete or rename the file .jack.plumbing if used. Otherwise, the audio output will falter.  
+Then, open the Dashboard and on the Audio/Visualization tab, select `Jack` as the audio output and input modes, naming them openbroadcasterout and openbroadcasterin respectively. Save the change. If using the USB2XLR adapter, ensure it is connected to the Player. Reboot. Use alsamixer to adjust levels as required.
+
+
+<a name="pulse"></a>
+
+##### __PulseAudio__ 
+{:.no_toc}
+requires editing of the PulseAudio configuration file `~/.pulse/client.conf` to enable use of PulseAudio Volume controls (see Multimedia menu). If using the USB2XLR adapter, ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, enable the PCM2902 Audio Codec Analog input/digital output mode and disable the built-in audio. Adjut input/output levels and signal latency as required.
+
+__NB: Reduce input by -10db, and Adjust the Latency (Advanced) to +60ms. Set output gain to 0db. Set playback gain to 0db.__
+
+`obsuser:~$ nano ~/.pulse/client.conf `
+
+~~~~
+#to enable PulseAudio:
+    autospawn = yes
+    daemon-binary = /usr/bin/pulseaudio
+~~~~
+
+
+
