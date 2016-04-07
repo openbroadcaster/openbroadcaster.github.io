@@ -159,7 +159,7 @@ The Alerting Player comes setup for using Jack Audio, with or without a USB to X
 {:.no_toc}
 From the Audio/Visualization tab on the Dashboard, select the desired audio mode. 
 
-The 'Enable Audio In Source' allows the Player to pass audio from an external source, while allowing interruption of the source to inject Alert Messages as necessary. Note that  __USB2XLR__ adapters are designed to handle input of __-10dbV__. When passing source signals of __+4dbV__ through the adapter,  ~15 db of attentuation should be applied to input signal upstream of the XLR adapter.
+The 'Enable Audio In Source' allows the Player to pass audio from an external source, while allowing interruption of the source to inject Alert Messages as necessary. Note that  __USB2XLR__ adapters are designed to handle input of __-10dBV__. When passing source signals of __+4dBu__ through the adapter,  ~15 db of attentuation should be applied to input signal upstream of the XLR adapter.
 
 <a name="alsa"></a>
 
@@ -184,7 +184,11 @@ The default sound processor, with [Alsamixer](#alsa) as the default output contr
 
 First, rename the default configuration file:
 
+<<<<<<< HEAD
 `obsuser:~$ sudo mv /etc/jack.plumbing /etc/jack.default`
+=======
+obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def` # Note: You will be prompted to confirm your user password
+>>>>>>> 1ad2db1ec56c40a6c9b97ecb5515cce47bfe6fab
 
 Then, create a new configuration file in the home directory:
 
