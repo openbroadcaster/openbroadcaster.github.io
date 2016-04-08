@@ -184,10 +184,8 @@ The default sound processor, with [Alsamixer](#alsa) as the default output contr
 
 First, rename the default configuration file:
 
-<<<<<<< HEAD
-`obsuser:~$ sudo mv /etc/jack.plumbing /etc/jack.default`
-=======
-obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def` # Note: You will be prompted to confirm your user password
+`obsuser:~$ sudo mv /etc/jack.plumbing /etc/jack.plumbing.def` 
+__Note: You will be prompted to confirm your user password__
 
 Then, create a new configuration file in the home directory:
 
