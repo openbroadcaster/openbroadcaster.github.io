@@ -1,4 +1,4 @@
-var urlToGetOpenPlayerBugs = "https://api.github.com/repos/openbroadcaster/obplayer/issues?state=all";
+var urlToGetOpenPlayerBugs = "https://api.github.com/repos/openbroadcaster/obplayer/issues?state=open";
 var urlToGetOpenServerBugs = "https://api.github.com/repos/openbroadcaster/observer/issues?state=open";
 
 
