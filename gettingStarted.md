@@ -204,8 +204,8 @@ Then, create a new configuration file in the home directory:
 (connect "openbroadcasterout:out_audiosink_2" "jack_mixer:OB_In R")
 (disconnect "openbroadcasterout:out_audiosink_1" "system:playback_1")
 (disconnect "openbroadcasterout:out_audiosink_2" "system:playback_2")
-(connect "jack_mixer:MAIN L" "system:playback_1")
-(connect "jack_mixer:MAIN R" "system:playback_2")
+(connect "jack_mixer:OB_In Out L" "system:playback_1")
+(connect "jack_mixer:OB_In Out R" "system:playback_2")
 ~~~~
 
 __NB:__ *When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible.*
