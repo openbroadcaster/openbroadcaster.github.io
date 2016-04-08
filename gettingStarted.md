@@ -188,12 +188,12 @@ First, rename the default configuration file:
 `obsuser:~$ sudo mv /etc/jack.plumbing /etc/jack.default`
 =======
 obsuser:~$ `sudo mv /etc/jack.plumbing /etc/jack.plumbing.def` # Note: You will be prompted to confirm your user password
->>>>>>> 1ad2db1ec56c40a6c9b97ecb5515cce47bfe6fab
 
 Then, create a new configuration file in the home directory:
 
 `obsuser:~$ nano ~/.jack.plumbing`
 
+<a name="plumbing"></a>
 ~~~~
 #connect Audio Inputs to OpenBroadcaster Inputs
 (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
