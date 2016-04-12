@@ -36,8 +36,6 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
    - Numerics (0, 1, 2, etc.)
    - Special Characters (@, %, !, etc.)
 
-
-
 __If you forget or lose the password, you'll need to re-image the unit and start over. Be sure to record the password in a safe place.__ 
 
 <a name="basic"></a>
@@ -53,6 +51,7 @@ The OpenBroadcaster Player is configured using a secure web browser __Dashboard_
 
 Open the __Dashboard__ to set the alerting locale, test audio output and generate a test Alert. Once you have confirmed proper functioning of the Alert Player, proceed to the [Advanced Setup](#advanced).
 
+![ Dashboard Screenshot](/img/dashboard.png ){: .screenshot}
 
 ### Set Alerting Locale
 {:toc}
@@ -162,11 +161,16 @@ The 'Enable Audio In Source' allows the Player to pass audio from an external so
 #### Changing audio modes
 {:.no_toc}
 
-From the Audio/Visualization Tab on the Dashboard, select the desired audio mode. Use of the __Auto Detect__ mode will enable the on-board sound card and the ALSA mixer.
+ __Auto Detect__ mode will enable the on-board sound card and the ALSA mixer.
 
 <a name="alsa"></a>
 
+##### __ALSA Mixer__
+{:.no_toc}
+
 __ALSAmixer__ is the default tool for adjustment of output levels for all installed sound cards. To launch the ALSA mixer control, type 'alsamixer' at a command line, or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). A Control Console displays hardware details for each sound card, with mix controls for the channels associated with that card.
+
+![ ALSA Mixer Screenshot](/img/alsamixer.png ){: .alsamix}
 
     # Using the ALSA Mixer controls
     F6 - select the desired sound card from the available sound cards
@@ -202,7 +206,9 @@ If using the [USB XLR Adapter](#adapter), ensure it is connected to the Player. 
 ##### __PulseAudio__ 
 {:.no_toc}
 
-The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Desktop Multimedia menu). If using the [USB XLR Adapter](#adapter), ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, configure the PCM2902 Audio Codec with Analog input/digital output modes; disable the built-in audio; adjust input/output levels and signal latency as required.
+The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio Volume controls (see Desktop Multimedia menu). If using the [USB XLR Adapter](#adapter), ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, select the PCM2902 Audio Codec input/output modes; disable the built-in audio; adjust input/output levels and signal latency as required.
+
+![ Pulse Volume Control Screenshot](/img/pauv.png ){: .pauv}
 
 obsuser@obsource:~$ `nano ~/.pulse/client.conf `
 
@@ -217,7 +223,7 @@ obsuser@obsource:~$ `nano ~/.pulse/client.conf `
 # USB XLR adapter
 __NB: Line level input signal (+4dBu) may require attenuation by -15db to -20dB.__ 
 
-(To construct an H-Pad for attenuation of balanced audio in, input\_impedance=30k, output\_impedance=10k) 
+![ USB XLR Adapter](/img/usb-xlr.jpeg ){: .usb-xlr}
 
 The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed specifications for which may be found [here](http://www.ti.com/lit/ds/symlink/pcm2902.pdf). When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openbroadcaster-player) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
 
@@ -232,9 +238,19 @@ To use the XLR cable:
 1.  __If the audio mode settings need to changed, be sure to reboot after saving your changes.__
 1. Restart the Player from the Dashboard. Audio will now be routed through the XLR cable.
 
+To calculate resistors for an H-Pad for attenuation of balanced audio in, input\_impedance=30k &Omega;, output\_impedance=10k &Omega;. The example below provides approximately -20dB of attenuation using resistors R 1/2= 12k &Omega;; R 2=3.3k &Omega;; R 3/2=3.3k &Omega; (ground wires should also be connected).
+ 
+![ H Pad](/img/hpad.png ){: .hpad}
+
+If the USB XLR Adapter has been modified to swap phase on either of the inputs, confirm that pins 2 and 3 (NOT 1 and 2) have been swapped.
+
+![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
+
 ### Input Level Control
 
 If it is necessary to adjust input levels, reconfigure the jack.plumbing setting to include the jack_mixer control.
+
+![ JackMixer Screenshot](/img/jack.png ){: .jack}
 
 First, rename the default configuration file:
 

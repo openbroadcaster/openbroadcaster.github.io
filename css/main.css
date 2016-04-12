@@ -189,3 +189,47 @@ footer {
        border-top-left-radius: 0px;
        border-top-right-radius: 0px;
    }
+
+
+/* ===============================
+   IMAGES 
+   ============================== */
+
+.screenshot {
+	width:580px;
+	height: 500px;
+}
+.alsamix {
+	width: 580px;
+	height:410px;
+}
+
+.jack {
+	width: 140px;
+	height:330px;
+}
+
+.hpad {
+	width: 580px;
+	height:387px;
+}
+
+.xlr {
+	width: 250px;
+	height:250px;
+}
+
+.pins {
+	width: 350px;
+	height:240px;
+}
+
+.pauv {
+	width: 400px;
+	height:250px;
+}
+
+.usb-xlr {
+	width: 220px;
+	height:167px;
+}
