@@ -217,7 +217,7 @@ obsuser@obsource:~$ `nano ~/.pulse/client.conf `
 # USB XLR adapter
 __NB: Line level input signal (+4dBu) will require attenuation by -15db to -20dB.__ 
 
-(To construct an H-Pad for attenuation of balanced audio in, input\_impedance=30000, output\_impedance=10000) 
+(To construct an H-Pad for attenuation of balanced audio in, input\_impedance=30k, output\_impedance=10k) 
 
 The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed specifications for which may be found [here](http://www.ti.com/lit/ds/symlink/pcm2902.pdf). When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openbroadcaster-player) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
 
@@ -246,6 +246,7 @@ Then, create a new configuration file in the home directory:
 
 obsuser@obsource:~$ `nano ~/.jack.plumbing`
 
+~~~~
 #connect Audio Inputs to OpenBroadcaster Inputs
 (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
 (connect "system:capture_2" "openbroadcasterin:in_audiosrc_2")
@@ -257,7 +258,7 @@ obsuser@obsource:~$ `nano ~/.jack.plumbing`
 (disconnect "openbroadcasterout:out_audiosink_2" "system:playback_2")
 (connect "jack_mixer:OB_In Out L" "system:playback_1")
 (connect "jack_mixer:OB_In Out R" "system:playback_2")
-
+~~~~
 NB: When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible. The mixer control must be reopened after a reboot.
 
 # Headless Operation
