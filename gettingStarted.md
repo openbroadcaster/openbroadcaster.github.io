@@ -215,7 +215,7 @@ obsuser@obsource:~$ `nano ~/.pulse/client.conf `
 <a name="adapter"></a>
 
 # USB XLR adapter
-__NB: Line level input signal (+4dBu) will require attenuation by -15db to -20dB.__ 
+__NB: Line level input signal (+4dBu) may require attenuation by -15db to -20dB.__ 
 
 (To construct an H-Pad for attenuation of balanced audio in, input\_impedance=30k, output\_impedance=10k) 
 
