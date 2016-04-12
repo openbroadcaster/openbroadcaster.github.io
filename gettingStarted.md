@@ -232,6 +232,8 @@ To use the XLR cable:
 1.  __If the audio mode settings need to changed, be sure to reboot after saving your changes.__
 1. Restart the Player from the Dashboard. Audio will now be routed through the XLR cable.
 
+### Input Level Control
+
 If it is necessary to adjust input levels, reconfigure the jack.plumbing setting to include the jack_mixer control.
 
 First, rename the default configuration file:
