@@ -260,6 +260,8 @@ NOTE: `sudo` requires confirmation of your user password to use administrative p
 
 Then, create a new configuration file in the home directory:
 
+<a name="adapter"></a>
+
 obsuser@obsource:~$ `nano ~/.jack.plumbing`
 
 ~~~~
