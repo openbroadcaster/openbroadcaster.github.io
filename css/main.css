@@ -1,7 +1,12 @@
 /* ==========================================================================
    Friends Of Cake
    ========================================================================== */
-
+/* MAP */
+#map {
+  height: 350px;
+  width: 550px;
+  background-color: black;
+}
 /* TYPOGRAPHY */
 h1, h2, h3, h4, p.lead {
   font-family: 'Open Sans Condensed', sans-serif;

@@ -136,6 +136,9 @@ The *Enable Emergency Alerts* setting enables the Player to receive and broadcas
 
 The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
 
+<div id="map">
+</div>
+
 #### Language Options
 {:.no_toc}
 Text-To-Speech (TTS) conversion uses the eSpeak engine and a selection of mbrola voice synthesizers. Choose from available language and voice for both primary and secondary voices.
