@@ -253,7 +253,7 @@ To use the XLR cable:
 1. Open the Dashboard __Audio Visualization__ Tab. Confirm output and input audio modes are set to use JACK audio, with port names openbroadcasterout and openbroadcasterin respectively. For audio bypass, enable the *Audio In Source* setting, and disable the *Test Signal*.  __If the audio mode settings need to changed, be sure to reboot after saving your changes.__
 1. Restart the Player from the Dashboard. Audio should now be routed through the XLR cable.
 
-If no audio output is heard, refer to [Troubleshooting](#troubleshooting).
+If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
 
 
 # Headless Operation
