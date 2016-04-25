@@ -38,28 +38,6 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
 
 __If you forget or lose the password, you'll need to re-image the unit and start over. Be sure to record the password in a safe place.__ 
 
-#### 4. Headless Operation
-{:.no_toc}
-
-For headless operation (i.e. no keyboard/video/mouse), open a Terminal window and edit the grub configuration as follows:
-
-obsuser@obsource:~$ `sudo nano /etc/default/grub`
-
-<sup>(__ed. Note:__ When using the Terminal Emulator, the tilde '~' denotes the users home directory, i.e. /home/obsuser; '#' denotes a comment or disabled command; `sudo` is required for root privileges, so you will be prompted for your user password; To change directories: 'cd *directory_name* '; 'nano' is the name of a simple text editing program, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.)
-
-~~~~
-#Disable the next line for Headless operation
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" 
-
-#Enable next line for Headless operation
-GRUB_CMDLINE_LINUX_DEFAULT="quiet text" 
-
-#Enable next line for Headless operation
-GRUB_TERMINAL=console 
-~~~~
-
-__IMPORTANT__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
-The computer should now boot successfully without a monitor attached.  Use http://player\_ip\_address:23233 to access the Dashboard over the local network. To control audio output, SSH to the computer (ssh obsuser@player\_ip\_address) and run [alsamixer](#alsa) at the command line. Follow instructions for Basic Setup.
 
 <a name="setup"></a>
 
@@ -278,5 +256,27 @@ To use the XLR cable:
 If no audio output is heard, refer to [Troubleshooting](#troubleshooting).
 
 
+# Headless Operation
+{:toc}
+
+For headless operation (i.e. no keyboard/video/mouse), open a Terminal window and edit the grub configuration as follows:
+
+obsuser@obsource:~$ `sudo nano /etc/default/grub`
+
+<sup>(__ed. Note:__ When using the Terminal Emulator, the tilde '~' denotes the users home directory, i.e. /home/obsuser; '#' denotes a comment or disabled command; `sudo` is required for root privileges, so you will be prompted for your user password; To change directories: 'cd *directory_name* '; 'nano' is the name of a simple text editing program, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.)
+
+~~~~
+#Disable the next line for Headless operation
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" 
+
+#Enable next line for Headless operation
+GRUB_CMDLINE_LINUX_DEFAULT="quiet text" 
+
+#Enable next line for Headless operation
+GRUB_TERMINAL=console 
+~~~~
+
+__IMPORTANT__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
+The computer should now boot successfully without a monitor attached.  Use http://player\_ip\_address:23233 to access the Dashboard over the local network. To control audio output, SSH to the computer (ssh obsuser@player\_ip\_address) and run [alsamixer](#alsa) at the command line. Follow instructions for Basic Setup.
 
 
