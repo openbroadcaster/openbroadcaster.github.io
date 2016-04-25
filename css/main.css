@@ -237,4 +237,15 @@ footer {
 .usb-xlr {
 	width: 220px;
 	height:167px;
+	margin: 5px;
+	vertical-align: middle;
+        float:left;
+}
+
+.xlrpad {
+	vertical-align: middle;
+        float:right;
+	margin: 5px;
+	width:  220px;
+	height: 200px;
 }
