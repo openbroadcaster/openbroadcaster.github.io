@@ -129,16 +129,22 @@ The __Summary__ Tab displays all current configuration settings. The current set
 
 ### __Admin Tab__
 
-The __Admin__ Tab is visible to the Admin user only. This Tab controls visibility of Tabs for Read Only user access.
+The __Admin__ Tab is visible to the Admin user only. Advance Settings control visibility of Tabs for Read Only user access.
 
-Device ID, password and Sync URL settings are used for installations that link the Player to a OpenBroadcaster Duo media management server. The *Sync URL* should be in the format `http://server_ip_address/remote.php` or `https://server_ip_address/remote.php`. These settings are ignored if Sync/Media settings are disabled.
+The data.db contains a copy of media scheduled for the period identified by the sync buffer (default 24 hours). The backup database may be purged using this setting, and the Player will refresh the database according to the current sync settings. Useful when changing backend services.
 
-Configuration settings may be exported for backup or diagnostics. A saved settings file may also be imported to restore a previous configuration. 
+Current configuration settings may be saved and used to restore the configuration if necessary. To create a backup of the configuration export the settings. To restore a configuration, import the settings file. Configuration settings are output in plain text form, including password, so this file should be kept in a secure location.
+
+*Reset to Defaults* will restore the default configuration. Current configuration parameters will be overwritten, but may be restored from the backup settings file.
+
+*Update Player* allows the user to confirm the installed Player version, check for updates to the Player software, and if desired, retrieve and install the updates. Changes will not take effect until the Player is restarted.
+
+![ Admin Tab Screenshot](/img/admin_tab.png ){: .screenshot}
 
 <a name="sync"></a>
 
 ### __Sync/Media Tab__
-The __Sync/Media__ Tab is not enabled in the default configuration. Media sync requires a valid Device ID, password and sync URL for an [OpenBroadcaster Server](/server) instance on the __Admin__ Tab. 
+The __Sync/Media__ Tab is not enabled in the default configuration. Device ID, password and Sync URL settings are used for installations that link the Player to a OpenBroadcaster Duo media management server. The *Sync URL* should be in the format `http://server_ip_address/remote.php` or `https://server_ip_address/remote.php`. These settings are ignored if Sync/Media settings are disabled.
 
 <a name="stream"></a>
 
