@@ -63,10 +63,10 @@ To monitor real alerts, use a high level geocode for your province (Atlantic Can
 
 Be sure to reset the Location Geocode for a specific alerting locale before proceeding to [Operation](#operation). 
 
-![ Emergency Alert Tab ](/img/alert_tab.png ){: .screenshot}
-
 #### Set Alerting Locale
 {:toc}
+
+![ Emergency Alert Tab ](/img/alert_tab.png ){: .screenshot}
 
 1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
 1. Enter the [SGC code(s)](#map) for your alerting locale. 
