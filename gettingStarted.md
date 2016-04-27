@@ -263,7 +263,7 @@ When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openb
 To use the XLR cable:
 
 1. Connect the USB end to any one of the USB ports on the Player unit. The adapter must be connected __before__ power up for the system to auto-configure the adapter. 
-1. Connect the output(male) XLR connectors to the inputs of your sound board or transmitter. Connect the input(female) XLR connectors to the output of your audio source. Use in-line attenuators (-20dB) if connecting to +4dBu line level audio sources. The attenuated signal should pass thru without the need for input level controls. [Alsamixer](#alsamixer) may be used to control output, if required. __If revisions were made to the Jack configuration to include jack-mixer controls, the original configuration should be restored in .jack.plumbing .  The ~/.jack.plumbing file should define the following connections:__
+1. Connect the output(male) XLR connectors to the inputs of your sound board or transmitter. Connect the input(female) XLR connectors to the output of your audio source. Use in-line attenuators (-20dB) if connecting to +4dBu line level audio sources. The attenuated signal should pass thru without the need for input level controls. [Alsamixer](#alsa) may be used to control output, if required. __If revisions were made to the Jack configuration to include jack-mixer controls, the original configuration should be restored in .jack.plumbing .  The ~/.jack.plumbing file should define the following connections:__
 
    obsuser@obsource:~$ `nano ~/.jack.plumbing`
 
