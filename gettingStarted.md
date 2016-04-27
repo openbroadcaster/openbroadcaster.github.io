@@ -119,6 +119,15 @@ _(Operation)_
 
 Be sure to __Save__ any changes on each Tab before restarting. If audio modes are changed, a reboot will be required.
 
+~~~~
+Shaded code blocks contain contents of configuration files that may be edited using `nano`, a simple text editing program in the Terminal Emulator (command line): 
+ * To change directories: 'cd *directory_name* '; 
+ * the tilde '~' denotes the users home directory, i.e. `cd ~` is equivalent to `cd /home/obsuser`; '#' denotes a comment or disabled command;
+ *  `sudo` is required for root privileges, so you will be prompted for your user password;
+ * In `nano`, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.
+~~~~
+
+
 <a name="status"></a>
 
 ### __Status and Summary Tabs__
@@ -217,7 +226,6 @@ obsuser@obsource:~$ `nano ~/.pulse/client.conf `
     autospawn = no
     daemon-binary = /usr/bin/true
 ~~~~
-<sup>(__ed. Note:__ When using the Terminal Emulator, the tilde '~' denotes the users home directory, i.e. /home/obsuser; To change directories: 'cd *directory_name* '; 'nano' is the name of a simple text editing program, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.)</sup>
  
 <a name="pulse"></a>
 
@@ -255,7 +263,20 @@ When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openb
 To use the XLR cable:
 
 1. Connect the USB end to any one of the USB ports on the Player unit. The adapter must be connected __before__ power up for the system to auto-configure the adapter. 
-1. Connect the output(male) XLR connectors to the inputs of your sound board or transmitter. Connect the input(female) XLR connectors to the output of your audio source. Use in-line attenuators (-20dB) if connecting to +4dBu line level audio sources.
+1. Connect the output(male) XLR connectors to the inputs of your sound board or transmitter. Connect the input(female) XLR connectors to the output of your audio source. Use in-line attenuators (-20dB) if connecting to +4dBu line level audio sources. __If revisions were made to the Jack configuration to include jack-mixer controls, the original configuration should be restored in .jack.plumbing__, as follows:
+
+   obsuser@obsource:~$ `nano ~/.jack.plumbing`
+
+   ~~~~
+   #connect Audio Inputs to OpenBroadcaster Inputs
+   (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
+   (connect "system:capture_2" "openbroadcasterin:in_audiosrc_2")
+   
+   #Connect Openbroadcaster Outputs to Audio Outputs
+   (connect "openbroadcasterout:out_audiosink_1" "system:playback_1")
+   (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
+   ~~~~
+
 1. Open the Dashboard __Audio Visualization__ Tab. Confirm output and input audio modes are set to use JACK audio, with port names openbroadcasterout and openbroadcasterin respectively. For audio bypass, enable the *Audio In Source* setting, and disable the *Test Signal*.  __If the audio mode settings need to changed, be sure to reboot after saving your changes.__
 1. Restart the Player from the Dashboard. Audio should now be routed through the XLR cable.
 
@@ -268,8 +289,6 @@ If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
 For headless operation (i.e. no keyboard/video/mouse), open a Terminal window and edit the grub configuration as follows:
 
 obsuser@obsource:~$ `sudo nano /etc/default/grub`
-
-<sup>(__ed. Note:__ When using the Terminal Emulator, the tilde '~' denotes the users home directory, i.e. /home/obsuser; '#' denotes a comment or disabled command; `sudo` is required for root privileges, so you will be prompted for your user password; To change directories: 'cd *directory_name* '; 'nano' is the name of a simple text editing program, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.)
 
 ~~~~
 #Disable the next line for Headless operation
