@@ -185,7 +185,7 @@ The *Enable Emergency Alerts* setting enables the Player to receive and broadcas
 #### Location Geocode
 {:.no_toc}
 
- Alerting Districts are defined by a [Standard Geographical Classification](https://en.wikipedia.org/wiki/Standard_Geographical_Classification_code_%28Canada%29). Use the map below to find SGC codes in your area. The SGC may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list. For example, the town of Carcross Yukon is "6001048"; the village of Tagish(Yukon) is “6001036”. To include alerts affecting both districts, "6001036,6001048' would be entered into the textbox.  Alerts will be filtered to include only those that match, contain, or are contained by the set Alerting District. 
+ Alerting Districts are defined by a [Standard Geographical Classification](https://en.wikipedia.org/wiki/Standard_Geographical_Classification_code_%28Canada%29). Use the map below to find SGC codes in your area. The SGC may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list (no spaces). For example, the town of Carcross Yukon is "6001048"; the village of Tagish(Yukon) is “6001036”. To include alerts affecting both districts, "6001036,6001048' would be entered into the textbox.  Alerts will be filtered to include only those that match, contain, or are contained by the set Alerting District. 
 
 The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
 
