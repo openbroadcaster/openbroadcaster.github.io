@@ -69,7 +69,7 @@ Be sure to reset the Location Geocode for a specific alerting locale before proc
 ![ Emergency Alert Tab ](/img/alert_tab.png ){: .screenshot}
 
 1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
-1. Enter the [SGC code(s)](#map) for your alerting locale. 
+1. Enter the [SGC code(s)](#sgc) for your alerting locale. 
 1. The default setting will convert the headline and first sentence of a broadcst intrusive Alert message to audio using TTS(text-to-speech). To have the entire message converted, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable non-broadcast intrusive alert messages, if desired.
 1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. To limit the number of repeats of an Alert message, change this setting.
 
