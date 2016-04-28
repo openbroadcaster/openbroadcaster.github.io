@@ -119,13 +119,23 @@ _(Operation)_
 
 Be sure to __Save__ any changes on each Tab before restarting. If audio modes are changed, a reboot will be required.
 
+Shaded code blocks are commands in the Terminal Emulator: 
+
+To change directories:
+
 ~~~~
-Shaded code blocks contain contents of configuration files that may be edited using `nano`, a simple text editing program in the Terminal Emulator (command line): 
- * To change directories: 'cd *directory_name* '; 
- * the tilde '~' denotes the users home directory, i.e. `cd ~` is equivalent to `cd /home/obsuser`; '#' denotes a comment or disabled command;
- *  `sudo` is required for root privileges, so you will be prompted for your user password;
- * In `nano`, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.
+cd *directory_name* '; 
 ~~~~
+    
+the tilde '~' denotes the users home directory, '#' denotes a comment or disabled command i.e.
+
+~~~~
+cd ~ # equivlaent to cd /home/obsuser; 
+~~~~
+   
+ Where  `sudo` is indicated for root privileges, you will be prompted for your user password;
+
+In `nano`, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.
 
 
 <a name="status"></a>
