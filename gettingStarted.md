@@ -15,7 +15,8 @@ title: gettingStarted
 #### 1. Connect the components
 {:.no_toc}
 
-* Setup the computer with a mouse, keyboard and monitor (HDMI or DSUB) and power.
+* Setup the computer with a mouse, keyboard and monitor (HDMI or DSUB).
+* Connect power, preferably to a battery UPS to maintain up time during power failure (unit draws only 20W). 
 * Plug in headphones or speakers to green audio output.
 * Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
