@@ -4,8 +4,10 @@ title: gettingStarted
 ---
 
 ## Quick Start Guide
-{:.no_toc}
+
 __NB: REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
+
+{:.no_toc}
 
 * TOC
 {:toc}
