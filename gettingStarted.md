@@ -4,6 +4,9 @@ title: gettingStarted
 ---
 
 ## Quick Start Guide
+
+__NB: REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
+
 {:.no_toc}
 
 * TOC
@@ -46,6 +49,17 @@ __If you forget or lose the password, you'll need to re-image the unit and start
 {:toc}
  
 _(Initial setup and testing)_
+
+<a name="update"></a>
+
+### Update the Player
+Updating the Alert Player ensures the most current version of the application is running. Utilities for updating the Player are now located on the Admin Tab of the [Dashboard](#dash). 
+
+![Update Player Utilities](/img/updater.png ){: .updater}
+
+If the Admin Tab of your Dashboard does not have Update Player utilities (i.e. Check & Update), click the Green/White check Update icon ![OBPlayer Launcher](/img/launcher.png ){: .launcher} located on the bottom right of the Desktop Panel. 
+
+After updating the Player, restart the Player and refresh the browser (Tip: press F5 on the keyboard) to the load changes to the Dashboard layout.
 
 <a name="dash"></a>
 
