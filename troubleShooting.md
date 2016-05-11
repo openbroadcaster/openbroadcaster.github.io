@@ -8,39 +8,6 @@ title: troubleShooting
 ## Troubleshooting Audio
 {:.no_toc}
 
-When using USB sound cards, there are three aspects of the audio signal quality that must be addressed:
-
-* TOC
-{:toc}
-
-To achieve the best possible sound quality, each of these limitations must be addressed in the configuration.
-
-### Signal Attenuation
-{:toc}
-
-The USB-XLR adapter is designed for input at -10dBv (0.316V, or 316 mV). Transmitter feed signals are typically +4Bu (1.228V).
-The difference, in dB, between +4 dBu and -10 dBv is -11.78 dB, or about -12 dB. Therefore, between 10dB and 20 dB of attenuation is recommended to avoid distortion of +4dBv input signals. 
-
-In-line attenuators are available at [openbroadcaster.pro]() .
- 
-![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
-
-Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench).
-
-### Signal phase 
-{:toc}
-
-The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled or variable output signal. To fix, you will need to swap wires to pins 2 and 3 (i.e the red and white wires) in ONLY ONE of the female XLRs. This will require solder and a soldering iron.
-
-![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
-
-### Signal delay
-{:toc}
-The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
-
-![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} A switching relay is not dependant on the Alert Player for functioning, and in the event of power failure would continue to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
-
-Pre-built Switching relays are available at [openbroadcaster.pro](https://openbroadcaster.pro/rs232-gpio-mechanical-relay).
 
 <br /><a name="mixer"></a>
 
@@ -74,6 +41,21 @@ obsuser@obsource:~$ `nano ~/.jack.plumbing`
 ![ JackMixer Screenshot](/img/jack.png ){: .jack}
 
 NB: When using jack mixer, the jack_mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, it no longer has any effect on the audio signal. The control must be visible and indicating signal bars if signal is to be audible. The mixer control must be reopened after a reboot.
+
+ __To restore the original configuration of jack.plumbing, without the jack-moxer control, edit ~/.jack.plumbing file to define the following connections:__
+
+   obsuser@obsource:~$ `nano ~/.jack.plumbing`
+
+   ~~~~
+   #connect Audio Inputs to OpenBroadcaster Inputs
+   (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
+   (connect "system:capture_2" "openbroadcasterin:in_audiosrc_2")
+   
+   #Connect Openbroadcaster Outputs to Audio Outputs
+   (connect "openbroadcasterout:out_audiosink_1" "system:playback_1")
+   (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
+   ~~~~
+
 
 ## Workbench
 {:.no_toc}

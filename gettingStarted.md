@@ -4,10 +4,10 @@ title: gettingStarted
 ---
 
 ## Quick Start Guide
+{:.no_toc}
 
 __NB: REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
 
-{:.no_toc}
 
 * TOC
 {:toc}
@@ -42,28 +42,30 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
 
 __If you forget or lose the password, you'll need to re-image the unit and start over. Be sure to record the password in a safe place.__ 
 
+<a name="update"></a>
 
-<a name="setup"></a>
+## Software Updates
+{:toc}
 
-# Setup
+Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Green/White check Update icon ![Update Launcher](/img/launcher.png ){: .launcher} located on the bottom right of the Desktop Panel. The update script will run (a terminal window may open temporarily), and an email message outlining any updates will be sent to the mailbox. To view the update message, open Thunderbird Mail.
+
+![Update Player Utilities](/img/updater.png ){: .updater} 
+
+__NOTE: Utilities for updating the Player will now be found on the Admin Tab of the [Dashboard](#dash).__ 
+
+After updating the Player, restart the Player and refresh the browser (Tip: press F5 on the keyboard) to the load changes to the Dashboard layout.
+
+<a name="player"></a>
+
+# Alert Player
 {:toc}
  
 _(Initial setup and testing)_
 
-<a name="update"></a>
-
-### Update the Player
-Updating the Alert Player ensures the most current version of the application is running. Utilities for updating the Player are now located on the Admin Tab of the [Dashboard](#dash). 
-
-![Update Player Utilities](/img/updater.png ){: .updater}
-
-If the Admin Tab of your Dashboard does not have Update Player utilities (i.e. Check & Update), click the Green/White check Update icon ![OBPlayer Launcher](/img/launcher.png ){: .launcher} located on the bottom right of the Desktop Panel. 
-
-After updating the Player, restart the Player and refresh the browser (Tip: press F5 on the keyboard) to the load changes to the Dashboard layout.
 
 <a name="dash"></a>
 
-### Dashboard Configuration
+### Configure the Dashboard 
 The OpenBroadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
 
 The __Status__ tab displays the current state of the Player.
@@ -78,7 +80,7 @@ To monitor real alerts, use a high level geocode for your province (Atlantic Can
 
 Be sure to reset the Location Geocode for a specific alerting locale before proceeding to [Operation](#operation). 
 
-#### Set Alerting Locale
+### Set Alerting Locale
 {:toc}
 
 ![ Emergency Alert Tab ](/img/alert_tab.png ){: .screenshot}
@@ -88,31 +90,9 @@ Be sure to reset the Location Geocode for a specific alerting locale before proc
 1. NAAD messages from Pelmorex may be issued as a digital audio file and/or with an included graphic image. These will automatically be recieved and broadcast with our systems.  In the event the attached alert is missing or corrupted, relayed from Environment Canada or issued using a text source, your system will play the audio using built in TTS(text-to-speech) and display a full screen red slide with Description text and accompanying audio alerts.  Default setting will truncate the headline to the first sentence of a broadcast intrusive Alert message.  To play the entire CAP alert, including the entire lengthy description, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable optional, non-broadcast intrusive alert messages, if desired.
 1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. Broadcast Intrusive alert messages are required to play at least once. To limit the number of repeats of an Alert message, change this setting.
 
-#### Test Audio Output
-{:toc}
-Audio output will be directed through the onboard sound card to the stereo 1/8" mini output. To confirm your audio setup is working correctly:
-
-1. On the [Audio Visualization](#audio) Tab, enable Test Signal.
-1. Save changes. Restart the Player (using the Restart button on the __Dashboard__).
-1. The Test Signal (440 Hz tone) should be audible via the green line out connection.
-1. Once audio output has been confirmed, disable the Test Signal. Save Change and Restart.
- 
-<a name="alsa"></a>
-
-__ALSAmixer__ is the default tool for adjustment of output levels for all installed sound cards. To launch the ALSA mixer control, type 'alsamixer' at a command line, or click the icon on the Panel on lower right of the Player Desktop (hover over icons to the far left of clock). A Control Console displays hardware details for each sound card, with mix controls for the channels associated with that card.
-
-![ ALSA Mixer Screenshot](/img/alsamixer.png ){: .alsamix}
-
-Using the ALSA Mixer controls:
-
- * F6 - select the desired sound card from the available sound cards
- * Left-right cursor keys - select the desired control
- * up-down cursor keys - adjust the level
- * 'm' - toggle mute for the selected control
- * 'esc' - close the control window. 
 
 
-####  Generate Test Alert
+###  Generate A Test Alert
 {:toc}
 
 To confirm that Alert messages are working correctly, select one of the four sample messages (each one tests a valid CAP message format):
@@ -126,154 +106,12 @@ _NOTE English and French are presently the only supported language for on board 
 
 Click `Inject` to add the message to the Active Alerts queue;  a 20 second countdown begins. If another incoming message is received, the countdown timer is rest at 20 seconds. Once the countdown reaches 0 secs, queued messages will play through the active audio output.
 
-<a name="operation"></a>
-
-#  Operation
-
-_(Operation)_
-
-Be sure to __Save__ any changes on each Tab before restarting. If audio modes are changed, a reboot will be required.
-
-Shaded code blocks are commands in the Terminal Emulator: 
-
-To change directories:
-
-~~~~
-cd *directory_name* '; 
-~~~~
-    
-the tilde '~' denotes the users home directory, '#' denotes a comment or disabled command i.e.
-
-~~~~
-cd ~ # equivlaent to cd /home/obsuser; 
-~~~~
-   
- Where  `sudo` is indicated for root privileges, you will be prompted for your user password;
-
-In `nano`, use CTRL-X to exit the editor; click 'Y' when prompted to save changes, and enter to save the file.
-
-
-<a name="status"></a>
-
-### __Status and Summary Tabs__
-
-The __Status__ Tab displays information for the current state of the Player. If audio signal is present, a  signal level indicator will respond to output from both audio channels. All system operations are displayed on the Log displayed on the __Status__ Tab. Messages in green text denote normal system operations. Messages displayed in red text denote playout of active alerts. Systems error messages (e.g. network failure, broken audio links) are also diplayed in red. More detailed logging may be displayed by viewing the Debug log. The Debug log displays all CAP alert messages received by the Alert Player, before local filters have been applied.
-
-The __Summary__ Tab displays all current configuration settings. The current settings may be exported from the __Admin__ Tab.
-
-### __Admin Tab__
-
-The __Admin__ Tab is visible to the Admin user only. Advance Settings control visibility of Tabs for Read Only user access.
-
-The data.db contains a copy of media scheduled for the period identified by the sync buffer (default 24 hours). The backup database may be purged using this setting, and the Player will refresh the database according to the current sync settings. Useful when changing backend services.
-
-Current configuration settings may be saved and used to restore the configuration if necessary. To create a backup of the configuration export the settings. To restore a configuration, import the settings file. Configuration settings are output in plain text form, including password, so this file should be kept in a secure location.
-
-*Reset to Defaults* will restore the default configuration. Current configuration parameters will be overwritten, but may be restored from the backup settings file.
-
-*Update Player* allows the user to confirm the installed Player version, check for updates to the Player software, and if desired, retrieve and install the updates. Changes will not take effect until the Player is restarted.
-
-![ Admin Tab Screenshot](/img/admin_tab.png ){: .screenshot}
-
-<a name="sync"></a>
-
-### __Sync/Media Tab__
-The __Sync/Media__ Tab is not enabled in the default configuration. Device ID, password and Sync URL settings are used for installations that link the Player to a OpenBroadcaster Duo media management server. The *Sync URL* should be in the format `http://server_ip_address/remote.php` or `https://server_ip_address/remote.php`. These settings are ignored if Sync/Media settings are disabled.
-
-<a name="stream"></a>
-
-### __Streaming Tab__
-The __Streaming__ Tab is not enabled in the default configuration. Settings correspond to local Icecast configuration, and should only be changed if the network and Icecast are configured accordingly.
-
-<a name="map"></a>
-
-### __Location Map Tab__
-The __Location Map__ Tab is not enabled in the default configuration. The Location Map may be used to establish geopgraphic coordinates for an installation. Coordinates are reported back to an Openbroadcster Duo server, if Sync is enabled.
-
-<a name="alerts"></a>
-
-### __Emergency Alerts Tab__
-The *Enable Emergency Alerts* setting enables the Player to receive and broadcast Alert Messages. Please refer to the National Public Alerting System [Common Look and Feel Guidleines](https://alerts.pelmorex.com/download/public/NPAS%20CLF%20Guidance%201.0%20-%20April%2024,%202013.pdf) for more detail on specifications and recommended practices relating to public alerts.
-
-<a name="sgc"></a>
-
-#### Location Geocode
-{:.no_toc}
-
- Alerting Districts are defined by a [Standard Geographical Classification](https://en.wikipedia.org/wiki/Standard_Geographical_Classification_code_%28Canada%29). Use the map below to find SGC codes in your area. The SGC may be as broad as a province, or a specific as a hamlet. If more than one region is part of the broadcast area, enter the SGC codes as a comma separated list (no spaces). For example, the town of Carcross Yukon is "6001048"; the village of Tagish(Yukon) is “6001036”. To include alerts affecting both districts, "6001036,6001048' would be entered into the textbox.  Alerts will be filtered to include only those that match, contain, or are contained by the set Alerting District. 
-
-The status log will indicate status of connection to the NAAD server(s). Viewing the debug log will show messages being received, but only those matching the SGC filters will actually be played.
-
-Pan/zoom the map below to find SGC codes for your area of interest.
-
-<div id="map" name="map">
-</div>
-
-#### Language Options
-{:.no_toc}
-Text-To-Speech (TTS) conversion uses the eSpeak engine and a selection of mbrola voice synthesizers. Choose from available language and voice for both primary and secondary voices.
-
-#### Message Options
-{:.no_toc}
-Alert Messages will continue to play at the Alert Repeat Interval until the Expiry time for each message has passed, unless a specific repeat value is set. Playback of messages can be adjusted to include only the introductory sentences, by using the setting to truncate long alert messages. Only those messages with a Broadcast Immediate flag will be played, unless the *Play Moderately Severe Alerts* setting is enabled.
-
-<a name="gpio"></a>
-
-#### GPIO Settings
-{:.no_toc}
-Expand the Advanced Settings to modify. A GPIO Trigger may be used to issue a DTR serial signal upon commencement of CAP-CP Alerts. When enabled and a matching CAP-CP message is broadcast, an alert cycle starts, the serial port will be opened and the DTR control signal (positive pin voltage) will be transmitted. After the alert cycle has completed, the DTR signal will drop (negative pin voltage). Lead-in Delay timings may be adjusted to prevent 'clipping' of messages. URL's of the NAAD servers should not be changed.
-
-<a name="audio"></a>
-
-### __Audio/Visualization Tab__
-
-__Auto Detect__ mode will enable the on-board sound card and the ALSA audio processor.  The *Enable Audio In Source* allows the Player to pass audio from an external source through the audio output, while allowing interruption of the source to inject Alert Messages as necessary. 
-
-<a name="modes"></a>
-
-#### Audio modes
-{:.no_toc}
-
-<a name="jack"></a>
-
-##### __JACK Audio Kit__ 
-{:.no_toc}
-
-JACK is pre-configured as the default for  audio output and input modes, using port names *openbroadcasterout* and *openbroadcasterin*  respectively. These port names are used by __jack-plumbing__ to maintain the connection state.  To use the Player to pass thru audio from a Line In source, please refer to the [USB-XLR Adapter](#adapter) section.
-
-When reconfiguring for a JACK setup, ensure that [PulseAudio](#pulse) is disabled, by editing the pulse configuration file at ~/.pulse/client.conf 
-
-obsuser@obsource:~$ `nano ~/.pulse/client.conf `
-
-~~~~
-#hashtag denotes a comment.
-#to disable PulseAudio:
-    autospawn = no
-    daemon-binary = /usr/bin/true
-~~~~
- 
-<a name="pulse"></a>
-
-##### __PulseAudio__ 
-{:.no_toc}
-
-The PulseAudio configuration file `~/.pulse/client.conf` must be edited to enable use of PulseAudio.
-
-obsuser@obsource:~$ `nano ~/.pulse/client.conf `
-
-~~~~
-#to enable PulseAudio:
-    autospawn = yes
-    daemon-binary = /usr/bin/pulseaudio
-~~~~
-If using the [USB XLR Adapter](#adapter), ensure it is connected to the Player. Then, on the configuration tab of the PulseAudio Volume Control, select the PCM2902 Audio Codec input/output modes; disable the built-in audio; adjust input/output levels and signal latency as required.
- PulseAudio Volume controls for PulseAudio are found under Multimedia on the system menu.
-
-![ Pulse Volume Control Screenshot](/img/pauv.png ){: .pauv}
 
 <a name="adapter"></a>
 
 # USB XLR adapter
+{:toc}
+
 __NB: Line level input signal (+4dBu) will require attenuation by -15db to -20dB.__ 
 
 ![ USB XLR Adapter](/img/usb-xlr.jpeg ){: .usb-xlr}
@@ -285,48 +123,65 @@ The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed spec
 
 When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openbroadcaster-player) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
 
-To use the XLR cable:
+To use the XLR cable with the Alert Player:
 
-1. Connect the USB end to any one of the USB ports on the Player unit. The adapter must be connected __before__ power up for the system to auto-configure the adapter. 
-1. Connect the output(male) XLR connectors to the inputs of your sound board or transmitter. Connect the input(female) XLR connectors to the output of your audio source. Use in-line attenuators (-20dB) if connecting to +4dBu line level audio sources. The attenuated signal should pass thru without the need for input level controls. [Alsamixer](#alsa) may be used to control output, if required. __If revisions were made to the Jack configuration to include jack-mixer controls, the original configuration should be restored in .jack.plumbing .  The ~/.jack.plumbing file should define the following connections:__
+### Connect the cables
+{:toc}
 
-   obsuser@obsource:~$ `nano ~/.jack.plumbing`
+  1. Connect the __USB__ end to any one of the USB ports on the Player unit. The adapter MUST be connected before_power up for the system to auto-configure the adapter. 
+  1. Connect the __male XLR__ output connectors to the inputs of your sound board, transmitter or switching relay.
+  1. Connect the __female XLR__ input connectors to the output of your audio source. Use in-line attenuators (-20dB) on the inputs if connecting to +4dBu line level audio sources.
+ 
+### Configure Audio
+{:toc}
 
-   ~~~~
-   #connect Audio Inputs to OpenBroadcaster Inputs
-   (connect "system:capture_1" "openbroadcasterin:in_audiosrc_1")
-   (connect "system:capture_2" "openbroadcasterin:in_audiosrc_2")
-   
-   #Connect Openbroadcaster Outputs to Audio Outputs
-   (connect "openbroadcasterout:out_audiosink_1" "system:playback_1")
-   (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
-   ~~~~
+   * On the __Audio Visualization__ Tab, set audio output and input mode to JACK , using port names *openbroadcasterout* and *openbroadcasterin* respectively. Enable the __Audio In Source__ setting, if using a line-in source. Disable the *Test Signal*.  __If the audio mode settings are changed, reboot.__
+   * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
-1. Open the Dashboard __Audio Visualization__ Tab. Confirm output and input audio modes are set to use JACK audio, with port names openbroadcasterout and openbroadcasterin respectively. For audio bypass, enable the *Audio In Source* setting, and disable the *Test Signal*.  __If the audio mode settings need to changed, be sure to reboot after saving your changes.__
-1. Restart the Player from the Dashboard. Audio should now be routed through the XLR cable.
+### Restart the Player
+{:toc}
 
 If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
 
+When using USB sound cards, there are three aspects of the audio signal quality that must be addressed. To achieve the best possible sound quality, each of these limitations must be addressed in the configuration:
 
-# Headless Operation
-{:toc}
+* [Signal Attenuation]()
 
-For headless operation (i.e. no keyboard/video/mouse), open a Terminal window and edit the grub configuration as follows:
+* [Signal Phase]()
 
-obsuser@obsource:~$ `sudo nano /etc/default/grub`
+* [Signal Delay]()
 
-~~~~
-#Disable the next line for Headless operation
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" 
+<a name="attenuation">
 
-#Enable next line for Headless operation
-GRUB_CMDLINE_LINUX_DEFAULT="quiet text" 
+### Signal Attenuation
+{:.no_toc}
 
-#Enable next line for Headless operation
-GRUB_TERMINAL=console 
-~~~~
+The USB-XLR adapter is designed for input at -10dBv (0.316V, or 316 mV). Transmitter feed signals are typically +4Bu (1.228V).
+The difference, in dB, between +4 dBu and -10 dBv is -11.78 dB, or about -12 dB. Therefore, between 10dB and 20 dB of attenuation is recommended to avoid distortion of +4dBv input signals. 
 
-__IMPORTANT__ After changing grub config, you MUST run `sudo update-grub` to apply the changes.
-The computer should now boot successfully without a monitor attached.  Use http://player\_ip\_address:23233 to access the Dashboard over the local network. To control audio output, SSH to the computer (ssh obsuser@player\_ip\_address) and run [alsamixer](#alsa) at the command line. Follow instructions for Basic Setup.
+In-line attenuators are available at [openbroadcaster.pro]() .
+ 
+![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
+
+Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench).
+
+<a name="phase">
+
+### Signal Phase
+{:.no_toc}
+
+The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled or variable output signal. To fix, you will need to swap wires to pins 2 and 3 (i.e the red and white wires) in ONLY ONE of the female XLRs. This will require solder and a soldering iron.
+
+![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
+
+<a name="delay">
+
+### Signal Delay
+{:.no_toc}
+The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
+
+![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} A switching relay is not dependant on the Alert Player for functioning, and in the event of power failure would continue to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
+
+Pre-built Switching relays are available at [openbroadcaster.pro](https://openbroadcaster.pro/rs232-gpio-mechanical-relay).
 
 
