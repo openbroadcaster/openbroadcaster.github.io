@@ -277,7 +277,7 @@ If using the [USB XLR Adapter](#adapter), ensure it is connected to the Player. 
 __NB: Line level input signal (+4dBu) will require attenuation by -15db to -20dB.__ 
 
 ![ USB XLR Adapter](/img/usb-xlr.jpeg ){: .usb-xlr}
- ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
+
 
 The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed specifications for which may be found [here](http://www.ti.com/lit/ds/symlink/pcm2902.pdf). 
 
