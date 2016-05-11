@@ -42,6 +42,7 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, i
 <a name="mixer"></a>
 
 ### Jack Mixer
+{:.no_toc}
 
 There are no input level controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. The jack-mixer programs uses a sub process called __jack plumbing__ to keep input and output channels alive while signals are reconnecting. The default jack.plumbing configuration needs to be modified to include the jack-mixer control.
 
@@ -77,6 +78,7 @@ NB: When using jack mixer, the jack_mixer control must be opened manually from t
 <a name="workbench"></a>
 
 ### DIY Attenuators
+{:.no_toc}
 
 'H' or 'T' pads may also be fabricated to accomplish the same level of attenuation.For a balanced signal, use an H-Pad: input\_impedance=30k &Omega;, output\_impedance=10k &Omega;. The example below provides approximately -20dB of attenuation using resistors R 1/2= 12k &Omega;; R 2=3.3k &Omega;; R 3/2=3.3k &Omega; (ground wires should also be connected).
  
