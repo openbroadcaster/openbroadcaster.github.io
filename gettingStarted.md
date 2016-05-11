@@ -151,7 +151,7 @@ When using USB sound cards, there are three aspects of the audio signal quality 
 
 * [Signal Delay]()
 
-<a name="attenuation">
+<a name="attenuation"></a>
 
 ### Signal Attenuation
 {:.no_toc}
@@ -166,7 +166,7 @@ In-line attenuators are available at [openbroadcaster.pro]() .
 
 Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench).
 
-<a name="phase">
+<a name="phase"></a>
 
 ### Signal Phase
 {:.no_toc}
@@ -175,7 +175,7 @@ The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled 
 
 ![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
 
-<a name="delay">
+<a name="delay"></a>
 
 ### Signal Delay
 {:.no_toc}
