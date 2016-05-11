@@ -8,7 +8,6 @@ title: troubleShooting
 ## Troubleshooting Audio
 {:.no_toc}
 
-
 <br /><a name="mixer"></a>
 
 ### Jack Mixer
