@@ -7,6 +7,15 @@ title: troubleShooting
 
 ### Troubleshooting Audio
 
+There are three aspects to the audio signal quality that can be addressed:
+
+    Signal attenuation: Signals at +4dBv require ~15 to 20 dB of attenuation to avoid distortion of input signals
+    Signal phase : phase of one of the input connectors to avoid muffled sound
+    Signal delay: the use of the USB-XLR adaptor creates a delay of ~ 0.5 sec.
+
+These aspects of sound quality may be improved by following the recommendations
+
+
 If it is necessary to adjust input levels, reconfigure the jack.plumbing setting to include the jack_mixer control.
 
 First, rename the default configuration file:
@@ -46,7 +55,9 @@ NB: When using jack mixer, the jack_mixer control must be opened manually from t
  
 ![ H Pad](/img/hpad.png ){: .hpad}
 
-If the USB XLR Adapter has been modified to swap phase on either of the inputs, confirm that pins 2 and 3 (NOT 1 and 2) have been swapped.
+Out of Phase
+
+Create a phase shifted cable on one side of input.  If the USB XLR Adapter has been modified to swap phase on either of the inputs, confirm that pins 2 and 3 (NOT 1 and 2) have been swapped.
 
 ![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
 
