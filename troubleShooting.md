@@ -30,7 +30,11 @@ Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench)
 ### Signal phase 
 {:toc}
 
-The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled or variable output signal. To fix, you will need to swap wires to pins 2 and 3 (i.e the red and white wires) in ONLY ONE of the female XLRs. This will require solder and a soldering iron.
+The INPUTS on the USB-XLR adapter are wired and out of phase coming from the manufacturer, causing a muffled or variable output signal. To fix, you will need to swap wires to pins 2 and 3 (i.e the red and white wires) in ONLY ONE of the female XLRs. This will require solder and a soldering iron. This procedure will leave the bare ground wire on pin 1.
+
+Alternative to soldering. A short phase corrected jumper cable may be placed inline on either one of the INPUTS.
+
+Instructions for DIY "Phase corrected cable" may be found on the [workbench](#workbench).
 
 ![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
 
