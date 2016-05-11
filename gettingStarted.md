@@ -223,7 +223,7 @@ Alert Messages will continue to play at the Alert Repeat Interval until the Expi
 {:.no_toc}
 Expand the Advanced Settings to modify. A GPIO Trigger may be used to issue a DTR serial signal upon commencement of CAP-CP Alerts. When enabled and a matching CAP-CP message is broadcast, an alert cycle starts, the serial port will be opened and the DTR control signal (positive pin voltage) will be transmitted. After the alert cycle has completed, the DTR signal will drop (negative pin voltage). Lead-in Delay timings may be adjusted to prevent 'clipping' of messages. URL's of the NAAD servers should not be changed.
 
-To test GPIO functionality.  Use a mulimeter to measure voltage on DB9 connector on Pin 4.  From the Dashboard Emergency Tab Inject a test alert and observe the voltage flip while alert is in progress returning to defualt value when alert finished.
+To test GPIO functionality.  Use a multimeter to measure voltage on DB9 connector on Pin 4.  From the Dashboard Emergency Tab Inject a test alert and observe the voltage flip while alert is in progress returning to defualt value when alert finished.
 
 Instructions for DIY "GPIO LED Tester" may be found on the [workbench](#workbench).
 
