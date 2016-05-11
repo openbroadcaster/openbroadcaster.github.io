@@ -85,8 +85,8 @@ Be sure to reset the Location Geocode for a specific alerting locale before proc
 
 1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
 1. Enter the [SGC code(s)](#sgc) for your alerting locale. 
-1. The default setting will convert the headline and first sentence of a broadcst intrusive Alert message to audio using TTS(text-to-speech). To have the entire message converted, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable non-broadcast intrusive alert messages, if desired.
-1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. To limit the number of repeats of an Alert message, change this setting.
+1. NAAD messages from Pelmorex may be issued as a digital audio file and/or with an included graphic image. These will automatically be recieved and broadcast with our systems.  In the event the attached alert is missing or corrupted, relayed from Environment Canada or issued using a text source, your system will play the audio using built in TTS(text-to-speech) and display a full screen red slide with Description text and accompanying audio alerts.  Default setting will truncate the headline to the first sentence of a broadcast intrusive Alert message.  To play the entire CAP alert, including the entire lengthy description, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable optional, non-broadcast intrusive alert messages, if desired.
+1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. Broadcast Intrusive alert messages are required to play at least once. To limit the number of repeats of an Alert message, change this setting.
 
 #### Test Audio Output
 {:toc}
