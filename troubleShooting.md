@@ -40,7 +40,7 @@ Instructions for DIY "Phase corrected cable" may be found on the [workbench](#wo
 
 ### Signal delay
 {:toc}
-The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
+The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome this delay latency, it is necessary to use a switching relay that mechanical interrupts the source signal to inject an Alert Message. 
 
 ![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} A switching relay is not dependant on the Alert Player for functioning, and in the event of power failure would continue to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
