@@ -36,10 +36,13 @@ The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled 
 
 ### Signal delay
 {:toc}
+The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
 
-The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. A switching relay is not dependant on the Alert Player for functioning, and in the event of power failure would continue to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). Pre-built Switching relays are available at [openbroadcaster.pro](https://openbroadcaster.pro/rs232-gpio-mechanical-relay)
+![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} A switching relay is not dependant on the Alert Player for functioning, and in the event of power failure would continue to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
-<a name="mixer"></a>
+Pre-built Switching relays are available at [openbroadcaster.pro](https://openbroadcaster.pro/rs232-gpio-mechanical-relay).
+
+<br /><a name="mixer"></a>
 
 ### Jack Mixer
 {:.no_toc}
