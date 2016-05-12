@@ -80,6 +80,7 @@ To monitor real alerts, use a high level geocode for your province (Atlantic Can
 
 Be sure to reset the Location Geocode for a specific alerting locale before proceeding to [Operation](#operation). 
 
+
 ### Set Alerting Locale
 {:toc}
 
