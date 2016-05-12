@@ -222,8 +222,10 @@ img .launcher {
 }
 
 .jack {
-	width: 140px;
-	height:330px;
+	width: 130px;
+	height:310px;
+	margin: 5px;
+        float:left;
 }
 
 .hpad {
