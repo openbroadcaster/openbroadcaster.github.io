@@ -8,6 +8,14 @@ title: troubleShooting
 ## Troubleshooting Audio
 {:.no_toc}
 
+To confirm your audio setup is working correctly:
+
+1. Connect headphones or studio monitor to 1/8" audio output.
+1. On the [Audio Visualization](#audio) Tab, enable Test Signal.
+1. Save changes. Restart the Player (using the Restart button on the __Dashboard__).
+1. The Test Signal (440 Hz tone) should be audible.
+1. Once audio output has been confirmed, disable the Test Signal. Save Change and Restart.
+
 <br /><a name="mixer"></a>
 
 ### Level Control
