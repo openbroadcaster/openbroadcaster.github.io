@@ -63,9 +63,9 @@ After updating the Player, restart the Player and refresh the browser (Tip: pres
 _(Initial setup and testing)_
 
 
-<a name="dash"></a>
+<a name="start"></a>
 
-### Configure the Dashboard 
+### Open the Dashboard 
 The OpenBroadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
 
 The __Status__ tab displays the current state of the Player.
