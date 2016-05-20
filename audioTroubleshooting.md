@@ -3,25 +3,52 @@ layout: default
 title: troubleShooting
 ---
 
+* TOC
+{:toc}
+
 <a name="troubleshooting"></a>
 
 ## Troubleshooting Audio
-{:.no_toc}
 
-To confirm your audio setup is working correctly:
+### Test Signal 
 
+Use the __test signal__ to confirm your audio setup is working correctly.
+
+To test the __on-board__ sound card:
+
+1. Disconnect USB adapter. Reboot.
 1. Connect headphones or studio monitor to 1/8" audio output.
-1. On the [Audio Visualization](#audio) Tab, enable Test Signal.
-1. Save changes. Restart the Player (using the Restart button on the __Dashboard__).
+1. On the [Audio Visualization](#audio) Tab, disable Audio In Source. Enable Test Signal.
+1. Save changes & restart the Player (using the Restart button on the __Dashboard__).
 1. The Test Signal (440 Hz tone) should be audible.
-1. Once audio output has been confirmed, disable the Test Signal. Save Change and Restart.
+
+To test an external __USB__ sound card:
+
+1. Connect the USB adapter. Reboot.
+1. Connect the XLR outputs to sound board, amp or studio monitors.
+1. On the [Audio Visualization](#audio) Tab, disable Audio In Source. Enable Test Signal.
+1. Save changes & restart the Player (using the Restart button on the __Dashboard__).
+1. The Test Signal (440 Hz tone) should be audible. 
+
+If <span style="color: darkred">no audio output</span> is produced, check the Status page for errors in the log:
+
+1. There are no errors.
+- Check to see if __PCM__ output has been muted. Use the [Alsa Mixer](/Player#alsa).
+- If jack.plumbing has been configured to use jack-mixer, the [Jack Mixer](#mixer) control must be open. 
+1. There are `gstreamer` errors indicating problems with audio mode settings. 
+- Refer to [Getting Started](gettingStarted/#audio). Be sure mode is properly configured.
+- If using Jack, check that the file `~/.jack.plumbing` ( or `/etc/jack.plumbing`) contains the correct connection definitions.
+- If using Pulse, check the file `~/.pulse/client.conf` is set to enable Pulse to autospawn.
+
+Disable the test signal once audio setup is working. Enable __Audio In Source__, if necessary.
 
 <br /><a name="mixer"></a>
 
-### Level Control
-{:.no_toc}
+### Adjusting Audio Level 
+{:toc}
 
-#### Jack Audio Connection Kit
+#### Jack Audio
+{:.no_toc}
 
 There are no input level controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the openbroadcaster ports, the jack-mixer control and system output. 
 
@@ -72,16 +99,23 @@ To open the jack mixer control in headless mode), use the command:
 ~~~~
 
 ## Workbench
-{:.no_toc}
 
 <a name="workbench"></a>
 
-### DIY Attenuators
-{:.no_toc}
+
+### DIY Attenuation
 
 'H' or 'T' pads may also be fabricated to accomplish the same level of attenuation.For a balanced signal, use an H-Pad: input\_impedance=30k &Omega;, output\_impedance=10k &Omega;. The example below provides approximately -20dB of attenuation using resistors R 1/2= 12k &Omega;; R 2=3.3k &Omega;; R 3/2=3.3k &Omega; (ground wires should also be connected).
  
 ![ H Pad](/img/hpad.png ){: .hpad}
+
+### Reimaging the PLayer
+
+To restore the original factory configuration, obtain the disk image for your Player from openbroadcaster.pro.
+
+1. Use UNETBOOTIN or similar utility to create a bootable USB drive (min. 4Gb) from the disk image. 
+1. Insert the USB drive into the Player, and  power up the unit. The imaging process will start auotmatically.
+1. When the process has completed, remove the USB drive and reboot.
 
 
 
