@@ -9,6 +9,8 @@ Advanced Operations
 {:toc}
 
 
+## BARIX Configuration
+
 ### Reimaging the Player
 
 To restore the original factory configuration, obtain the disk image for your Player from openbroadcaster.pro.
