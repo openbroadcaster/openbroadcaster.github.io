@@ -9,7 +9,7 @@ Advanced Operations
 {:toc}
 
 
-## BARIX Configuration
+### BARIX Configuration
 
 ### Reimaging the Player
 
