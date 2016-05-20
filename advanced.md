@@ -9,7 +9,7 @@ Advanced Operations
 {:toc}
 
 
-### BARIX Configuration
+### CAP Alerts with Barix Exstreamer
 
 ### Reimaging the Player
 
