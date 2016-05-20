@@ -1,6 +1,6 @@
 ---
 layout: default
-title: troubleShooting
+title: troubleshooting
 ---
 
 * TOC
