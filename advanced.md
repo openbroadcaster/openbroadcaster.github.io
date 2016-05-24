@@ -17,9 +17,10 @@ there is no audio present unless a message is being issued; either a valid Pelmo
 Pelmorex test message or when a internal test alert is issued
 
 On Board Audio Out
+
 • Onboard analog stereo 1/8” mini output using Realtek ALC888S codec.  Audio present only when a valid CAP message is being broadcast.
 
-• GPIO trigger reverses DTR pin voltage using RS232 DB9 when CAP message is played.
+• GPIO trigger reverses DTR voltage on pin 4 using RS232 DB9 when CAP message is played.
 
 • Silence Detection using external third party hardware used to sense audio coming out of the Alert Player and mechanically switch a relay on your board.
 
