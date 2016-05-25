@@ -63,7 +63,7 @@ After updating the Player, restart the Player and refresh the browser (Tip: pres
 _(Initial setup and testing)_
 
 
-<a name="start"></a>
+<a name="dash"></a>
 
 ### Open the Dashboard 
 The OpenBroadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
@@ -144,6 +144,9 @@ To use the XLR cable with the Alert Player:
 
 If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
 
+### Improving Sound Quality
+{:toc}
+
 When using USB sound cards, there are three aspects of the audio signal quality that must be addressed. To achieve the best possible sound quality, each of these limitations must be addressed in the configuration:
 
 * [Signal Attenuation]()
@@ -186,4 +189,45 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, i
 
 Pre-built Switching relays are available at [openbroadcaster.pro](https://openbroadcaster.pro/rs232-gpio-mechanical-relay).
 
+<br/>
+
+# Duo Server
+The OpenBroadcaster __Duo Server__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Duo Server__ installation contains both __Server__ and __Player__ components of the [OpenBroadcaster framework](https://openbroadcaster.pro).
+
+### Account Settings
+Login to the [OpenBroadcaster Server](http://localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
+
+Using the `account` menu to access the `admin` account settings:
+
+1. Change the `admin` user password.
+ * The `admin` user has access to all media, playlists and schedules. As new users are added, they are assigned to a group with the appropriate set of permissions. For example, a `guest` user may browse, but not add/edit/delete items in the media library.
+1. Set the `admin` user email
+ * When a playlog, schedule or media sync hasn't been received  from a remote Player in 60 minutes, an advisory email will be sent to this address from the server indicating there is a problem that needs attention.
+1. Set language preferences 
+ * User menus, form fields and system messages are displayed in English by default. Available language options are displayed in a dropdown menu. These settings are __not__ system-wide. Each user may choose their own language settings.
+1. Change Theme and Font 
+ * Background/foreground color and font options are designed to enhance accessibility of the interface using bright/dark contrast settings or using dyslexia friendly fonts. These settings are __not__ system-wide. Each user may choose their own theme and font settings.
+
+### Create Default Playlist
+If a Player cannot locate a schedule of media to be played, it will play the DPL in a loop to avoid dead air.
+Using the `playlist` menu to create a new playlist: 
+
+1. Provide a `Name` and `Description` for the Default Playlist (DPL).
+1. From the media sidebar tab, __drag and drop__ selections to the DPL. As items are added to the list of Playlist Items, the `Total Duration` for all items on the Playlist is updated. Add items to the Playlist until the desired duration is achieved. See [Server Documentation](/Server/#playlist) for more details on composing Playlists.
+
+### Provision The Player
+
+Using the `admin` menu to access the `player manager` options:
+
+1. `Expand` existing Player Settings for a defined __Player__, or create a `New Player`.
+1. Provide a `Name` and `Description` for the __Player__.
+1. Enter the password that will be required for the __Player__ to establish a sync connection to the __Server__.
+1. Set the media types that will be available for the __Player__. Ensure the __Player__ is configured properly to handle the assigned media types.
+1. Set the `Timezone` that will be used for scheduling shows.
+1. Drag the __Playlist__ created in the previous step (DPL) from the Playlist sidebar tab to the __Default Playlist__ landing zone (the area highlighted during the drag operation).
+1. Save the Playlist.
+
+### Sync the Player
+
+Use the [Player Dashboard](#dash) to set the device ID and password, and media sync connection details. Note that the intitial `show lock-in time` will require at least 20 minutes of lead time before playout of a scheduled or default playlist, thus ensuring all required media are downloaded before a show begins.
 
