@@ -209,10 +209,10 @@ Using the `account` menu to access the `admin` account settings:
  * Background/foreground color and font options are designed to enhance accessibility of the interface using bright/dark contrast settings or using dyslexia friendly fonts. These settings are __not__ system-wide. Each user may choose their own theme and font settings.
 
 ### Create Default Playlist
-If a Player cannot locate a schedule of media to be played, it will play the DPL in a loop to avoid dead air.
+If a Player cannot locate a schedule of media to be played, it will play the Default Playlist (DPL) in a loop to avoid dead air.
 Using the `playlist` menu to create a new playlist: 
 
-1. Provide a `Name` and `Description` for the Default Playlist (DPL).
+1. Provide a `Name` and `Description` for the (DPL).
 1. From the media sidebar tab, __drag and drop__ selections to the DPL. As items are added to the list of Playlist Items, the `Total Duration` for all items on the Playlist is updated. Add items to the Playlist until the desired duration is achieved. See [Server Documentation](/Server/#playlist) for more details on composing Playlists.
 
 ### Provision The Player
@@ -225,7 +225,7 @@ Using the `admin` menu to access the `player manager` options:
 1. Set the media types that will be available for the __Player__. Ensure the __Player__ is configured properly to handle the assigned media types.
 1. Set the `Timezone` that will be used for scheduling shows.
 1. Drag the __Playlist__ created in the previous step (DPL) from the Playlist sidebar tab to the __Default Playlist__ landing zone (the area highlighted during the drag operation).
-1. Save the Playlist.
+1. Save the Player.
 
 ### Sync the Player
 
