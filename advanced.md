@@ -38,5 +38,58 @@ To restore the original factory configuration, obtain the disk image for your Pl
 
 1. When the process has completed, remove the USB drive and reboot.
 
+###Monitoring FM Transmission
 
+An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering] (http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
 
+The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver] (https://openbroadcaster.pro/catalog/hardware).
+
+In order to use the the USB DVB-T dongle, you first need to install the rtl-sdr software:
+
+~~~~
+sudo apt-get install rtl-sdr
+~~~~
+
+The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newer version of linux, gets loaded by default, The driver must be unloaded for SDR to work, each time the dongle is inserted.
+
+~~~~
+sudo rmmod dvb_usb_283xxu
+~~~~ 
+
+To prevent the default dvb_usb driver from being loaded on reboot, it can be blacklisted. Create the file in /etc/modprobe.d/blacklist-rtl.conf, add the following line :
+
+~~~~
+blacklist dvb_usb_rtl28xxu
+~~~~
+
+Now you can check if your USB device can be detected. Insert the USB dongle, and use the rtl command line utilities:
+
+~~~~
+rtl_test -t
+~~~~
+
+The FM signal may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility] (http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
+
+~~~~
+rtl_tcp -a host_ip 
+~~~~
+
+For example _rtl\_tcp -a 10.0.0.106_
+
+You should now be able to use SDR to remotely monitor the stream over the network, using gqrx for example.
+
+~~~~
+sudo apt-get install gqrx-sdr
+~~~~
+
+Launch the program with the command:
+
+~~~~
+gqrx
+~~~~
+
+The first window to appear is for configuring the input source and audio output. Set the Device option to 'Other' and type 'rtl_tcp=host_ip:1234' into the Device String (host_ip is the IP address used in the previous step).
+
+Activate gqrx by clicking on the grey start/stop button just below the File menu. Noise should be heard from your speaker or head-phones, if not, check your audio volume control.
+
+To tune the received frequency move the mouse pointer on any of the frequency digits and use the mouse wheel to change it. Alternatively you can move the pointer and click on the upper or lower part of any digit or use the Up/Down key to change it.
