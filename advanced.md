@@ -55,7 +55,7 @@ sudo apt-get install rtl-sdr
 The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newer version of linux, gets loaded by default. Therefore, the driver must be unloaded for SDR to work, each time the dongle is inserted.
 
 ~~~~
-sudo rmmod dvb_usb_283xxu
+sudo rmmod dvb_usb_rtl_28xxu
 ~~~~ 
 
 To prevent the default dvb_usb driver from being loaded on reboot, it can be blacklisted. Create the file (use sudo) in /etc/modprobe.d/blacklist-rtl.conf, add the following line :
