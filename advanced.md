@@ -52,7 +52,7 @@ In order to use the USB DVB-T dongle, you first need to install the rtl-sdr soft
 sudo apt-get install rtl-sdr
 ~~~~
 
-The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newer version of linux, gets loaded by default, The driver must be unloaded for SDR to work, each time the dongle is inserted.
+The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newer version of linux, gets loaded by default. Therefore, the driver must be unloaded for SDR to work, each time the dongle is inserted.
 
 ~~~~
 sudo rmmod dvb_usb_283xxu
