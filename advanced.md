@@ -33,16 +33,16 @@ OBPlayer will create an on demand ICEcast mount point when an alert cycle starts
 
 To restore the original factory configuration, obtain the disk image for your Player from openbroadcaster.pro.
 
-1. Use [UNETBOOTIN] (https://unetbootin.github.io/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image. 
+1. Use [UNETBOOTIN](https://unetbootin.github.io/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image. 
 1. Insert the USB drive into the OBPlayer, and  power up the unit. The imaging process will start auotmatically. A progress bar will display. Be patient at 88% for a few minutes, it really is copying data. Observe activity on USB boot device.
 
 1. When the process has completed, remove the USB drive and reboot.
 
 ### Monitoring FM Transmission
 
-An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering] (http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
+An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering](http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
 
-The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver] (https://openbroadcaster.pro/catalog/hardware).
+The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.pro/catalog/hardware).
 
 In order to use the the USB DVB-T dongle, you first need to install the rtl-sdr software:
 
@@ -68,7 +68,7 @@ Now you can check if your USB device can be detected. Insert the USB dongle, and
 rtl_test -t
 ~~~~
 
-The FM signal may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility] (http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
+The FM signal may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility](http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
 
 ~~~~
 rtl_tcp -a host_ip 
