@@ -44,7 +44,7 @@ An inexpensive FM signal monitoring solution can be acheived using SDR (software
 
 The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.pro/catalog/hardware).
 
-In order to use the the USB DVB-T dongle, you first need to install the rtl-sdr software:
+In order to use the USB DVB-T dongle, you first need to install the rtl-sdr software:
 
 ~~~~
 sudo apt-get install rtl-sdr
@@ -56,7 +56,7 @@ The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newe
 sudo rmmod dvb_usb_283xxu
 ~~~~ 
 
-To prevent the default dvb_usb driver from being loaded on reboot, it can be blacklisted. Create the file in /etc/modprobe.d/blacklist-rtl.conf, add the following line :
+To prevent the default dvb_usb driver from being loaded on reboot, it can be blacklisted. Create the file (use sudo) in /etc/modprobe.d/blacklist-rtl.conf, add the following line :
 
 ~~~~
 blacklist dvb_usb_rtl28xxu
@@ -68,7 +68,7 @@ Now you can check if your USB device can be detected. Insert the USB dongle, and
 rtl_test -t
 ~~~~
 
-The FM signal may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility](http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
+The FM reception may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility](http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
 
 ~~~~
 rtl_tcp -a host_ip 
