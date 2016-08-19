@@ -12,7 +12,7 @@ The project requires Ruby2.0, and nodejs. If no ruby environment is installed, s
 
 1. `apt-get install ruby2.0 ruby2.0-dev gem bundler zlib1g-dev nodejs`
 2. `gem install RedCloth -v '4.2.9'`
-3. `gem install nokogiri -v '1.6.6.2'
+3. `gem install nokogiri -v '1.6.6.2'`
 
 
 After cloning this repository, run:
