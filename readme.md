@@ -11,8 +11,9 @@ This repository holds the source code to the [OpenBroadcaster Support](http://op
 The project requires Ruby2.0, and nodejs. If no ruby environment is installed, setup as follows:
 
 1. `apt-get install ruby2.0 ruby2.0-dev gem bundler zlib1g-dev nodejs`
-2. `gem install RedCloth -v '4.2.9'`
-3. `gem install nokogiri -v '1.6.6.2'`
+2. Relink the /usr/bin/ruby and /usr/bin/gem executables to the 2.0 versions:
+3. `gem install RedCloth -v '4.2.9'`
+4. `gem install nokogiri -v '1.6.6.2'`
 
 
 After cloning this repository, run:
