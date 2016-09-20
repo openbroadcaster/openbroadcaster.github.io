@@ -1,11 +1,14 @@
 ---
 layout: default
 title: basics
+---
 
 Initial Setup
 
 * TOC
 {:toc}
+
+<a name="basics"></a>
 
 ### Provisioning Player
 
