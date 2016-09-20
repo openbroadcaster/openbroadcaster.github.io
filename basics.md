@@ -24,7 +24,7 @@ For the sync URL,  [http://IP_OF_YOUR_SERVER/remote.php]
 
 Use Remote mode for testing. Save.
  
-Dashboard will take you back to Status page. Observe green connection messages, orange while downloading media and a now playing message. 
+Dashboard will take you back to Status page. Observe Green connection messages, Magenta connecting to NAAD Alerts feed, Red when playing an alert, Gold for warnings and Orange while downloading media and a now playing message of current media item. 
 
 You will be able to hear audio coming out of Pulse Audio (used as default)
 
