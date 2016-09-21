@@ -120,7 +120,6 @@ Click `Streamer Launcher` button to begin Live streaming source material from yo
 
 On the LA interface click **only** the `RTP` button on the live assist.   This will accept the incoming stream from laptop. A triangle > will appear next to the RTP button, count down timer will appear below and the VU meter in the lower *left* corner will show a signal levels present.
 
-
 ## Future
 
 On the LA interface, From top right drop down menu, Select, Microphone, Monitor or currently playing material or Mic and Monitor so that you can talk over the media playing.
@@ -129,4 +128,23 @@ Connect\Disconnect buttons turn on\off the live mic\monitor.
 
 You can now begin speaking into mic and set the level. You may also toggle MUTE.
 
-When finished show, click Disconnect on LA and Stop on the floating window 
+When finished show, click Disconnect on LA and Stop on the floating window
+
+## Drupal Radio Modules
+
+There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) for Drupal 7 CMS.
+
+
+**API Bridge** - Takes info from the backend of an OBServer and presents this for display on a front end Drupal site.  Includes information that can be placed in a block; What's playing, What played the last 24 hours and What has recently been uploaded.
+
+![API Module](/img/OB_API_Module.png ){: .screen shot} 
+
+
+**Media Player** - Provides a HTML5 embedded streaming player that plays the stream of your station without needing any additional plugins.  It displays current Name of show, Artist and song title.
+
+![Streaming Module](/img/OB_Streaming_Module.png ){: .screen shot} 
+
+
+**Schedule** - Automatically updates the OBServer schedule information, links to DJ profile and associates show graphic.
+
+![Installed Modules](/img/OB_Modules_Installed.png ){: .screen shot}
