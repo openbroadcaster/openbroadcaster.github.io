@@ -48,7 +48,7 @@ Inject test alert, mechanical relay will engage when alert plays and resume norm
 
 __Prerequisites__
 
-Update alert player.  Ensure that com port is enabled in BIOS (default=on)
+Update alert player.   Com Port(s) are enabled in BIOS (default=on)
 
 __Install LED Screen__
 
