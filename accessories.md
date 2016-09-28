@@ -30,6 +30,8 @@ Connect DB9 connector (female) to Com Port 1 (ttyS0) on the back (left) of playe
 
 3. Connect EAS audio output from player into the XLR Female marked `EAS Alert Feed` using Male XLR-USB cable or onboard audio 1/8" mini jack.
 
+Energize Power Supply
+
 __Configure DashBoard__
 
 Changes required for default settings.
