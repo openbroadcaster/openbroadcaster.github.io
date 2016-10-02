@@ -99,7 +99,7 @@ Drag media to schedule
 Assign user to time slot. Log out with user and demo adding media with their permissions
 Admin
 
-##Lesson 2 - Advance Server
+## Lesson 2 - Advance Server
 
 |Learning Outcomes|
 |:-|:--|
@@ -112,7 +112,7 @@ Admin
 
 ***
 
-###Saved Search Filters
+### Saved Search Filters
 {:toc}
 
 Advanced Search
@@ -121,7 +121,7 @@ Saved Searches
 
 Default saved searched
 
-###Server Management
+### Server Management
 {:toc}
 
 Add remove users
@@ -144,7 +144,7 @@ Show media formats
 
 Add/Customize Categories and Genres
 
-###Advanced Media
+### Advanced Media
 {:toc}
 
 Extended Metadata
