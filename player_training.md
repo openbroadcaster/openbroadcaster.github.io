@@ -13,12 +13,13 @@ title: player training
 ## Lesson 1 - Player Operation
 {:toc}
 
-|Learning Outcomes|
-|:-|:--||Outline|How to manage and operate a OpenBroadcaster Player|
-|Skill|Beginner|
+|Learning Outcomes
+|:-|:--|
+|Outline|How to manage and operate OpenBroadcaster Player|
+|Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 Hours|
-|Description|Manage and operate a OpenBroadcaster Player.|
+|Description|Manage and operate the OpenBroadcaster Player.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
