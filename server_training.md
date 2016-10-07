@@ -48,11 +48,15 @@ Formats supported
 
 Approved, Unapproved and Archived
 
+Found to the left of the search bar. Selected if capitalized. Approved is media that has been approved for play by administrator or other authorized individual. Unapproved is media that awaiting approval by administrator. Archived media is media that is media awaiting deletion or media such as commercials or PSA’s that have been disabled by the AD Manager. Individuals can view and search their own media by selecting MY (media).
+
 Upload and Bulk Edit Media
 
 Importing Metadata with ID3
 
 Media Details
+
+
 
 Work with Media Library
 
