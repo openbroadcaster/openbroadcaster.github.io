@@ -27,9 +27,9 @@ title: server training
 ### Screen Elements and Menus
 {:toc}
 
-Concept of a HTML5 AJAX web application, loading in browser
+#### Concept of a HTML5 AJAX web application, loading in browser
 
-Preview Window
+#### Preview Window
 
 #### Media Sidebar
 Found on the right side of the screen. 
@@ -37,9 +37,9 @@ Includes:
 Media Player at the top. Drag media into this space to preview.
 Selection tabs for Media, Playlists and Programs
 
-Short Cuts
+#### Short Cuts
 
-TTS (Text To Speech) interactive Tutorial
+#### TTS (Text To Speech) interactive Tutorial
 
 ### Media
 {:toc}
@@ -69,7 +69,7 @@ OpenBroadcaster supports Media Items embedded with ID3 tags. Once uploaded, sele
 The more details you can add to media when uploaded will give more details for searching. This becomes important as your media library grows.
 
 
-Work with Media Library
+#### Work with Media Library
 
 #### Search Filters
 Found under __advanced__. Select to display __Advance Search__ box. Search selections are as follows: Artist, Title, Album, Year, Media Type, Category, Country, Language, Genre, Comments and Duration (in seconds).  Each primary search parameter has a secondary selection to narrow the search. Select __Add__ to create search criteria.
@@ -89,36 +89,38 @@ Standard: Basic playlist
 Advanced: Used for audio,video and pictures running simultaniously.
 LiveAssist: A playlist that adds multiple internal playlists to act as active buttons.
 
-Public vs Private
+#### Public vs Private
 
-Play List Details
+#### Play List Details
 
-Create a new Playlist
+#### Create a new Playlist
 
-Modify and rearrange sample playlist
+#### Modify and rearrange sample playlist
 
-Using station IDs
+#### Using station IDs
 
-Dynamic Segments
+#### Dynamic Segments
 
 ### Schedule Media
 {:toc}
 
-Scheduling Media and Play Lists
+#### Scheduling Media and Play Lists
 
-Set Start and Stop times option
+#### Set Start and Stop times option
 
-Scheduling Line In
+#### Scheduling Line In
 
-Managing User Time Slots
+#### Managing User Time Slots
 
-Priority Scheduling
+#### Priority Scheduling
 
-Scheduling Media and Playlists
+#### Scheduling Media and Playlists
 
-Drag media to schedule
+#### Drag media to schedule
 
-Assign user to time slot. Log out with user and demo adding media with their permissions
+#### Assign user to time slot 
+
+Log out with user and demo adding media with their permissions
 Admin
 
 ## Lesson 2 - Advance Server
