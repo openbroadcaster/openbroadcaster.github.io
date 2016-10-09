@@ -31,7 +31,11 @@ Concept of a HTML5 AJAX web application, loading in browser
 
 Preview Window
 
-Media Sidebar
+####Media Sidebar
+Found on the right side of the screen. 
+Includes: 
+Media Player at the top. Drag media into this space to preview.
+Selection tabs for Media, Playlists and Programs
 
 Short Cuts
 
@@ -40,36 +44,50 @@ TTS (Text To Speech) interactive Tutorial
 ### Media
 {:toc}
 
-Simple Search
+####Simple Search
+Entering info in search bar will give you artist or titles with corresponding words.
 
-Expand Media Side Bar and Sort
+####Expand Media Side Bar and Sort
+Selecting __<more__ at the bottom of the Media Sidebar will expand sidebar toreveal more detail in search results. Selecting the headings will sort alphabetically or numerically. Click again to reverse the selection.
 
-Formats supported
+####Formats supported
+Find by clicking on the __admin__ link on the bottom navigation bar and selecting __media settings__. 
+Audio formats supported: FLAC (Free Lossless Audio Codec), MP3 (MPEG-1 Layer-3 Audio), MP4 (MPEG-4 Audio), OGG (Ogg Container Format), WAV (Waveform Audio). 
+Video formats supported: AVI (Audio Video Interleave, container format), MPEG (Moving Picture Experts Group), OGG (Ogg Container Format), WMV (Windows Media Video), MOV (Apple Quicktime).
+Image formats supported: JPEG (Joint Photographic Experts Group), PNG (Portable Network Graphics), SVG (Scalable Vector Graphics)
 
-Approved, Unapproved and Archived
+#### Approved, Unapproved and Archived
+Found to the left of the search bar. Selected if capitalized. Approved is media that has been approved for play by administrator or other authorized individual. Unapproved is media that awaiting approval by administrator. Archived media is media that is media awaiting deletion or media such as commercials or PSA’s that have been disabled by the AD Manager. Individuals can view and search their own media by selecting __MY__ (media)
 
-Found to the left of the search bar. Selected if capitalized. Approved is media that has been approved for play by administrator or other authorized individual. Unapproved is media that awaiting approval by administrator. Archived media is media that is media awaiting deletion or media such as commercials or PSA’s that have been disabled by the AD Manager. Individuals can view and search their own media by selecting MY (media).
+####Upload and Bulk Edit Media
+Select __media__ from lower navigation bar then select __upload media__. Click to select files. Will ask where to upload files from. Select single or multiple files for upload. Upload starts automatically and will show progress of each file to 100%. Fill in media information and save. With multiple items of same artist or type, select __copy to all__ to autofill information to all uploads. 
 
-Upload and Bulk Edit Media
+####Importing Metadata with ID3
+OpenBroadcaster supports Media Items embedded with ID3 tags. Once uploaded, select __ID3__ button to fill in embedded information. 
 
-Importing Metadata with ID3
-
-Media Details
-
+####Media Details
+The more details you can add to media when uploaded will give more details for searching. This becomes important as your media library grows.
 
 
 Work with Media Library
 
-Search Filters
+####Search Filters
+Found under __advanced__. Select to display __Advance Search__ box. Search selections are as follows: Artist, Title, Album, Year, Media Type, Category, Country, Language, Genre, Comments and Duration (in seconds).  Each primary search parameter has a secondary selection to narrow the search. Select __Add__ to create search criteria.
+ 
+####Public Private Media
+Public media is any media that can be viewed by anyone using the system. You as an uploader can only view and edit your own private media. We suggest that any media that is approved for play be selected as public so all users of the system can use the common media library. Use the private setting only for media that is personal.
 
-Public Private Media
 
 ### Playlist
 {:toc}
 
-Preview Playlists
+####Preview Playlists
+Select __Playlist__ tab from media sidebar to show all playlists. Use search bar to find specific playlists. Highlight selected playlist and right click to edit or show details.
 
-Types of Play Lists
+####Types of Play Lists
+Standard: Basic playlist 
+Advanced: Used for audio,video and pictures running simultaniously.
+LiveAssist: A playlist that adds multiple internal playlists to act as active buttons.
 
 Public vs Private
 
