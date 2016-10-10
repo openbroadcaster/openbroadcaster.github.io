@@ -30,6 +30,7 @@ title: server training
 #### Concept of a HTML5 AJAX web application, loading in browser
 
 #### Preview Window
+Drop any media into __Media Player__ to preview media content
 
 #### Media Sidebar
 Found on the right side of the screen. 
@@ -90,6 +91,7 @@ Advanced: Used for audio,video and pictures running simultaniously.
 LiveAssist: A playlist that adds multiple internal playlists to act as active buttons.
 
 #### Public vs Private
+Public playlists can be viewed by all users but only editable by creator. Private playlists are can only be viewed by the creator.
 
 #### Play List Details
 
