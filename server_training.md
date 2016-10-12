@@ -96,8 +96,11 @@ Public playlists can be viewed by all users but only editable by creator. Privat
 #### Play List Details
 
 #### Create a new Playlist
+In the __Media Sidebar__ select __playlists__. At the bottom of the bar select __New__. Put your show name in the __Name__ bar and a brief description in the __Description__ bar. Select private or public in the __Status__ bar. Private allows only the creator to see and edit the list, public allows anyone to see the playlist. Under __Type__ select Standard, Advanced or LiveAssist. See __Types of Play Lists__ for more detail. __Clear__ to delete all media from the list, __Save__ to save selections. Note: OpenBroadcaster does not autosave. 
+
 
 #### Modify and rearrange sample playlist
+Search, select then drag and drop media into __Drag Items Here__ box. Drag media up and down to arrange.
 
 #### Using station IDs
 
