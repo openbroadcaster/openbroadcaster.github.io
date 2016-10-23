@@ -102,15 +102,20 @@ In the __Media Sidebar__ select __playlists__. At the bottom of the bar select _
 #### Modify and rearrange sample playlist
 Search, select then drag and drop media into __Drag Items Here__ box. Drag media up and down to arrange.
 
-#### Using station IDs
-
 #### Dynamic Segments
+These allow you to program a segment that changes with every play. Start by opening selected playlist then create a search criteria in __Advance Search__ for media. When the search results display select the __Add Dynamic Selection__ button. In the __Dynamic Item Properties__ box create a name for your Dynamic Segment, the number of items to be played (or all) and if an image, the duration. Select __Save__. Drag and drop segment within the playlist.
+
+#### Using station IDs
+Media designated as station IDs once uploaded can be inserted into playlists in two ways. 
+..1.Search for a specific ID and drag and drop into the playlist. 
+..2.Create a dynamic segment of many station IDs select __admin__ > __player manager__ and __expand__, selecting your station. Drag the selected ID from the media sidebar to __Station IDs (drag media here)__. Select __Save__. Back in the playlist you now select __Add Station ID__ to create a dynamic segment that will change with every play. Drag and drop segment within the playlist.
+
 
 ### Schedule Media
 {:toc}
 
 #### Scheduling Media and Play Lists
-
+ 
 #### Set Start and Stop times option
 
 #### Scheduling Line In
