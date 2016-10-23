@@ -107,8 +107,8 @@ These allow you to program a segment that changes with every play. Start by open
 
 #### Using station IDs
 Media designated as station IDs once uploaded can be inserted into playlists in two ways. 
-..1.Search for a specific ID and drag and drop into the playlist. 
-..2.Create a dynamic segment of many station IDs select __admin__ > __player manager__ and __expand__, selecting your station. Drag the selected ID from the media sidebar to __Station IDs (drag media here)__. Select __Save__. Back in the playlist you now select __Add Station ID__ to create a dynamic segment that will change with every play. Drag and drop segment within the playlist.
+*1.Search for a specific ID and drag and drop into the playlist. 
+*2.Create a dynamic segment of many station IDs select __admin__ > __player manager__ and __expand__, selecting your station. Drag the selected ID from the media sidebar to __Station IDs (drag media here)__. Select __Save__. Back in the playlist you now select __Add Station ID__ to create a dynamic segment that will change with every play. Drag and drop segment within the playlist.
 
 
 ### Schedule Media
