@@ -3,4 +3,4 @@ exclude:
   - README.md
 project_title: foo-bar
 # Google services
-google_analytics:UA-56313059-3
+google_analytics: UA-56313059-3
