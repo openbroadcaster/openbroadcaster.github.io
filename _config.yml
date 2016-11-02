@@ -4,3 +4,5 @@ exclude:
 project_title: foo-bar
 # Google services
 google_analytics: UA-56313059-3
+gems:
+  - jekyll-sitemap
