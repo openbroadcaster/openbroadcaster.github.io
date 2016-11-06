@@ -89,6 +89,7 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, i
 
 ![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} Switching relay is not dependant on the Alert Player for functioning, and in the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
+
 __Prerequisites__
 
 Update alert player.  Com Port(s) are enabled in BIOS (default=on) 
