@@ -85,6 +85,7 @@ The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled 
 The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
 
 ## Mechanical RS232 Switching Relay
+{:toc}
 
 ![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} Switching relay is not dependant on the Alert Player for functioning, and in the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
@@ -119,6 +120,7 @@ __Testing__
 Inject test alert, mechanical relay will engage when alert plays and resume normal pass through when complete.
 
 ## LED Scrolling Sign
+{:toc}
 
 __Prerequisites__
 
@@ -141,6 +143,7 @@ __To Test__
 Inject test alert.  CAP test message text will scroll across LED screen.
 
 ## Barix Exstreamer (Receiver)
+{:toc}
 
 Setup Static IP for Barix device. Use info that was setup in network, include DNS info
 
@@ -165,6 +168,7 @@ No Autoplay or USB
 Disable Use SonicIP (don't want IP spoken over air every reboot)
 
 ## Instreamer (Encoder)
+{:toc}
 
 Setup manual IP for Barix device. Use info that was setup in network, include DNS info
 
@@ -202,10 +206,10 @@ Mount point will show up in [http://localhost:8000](http://localhost:8000)
 
 ![ BARIX IceCast Screenshot](img/BARIX_ICECAST_CONFIG.png ){: .BARIX} 
 
-## CAP Alerts with Barix 
-{:.no_toc}
+## CAP Alerts with Barix Exstreamer
+{:toc}
 
-OBPlayer creates an on demand IceCast mount point when an alert is present with a Barix Exstreamer receiver at transmitter to play CAP alerts.  Stations normally will be supplying audio to Exstreamer at transmitter.  Barix will be configured to detect the new mount point stream, cut over and play alert.
+OBPlayer creates an on demand IceCast mount point when an alert is present with a Barix Exstreamer receiver at transmitter to play CAP alerts.  Stations normally will be supplying audio to Exstreamer at transmitter.  Barix will be configured to detect and automatically switch to the generated alert mount point the new mount point stream, cut over and play alert, switch back to normal programming when alert stops. .
 
 __Prerequisites__
 
