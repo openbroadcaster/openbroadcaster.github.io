@@ -66,9 +66,59 @@ __To Test__
 
 Inject test alert.  CAP test message text will scroll across LED screen.
 
-## Barix Exstreamer
+## Barix Exstreamer (Receiver)
 
-OBPlayer can create an encoded MP3 stream received by a Barix Exstreamer device.  This combination creates a robust STL (Studio Transmitter Link)
+Setup Static IP for Barix device. Use info that was setup in network, include DNS info
+
+Save, Restart and login to new Static IP
+
+Change password and set in Security (Defaults user = admin)
+
+Test and save password in browser
+
+Configuration> Advanced Settings
+
+Stream 1 Reserved for Priority Stream
+
+Stream 2 http://192.168.123.10:8000/CALLSIGN_LIVE  (supplied from Instreamer in field)
+
+Stream 3 http://192.168.123.10:8000/CALLSIGN  (suppplied from OBPlayer at studio)
+
+Audio 80%
+
+No Autoplay or USB
+
+Disable Use SonicIP (don't want IP spoken over air every reboot)
+
+## Instreamer (Encoder)
+
+Setup manual IP for Barix device. Use info that was setup in network, include DNS info
+
+Save, Restart and login to new Static IP
+
+Change password and set in Security
+
+Test and save password in browser
+
+Set IP Streaming info to ICECast
+
+Set IP to send to of the Icecast Server on LS box
+
+http://192.168.123.10:8000/CALLSIGN_LIVE
+
+Use password ICECast server is expecting to hear.
+
+Use MP3 Codec
+
+Select VBR (CBR Will not work)
+
+Take screenshots of all config pages
+
+BARIX ICECAST CONFIG 1000px.png 
+
+OBPlayer generated mountpoint
+
+Create an encoded MP3 stream received by a Barix Exstreamer device hooked to transmitter.  This combination creates a robust STL (Studio Transmitter Link)
 
 From __Streaming Tab__ in dashboard create mount point
  
