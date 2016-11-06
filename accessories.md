@@ -10,9 +10,83 @@ Setup of external devices
 
 <a name="accessories"></a>
 
+## USB XLR adapter
+{:toc}
+
+__NB: Line level input signal (+4dBu) will require attenuation by -15db to -20dB.__ 
+
+![ USB XLR Adapter](/img/usb-xlr.jpeg ){: .usb-xlr}
+
+
+The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed specifications for which may be found [here](http://www.ti.com/lit/ds/symlink/pcm2902.pdf). 
+
+600 ohm in-line XLR attenuators (-20dB) are recommended for installation in +4dBu radio broadcast chain. 
+
+When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openbroadcaster-player) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
+
+To use the XLR cable with the Alert Player:
+
+### Connect the cables
+{:toc}
+
+  1. Connect the __USB__ end to any one of the USB ports on the Player unit. The adapter MUST be connected before_power up for the system to auto-configure the adapter. 
+  1. Connect the __male XLR__ output connectors to the inputs of your sound board, transmitter or switching relay.
+  1. Connect the __female XLR__ input connectors to the output of your audio source. Use in-line attenuators (-20dB) on the inputs if connecting to +4dBu line level audio sources.
+ 
+### Configure Audio
+{:toc}
+
+   * On the __Audio Visualization__ Tab, set audio output and input mode to JACK , using port names *openbroadcasterout* and *openbroadcasterin* respectively. Enable the __Audio In Source__ setting, if using a line-in source. Disable the *Test Signal*.  __If the audio mode settings are changed, reboot.__
+   * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
+
+### Restart the Player
+{:toc}
+
+If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
+
+### Improving Sound Quality
+{:toc}
+
+When using USB sound cards, there are three aspects of the audio signal quality that must be addressed. To achieve the best possible sound quality, each of these limitations must be addressed in the configuration:
+
+* [Signal Attenuation]()
+
+* [Signal Phase]()
+
+* [Signal Delay]()
+
+<a name="attenuation"></a>
+
+### Signal Attenuation
+{:.no_toc}
+
+The USB-XLR adapter is designed for input at -10dBv (0.316V, or 316 mV). Transmitter feed signals are typically +4Bu (1.228V).
+The difference, in dB, between +4 dBu and -10 dBv is -11.78 dB, or about -12 dB. Therefore, between 10dB and 20 dB of attenuation is recommended to avoid distortion of +4dBv input signals. 
+
+In-line attenuators are available at [openbroadcaster.pro]() .
+ 
+![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
+
+Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench).
+
+<a name="phase"></a>
+
+### Signal Phase
+{:.no_toc}
+
+The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled or variable output signal. The photo below shows the wires in the original configuration. To fix, you will need to swap wires to pins 2 and 3 (i.e the red and white wires) in ONLY ONE of the female XLRs. This will require solder and a soldering iron. After swapping, the white wire would be connected to Pin 2, and the red wire to Pin 3. 
+
+![ XLR Pins](/img/xlr.png ){: .xlr}    ![ XLR Pins](/img/pins.png ){: .pins}
+
+<a name="delay"></a>
+
+### Signal Delay
+{:.no_toc}
+The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
+
 ## Mechanical RS232 Switching Relay
 
-Switches audio and injects audio alerts
+![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} Switching relay is not dependant on the Alert Player for functioning, and in the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
 __Prerequisites__
 
