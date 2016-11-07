@@ -82,16 +82,19 @@ The INPUTS on the USB-XLR adapter are wired are out of phase, causing a muffled 
 
 ### Signal Delay
 {:.no_toc}
-The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
+
+The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome latency delay, it is necessary to use a switching relay that interrupts the source signal to inject an Alert Message. 
+
+<a name="relay"></a>
 
 ## Mechanical RS232 Switching Relay
 {:toc}
 
 Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
 
-![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} 
+![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
 
-<a name="relay"></a>
+
 
 __Prerequisites__
 
