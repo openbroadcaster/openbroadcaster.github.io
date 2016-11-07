@@ -91,6 +91,8 @@ Switching relay is not dependant on the Alert Player for functioning, and in the
 
 ![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} 
 
+
+
 __Prerequisites__
 
 Update alert player.  Com Port(s) are enabled in BIOS (default=on) 
