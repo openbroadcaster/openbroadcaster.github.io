@@ -8,7 +8,7 @@
   
 - name: Drupal Radio
   github: https://github.com/openbroadcaster/DrupalRadio
-  brief: Drupal Radio Moduules 
+  brief: Drupal Radio Modules 
 
 - name: eBusker
   github: https://github.com/openbroadcaster/eBuskerApp.git
