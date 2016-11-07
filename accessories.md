@@ -22,7 +22,7 @@ The __USB XLR Adapter__ uses the Texas Instrument PCM2902 chipset, detailed spec
 
 600 ohm in-line XLR attenuators (-20dB) are recommended for installation in +4dBu radio broadcast chain. 
 
-When the [USB to XLR cable](https://openbroadcaster.pro/hardware/xlr-cable-openbroadcaster-player) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
+When the [USB to XLR cable](https://openbroadcaster.pro/xlr-cable) is connected, both input and output may be routed through balanced XLR connectors.  When using the inputs on the adapter for audio bypass, source programming is muted during playback of alert messages. After the message completes, source programming resumes. 
 
 To use the XLR cable with the Alert Player:
 
