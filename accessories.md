@@ -87,18 +87,16 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome delay, i
 ## Mechanical RS232 Switching Relay
 {:toc}
 
-![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} 
-
-
-
-
 Switching relay is not dependant on the Alert Player for functioning, and in the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
+
+![ Relay Box](/img/relay_box.jpg ){: .usb-xlr} 
 
 __Prerequisites__
 
 Update alert player.  Com Port(s) are enabled in BIOS (default=on) 
 
-__Install Relay__
+### Install Relay
+{:toc}
 
 ![ Ports Diagram Screenshot](img/Ports_Diagram_400px.png ){: .Ports}
 
@@ -131,7 +129,8 @@ __Prerequisites__
 
 Update alert player.   Com Port(s) are enabled in BIOS (default=on)
 
-__Install LED Screen__
+### Install LED Screen
+{:toc}
 
 1. Connect `DB9 Female to RJ12` connector to Com Port2 (ttyS1) on the back (right) of player.
 
@@ -158,8 +157,8 @@ Change password and set in Security (Defaults user = admin)
 
 Test and save password in browser
 
-Configuration> Advanced Settings
-
+### Configuration> Advanced Settings
+{:toc}
 Stream 1 Reserved for Priority Stream
 
 Stream 2 http://192.168.123.10:8000/CALLSIGN_LIVE  (supplied from Instreamer in field)
@@ -199,7 +198,8 @@ Take screenshots of all config pages
 
 BARIX ICECAST CONFIG 1000px.png 
 
-OBPlayer generated mountpoint
+## OBPlayer ICEcast mountpoint
+{:toc}
 
 Create an encoded MP3 stream received by a Barix Exstreamer device hooked to transmitter.  This combination creates a robust STL (Studio Transmitter Link)
 
