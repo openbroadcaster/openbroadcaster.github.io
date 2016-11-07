@@ -36,7 +36,7 @@ If <span style="color: darkred">no audio output</span> is produced, check the St
 - Check to see if __PCM__ output has been muted. Use the [Alsa Mixer](/Player#alsa).
 - If jack.plumbing has been configured to use jack-mixer, the [Jack Mixer](#mixer) control must be open. 
 1. There are `gstreamer` errors indicating problems with audio mode settings. 
-- Refer to [Getting Started](gettingStarted/#audio). Be sure mode is properly configured.
+-  Be sure mode is properly configured.
 - If using Jack, check that the file `~/.jack.plumbing` ( or `/etc/jack.plumbing`) contains the correct connection definitions.
 - If using Pulse, check the file `~/.pulse/client.conf` is set to enable Pulse to autospawn.
 
