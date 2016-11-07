@@ -42,7 +42,7 @@ To use the XLR cable with the Alert Player:
 ### Restart the Player
 {:toc}
 
-If no audio output is heard, refer to [Troubleshooting](./troubleShooting.html).
+If no audio output is heard, refer to [Troubleshooting](http://support.openbroadcaster.pro/troubleshooting.html ).
 
 ### Improving Sound Quality
 {:toc}
