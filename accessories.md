@@ -98,7 +98,7 @@ Switching relay is not dependant on the Alert Player for functioning. In the eve
 
 __Prerequisites__
 
-Update Alert Player.  Com Port(s) are enabled in BIOS (default=on) 
+Update Alert Player. Com Port(s) are enabled in BIOS (default=on) 
 
 ### Install Relay
 {:toc}
@@ -127,6 +127,8 @@ __Testing__
 
 Inject test alert, mechanical relay will engage when alert plays and resume normal pass through when complete.
 
+<a name="LED Sign"></a>
+
 ## LED Scrolling Sign
 {:toc}
 
@@ -150,6 +152,8 @@ Update alert player.   Com Port(s) are enabled in BIOS (default=on)
 __To Test__ 
 
 Inject test alert.  CAP test message text will scroll across LED screen.
+
+<a name="Exstreamer"></a>
 
 ## Barix Exstreamer (Receiver)
 {:toc}
@@ -175,6 +179,8 @@ Audio 80%
 No Autoplay or USB
 
 Disable Use SonicIP (don't want IP spoken over air every reboot)
+
+<a name="Instreamer"></a>
 
 ## Instreamer (Encoder)
 {:toc}
