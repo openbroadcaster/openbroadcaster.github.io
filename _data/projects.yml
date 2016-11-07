@@ -1,10 +1,10 @@
-- name: OpenBroadcaster Player
-  github: https://github.com/openbroadcaster/OBPlayer
-  brief: Playout Device
-
 - name: OpenBroadcaster Server
   github: https://github.com/openbroadcaster/OBServer
   brief: Media Server Platform
+
+- name: OpenBroadcaster Player
+  github: https://github.com/openbroadcaster/OBPlayer
+  brief: Playout Device
   
 - name: Drupal Radio
   github: https://github.com/openbroadcaster/DrupalRadio
