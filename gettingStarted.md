@@ -3,11 +3,8 @@ layout: default
 title: gettingStarted
 ---
 
-## Quick Start Guide
+## Setup Guide
 {:.no_toc}
-
-__NB: REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
-
 
 * TOC
 {:toc}
@@ -26,12 +23,12 @@ __NB: REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR T
 #### 2. Boot the computer.
 {:.no_toc}
 
-#### 3. Change the default user password
+#### 3. Change the default system user password
 {:.no_toc}
 
 On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
 
-Enter the default password 'obsuser' (you will have to re-enter the password), followed by a new password (you will have to re-enter the new password). 
+Enter the default password **'obsuser'** (twice to re-enter the password), followed by a new password (you will have to re-enter the new password). 
 
 Passwords must be a minimum of 8 characters and contain at least two of the following character types:
 
@@ -42,10 +39,17 @@ Passwords must be a minimum of 8 characters and contain at least two of the foll
 
 __If you forget or lose the password, you'll need to re-image the unit and start over. Be sure to record the password in a safe place.__ 
 
+#### 4. Change the default Dashbord password
+{:.no_toc}
+
+Change the default **(admin/admin)** user and password from within the Player dashboard. Save and restart for passwords to take a effect.  Password manager will ask to update. 
+
 <a name="update"></a>
 
 ## Software Updates
 {:toc}
+
+__REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
 
 Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Green/White check Update icon ![Update Launcher](/img/launcher.png ){: .launcher} located on the bottom right of the Desktop Panel. The update script will run (a terminal window may open temporarily), and an email message outlining any updates will be sent to the mailbox. To view the update message, open Thunderbird Mail.
 
