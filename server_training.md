@@ -120,11 +120,11 @@ Media designated as station IDs once uploaded can be inserted into playlists in 
 #### Scheduling Media and Play Lists
 Providing the user has permission select __schedules__ > __schedule shows__ and if needed select your station from __dropdown__ on the top left. Your schedule is laid out 7 days across by 24 hours down starting the day at 00:00 local time. 
 
-####Set Start and Stop times option
+#### Set Start and Stop times option
 Drag and drop a playlist anywhere in the schedule and a dialogue box will open allowing you to schedule it. The box will show the name of the playlist followed by __Timeslot__ - see __Assign user to time slot__ below for detail on selecting other than __Manual__-, __Scheduling Mode__ or the frequency of play within the schedule, __Start Date__ of playlist, __Start Time__ (Hours, Minutes and Seconds), __Duration__ or the length of the program and __Recurring Last Date__ or when in the future do you want to have this program stop being scheduled. If you get a conflict error message it is because the schedule you have chosen interferes with a previously scheduled program. Contact the admin or program director for details.
 
-####Scheduling Line In
-####Managing User Time Slots
+#### Scheduling Line In
+#### Managing User Time Slots
 
 #### Priority Scheduling
 This feature is used if a message needs to be announced immediately and/or repeatedly during a specific time period. 
