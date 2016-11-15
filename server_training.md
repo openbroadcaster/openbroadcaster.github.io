@@ -124,7 +124,9 @@ Providing the user has permission select __schedules__ > __schedule shows__ and 
 Drag and drop a playlist anywhere in the schedule and a dialogue box will open allowing you to schedule it. The box will show the name of the playlist followed by __Timeslot__ - see __Assign user to time slot__ below for detail on selecting other than __Manual__-, __Scheduling Mode__ or the frequency of play within the schedule, __Start Date__ of playlist, __Start Time__ (Hours, Minutes and Seconds), __Duration__ or the length of the program and __Recurring Last Date__ or when in the future do you want to have this program stop being scheduled. If you get a conflict error message it is because the schedule you have chosen interferes with a previously scheduled program. Contact the admin or program director for details.
 
 #### Scheduling Line In
+
 #### Managing User Time Slots
+
 
 #### Priority Scheduling
 This feature is used if a message needs to be announced immediately and/or repeatedly during a specific time period. 
@@ -133,8 +135,10 @@ Providing the user has permission select __schedules__ > __priority broadcast__.
 #### Scheduling Media and Playlists
 
 #### Drag media to schedule
+Once set up users will only have to open __schedules__ > __schedule shows__ and drag their playlist into the schedule. At this point they will be prompted to confirm a select date for their show from a dropdown menu.
 
-#### Assign user to time slot 
+#### Assign user to time slot
+Go to __schedules__ > __schedule permissions__ and select __Add Permissions__ from the top left of the screen. You will be prompted to select a user from __Permission For__ dropdown menu, __Name__ the show, Scheduling Mode, Start and Stop times, Duration and End Date will be filled out similarly to above __Set Start and Stop times option__. If you get a conflict error message it is because the schedule you have chosen interferes with a previously scheduled program. Contact the admin or program director for details.
 
 Log out with user and demo adding media with their permissions
 Admin
