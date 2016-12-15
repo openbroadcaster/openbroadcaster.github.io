@@ -1,6 +1,6 @@
 ---
 layout: default
-title: gettingStarted
+title: Getting_Started
 ---
 
 ## Setup Guide
