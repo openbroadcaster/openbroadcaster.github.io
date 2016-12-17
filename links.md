@@ -22,7 +22,7 @@ permalink: /Links
 
 #### Canada
 
-[NCRA](www.ncra.ca/ "National Community Radio Association")
+[NCRA](http://www.ncra.ca/ "National Community Radio Association")
 
 [CACTUS](http://cactus.independentmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
@@ -58,13 +58,13 @@ permalink: /Links
 
 #### Canada
 
-[SOCAN](www.socan.ca/  "Society of Composers, Authors and Music Publishers")
+[SOCAN](http://www.socan.ca/  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
 [ASCAP](https://www.ascap.com/  "American Society of Composers, Authors and Publishers")
 
-[BMI](www.bmi.com/  "Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
+[BMI](http://www.bmi.com/  "Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
 
 [SoundExchange](https://www.soundexchange.com/  "Collects and distributes royalties on the behalf of sound recording copyright owners")
 
@@ -85,4 +85,4 @@ Creative Commons
 
 ### USA
 
-[HomeLand Security](https://www.dhs.gov/office-emergency-communications"coordinate emergency communications planning, preparation and evaluation")
+[HomeLand Security](https://www.dhs.gov/office-emergency-communications "Coordinates emergency communications planning, preparation and evaluation")
