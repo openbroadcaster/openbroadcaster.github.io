@@ -4,11 +4,11 @@ title: Links
 permalink: /Links
 ---
 
-# Software
+## Software
 
-## All these tools are open source and most are Multi-Platform (Windows, Mac and Linux)
+### All these tools are open source and most are Multi-Platform (Windows, Mac and Linux)
 
-[Audacity] (https://sourceforge.net/projects/audacity/ “Audio Editing of Ogg, Flac and Wav”)
+[Audacity](https://sourceforge.net/projects/audacity/ “Audio Editing of Ogg, Flac and Wav”)
 
 [Handbrake](https://handbrake.fr/ "Analyzing and transcoding tool")
 
@@ -16,52 +16,51 @@ permalink: /Links
 
 [VLC](www.videolan.org/ "All Purpose cross-platform multimedia player")
 
-# Community  Media Organizations
+## Community  Media Organizations
 
-## Umbrella groups of community broadcasters
+### Umbrella groups of community broadcasters
 
-### Canada
+#### Canada
 
 [NCRA](www.ncra.ca/ "National Community Radio Association")
 
-[CACTUS] (http://cactus.independentmedia.ca/ «Canadian Association of Community Television Users and Stations»)
+[CACTUS](http://cactus.independentmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
-### Australia
+#### Australia
 
-[CBBA](https://www.cbaa.org.au/ "Community Broadcasting Association of Australia
-")
+[CBBA](https://www.cbaa.org.au/ "Community Broadcasting Association of Australia")
 
-### New Zealand 
+#### New Zealand 
 
-[ACAB](https"Association of Community Access Broadcasters")
+[ACAB](https://"Association of Community Access Broadcasters")
 
-### International 
+#### International 
 
-# Regulators
+## Regulators
 
-## Radio Television Regualtors
+### Radio Television Regualtors
 
-###  Canada
+####  Canada
 
-[CRTC](www.crtc.gc.ca/ "Canadian Radio and Telecommunications Committee")
+[CRTC](https://www.crtc.gc.ca/ "Canadian Radio and Telecommunications Committee")
  
-###  New Zealand
+####  New Zealand
 
 [Icecast](https://bsa.govt.nz/"Broadcasting Standards Authority")
 
-### USA
+#### USA
 
 [FCC](https://www.fcc.gov/"Federal Communications Commission")
  
-# Royalties, Copyright and Licencing
+## Royalties, Copyright and Licencing
 
-## Music Licencing
+### Music Licencing
 
-### Canada
+#### Canada
 
-[SOCAN](www.socan.ca/ "Society of Composers, Authors and Music Publishers ")
+[SOCAN](www.socan.ca/ "Society of Composers, Authors and Music Publishers")
 
-### USA
+#### USA
 
 [ASCAP](https://www.ascap.com/"American Society of Composers, Authors and Publishers")
 
@@ -69,21 +68,21 @@ permalink: /Links
 
 [SoundExchange](https://www.soundexchange.com/"Collects and distributes royalties on the behalf of sound recording copyright owners")
 
-### International
+#### International
 
-[List of copyright collection societies] (https://en.wikipedia.org/wiki/List_of_copyright_collection_societies"Streaming")
+[Copyright collection societies](https://en.wikipedia.org/wiki/List_of_copyright_collection_societies "Copyright collection societies")
 
-### Licening Tools
+#### Licening Tools
 
-[Creative Commons](https://creativecommons.org/ "FREE Licencing tools ")
+[Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
 Creative Commons
 
-# Emergency Authorities
+## Emergency Authorities
 
-## Canada
+### Canada
 
 [Pelmorex](https://www.theweathernetwork.com"Canada’s NAAD distributing CAP-CP alerts")
 
-## USA
+### USA
 
 [HomeLand Security](https://www.dhs.gov/office-emergency-communications"coordinate emergency communications planning, preparation and evaluation")
