@@ -1,6 +1,7 @@
 ---
 layout: default
-title: advanced
+title: Advanced
+permalink: /Advanced
 ---
 Advanced Operations
 
