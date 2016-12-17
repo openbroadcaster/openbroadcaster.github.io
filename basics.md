@@ -1,6 +1,7 @@
 ---
 layout: default
-title: basics
+title: Basics
+permalink: /Basics
 ---
 
 Initial Setup
