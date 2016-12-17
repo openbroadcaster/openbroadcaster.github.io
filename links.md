@@ -8,13 +8,13 @@ permalink: /Links
 
 ### All these tools are open source and most are Multi-Platform (Windows, Mac and Linux)
 
-[Audacity](https://sourceforge.net/projects/audacity/ “Audio Editing of Ogg, Flac and Wav”)
+[Audacity](https://sourceforge.net/projects/audacity/  “Audio Editing of Ogg, Flac and Wav”)
 
-[Handbrake](https://handbrake.fr/ "Analyzing and transcoding tool")
+[Handbrake](https://handbrake.fr/  "Analyzing and transcoding tool")
 
-[Icecast](http://icecast.org/ "Streaming Media Server")
+[Icecast](http://icecast.org/  "Streaming Media Server")
 
-[VLC](http://videolan.org/ "All Purpose cross-platform multimedia player")
+[VLC](http://videolan.org/  "All Purpose cross-platform multimedia player")
 
 ## Community  Media Organizations
 
