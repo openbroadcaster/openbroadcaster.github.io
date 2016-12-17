@@ -1,6 +1,7 @@
 ---
 layout: default
-title: accessories
+title: Accessories
+permalink: /Accessories
 ---
 
 Setup of external devices
