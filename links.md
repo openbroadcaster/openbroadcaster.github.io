@@ -8,7 +8,7 @@ permalink: /Links
 
 ### These free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)
 
-[Audacity](http://www.audacityteam.org/  “Audio Editing of Ogg, Flac and Wav”)
+[Audacity](http://www.audacityteam.org/  "Audio Editing of Ogg, Flac and Wav")
 
 [Handbrake](https://handbrake.fr/  "Analyzing and Transcoding tool")
 
@@ -32,7 +32,7 @@ permalink: /Links
 
 #### Nepal
 
-[ACAB](http://acorab.org.np/  "Association of Community Access Broadcasters Nepal")
+[ACABN](http://acorab.org.np/  "Association of Community Access Broadcasters Nepal")
 
 #### New Zealand 
 
@@ -44,11 +44,11 @@ permalink: /Links
 
 #### United Kingdom
 
-[CMA](http://www.commedia.org.uk/  "Community Media Association")
+[CMA](http://commedia.org.uk/  "Community Media Association")
 
 #### United States of America
 
-[ACM](http://www.allcommunitymedia.org/  "Alliance for Community Media")
+[ACM](http://allcommunitymedia.org/  "Alliance for Community Media")
 
 [NFCB](http://nfcb.org/  "National Federation of Community Broadcasters")
 
