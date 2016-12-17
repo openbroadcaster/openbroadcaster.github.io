@@ -12,9 +12,9 @@ permalink: /Links
 
 [Handbrake](https://handbrake.fr/ "Analyzing and transcoding tool")
 
-[Icecast](icecast.org/ "Streaming Media Server")
+[Icecast](http://icecast.org/ "Streaming Media Server")
 
-[VLC](www.videolan.org/ "All Purpose cross-platform multimedia player")
+[VLC](http://videolan.org/ "All Purpose cross-platform multimedia player")
 
 ## Community  Media Organizations
 
@@ -22,17 +22,17 @@ permalink: /Links
 
 #### Canada
 
-[NCRA](http://www.ncra.ca/ "National Community Radio Association")
+[NCRA](http://ncra.ca/ "National Community Radio Association")
 
 [CACTUS](http://cactus.independentmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
 #### Australia
 
-[CBBA](https://www.cbaa.org.au/  "Community Broadcasting Association of Australia")
+[CBBA](https://cbaa.org.au/  "Community Broadcasting Association of Australia")
 
 #### New Zealand 
 
-[ACAB](https://www.acab.org.nz/  "Association of Community Access Broadcasters")
+[ACAB](https://acab.org.nz/  "Association of Community Access Broadcasters")
 
 #### International 
 
@@ -42,7 +42,7 @@ permalink: /Links
 
 ####  Canada
 
-[CRTC](https://www.crtc.gc.ca/ "Canadian Radio and Telecommunications Committee")
+[CRTC](https://crtc.gc.ca/ "Canadian Radio and Telecommunications Committee")
  
 ####  New Zealand
 
@@ -50,7 +50,7 @@ permalink: /Links
 
 #### USA
 
-[FCC](https://www.fcc.gov/  "Federal Communications Commission")
+[FCC](https://fcc.gov/  "Federal Communications Commission")
  
 ## Royalties, Copyright and Licencing
 
@@ -58,15 +58,15 @@ permalink: /Links
 
 #### Canada
 
-[SOCAN](http://www.socan.ca/  "Society of Composers, Authors and Music Publishers")
+[SOCAN](http://socan.ca/  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
-[ASCAP](https://www.ascap.com/  "American Society of Composers, Authors and Publishers")
+[ASCAP](https://ascap.com/  "American Society of Composers, Authors and Publishers")
 
-[BMI](http://www.bmi.com/  "Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
+[BMI](http://bmi.com/  "Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
 
-[SoundExchange](https://www.soundexchange.com/  "Collects and distributes royalties on the behalf of sound recording copyright owners")
+[SoundExchange](https://soundexchange.com/  "Collects and distributes royalties on the behalf of sound recording copyright owners")
 
 #### International
 
@@ -81,8 +81,8 @@ Creative Commons
 
 ### Canada
 
-[Pelmorex](https://www.theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
+[Pelmorex](https://theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
 
 ### USA
 
-[HomeLand Security](https://www.dhs.gov/office-emergency-communications "Coordinates emergency communications planning, preparation and evaluation")
+[HomeLand Security](https://dhs.gov/office-emergency-communications "Coordinates emergency communications planning, preparation and evaluation")
