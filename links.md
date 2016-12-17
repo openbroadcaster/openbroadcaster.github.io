@@ -28,11 +28,11 @@ permalink: /Links
 
 #### Australia
 
-[CBBA](https://www.cbaa.org.au/ "Community Broadcasting Association of Australia")
+[CBBA](https://www.cbaa.org.au/  "Community Broadcasting Association of Australia")
 
 #### New Zealand 
 
-[ACAB](https://"Association of Community Access Broadcasters")
+[ACAB](https://www.acab.org.nz/  "Association of Community Access Broadcasters")
 
 #### International 
 
@@ -46,11 +46,11 @@ permalink: /Links
  
 ####  New Zealand
 
-[Icecast](https://bsa.govt.nz/"Broadcasting Standards Authority")
+[BSA](https://bsa.govt.nz/  "Broadcasting Standards Authority")
 
 #### USA
 
-[FCC](https://www.fcc.gov/"Federal Communications Commission")
+[FCC](https://www.fcc.gov/  "Federal Communications Commission")
  
 ## Royalties, Copyright and Licencing
 
@@ -58,30 +58,30 @@ permalink: /Links
 
 #### Canada
 
-[SOCAN](www.socan.ca/ "Society of Composers, Authors and Music Publishers")
+[SOCAN](www.socan.ca/  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
-[ASCAP](https://www.ascap.com/"American Society of Composers, Authors and Publishers")
+[ASCAP](https://www.ascap.com/  "American Society of Composers, Authors and Publishers")
 
-[BMI](www.bmi.com/"Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
+[BMI](www.bmi.com/  "Broadcast Music, Inc. collects license fees on behalf of its songwriters, composers and music publishers")
 
-[SoundExchange](https://www.soundexchange.com/"Collects and distributes royalties on the behalf of sound recording copyright owners")
+[SoundExchange](https://www.soundexchange.com/  "Collects and distributes royalties on the behalf of sound recording copyright owners")
 
 #### International
 
-[Copyright collection societies](https://en.wikipedia.org/wiki/List_of_copyright_collection_societies "Copyright collection societies")
+[Copyright collection societies](https://en.wikipedia.org/wiki/List_of_copyright_collection_societies  "Copyright collection societies")
 
 #### Licening Tools
 
-[Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
+[Creative Commons](https://creativecommons.org/  "FREE Licencing tools")
 Creative Commons
 
 ## Emergency Authorities
 
 ### Canada
 
-[Pelmorex](https://www.theweathernetwork.com"Canada’s NAAD distributing CAP-CP alerts")
+[Pelmorex](https://www.theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
 
 ### USA
 
