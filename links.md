@@ -115,3 +115,15 @@ permalink: /Links
 ### USA
 
 [HomeLand Security](https://dhs.gov/office-emergency-communications "Coordinates emergency communications planning, preparation and evaluation")
+
+## Funders
+
+### Canada
+
+[Community Radio Fund of Canada] (http://crfc-fcrc.ca)
+
+[Northern Aboriginal Broadcasting] (http://canada.pch.gc.ca/eng/1456435422782)
+
+
+
+
