@@ -110,6 +110,8 @@ permalink: /Links
 
 ### Canada
 
+[National Public Alerting System Common Guidelines] (https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-eng.aspx)
+
 [Pelmorex](https://theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
 
 ### USA
