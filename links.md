@@ -116,7 +116,7 @@ permalink: /Links
 
 ### Canada
 
-[National Public Alerting System Common Guidelines] (https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-eng.aspx)
+[National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-eng.aspx)
 
 [Pelmorex](https://theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
 
@@ -128,9 +128,9 @@ permalink: /Links
 
 ### Canada
 
-[Community Radio Fund of Canada] (http://crfc-fcrc.ca)
+[Community Radio Fund of Canada](http://crfc-fcrc.ca)
 
-[Northern Aboriginal Broadcasting] (http://canada.pch.gc.ca/eng/1456435422782)
+[Northern Aboriginal Broadcasting](http://canada.pch.gc.ca/eng/1456435422782)
 
 
 
