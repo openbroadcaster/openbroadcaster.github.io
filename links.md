@@ -28,7 +28,7 @@ permalink: /Links
 
 [CACTUS](http://cactus.independentmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
-[WAAB](http://www.waab.ca/ "The Western Association of Aboriginal Broadcasters) 
+[WAAB](http://www.waab.ca/ "The Western Association of Aboriginal Broadcasters") 
 
 #### Australia
 
@@ -110,7 +110,7 @@ permalink: /Links
 
 #### Licencing Tools
 
-[Creative Commons](https://creativecommons.org/  "FREE Licencing tools")
+[Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
 
 ## Emergency Alerting Authorities
 
