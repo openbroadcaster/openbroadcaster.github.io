@@ -241,11 +241,18 @@ __Barix>Configuration__ Set the first URL as priority for the alert stream.  Sec
 ## IceCast Streaming Server
 {:.no_toc}
 
-To allow the stream coming from OBPlayer set incoming password in local IceCast server editing config file.  This will be the same password that was setup in the dashboard.
+To allow the stream coming from OBPlayer set incoming password in local IceCast server editing config file.  This will be the same password that was setup in the dashboard. 
 
 ~~~~
 sudo nano /etc/icecast2/icecast.xml
 ~~~~
+        Sources log in with username 'source'
+        <source-password>hackme</source-password>
+        Relays log in with username 'relay'
+        <relay-password>hackme</relay-password>
 
-Restart the IceCast service to enable saved settings or restart computer 
+        Admin logs in with the username given below
+        <admin-user>admin</admin-user>
+        <admin-password>hackme</admin-password>
 
+Restart computer for IceCast service to enable saved settings or restart computer
