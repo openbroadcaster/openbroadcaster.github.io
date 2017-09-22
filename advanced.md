@@ -41,7 +41,7 @@ To restore the original factory configuration, obtain the disk image for your Pl
 
 An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering](http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
 
-The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.pro/catalog/hardware).
+The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.com/broadcast-hardware).
 
 In order to use the USB DVB-T dongle, you first need to install the rtl-sdr software:
 
