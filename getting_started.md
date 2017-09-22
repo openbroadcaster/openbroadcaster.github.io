@@ -27,7 +27,7 @@ permalink: /Getting_Started
 #### 3. Change the default system user password
 {:.no_toc}
 
-On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
+On the initial run of machines with pre-installed versions of Open Broadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
 
 Enter the default password **'obsuser'** (twice to re-enter the password), followed by a new password (you will have to re-enter the new password). 
 
@@ -52,7 +52,7 @@ Change the default **(admin/admin)** user and password from within the Player da
 
 __REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
 
-Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Green/White check Update icon ![Update Launcher](/img/launcher.png ){: .launcher} located on the bottom right of the Desktop Panel. The update script will run (a terminal window may open temporarily), and an email message outlining any updates will be sent to the mailbox. To view the update message, open Thunderbird Mail.
+Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu
 
 ![Update Player Utilities](/img/updater.png ){: .updater} 
 
@@ -71,13 +71,13 @@ _(Initial setup and testing)_
 <a name="dash"></a>
 
 ### Open the Dashboard 
-The OpenBroadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
+The Open Broadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
 
 The __Status__ tab displays the current state of the Player.
 
 ![ Dashboard Screenshot](/img/dashboard.png ){: .screenshot}
 
-For initial setup, disconnect any USB audio device __before__ powering up the unit, and use the green speaker/headphone jack to monitor audio output. The *Enable Audio In* setting is disabled in the default configuration. If *Enable Source In*  or *Enable LED Sign*  are set on the A/V tab, disable them. 
+For initial setup, disconnect any USB audio device __before__ powering up the unit, and use the external green speaker/headphone jack to monitor audio output located on the back of device. The *Enable Audio In* setting is disabled in the default configuration. If *Enable Source In*  or *Enable LED Sign*  are set on the A/V tab, disable them. 
 
 Open the Dashboard and configure __Emergency Alerts__ with a __Location Geocode__. Adjust __Primary and Secondary Languages__ if necessary. Generate a __Test Alert__. Try different text-to-speech (__TTS__) voices. Click the __Save__  button if changes are made to any Tab. The Dashboard must be restarted to load the new settings.
 
@@ -93,7 +93,7 @@ Be sure to reset the Location Geocode for a specific alerting locale before proc
 
 1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
 1. Enter the [SGC Geocode(s)](#sgc) for your alerting locale. A single geocode is required. Multiple geocodes may be used and seperated by commas eg: "6001036,6001018" would play alerts for both Tagish AND Haines Junction.  
-1. Use this [tool](http://support.openbroadcaster.pro/Player/#location-geocodes) to find the Geocode for your area. 
+1. Use this [tool](http://support.openbroadcaster.com/Player/#location-geocodes) to find the Geocode for your area. 
 1. NAAD messages from Pelmorex may be issued as a digital audio file and/or with an included graphic image. These will automatically be recieved and broadcast with our systems.  In the event the attached alert is missing or corrupted, relayed from Environment Canada or issued using a text source, your system will play the audio using built in TTS(text-to-speech) and display a full screen red slide with Description text and accompanying audio alerts.  Default setting will truncate the headline to the first sentence of a broadcast intrusive Alert message.  To play the entire CAP alert, including the entire lengthy description, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable optional, non-broadcast intrusive alert messages, if desired.
 1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. Broadcast Intrusive alert messages are required to play at least once. To limit the number of repeats of an Alert message, change this setting.
 
@@ -114,10 +114,10 @@ Click `Inject` to add the message to the Active Alerts queue;  a 20 second count
 <br/>
 
 # Duo Server
-The OpenBroadcaster __Duo Server__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Duo Server__ installation contains both __Server__ and __Player__ components of the [OpenBroadcaster framework](https://openbroadcaster.pro).
+The OpenBroadcaster __Duo Server__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Duo Server__ installation contains both __Server__ and __Player__ components of the [Open Broadcaster framework](https://openbroadcaster.com).
 
 ### Account Settings
-Login to the [OpenBroadcaster Server](http://localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
+Login to the [Open Broadcaster Server](http://localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
 
 Using the `account` menu to access the `admin` account settings:
 
