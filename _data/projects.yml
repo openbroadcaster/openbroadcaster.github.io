@@ -1,8 +1,8 @@
-- name: OpenBroadcaster Server
+- name: Open Broadcaster Server
   github: https://github.com/openbroadcaster/OBServer
   brief: Media Server Platform
 
-- name: OpenBroadcaster Player
+- name: Open Broadcaster Player
   github: https://github.com/openbroadcaster/OBPlayer
   brief: Playout Device
   
