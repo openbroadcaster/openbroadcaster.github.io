@@ -16,11 +16,11 @@ permalink: /Server_Training
  
 |Learning Outcomes|
 |:-|:--|
-|Outline|How to manage and operate a OpenBroadcaster server installation.|
+|Outline|How to manage and operate a Open Broadcaster server installation.|
 |Skill|Beginner|
 |Prerequisites|None|
 |Time required|6 Hours|
-|Description|Manage and operate a OpenBroadcaster server installation.|
+|Description|Manage and operate a Open Broadcaster server installation.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
@@ -148,11 +148,11 @@ Admin
 
 |Learning Outcomes|
 |:-|:--|
-|Outline|How to manage and operate Advance OpenBroadcaster server.|
+|Outline|How to manage and operate Advance Open Broadcaster server.|
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|6 Hours|
-|Description|Manage and operate a OpenBroadcaster Advance server.|
+|Description|Manage and operate a Open Broadcaster Advance server.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
