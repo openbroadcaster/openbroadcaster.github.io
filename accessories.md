@@ -4,10 +4,36 @@ title: Accessories
 permalink: /Accessories
 ---
 
-Setup of external devices
+Guide for setting up external devices
 
 * TOC
 {:toc}
+
+<a name="supported-hardware"></a>
+
+## Supported Hardware
+{:toc}
+
+### Audio
+
+| Manufacturer          | Protocol      | Notes |
+| --------------------- |---------------| ------|
+| Allen and Heath       | USB Audio     |       |
+| Arrikis               | USB Audio     |       |
+| AXIA\Telos            | RTP\Livewire  |       |
+| M-Audio               | USB Audio     |       |
+| Scarlette             | USB Audio     |  6i6  |
+| SoundCraft            | USB Audio     |       |
+| Stellar Labs\USB XLR  | USB Audio     | PCM2902 chipset |
+
+### Video
+
+| Manufacturer     | Protocol      | Notes |
+| ---------------- |---------------| ------|
+| Black Magic      | HDMI          |       |
+| CISCO DCM        | MPEG-TS       |       |
+
+Please [Report](mailto:support@openbroadcaster.com) successful manufacturers of hardware devices that are not listed 
 
 <a name="accessories"></a>
 
