@@ -52,8 +52,6 @@ To restore the original factory configuration, obtain the disk image for your Pl
 
 1. When the process has completed, remove the USB drive and reboot.
 
-<a name="Recording-Transmissions"></a>
-
 ### Recording FM Transmission
 {:toc}
 
@@ -61,21 +59,19 @@ Most radio stations have a requirement from regulators to maintain off air recor
 
 Alert Player users are able to record and capture off-air audio logs that can be used for CRTC logging purposes or reused as a podcast. An example would be to use the onboard "line-in" of sound card, plug a FM tuner monitoring you stations signal. Pulse must be the audio mode for your system. 
 
-1. Enable Audio Logging from the sources tab. 
+1) Enable Audio Logging from the sources tab. 
 
 ![ Audio Logging](img/audio_logging.png ){: .audio_logging} 
 
-1. Select Input source to record.
+2) Select Input source to record.
 
 ![ Input source](img/input_source.png ){: .input_source} 
 
-1. Tell Gstreamer what Source to record from. Go to command line of local box and type `pulsemixer`
+3) Tell Gstreamer what Source to record from. Go to command line of local box and type `pulsemixer` Select the Input source, press enter to select as default.
 
 ![ Pulse Mixer Monitor](img/pulse_mixer.png ){: .pulse_mixer}
 
-Audio logs will be automatically created in one hour segments. To access these audio files, click the downloads button on the Status tab from the player's dashboard.
-
-<a name="Monitoring-FM-Transmissions"></a>
+Audio logs will be automatically created in one hour segments. To access these audio files, click the `Downloads` button on the Status tab from the player's dashboard.
 
 ### Monitoring FM Transmission
 {:toc}
