@@ -8,23 +8,40 @@ Advanced Operations
 * TOC
 {:toc}
 
-### Audio Configurations
+### Injecting Alerts into the broadcast chain
 
-There are several ways to inject audio alerts into the broadcast chain. CAP-CP alerts may be issued
-from the standalone alert player and put into the audio broadcast chain each with their own merits.
-When an alert is received, audio is sent out for your systems to receive in several ways. Generally
-there is no audio present unless a message is being issued; either a valid Pelmorex CAP message,
-Pelmorex test message or when a internal test alert is issued
+Every station is setup different with several ways to inject audio and visual alerts into the broadcast chain.  CAP-CP alerts may be issued 
+from the standalone alert player and put into the broadcast chain each with their own merits.
+ 
+#### Audio
 
-On Board Audio Out
+When an alert is received, audio is sent out for your systems to receive in several ways. Generally there is no audio present unless a message is being issued; either a valid Pelmorex CAP message, Pelmorex test message or when a internal test alert is issued.
 
 • Onboard analog stereo 1/8” mini output using Realtek ALC888S codec.  Audio present only when a valid CAP message is being broadcast.
 
-• GPIO trigger reverses DTR voltage on pin 4 using RS232 DB9 when CAP message is played to switch an external relay.
+• GPIO trigger reverses DTR voltage on pin 4 using RS232 DB9 when CAP message is played to switch an [External relay](http://support.openbroadcaster.com/Accessories#mechanical-rs232-switching-relay).
+
+• Using [BARIX exstreamer](http://support.openbroadcaster.com/Accessories#cap-alerts-with-barix-exstreamer) at transmitter to listen to a prioity port of incoming stream of CAP message
+
+• Configuring ICECAST server to detect new mount point of on demand stream
 
 • Silence Detection using external third party hardware used to sense audio coming out of the Alert Player and mechanically switch a relay on your board.
 
-• Windows playout machine may use free Silence Detection software from [Pira CZ Silence Detector](http://pira.cz/show.asp?art=silence)  to switch broadcast audio source when CAP message is played.
+• Windows playout machine may use free Silence Detection software from [Pira CZ Silence Detector](http://pira.cz/show.asp?art=silence) to switch broadcast audio source when CAP message is played.
+
+• Intergrating to AXIA Digital AOIP Consoles to sense an on demand Livewire stream of CAP message in conjunction with the Qor's GPIO to switch channels on the console while EAS is in progress and switch back.
+
+#### Visual
+
+Applicable for; over the air TV, Cable TV and digital signage applications.  Normal visual content will be displayed.  When there is a valid CAP alert, a red scrolling overlay will display the text of this message with accompanying audio of the alert. 
+
+• Onboard local video with (HDMI\DSUB) where an overlay will be displayed when a valid CAP message is being broadcast.
+
+• GPIO trigger on pin 4 using RS232 DB9 when CAP message is played to switch CATV channel on digital cable head end.
+
+• Configuring ICECAST server to detect new mount point of on demand stream
+
+Please  [Share](mailto:support@openbroadcaster.com) your experience and innovative solutions not listed here for injecting alerts.
 
 ### Reimaging the Player
 
@@ -35,9 +52,33 @@ To restore the original factory configuration, obtain the disk image for your Pl
 
 1. When the process has completed, remove the USB drive and reboot.
 
-<a name="rtl-sdr"></a>
+<a name="Recording-Transmissions"></a>
+
+### Recording FM Transmission
+{:toc}
+
+Most radio stations have a requirement from regulators to maintain off air recordings.  An easy way to accomplish this is the use the audio playlog feature of Player
+
+Alert Player users are able to record and capture off-air audio logs that can be used for CRTC logging purposes or reused as a podcast. An example would be to use the onboard "line-in" of sound card, plug a FM tuner monitoring you stations signal. Pulse must be the audio mode for your system. 
+
+1. Enable Audio Logging from the sources tab. 
+
+![ Audio Logging](img/audio_logging.png ){: .audio_logging} 
+
+1. Select Input source to record.
+
+![ Input source](img/input_source.png ){: .input_source} 
+
+1. Tell Gstreamer what Source to record from. Go to command line of local box and type `pulsemixer`
+
+![ Pulse Mixer Monitor](img/pulse_mixer.png ){: .pulse_mixer}
+
+Audio logs will be automatically created in one hour segments. To access these audio files, click the downloads button on the Status tab from the player's dashboard.
+
+<a name="Monitoring-FM-Transmissions"></a>
 
 ### Monitoring FM Transmission
+{:toc}
 
 An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering](http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
 
