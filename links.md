@@ -26,7 +26,7 @@ permalink: /Links
 
 [NCRA](http://ncra.ca/ "National Community Radio Association")
 
-[CACTUS](http://cactus.independentmedia.ca/ "Canadian Association of Community Television Users and Stations")
+[CACTUS](http://cactus.comtv.org/ "Canadian Association of Community Television Users and Stations")
 
 [WAAB](http://www.waab.ca/ "The Western Association of Aboriginal Broadcasters") 
 
@@ -131,6 +131,26 @@ permalink: /Links
 [Community Radio Fund of Canada](http://crfc-fcrc.ca)
 
 [Northern Aboriginal Broadcasting](http://canada.pch.gc.ca/eng/1456435422782)
+
+## Online Resources, Forums and Newsletters
+
+### Canada
+
+[Air Checker](www.airchecker.ca)
+
+[Broadcast Dialogue](https://www.broadcastdialogue.ca)
+
+### USA 
+
+[Broadcasters' Desktop Resource](https://www.thebdr.net)
+
+### International
+
+[The Asia-Pacific Broadcasting Union (ABU)](http://www.abu.org.my)
+
+
+
+
 
 
 
