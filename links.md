@@ -136,7 +136,7 @@ permalink: /Links
 
 ### Canada
 
-[Air Checker](www.airchecker.ca)
+[Air Checker](http://www.airchecker.ca)
 
 [Broadcast Dialogue](https://www.broadcastdialogue.ca)
 
