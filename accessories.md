@@ -16,15 +16,15 @@ Guide for setting up external devices
 
 ### Audio
 
-| Manufacturer          | Protocol      | Notes |
-| --------------------- |---------------| ------|
-| Allen and Heath       | USB Audio     |       |
-| Arrikis               | USB Audio     |       |
-| AXIA\Telos            | RTP\Livewire  |       |
-| M-Audio               | USB Audio     |       |
-| Scarlette             | USB Audio     |  6i6  |
-| SoundCraft            | USB Audio     |       |
-| Stellar Labs\USB XLR  | USB Audio     | PCM2902 chipset |
+| Manufacturer               | Protocol         | Notes |
+| -------------------------- |------------------| ------|
+| Allen and Heath            | USB Audio        |       |
+| Arrikis                    | USB Audio        |       |
+| AXIA\Telos                 | RTP\Livewire     |       |
+| M-Audio                    | USB Audio        |       |
+| Scarlette                  | USB Audio        |  6i6  |
+| SoundCraft                 | USB Audio        |       |
+| Stellar Labs\USB XLR       | USB Audio        | PCM2902 chipset |
 
 ### Video
 
@@ -117,7 +117,7 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome latency 
 ## Mechanical RS232 Switching Relay
 {:toc}
 
-Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](gettingStarted.html#gpio). 
+Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](getting_started.html#gpio). 
 
 ![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
 
