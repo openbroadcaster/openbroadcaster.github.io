@@ -63,8 +63,15 @@ To use the XLR cable with the Alert Player:
 ### Configure Audio
 {:toc}
 
-   * On the __Audio Visualization__ Tab, set audio output and input mode to JACK , using port names *openbroadcasterout* and *openbroadcasterin* respectively. Enable the __Audio In Source__ setting, if using a line-in source. Disable the *Test Signal*.  __If the audio mode settings are changed, reboot.__
+   * On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
+
+   * Optionally to use JACK, use port names *openbroadcasterout* and *openbroadcasterin* respectively.  In JACK mode audio levels must be set via CLI or desktop utlity.
+
    * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
+
+     __When audio mode settings are changed, reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels.
+
+![ Input Source](img/input_source.png ){: .Input}
 
 ### Restart the Player
 {:toc}
@@ -90,11 +97,11 @@ When using USB sound cards, there are three aspects of the audio signal quality 
 The USB-XLR adapter is designed for input at -10dBv (0.316V, or 316 mV). Transmitter feed signals are typically +4Bu (1.228V).
 The difference, in dB, between +4 dBu and -10 dBv is -11.78 dB, or about -12 dB. Therefore, between 10dB and 20 dB of attenuation is recommended to avoid distortion of +4dBv input signals. 
 
-In-line attenuators are available at [openbroadcaster.com]() .
+In-line attenuators are available at [https://openbroadcaster.com/catalog/]() .
  
 ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
 
-Instructions for DIY "H" or "T" pads may be found on the [workbench](#workbench).
+Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](#DIY-Maker-Space-Broadcast-Projects).
 
 <a name="phase"></a>
 
@@ -281,4 +288,4 @@ sudo nano /etc/icecast2/icecast.xml
         <admin-user>admin</admin-user>
         <admin-password>hackme</admin-password>
 
-Restart computer for IceCast service to enable saved settings or restart computer
+Restart computer for IceCast service to enable saved settings or restart ICECast service from CLI
