@@ -99,16 +99,3 @@ To open the jack mixer control in headless mode), use the command:
 
 ~~~~
 
-## Workbench
-
-<a name="workbench"></a>
-
-
-### DIY Attenuation
-
-'H' or 'T' pads may also be fabricated to accomplish the same level of attenuation.For a balanced signal, use an H-Pad: input\_impedance=30k &Omega;, output\_impedance=10k &Omega;. The example below provides approximately -20dB of attenuation using resistors R 1/2= 12k &Omega;; R 2=3.3k &Omega;; R 3/2=3.3k &Omega; (ground wires should also be connected).
- 
-![ H Pad](/img/hpad.png ){: .hpad}
-
-
-
