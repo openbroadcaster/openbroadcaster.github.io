@@ -65,8 +65,6 @@ To use the XLR cable with the Alert Player:
 
    * On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
 
-   * Optionally to use JACK, use port names *openbroadcasterout* and *openbroadcasterin* respectively.  In JACK mode audio levels must be set via CLI or desktop utlity.
-
    * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
      __When audio mode settings are changed, reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels.

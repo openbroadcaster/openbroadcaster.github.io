@@ -17,44 +17,56 @@ Use the __test signal__ to confirm your audio setup is working correctly.
 
 To test the __on-board__ sound card:
 
-1. Disconnect USB adapter. Reboot.
+1. Disconnect USB adapter.
 1. Connect headphones or studio monitor to 1/8" audio output.
-1. On the [Audio Visualization](#audio) Tab, disable Audio In Source. Enable Test Signal.
-1. Save changes & restart the Player (using the Restart button on the __Dashboard__).
+1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
+1. On the [Sources](#Sources) Tab disable Audio In Source
+1. Save changes & reboot the Player 
 1. The Test Signal (440 Hz tone) should be audible.
 
 To test an external __USB__ sound card:
 
-1. Connect the USB adapter. Reboot.
+1. Connect the USB adapter.
 1. Connect the XLR outputs to sound board, amp or studio monitors.
-1. On the [Audio Visualization](#audio) Tab, disable Audio In Source. Enable Test Signal.
-1. Save changes & restart the Player (using the Restart button on the __Dashboard__).
+1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
+1. On the [Sources](#Sources) Tab disable Audio In Source
+1. Save changes & reboot the Player 
 1. The Test Signal (440 Hz tone) should be audible. 
 
-If <span style="color: darkred">no audio output</span> is produced, check the Status page for errors in the log:
+If <span style="color: darkred">no audio output</span> is produced, check the Status page for errors in the log and observe VU meter for activity:
 
-1. There are no errors.
-- Check to see if __PCM__ output has been muted. Use the [Alsa Mixer](/Player#alsa).
-- If jack.plumbing has been configured to use jack-mixer, the [Jack Mixer](#mixer) control must be open. 
+1. Be sure mode is properly configured.
 1. There are `gstreamer` errors indicating problems with audio mode settings. 
--  Be sure mode is properly configured.
-- If using Jack, check that the file `~/.jack.plumbing` ( or `/etc/jack.plumbing`) contains the correct connection definitions.
-- If using Pulse, check the file `~/.pulse/client.conf` is set to enable Pulse to autospawn.
+1. Adjust slider control or adjust from CLI `pulsemixer`
+1. No PulseAudio Sources Present in dashboard press F5 to refresh browser.
 
 Disable the test signal once audio setup is working. Enable __Audio In Source__, if necessary.
 
 <br /><a name="mixer"></a>
 
-### Adjusting Audio Level 
+### Adjusting Audio Levels 
+
 {:toc}
+
+### Pulse Audio
+{:.no_toc}
+
+Pulse is the default and recommended audio to use with OBPlayer. __When audio mode settings are changed, reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
+
+* On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
+
+* If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
+
+![ Input Source](img/input_source.png ){: .Input}
 
 #### Jack Audio
 {:.no_toc}
 
-There are no input level controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the openbroadcaster ports, the jack-mixer control and system output. 
+There are no input level GUI controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the openbroadcaster ports, the jack-mixer control and system output. 
 
+- If using Jack, check that the file `~/.jack.plumbing` ( or `/etc/jack.plumbing`) contains the correct connection definitions.
+- If using Pulse, check the file `~/.pulse/client.conf` is set to enable Pulse to autospawn.
 Create a new configuration file called .jack.plumbing in the home directory (make sure it has the preceeding dot). This will override the system defaults.
-
 
 ~~~~
 obsuser@obsource:~$ `nano ~/.jack.plumbing`
