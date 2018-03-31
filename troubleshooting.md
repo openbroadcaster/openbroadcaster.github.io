@@ -51,7 +51,7 @@ Disable the test signal once audio setup is working. Enable __Audio In Source__,
 ### Pulse Audio
 {:.no_toc}
 
-Pulse is the default and recommended audio to use with OBPlayer. __When audio mode settings are changed, reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
+Pulse is the default and recommended audio to use with OBPlayer. When audio mode settings are changed, __Reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
 
 * On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
 
