@@ -9,7 +9,67 @@ permalink: /Troubleshooting
 
 <a name="troubleshooting"></a>
 
-## Troubleshooting Audio
+## Player Start Up
+
+### Networking
+
+On headless machines the Player is accessed from a web dasboard accecible from another machine on the same network from an IP address that is issued with DHCP.  To determine the local IP of Player from terminal issue "ip addr show"  Your IP will appear like 192.168.1.100.  127.0.0.1 is a local loop back IP. You might also get into your router and look at the DHCP Client list and see the players IP that way.  Recomended that Players be setup with a static IP address as DHCP can often change.
+
+From a web browser type 
+
+~~~~
+http://ip-of-server:23233
+~~~~
+
+a login window will prompt for user and password. If there is a timeout and/or network unreachable message try these steps to resolve.
+
+__Networking Tests__
+
+From __Terminal__ Ping "localhost" replies indicate internal networking working
+
+From __Terminal__ Ping "IP-of_Router/Gateway" replies indicate networking working to router.
+
+From __Terminal__ Ping "IP-of-Other-Device-on-Network" replies indicate Player and router are able to communicate to other Devices.
+
+From __Terminal__ Ping "google.com" replies indicate network is able to communicate through router to the real world internet.
+
+### Checking Player is running
+
+If you are unable to access the player dashboard, do not have local access or running in a virtual service, you'll want to verify the Player appears as a process.
+
+From __Terminal__ 
+
+~~~~
+ps -ef | grep python
+~~~~
+
+Lists all Python process including the obplayer.  If this is not showing then obplayer is not running.
+
+![ PS FAX Python Screenshot](/img/ps-fax-python.png ){: .psfax-python}
+
+To check all running processes, including obplayer and Icecast 
+
+~~~~
+ps fax
+~~~~ 
+
+In this example both obplayer and Icecast are highlighted
+
+![ PS FAX Screenshot](/img/ps-fax.png ){: .psfax}
+
+#### Sync
+
+Ensure the player device is able to access the internet Terminal "ping google.com" and can reach the management server as specified in sync settings under the Sync tab. The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" Do not forget to include the trailing /remote.php.
+
+Check the sync url exisits by pasting into browser and you should see the 
+
+![ Sync Connect Screenshot](/img/sync-connect.png ){: .sync-connect}
+
+Confirm/Re-enter passwords and Device to match player in Player Manager in Server 
+
+Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
+
+## Audio
 
 ### Test Signal 
 
@@ -85,9 +145,9 @@ obsuser@obsource:~$ `nano ~/.jack.plumbing`
 
 ![ JackMixer Screenshot](/img/jack.png ){: .jack}
 
-If Jack is already running, it will load the new configuration. Open the jack-mixer control from the Panel (bottom right of Desktop, icon to left of VLC). This will open a mixer control, with an input channel on the left and Main output channel is on the right. The sliding control for the input channel can be used to set the level for the line-in (input) signal. The control on the right has no effect on the output. 
+If Jack is already running, it will load the new configuration. Open the jack-mixer this will open a mixer control, with an input channel on the left and Main output channel is on the right. The sliding control for the input channel can be used to set the level for the line-in (input) signal. 
 
-If Jack is not running ensure it is configured in the Dashboard, and reboot the Player, and open the jack-mixer control.
+If Jack is not running ensure it is configured in the Dashboard, and reboot the Player, and open the jack-mixer control from desktop.
 
 __NB:__ When using jack mixer, the jack-mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, the output will stop playing. The control must be visible and indicating signal bars for output signal to be audible. The mixer control must be reopened after a reboot, or no sound will be produced. 
 
@@ -110,4 +170,6 @@ To open the jack mixer control in headless mode), use the command:
    (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
 
 ~~~~
+
+## Video
 
