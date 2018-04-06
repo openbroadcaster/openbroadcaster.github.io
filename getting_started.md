@@ -71,7 +71,7 @@ _(Initial setup and testing)_
 <a name="dash"></a>
 
 ### Open the Dashboard 
-The Open Broadcaster Player is configured using a secure web browser interface, available at [http://localhost:23233](http://localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
+The Open Broadcaster Player is configured using a secure web browser interface, available at [//localhost:23233](//localhost:23233). A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
 
 The __Status__ tab displays the current state of the Player.
 
@@ -117,7 +117,7 @@ Click `Inject` to add the message to the Active Alerts queue;  a 20 second count
 The OpenBroadcaster __Open Box__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Open Box__ installation contains both __Server__ and __Player__ components of the [Open Broadcaster framework](https://openbroadcaster.com).
 
 ### Account Settings
-Login to the [Open Broadcaster Server](http://localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
+Login to the [Open Broadcaster Server](//localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
 
 Using the `account` menu to access the `admin` account settings:
 
