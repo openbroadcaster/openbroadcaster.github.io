@@ -95,11 +95,11 @@ When using USB sound cards, there are three aspects of the audio signal quality 
 The USB-XLR adapter is designed for input at -10dBv (0.316V, or 316 mV). Transmitter feed signals are typically +4Bu (1.228V).
 The difference, in dB, between +4 dBu and -10 dBv is -11.78 dB, or about -12 dB. Therefore, between 10dB and 20 dB of attenuation is recommended to avoid distortion of +4dBv input signals. 
 
-In-line attenuators are available at [https://openbroadcaster.com/catalog/]() .
+In-line attenuators are available [Here](https://openbroadcaster.com/catalog/).
  
 ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
 
-Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](#diy-maker-space-broadcast-projects).
+Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](http://support.openbroadcaster.com/diy-maker-space-broadcast-projects).
 
 <a name="phase"></a>
 
