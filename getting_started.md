@@ -93,7 +93,7 @@ Be sure to reset the Location Geocode for a specific alerting locale before proc
 
 1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
 1. Enter the [SGC Geocode(s)](#sgc) for your alerting locale. A single geocode is required. Multiple geocodes may be used and seperated by commas eg: "6001036,6001018" would play alerts for both Tagish AND Haines Junction.  
-1. Use this [tool](http://support.openbroadcaster.com/Player/#location-geocodes) to find the Geocode for your area. 
+1. Use this [tool](http://support.openbroadcaster.com/player/#location-geocodes) to find the Geocode for your area. 
 1. NAAD messages from Pelmorex may be issued as a digital audio file and/or with an included graphic image. These will automatically be recieved and broadcast with our systems.  In the event the attached alert is missing or corrupted, relayed from Environment Canada or issued using a text source, your system will play the audio using built in TTS(text-to-speech) and display a full screen red slide with Description text and accompanying audio alerts.  Default setting will truncate the headline to the first sentence of a broadcast intrusive Alert message.  To play the entire CAP alert, including the entire lengthy description, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable optional, non-broadcast intrusive alert messages, if desired.
 1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. Broadcast Intrusive alert messages are required to play at least once. To limit the number of repeats of an Alert message, change this setting.
 
@@ -113,8 +113,8 @@ Click `Inject` to add the message to the Active Alerts queue;  a 20 second count
 
 <br/>
 
-# Duo Server
-The OpenBroadcaster __Duo Server__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Duo Server__ installation contains both __Server__ and __Player__ components of the [Open Broadcaster framework](https://openbroadcaster.com).
+# Open Box
+The OpenBroadcaster __Open Box__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. A __Open Box__ installation contains both __Server__ and __Player__ components of the [Open Broadcaster framework](https://openbroadcaster.com).
 
 ### Account Settings
 Login to the [Open Broadcaster Server](http://localhost/welcome) application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
@@ -135,7 +135,7 @@ If a Player cannot locate a schedule of media to be played, it will play the Def
 Using the `playlist` menu to create a new playlist: 
 
 1. Provide a `Name` and `Description` for the (DPL).
-1. From the media sidebar tab, __drag and drop__ selections to the DPL. As items are added to the list of Playlist Items, the `Total Duration` for all items on the Playlist is updated. Add items to the Playlist until the desired duration is achieved. See [Server Documentation](/Server/#playlist) for more details on composing Playlists.
+1. From the media sidebar tab, __drag and drop__ selections to the DPL. As items are added to the list of Playlist Items, the `Total Duration` for all items on the Playlist is updated. Add items to the Playlist until the desired duration is achieved. See [Server Documentation](/server/#playlist) for more details on composing Playlists.
 
 ### Provision The Player
 
