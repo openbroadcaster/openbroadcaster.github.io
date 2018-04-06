@@ -40,7 +40,7 @@ permalink: /Links
 
 #### New Zealand 
 
-[ACAB](https://acab.org.nz/  "Association of Community Access Broadcasters")
+[ACAB](http://www.acab.org.nz/  "Association of Community Access Broadcasters")
 
 #### South Africa
 
@@ -118,7 +118,7 @@ permalink: /Links
 
 [National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-eng.aspx)
 
-[Pelmorex](https://theweathernetwork.com  "Canada’s NAAD distributing CAP-CP alerts")
+[Pelmorex](https://www.theweathernetwork.com/  "Canada’s NAAD distributing CAP-CP alerts")
 
 ### USA
 
