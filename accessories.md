@@ -81,12 +81,6 @@ If no audio output is heard, refer to [Troubleshooting](http://support.openbroad
 
 When using USB sound cards, there are three aspects of the audio signal quality that must be addressed. To achieve the best possible sound quality, each of these limitations must be addressed in the configuration:
 
-* [Signal Attenuation]()
-
-* [Signal Phase]()
-
-* [Signal Delay]()
-
 <a name="attenuation"></a>
 
 ### Signal Attenuation
@@ -122,7 +116,7 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome latency 
 ## Mechanical RS232 Switching Relay
 {:toc}
 
-Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](http://support.openbroadcaster.com/Accessories#gpio). 
+Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](http://support.openbroadcaster.com/player#gpio). 
 
 ![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
 
@@ -248,7 +242,7 @@ From __Streaming Tab__ in dashboard create mount point
  
 Enable __Streaming__ Save. Restart.
 
-Mount point will show up in [//localhost:8000](//localhost:8000)
+Mount point will show up in [//localhost:8000]
 
 ![ BARIX IceCast Screenshot](img/BARIX_ICECAST_CONFIG.png ){: .BARIX} 
 
