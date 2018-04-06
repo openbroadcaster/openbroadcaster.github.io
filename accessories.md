@@ -122,11 +122,9 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome latency 
 ## Mechanical RS232 Switching Relay
 {:toc}
 
-Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](Getting_Started.html#gpio). 
+Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](http://support.openbroadcaster.com/Getting_Started#gpio). 
 
 ![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
-
-
 
 __Prerequisites__
 
