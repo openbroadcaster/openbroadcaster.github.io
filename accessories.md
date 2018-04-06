@@ -74,7 +74,7 @@ To use the XLR cable with the Alert Player:
 ### Restart the Player
 {:toc}
 
-If no audio output is heard, refer to [Troubleshooting](http://support.openbroadcaster.com/Troubleshooting.html ).
+If no audio output is heard, refer to [Troubleshooting](http://support.openbroadcaster.com/Troubleshooting ).
 
 ### Improving Sound Quality
 {:toc}
@@ -99,7 +99,7 @@ In-line attenuators are available at [https://openbroadcaster.com/catalog/]() .
  
 ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
 
-Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](#DIY-Maker-Space-Broadcast-Projects).
+Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](#diy-maker-space-broadcast-projects).
 
 <a name="phase"></a>
 
@@ -202,9 +202,9 @@ Test and save password in browser
 {:toc}
 Stream 1 Reserved for Priority Stream
 
-Stream 2 http://192.168.123.10:8000/CALLSIGN_LIVE  (supplied from Instreamer in field)
+Stream 2 //192.168.123.10:8000/CALLSIGN_LIVE  (supplied from Instreamer in field)
 
-Stream 3 http://192.168.123.10:8000/CALLSIGN  (suppplied from OBPlayer at studio)
+Stream 3 //192.168.123.10:8000/CALLSIGN  (suppplied from OBPlayer at studio)
 
 Audio 80%
 
@@ -229,7 +229,7 @@ Set IP Streaming info to ICECast
 
 Set IP to send to of the Icecast Server on LS box
 
-http://192.168.123.10:8000/CALLSIGN_LIVE
+//192.168.123.10:8000/CALLSIGN_LIVE
 
 Use password ICECast server is expecting to hear.
 
@@ -250,7 +250,7 @@ From __Streaming Tab__ in dashboard create mount point
  
 Enable __Streaming__ Save. Restart.
 
-Mount point will show up in [http://localhost:8000](http://localhost:8000)
+Mount point will show up in [//localhost:8000](//localhost:8000)
 
 ![ BARIX IceCast Screenshot](img/BARIX_ICECAST_CONFIG.png ){: .BARIX} 
 
