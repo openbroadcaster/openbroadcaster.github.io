@@ -1,16 +1,23 @@
 - name: Open Broadcaster Server
-  github: https://github.com/openbroadcaster/OBServer
+  github: https://github.com/openbroadcaster/observer
   brief: Media Server Platform
 
 - name: Open Broadcaster Player
-  github: https://github.com/openbroadcaster/OBPlayer
+  github: https://github.com/openbroadcaster/obplayer
   brief: Playout Device
   
 - name: Drupal Radio
-  github: https://github.com/openbroadcaster/DrupalRadio
-  brief: Drupal Radio Modules 
+  github: https://github.com/openbroadcaster/drupal-broadcast-media
+  brief: Drupal Broadcast Media Modules 
 
 - name: eBusker
   github: https://github.com/openbroadcaster/eBuskerApp.git
   brief: Pitch Money to Artists in realtime
 
+- name: RDS
+  github: https://github.com/openbroadcaster/rds.git
+  brief: RDS Support for PIRA encoder hardware 
+    
+- name: Mapping
+  github: https://github.com/openbroadcaster/mapping.git
+  brief: Streetview map support 
