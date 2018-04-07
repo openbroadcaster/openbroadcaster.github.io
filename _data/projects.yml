@@ -6,7 +6,7 @@
   github: https://github.com/openbroadcaster/obplayer
   brief: Playout Device
   
-- name: Drupal Radio
+- name: Drupal Broadcast Media
   github: https://github.com/openbroadcaster/drupal-broadcast-media
   brief: Drupal Broadcast Media Modules 
 
@@ -20,4 +20,4 @@
     
 - name: Mapping
   github: https://github.com/openbroadcaster/mapping.git
-  brief: Streetview map support 
+  brief: Streetview map support for EAS and NOAA Alerts
