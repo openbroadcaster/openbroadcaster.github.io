@@ -14,10 +14,10 @@
   github: https://github.com/openbroadcaster/eBuskerApp.git
   brief: Pitch Money to Artists in realtime
 
-- name: RDS
+- name: Open Broadcaster RDS
   github: https://github.com/openbroadcaster/rds.git
   brief: RDS Support for PIRA encoder hardware 
     
-- name: Mapping
+- name: Open Broadcaster Mapping
   github: https://github.com/openbroadcaster/mapping.git
-  brief: Streetview map support for EAS and NOAA Alerts
+  brief: Infrastructure status EAS NAAD NOAA events
