@@ -72,6 +72,8 @@ permalink: /Links
 
 [AMARC](http://www.amarc.org/  "World Association of Community Radio Broadcasters")
 
+[CMFE](http://cmfe.eu/6s "Community Media Forum Europe")
+
 [Developing Radio Partners](http://developingradiopartners.org  "Developing Radio Partners")
 
 [Farm Radio](http://farmradio.org/  "Farm Radio International")
@@ -153,6 +155,8 @@ permalink: /Links
 ### USA 
 
 [Broadcasters' Desktop Resource](https://www.thebdr.net)
+
+[Broadcasting World](http://forums.broadcastingworld.com/ "Broadcasting World")
 
 [Hobby Broadcaster](https://www.hobbybroadcaster.net/)
 
