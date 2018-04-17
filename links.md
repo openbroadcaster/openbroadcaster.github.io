@@ -10,20 +10,21 @@ permalink: /Links
 
 #### Audio
 
-[Audacity](http://www.audacityteam.org/  "Audio Editing of Ogg, Flac and Wav")
+[Audacity](http://www.audacityteam.org/  "Audio Editing of Ogg, Flac and Wav") - Audio editor
 
-[Handbrake](https://handbrake.fr/  "Analyzing and Transcoding tool")
+[Handbrake](https://handbrake.fr/  "Analyzing and Transcoding tool") - Transcoding tool
 
-[Icecast](http://icecast.org/  "Streaming Media Server")
+[Icecast](http://icecast.org/  "Streaming Media Server") - Media server
 
-[VLC](http://videolan.org/  "All Purpose Multimedia Player")
+[VLC](http://videolan.org/  "All Purpose Multimedia Player") - Multimedia Player
 
 #### Utilities
 
-[Clonezilla](http://clonezilla.org/  "Disk cloning, Captures disk images, data recovery")
+[Clonezilla](http://clonezilla.org/  "Disk cloning, Captures disk images, data recovery") - Disk cloning
+
+[Etcher](https://etcher.io/ Writes Boot IMG ISO to SD Card) - IMG to SD Card
 
 [UNetbootin](https://unetbootin.github.io/  "Creates live USB systems and restore ISO")
-
 
 ## Community  Media Organizations
 
@@ -152,6 +153,8 @@ permalink: /Links
 ### USA 
 
 [Broadcasters' Desktop Resource](https://www.thebdr.net)
+
+[Hobby Broadcaster](https://www.hobbybroadcaster.net/)
 
 ### International
 
