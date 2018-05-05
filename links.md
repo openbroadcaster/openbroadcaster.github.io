@@ -150,6 +150,8 @@ permalink: /Links
 
 [Community Radio Fund of Canada](http://crfc-fcrc.ca)
 
+[Terry Reksten Memorial Fund](https://friendsofbcarchives.wordpress.com/terry-reksten-memorial-fund/)
+
 [Northern Aboriginal Broadcasting](http://canada.pch.gc.ca/eng/1456435422782)
 
 ### International
