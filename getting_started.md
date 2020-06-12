@@ -27,7 +27,7 @@ permalink: /Getting_Started
 #### 3. Change the default system user password
 {:.no_toc}
 
-On the initial run of machines with pre-installed versions of Open Broadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
+On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
 
 Enter the default password **'obsuser'** (twice to re-enter the password), followed by a new password (you will have to re-enter the new password). 
 
@@ -43,7 +43,7 @@ __If you forget or lose the password, you'll need to re-image the unit and start
 #### 4. Change the default Dashbord password
 {:.no_toc}
 
-Change the default **(admin/admin)** user and password from within the Player dashboard. Save and restart for passwords to take a effect.  Password manager will ask to update. 
+Change the default **(admin/admin)** user and password from within the Player dashboard. Save and restart for passwords to take a effect.  A RED screen will notifiy default passwords are still being used (security risk). 
 
 <a name="update"></a>
 
@@ -56,7 +56,7 @@ Updating the software ensures the most current version of the application is run
 
 ![Update Player Utilities](/img/updater.png ){: .updater} 
 
-__NOTE: Utilities for updating the Player will now be found on the Admin Tab of the [Dashboard](#dash).__ 
+__NOTE: Utilities for displaying current version and updating the Player are on the Admin Tab of the [Dashboard](#dash).__ 
 
 After updating the Player, restart the Player and refresh the browser (Tip: press F5 on the keyboard) to the load changes to the Dashboard layout.
 
