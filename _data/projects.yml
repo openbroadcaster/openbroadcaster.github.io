@@ -1,8 +1,8 @@
-- name: Open Broadcaster Server
+- name: OpenBroadcaster Server
   github: https://github.com/openbroadcaster/observer
   brief: Media Server Platform
 
-- name: Open Broadcaster Player
+- name: OpenBroadcaster Player
   github: https://github.com/openbroadcaster/obplayer
   brief: Playout Device
   
@@ -14,10 +14,10 @@
   github: https://github.com/openbroadcaster/eBuskerApp.git
   brief: Pitch Money to Artists in realtime
 
-- name: Open Broadcaster RDS
+- name: OpenBroadcaster RDS
   github: https://github.com/openbroadcaster/rds.git
   brief: RDS Support for PIRA encoder hardware 
     
-- name: Open Broadcaster Mapping
+- name: OpenBroadcaster Mapping
   github: https://github.com/openbroadcaster/mapping.git
   brief: Infrastructure status EAS NAAD NOAA events
