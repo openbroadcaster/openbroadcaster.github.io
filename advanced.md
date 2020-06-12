@@ -41,13 +41,11 @@ Applicable for; over the air TV, Cable TV and digital signage applications.  Nor
 
 • Configuring ICECAST server to detect new mount point of on demand stream
 
-Please  [Share](mailto:support@openbroadcaster.com) your experience and innovative solutions not listed here for injecting alerts.
-
 ### Reimaging the Player
 
 To restore the original factory configuration, obtain the disk image for your Player from your [Open Broadcaster Downloads] (https://openbroadcaster.com/account/user-downloads) user account.
 
-1. Use [UNETBOOTIN](https://unetbootin.github.io/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image. 
+1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image. 
 1. Insert the USB drive into the OBPlayer, and  power up the unit. The imaging process will start auotmatically. A progress bar will display. Be patient at 88% for a few minutes, it really is copying data. Observe activity on USB boot device.
 
 1. When the process has completed, remove the USB drive and reboot.
@@ -80,52 +78,14 @@ An inexpensive FM signal monitoring solution can be acheived using SDR (software
 
 The example below uses a software defined radio (SDR) receiver and a [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.com/broadcast-hardware).
 
-In order to use the USB DVB-T dongle, you first need to install the rtl-sdr software:
+When enabled in the OBPlayer dashboard, FM reception may be streamed over TCP to allow remote monitoring of the broadcast signal. An embedded FM Monitoring mountpoint displays in dashboard.
 
-~~~~
-sudo apt-get install rtl-sdr
-~~~~
+You should now be able to use SDR to remotely monitor the stream over the network
 
-The dvb\_usb\_rtl28xxu driver (for enabling TV reception), distributed with newer version of linux, gets loaded by default. Therefore, the driver must be unloaded for SDR to work, each time the dongle is inserted.
+Insert USB Dongle and attach an external FM antennae
 
-~~~~
-sudo rmmod dvb_usb_rtl_28xxu
-~~~~ 
+Enable FM Monitoring and restart OBPlayer dashboard.
 
-To prevent the default dvb_usb driver from being loaded on reboot, it can be blacklisted. Create the file (use sudo) in /etc/modprobe.d/blacklist-rtl.conf, add the following line :
+You will now be able to select and tune to a frequency with drop down menu.
 
-~~~~
-blacklist dvb_usb_rtl28xxu
-~~~~
-
-Now you can check if your USB device can be detected. Insert the USB dongle, and use the rtl command line utilities:
-
-~~~~
-rtl_test -t
-~~~~
-
-The FM reception may be streamed over TCP to allow remote monitoring of the broadcast signal, using the [rtl_tcp utility](http://sdr.osmocom.org/trac/wiki/rtl-sdr#Usage), where host_ip is the IP address of the host:
-
-~~~~
-rtl_tcp -a host_ip 
-~~~~
-
-For example _rtl\_tcp -a 10.0.0.106_
-
-You should now be able to use SDR to remotely monitor the stream over the network, using gqrx for example.
-
-~~~~
-sudo apt-get install gqrx-sdr
-~~~~
-
-Launch the program with the command:
-
-~~~~
-gqrx
-~~~~
-
-The first window to appear is for configuring the input source and audio output. Set the Device option to 'Other' and type 'rtl_tcp=host_ip:1234' into the Device String (host_ip is the IP address used in the previous step).
-
-Activate gqrx by clicking on the grey start/stop button just below the File menu. Noise should be heard from your speaker or head-phones, if not, check your audio volume control.
-
-To tune the received frequency move the mouse pointer on any of the frequency digits and use the mouse wheel to change it. Alternatively you can move the pointer and click on the upper or lower part of any digit or use the Up/Down key to change it.
+Enable recording and one hour off air logs will be available in Downloads
