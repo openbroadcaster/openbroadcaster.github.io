@@ -16,11 +16,11 @@ permalink: /Player_Training
 
 |Learning Outcomes
 |:-|:--|
-|Outline|How to manage and operate Open Broadcaster Player|
+|Outline|How to manage and operate OpenBroadcaster Player|
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 Hours|
-|Description|Manage and operate the Open Broadcaster Player.|
+|Description|Manage and operate the OpenBroadcaster Player.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
