@@ -62,57 +62,6 @@ After updating the Player, restart the Player and refresh the browser (Tip: pres
 
 <a name="player"></a>
 
-# Alert Player
-{:toc}
- 
-_(Initial setup and testing)_
-
-
-<a name="dash"></a>
-
-### Open the Dashboard 
-OBPlayer is configured using a secure web browser interface, available at [//localhost:23233]. A user/password is required to access the __Dashboard__ (the default is admin/admin). Configuration settings are grouped together on the tabbed pages of the __Dashboard__. 
-
-The __Status__ tab displays the current state of the Player.
-
-![ Dashboard Screenshot](/img/dashboard.png ){: .screenshot}
-
-For initial setup, disconnect any USB audio device __before__ powering up the unit, and use the external green speaker/headphone jack to monitor audio output located on the back of device. The *Enable Audio In* setting is disabled in the default configuration. If *Enable Source In*  or *Enable LED Sign*  are set on the A/V tab, disable them. 
-
-Open the Dashboard and configure __Emergency Alerts__ with a __Location Geocode__. Adjust __Primary and Secondary Languages__ if necessary. Generate a __Test Alert__. Try different text-to-speech (__TTS__) voices. Click the __Save__  button if changes are made to any Tab. The Dashboard must be restarted to load the new settings.
-
-To monitor real alerts, use a high level geocode for your province (Atlantic Canada=1; Quebec=2; Ontario=3; Prairies=4; British Columbia=5; Northern Canada=6). Enable the 'Play Moderately Severe Alerts' setting to recieve and play additional warning messages. 
-
-Be sure to reset the Location Geocode for a specific alerting locale before proceeding to [Operation](#operation). 
-
-
-### Set Alerting Locale
-{:toc}
-
-![ Emergency Alert Tab ](/img/alert_tab.png ){: .screenshot}
-
-1. Ensure Emergency Alerts are enabled on the [Emergency Alerts](#alerts) Tab.
-1. Enter the [SGC Geocode(s)](#sgc) for your alerting locale. A single geocode is required. Multiple geocodes may be used and seperated by commas eg: "6001036,6001018" would play alerts for both Tagish AND Haines Junction.  
-1. Use this [tool](http://support.openbroadcaster.com/player/#location-geocodes) to find the Geocode for your area. 
-1. NAAD messages from Pelmorex may be issued as a digital audio file and/or with an included graphic image. These will automatically be recieved and broadcast with our systems.  In the event the attached alert is missing or corrupted, relayed from Environment Canada or issued using a text source, your system will play the audio using built in TTS(text-to-speech) and display a full screen red slide with Description text and accompanying audio alerts.  Default setting will truncate the headline to the first sentence of a broadcast intrusive Alert message.  To play the entire CAP alert, including the entire lengthy description, disable the *Truncate Long Alert Messages* setting . Use the *Play Moderately Severe Alerts* setting to enable optional, non-broadcast intrusive alert messages, if desired.
-1. The default setting will continue to broadcast Alert messages at the *Alert Repeat Interval* until the Alert's expiry time is reached. Broadcast Intrusive alert messages are required to play at least once. To limit the number of repeats of an Alert message, change this setting.
-
-###  Generate A Test Alert
-{:toc}
-
-To confirm that Alert messages are working correctly, select one of the four sample messages (each one tests a valid CAP message format):
-
-1. Simple Test. Generates an internal CAP-CP formated message and plays using TTS
-1. Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
-1. External Audio Test. Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
-1. Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording. Requires 'Moderately Severe Alerts' to be enabled.
-
-_NOTE English and French are presently the only supported language for on board testing with Audio and Visual alerting_ 
-
-Click `Inject` to add the message to the Active Alerts queue;  a 20 second countdown begins. If another incoming message is received, the countdown timer is rest at 20 seconds. Once the countdown reaches 0 secs, queued messages will play through the active audio output.
-
-<br/>
-
 # OBServer
 __Open Box__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. An __Open Box__ installation contains both __Server__ and __Player__ components of the [OpenBroadcaster framework](https://openbroadcaster.com/openbox) as a stand alone applicance.
 
