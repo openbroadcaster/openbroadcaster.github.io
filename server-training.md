@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Server Training
-permalink: /Server_Training
+permalink: /Server-Training
 ---
 ## Server Training Syllabus
 {:.no_toc}
