@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Getting_Started
-permalink: /Getting_Started
+permalink: /Getting-Started
 ---
 
 ## Setup Guide
