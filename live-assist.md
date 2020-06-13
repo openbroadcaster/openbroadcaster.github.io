@@ -1,7 +1,7 @@
 ---
 layout: default
 title: live-assist
-permalink: /Live-Assist
+permalink: /LIVE-Assist
 ---
 
 live assist interface
