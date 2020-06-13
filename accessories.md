@@ -246,21 +246,6 @@ Mount point will show up in [//localhost:8000]
 
 ![ BARIX IceCast Screenshot](img/BARIX_ICECAST_CONFIG.png ){: .BARIX} 
 
-## CAP Alerts with Barix Exstreamer
-{:toc}
-
-OBPlayer creates an on demand IceCast mount point when an alert is present with a Barix Exstreamer receiver at transmitter to play CAP alerts.  Stations normally will be supplying audio to Exstreamer at transmitter.  Barix will be configured to detect and automatically switch to the generated alert mount point the new mount point stream, cut over and play alert, switch back to normal programming when alert stops. .
-
-__Prerequisites__
-
-In order to make the priority streaming work, so that OBPlayer only outputs the alerts and nothing else, disable the scheduler, fallback player, audio in, and the test signal.
-
-__Configure OBPlayer__
-
-__Streaming Tab__ Create a mount point on local machine’s IceCast server. Exstreamer will switch to the generated alert mount point and switch back when it stops. There is a minor delay in the switching with Barix Exstreamer. Set the lead-in delay to 1 second and the lead-out delay to 5 seconds to catch the whole alert cycle without having too much delay before and after. 
-
-__Barix>Configuration__ Set the first URL as priority for the alert stream.  Second URL is set to the normal stream coming from the studio. 
-
 ## IceCast Streaming Server
 {:.no_toc}
 
