@@ -206,33 +206,6 @@ Disable Use SonicIP (don't want IP spoken over air every reboot)
 
 <a name="Instreamer"></a>
 
-## Instreamer (Encoder)
-{:toc}
-
-Setup manual IP for Barix device. Use info that was setup in network, include DNS info
-
-Save, Restart and login to new Static IP
-
-Change password and set in Security
-
-Test and save password in browser
-
-Set IP Streaming info to ICECast
-
-Set IP to send to of the Icecast Server on LS box
-
-//192.168.123.10:8000/CALLSIGN_LIVE
-
-Use password ICECast server is expecting to hear.
-
-Use MP3 Codec
-
-Select VBR (CBR Will not work)
-
-Take screenshots of all config pages
-
-BARIX ICECAST CONFIG 1000px.png 
-
 ## OBPlayer ICEcast mountpoint
 {:toc}
 
