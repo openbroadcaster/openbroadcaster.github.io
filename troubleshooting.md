@@ -69,6 +69,15 @@ Confirm/Re-enter passwords and Device to match player in Player Manager in Serve
 
 Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
 
+#### __Backend Troubleshooting__
+
+Files containing user and machine settings are located in the .openbroadcaster folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.
+
+The __data.db__ contains a copy of media scheduled for the period identified by the sync buffer (default 24 hours). `Delete data.db and Restart` to purge the Player and force a refresh of the database, schedules and media according to the current sync settings. Useful when changing backend services.
+
+__settings.db__ contain the player settings in an sqlite db.  Lost passwords may be recovered by editing this file.
+
+
 ## Audio
 
 ### Test Signal 
@@ -103,6 +112,18 @@ If <span style="color: darkred">no audio output</span> is produced, check the St
 Disable the test signal once audio setup is working. Enable __Audio In Source__, if necessary.
 
 <br /><a name="mixer"></a>
+
+## __Advanced Topics__
+{:.toc}
+
+### __Audio Settings__
+{:.toc}
+
+<a name="pulse"></a>
+
+Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players. [Pulse](#pulse) and [JACK](#jack) are both supported audio modes, either will produce sound quality suitable for broadcast.
+
+Setting __Audio Mode__ to Pulse and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
 
 ### Adjusting Audio Levels 
 
@@ -173,3 +194,4 @@ To open the jack mixer control in headless mode), use the command:
 
 ## Video
 
+Select video system in drop down menu in >Video>Sources.  Restart service.   When the new video system is enabled, it will automatically detect the video capabilities of the onboard detected video processing.
