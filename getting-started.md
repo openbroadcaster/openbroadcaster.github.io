@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting_Started
+title: Getting-Started
 permalink: /Getting-Started
 ---
 
