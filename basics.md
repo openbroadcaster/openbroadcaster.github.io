@@ -41,12 +41,6 @@ Use Remote mode for testing. Save.
  
 Restart Player app. Dashboard will take you back to Status page.
 
-- Blue sync Message
-- Gold for warnings
-- Green connection messages
-- Magenta connecting to NAAD Alerts feed and when playing an alert
-- Orange while downloading media 
-
 Finally observe **now playing** message of current media item. 
 
 You will be able to hear audio coming out of Pulse Audio (used as default)
@@ -72,4 +66,3 @@ There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) 
 
 ![Installed Modules](/img/OB_Modules_Installed.png ){: .screen shot}
 
-**Media** (under development) - Provides a download link for Podcast assembler media items.
