@@ -1,0 +1,42 @@
+# embed-code-snippets #
+
+Easily create galleries and filters. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
+Includes a HLS HTML5 Streaming media player that supports forward\backward navigation with Album Art and pop up Metadata info button
+Turn on and off asset access in the back end with the Public field custom actions.
+OpenBroadcaster Embed Instructions
+## Installation ## 
+
+Add the following code just before the </body> end tag.
+
+```
+<script id="ob-stream-script">
+  obstream = {};
+  obstream.url = "https://ob.example.com"
+  obstream.itemSortBy = "title";
+  obstream.itemSortDir = "asc";
+  obstream.itemDisplay = "title";
+  var newScript = document.createElement("script");
+  newScript.defer = true;
+  newScript.src = "https://ob.example.com/tools/stream/stream.js?v="+Date.now();
+  var thisScript = document.getElementById('ob-stream-script');
+  thisScript.parentNode.insertBefore(newScript, thisScript);
+</script>
+
+```
+Update obstream.url and newScript.src to point to your OpenBroadcaster installation.
+
+__Options__
+
+- data-category: Category ID to display all items within a category.
+- data-genre: Genre ID to display all items within a genre (sub-category).
+- data-media: Media ID to display a single media item.
+- data-modal-player: View media in a modal window.
+- data-grid: Display items in a grid format rather than a list format.
+- data-hide-download: Hide the download link.
+- data-hide-play: Hide the play link (click thumbnail to view still possible).
+- data-metadata: List of extra metadata to display using metadata link (uses JSON, see example 3).
+- data-genre-filter: Display genre (sub-category) filter.
+- data-name-filter: Display name filter.
+- data-limit: Number of items to limit per request.
+- data-offset: Number of items to skip before load (can be used with data-limit for pagination).
+- data-more: Load more items automatically ("auto") or with link ("link").
