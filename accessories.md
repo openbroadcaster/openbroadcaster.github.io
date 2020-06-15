@@ -145,7 +145,7 @@ Changes required for default settings.
 
 1. __Audio Source>__ Uncheck `Enable Audio In Source`
 
-2. __Emergency Alerts>Advanced Settings__ Check `Trigger RS-232 DTR on Alerts`
+2. __Emergency Alerts>Advanced Settings__ Enable `Trigger RS-232 DTR on Alert signal` RS-232 Device should be set to serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
 __Testing__
 
