@@ -16,7 +16,6 @@ OpenBroadcaster Embed Instructions
 
 Add the following code just before the </body> end tag.
 
-```
 <script id="ob-stream-script">
   obstream = {};
   obstream.url = "https://ob.example.com"
@@ -30,7 +29,6 @@ Add the following code just before the </body> end tag.
   thisScript.parentNode.insertBefore(newScript, thisScript);
 </script>
 
-```
 Update obstream.url and newScript.src to point to your OpenBroadcaster installation.
 
 __Options__
