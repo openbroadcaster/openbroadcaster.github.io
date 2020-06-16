@@ -13,7 +13,7 @@ permalink: /Getting-Started
 ## BEFORE YOU BEGIN
 {:toc}
 
-Applies to supported hardware appliances 4X - 5X series; Media Player, Alert Player and OpenBox.
+Applies to supported hardware appliances 4X - 5X series; Media Player, Alert Player and OpenBox. __Open Box__ installation contains both __OBServer__ and __OBPlayer__ components of the [OpenBroadcaster framework](https://openbroadcaster.com/openbox) as a stand alone applicance.
 
 #### 1. Connect the components
 {:.no_toc}
@@ -58,29 +58,13 @@ Updating the software ensures the most current version of the application is run
 
 ![Update Player Utilities](/img/updater.png ){: .updater} 
 
-__NOTE: Utilities for displaying current version and updating the Player are on the Admin Tab of the [Dashboard](#dash).__ 
+__NOTE: Utilities for displaying current version and updating the Player are on the Admin Page of the [Dashboard](#dash).__ 
 
 After updating the Player, restart the Player to the load changes to the Dashboard layout.
 
 <a name="player"></a>
 
-# OBServer
 
-__Open Box__ installation contains both __OBServer__ and __OBPlayer__ components of the [OpenBroadcaster framework](https://openbroadcaster.com/openbox) as a stand alone applicance.
-
-### Account Settings
-Login to the [OpenBroadcaster Server] application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
-
-Using the `account` menu to access the `admin` account settings:
-
-1. Change the `admin` user password.
- * The `admin` user has access to all media, playlists and schedules. As new users are added, they are assigned to a group with the appropriate set of permissions. For example, a `guest` user may browse, but not add/edit/delete items in the media library.
-1. Set the `admin` user email
- * When a playlog, schedule or media sync hasn't been received  from a remote Player in 60 minutes, an advisory email will be sent to this address from the server indicating there is a problem that needs attention.
-1. Set language preferences 
- * User menus, form fields and system messages are displayed in English by default. Available language options are displayed in a dropdown menu. These settings are __not__ system-wide. Each user may choose their own language settings.
-1. Change Theme and Font 
- * Background/foreground color and font options are designed to enhance accessibility of the interface using bright/dark contrast settings or using dyslexia friendly fonts. These settings are __not__ system-wide. Each user may choose their own theme and font settings.
 
 
 
