@@ -195,3 +195,13 @@ To open the jack mixer control in headless mode), use the command:
 ## Video
 
 Select video system in drop down menu in >Video>Sources.  Restart service.   When the new video system is enabled, it will automatically detect the video capabilities of the onboard detected video processing.
+
+## Reimaging the Player/Server
+
+To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/account/user-downloads) user account.
+
+1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image.
+
+1. Insert the USB drive into the OBPlayer, and  power up the unit. The imaging process will start auotmatically. A progress bar will display. Be patient at 88% for a few minutes, it really is copying data. Observe activity on USB boot device.
+
+1. When the process has completed, remove the USB drive and reboot.
