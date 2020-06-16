@@ -93,7 +93,7 @@ In-line attenuators are available [Here](https://openbroadcaster.com/catalog/).
  
 ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
 
-Instructions for DIY "H" or "T" pads may be found on the [DIY-Maker-Space-Broadcast-Projects](http://support.openbroadcaster.com/diy-maker-space-broadcast-projects).
+Instructions for DIY "H" or "T" pads may be found on the [DIY-Broadcast-Projects](http://support.openbroadcaster.com/diy-broadcast-projects).
 
 <a name="phase"></a>
 
