@@ -57,7 +57,7 @@ In this example both obplayer and Icecast are highlighted
 
 ![ PS FAX Screenshot](/img/ps-fax.png ){: .psfax}
 
-#### Sync
+### Sync
 
 Ensure the player device is able to access the internet Terminal "ping google.com" and can reach the management server as specified in sync settings under the Sync tab. The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" Do not forget to include the trailing /remote.php.
 
@@ -69,7 +69,7 @@ Confirm/Re-enter passwords and Device to match player in Player Manager in Serve
 
 Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
 
-#### __Backend Troubleshooting__
+## __Backend Troubleshooting__
 
 Files containing user and machine settings are located in the .openbroadcaster folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.
 
@@ -77,6 +77,29 @@ The __data.db__ contains a copy of media scheduled for the period identified by 
 
 __settings.db__ contain the player settings in an sqlite db.  Lost passwords may be recovered by editing this file.
 
+### Command Line Interface
+
+Open local `Terminal` or ssh into target machine. Cd to dir where player files are /usr/share/obplayer
+
+__Do not run as root or Sudo__
+
+Script bash "obplayer_check" starts the player and checks for existing instances and not start if already running
+
+Script bash "obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
+
+Add this switches to for extra functionality
+
+obplayer -d prints log messages to console
+
+obplayer -f or obplayer--fullscreen on startup. (obplayer_loop -f also works)
+
+obplayer -h help (displays command-line options)
+
+obplayer -H starts headless, no desktop GUI
+
+obplayer -m starts screen minimized
+
+obplayer -r restarts fresh, clearing out Playlist\Schedule\Media cache
 
 ## Audio
 
