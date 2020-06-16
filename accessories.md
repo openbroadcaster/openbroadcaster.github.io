@@ -113,10 +113,17 @@ The USB-XLR adaptor introduces a signal delay of ~ 0.5 sec. To overcome latency 
 
 <a name="relay"></a>
 
-## Mechanical RS232 Switching Relay
+## Mechanical RS232 GPIO Trigger Switching Relay
 {:toc}
 
-Switching relay is not dependant on the Alert Player for functioning. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed). Configuration of the Alert Player to issue GPIO DTR signals to the relay are covered in [Getting Started](http://support.openbroadcaster.com/player#gpio). 
+GPIO Trigger with RS-232 DTR on CAP-CP Alerts. When enabled and a matching CAP message is broadcast, an alert cycle starts, the serial port will be opened and the DTR line will be set. After the alert cycle has completed, the DTR line will be cleared and a relay will be closed. In the event of power failure continues to pass thru the source signal (however, relays require power to be able to switch to the Alert feed).
+
+"Lead-In Delay (in seconds)". This is the number of seconds of silence that will be inserted at the beginning of each alert cycle before the first alert starts playing, but after the DTR/icecast stream notifies that an alert cycle has started. The default is 1 second. Always leave it at 1 or greater. Setting this to 5 or so seconds will give time for buffering to occur.
+
+"Trigger RS-232 DTR on Alerts" checkbox, when checked, will show the "RS-232 Device Filename" option. The device filename should be something like /dev/ttyS0, or /dev/ttyUSB0 if using a USB-to-Serial adapter. For initial setup, disable all RS-232 ports so there is only one available.
+
+The "Trigger Icecast Stream on Alerts" setting will start and stop the icecast streamer module (in the streaming tab) the same as the serial port. In addition to this setting, you must also uncheck the "Play Stream on Startup" option on the streaming tab, or else the streamer will start playing when obplayer starts.
+
 
 ![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
 
