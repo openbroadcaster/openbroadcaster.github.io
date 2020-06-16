@@ -10,7 +10,7 @@ Advanced Operations
 
 ## PlayLogs
 
-Generated with server [Player Monitoring](http://support.openbroadcaster.com/server/#logging) or the [Reports](http://support.openbroadcaster.com/reports/) module.
+Generated with server [Player Monitoring](http://support.openbroadcaster.com/server/#logging-and-monitoring) or the [Reports](http://support.openbroadcaster.com/reports/) module.
 
 ## Audio Logging
 
