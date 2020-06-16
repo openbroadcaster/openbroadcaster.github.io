@@ -4,7 +4,7 @@ title: Drupal
 permalink: /Drupal
 ---
 
-Initial Setup
+Drupal Modules
 
 * TOC
 {:toc}
