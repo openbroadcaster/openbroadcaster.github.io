@@ -16,9 +16,9 @@ Generated with server [Player Monitoring](http://support.openbroadcaster.com/ser
 
 ![ Audio Logging](img/audio-logging.png ){: .audio_logging} 
 
-Enable `Audio Logging` from the sources tab. 
+Enable `Audio Logging` from the `Sources` page. 
 
-Audio logs will be automatically created in one hour segments. To access these audio files, click the `Downloads` button on the Status tab from the player's dashboard that are located in ./openbroadcaster/Audio-Logs
+Audio logs will be automatically created in one hour segments. To access these audio files, click the `Downloads` button on the Status page from the player's dashboard or access from `./openbroadcaster/Audio-Logs`
 
 <br/>
 
@@ -36,15 +36,17 @@ Most radio stations have a requirement from regulators to maintain off air recor
 
 Users are able to record and capture off-air audio logs that can be used for CRTC logging purposes or reused as a podcast, several ways
 
+__Pulse must be the audio mode for your system.__
+
 ## Onboard Recording with Line in ###
 
 ![ Input source](img/input_source.png ){: .input_source} 
 
 Use the onboard "line-in" of sound card, plug an analog FM tuner, monitoring your stations signal. 
 
-__Pulse must be the audio mode for your system.__
-
 Select Input source to record displaying USB XLR device
+
+One hour off air recordings are available in `Dashboard>Downloads` or `./openbroadcaster/linein-logs`
 
 <br/>
 
