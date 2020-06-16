@@ -24,8 +24,6 @@ permalink: /Links
 
 [Etcher](https://etcher.io/ "Writes Boot IMG ISO to SD Card") - IMG to SD Card
 
-[UNetbootin](https://unetbootin.github.io/  "Creates live USB systems and restore ISO")
-
 ## Community  Media Organizations
 
 ### Umbrella groups of community broadcasters
@@ -36,13 +34,17 @@ permalink: /Links
 
 [NCRA](http://ncra.ca/ "National Community Radio Association")
 
-[CACTUS](http://cactus.comtv.org/ "Canadian Association of Community Television Users and Stations")
-
-[WAAB](http://www.waab.ca/ "The Western Association of Aboriginal Broadcasters") 
+[CACTUS](https://www.cactusmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
 #### Australia
 
 [CBBA](https://cbaa.org.au/ "Community Broadcasting Association of Australia")
+
+#### Bangladesh
+
+[BCRA](https://www.bcrabd.org/ "Bangladesh Community Radio Association")
+
+[BCRN](https://bnnrc.net/ "BCRN – Bangladesh Community Radio Network")
 
 #### Nepal
 
@@ -70,9 +72,11 @@ permalink: /Links
 
 #### International 
 
-[AMARC](http://www.amarc.org/  "World Association of Community Radio Broadcasters")
+[AMARC Europe](https://amarceurope.eu/ "World Association of Community Radio Broadcasters")
 
-[CMFE](http://cmfe.eu/6s "Community Media Forum Europe")
+[AMARC Asia pacific]("https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
+
+[CMFE](http://cmfe.eu/ "Community Media Forum Europe")
 
 [Developing Radio Partners](http://developingradiopartners.org  "Developing Radio Partners")
 
@@ -128,13 +132,13 @@ permalink: /Links
 
 ### Canada
 
-[National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-eng.aspx)
+[National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx
 
-[Pelmorex](https://www.theweathernetwork.com/ca  "Canada’s NAAD distributing CAP-CP alerts")
+[Pelmorex](https://pelmorex.com  "Canada’s NAAD distributing CAP-CP alerts")
 
 ### USA
 
-[HomeLand Security](https://dhs.gov/office-emergency-communications "Coordinates emergency communications planning, preparation and evaluation")
+[HomeLand Security](https://www.cisa.gov/emergency-communications-division "Coordinates emergency communications planning, preparation and evaluation")
 
 ## Funders
 
@@ -152,7 +156,7 @@ permalink: /Links
 
 [Terry Reksten Memorial Fund](https://friendsofbcarchives.wordpress.com/terry-reksten-memorial-fund/)
 
-[Northern Aboriginal Broadcasting](http://canada.pch.gc.ca/eng/1456435422782)
+[Northern Aboriginal Broadcasting](https://www.canada.ca/en/canadian-heritage/services/funding/aboriginal-peoples/northern-broadcasting.html)
 
 ### International
 
@@ -164,7 +168,7 @@ permalink: /Links
 
 [Air Checker](http://www.airchecker.ca)
 
-[Broadcast Dialogue](https://www.broadcastdialogue.ca)
+[Broadcast Dialogue](https://broadcastdialogue.com)
 
 ### USA 
 
