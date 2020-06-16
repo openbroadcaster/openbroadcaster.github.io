@@ -14,19 +14,19 @@ Generated with server [Player Monitoring](http://support.openbroadcaster.com/ser
 
 ## Audio Logging
 
+![ Audio Logging](img/audio_logging.png ){: .audio_logging} 
+
 Enable `Audio Logging` from the sources tab. 
 
 Audio logs will be automatically created in one hour segments. To access these audio files, click the `Downloads` button on the Status tab from the player's dashboard that are located in ./openbroadcaster/Audio-Logs
-
-![ Audio Logging](img/audio_logging.png ){: .audio_logging} 
 
 <br/>
 
 ### Silence Detection Recording
 
-Automatic Audio Input Recording adjusting the sensitivity of present signals from Line In source
-
 ![ Audio Input Recording](img/audio-input-recording.png ){: .input_source} 
+
+Automatic Audio Input Recording adjusting the sensitivity of present signals from Line In source
 
 <br/>
 
@@ -38,11 +38,11 @@ Users are able to record and capture off-air audio logs that can be used for CRT
 
 ### Onboard Line in ###
 
+![ Input source](img/input_source.png ){: .input_source} 
+
 Use the onboard "line-in" of sound card, plug an analog FM tuner, monitoring your stations signal. 
 
 __Pulse must be the audio mode for your system.__
-
-![ Input source](img/input_source.png ){: .input_source} 
 
 Select Input source to record displaying USB XLR device
 
@@ -68,6 +68,9 @@ One hour off air recordings are available in `Dashboard>Downloads` or `./openbro
 
 When SDR radio is enabled, a local mount point is created in dashboard media player and local icecast server.
 
-__Pro Tip__ Gstreamer Source to record. Go to command line of local box and type `pulsemixer` Select the Input source, press enter to select as default.
+### Pulse Mixer
 
 ![ Pulse Mixer Monitor](img/pulse_mixer.png ){: .pulse_mixer}
+
+__Pro Tip__ Gstreamer Source to record. Go to command line of local box and type `pulsemixer` Select the Input source, press enter to select as default.
+
