@@ -8,7 +8,7 @@ Embed Code Snippets
 * TOC
 {:toc}
 
-#Embed Code Snippets#
+# Embed Code Snippets#
 
 Easily create galleries and filters. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
 Includes a HLS HTML5 Streaming media player that supports forward\backward navigation with Album Art and pop up Metadata info button
