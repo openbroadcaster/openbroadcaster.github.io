@@ -8,7 +8,7 @@ Embed Code Snippets
 * TOC
 {:toc}
 
-# Embed Code Snippets#
+# Embed Code Snippets #
 
 Easily create galleries and filters. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
 Includes a HLS HTML5 Streaming media player that supports forward\backward navigation with Album Art and pop up Metadata info button
@@ -19,7 +19,6 @@ OpenBroadcaster Embed Instructions
 Add the following code just before the </body> end tag.
 
 ```
-
 <script id="ob-stream-script">
   obstream = {};
   obstream.url = "https://ob.example.com"
@@ -32,7 +31,6 @@ Add the following code just before the </body> end tag.
   var thisScript = document.getElementById('ob-stream-script');
   thisScript.parentNode.insertBefore(newScript, thisScript);
 </script>
-
 ```
 
 Update obstream.url and newScript.src to point to your OpenBroadcaster installation.
