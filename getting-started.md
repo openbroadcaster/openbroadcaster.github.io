@@ -4,7 +4,7 @@ title: Getting-Started
 permalink: /Getting-Started
 ---
 
-## Setup Guide
+## Getting-Started
 {:.no_toc}
 
 * TOC
@@ -29,7 +29,7 @@ Applies to supported hardware appliances 4X - 5X series; Media Player, Alert Pla
 #### 3. Change the default system user password
 {:.no_toc}
 
-On the initial run of machines with pre-installed versions of OpenBroadcaster, the user must change the factory default password. Once the password has been set, the user account will login automatically. 
+On the initial run of machines with pre-installed versions of OpenBroadcaster, the user is forced to change the factory default password. Once the password has been set, the user account will login automatically. 
 
 Enter the default password **'obsuser'** (twice to re-enter the password), followed by a new password (you will have to re-enter the new password). 
 
@@ -65,7 +65,8 @@ After updating the Player, restart the Player to the load changes to the Dashboa
 <a name="player"></a>
 
 # OBServer
-__OBServer__ is a media management host that provides scheduled media to properly configured remote __Player__ devices. An __Open Box__ installation contains both __OBServer__ and __OBPlayer__ components of the [OpenBroadcaster framework](https://openbroadcaster.com/openbox) as a stand alone applicance.
+
+__Open Box__ installation contains both __OBServer__ and __OBPlayer__ components of the [OpenBroadcaster framework](https://openbroadcaster.com/openbox) as a stand alone applicance.
 
 ### Account Settings
 Login to the [OpenBroadcaster Server] application as the `admin` user (default password is 'admin'). Menu options are found along the bottom of the page. 
