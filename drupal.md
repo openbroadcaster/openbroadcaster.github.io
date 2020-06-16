@@ -13,7 +13,7 @@ Initial Setup
 
 ## Drupal Radio Modules
 
-There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) for Drupal 7 CMS.
+There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) and a custom radio Theme template for Drupal 7.X CMS.
 
 **API Bridge** - Takes info from the backend of an OBServer and presents this for display on a front end Drupal site.  
 
@@ -25,8 +25,16 @@ Includes information that can be placed in a block; `Now playing`, `What played 
 
 ![Streaming Module](/img/OB_Streaming_Module.png ){: .screen shot} 
 
+**Schedule** - Automatically updates the OBServer schedule and show information, dynamically displays to DJ profile and associates show graphics, start and stop times automatically on Front Page of Drupal site.
 
-**Schedule** - Automatically updates the OBServer schedule information, links to DJ profile and associates show graphics.
+`Content>Add New Content>Program` Program name __MUST BE IDENTICAL__ to the Show\PL name on media server. When both are identical, they become associated so that when an adjustment is done on scheduler the metadata will sync with the program and and graphic will automatically be updated.
+
+__User Group Permissions__
+
+Host - Add, Update and Delete Program Content.
+
+Content Manager - Add users and assign them to groups. Modify and Delete Programs
 
 ![Installed Modules](/img/OB_Modules_Installed.png ){: .screen shot}
+
 
