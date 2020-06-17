@@ -3,16 +3,15 @@ layout: default
 title: Logging
 permalink: /Logging
 ---
-Advanced Operations
-
+Logging and Monitoring
 * TOC
 {:toc}
 
-# PlayLogs
+# Server Play Logs
 
-Generated with server [Player Monitoring](http://support.openbroadcaster.com/server/#logging-and-monitoring) or the [Reports](http://support.openbroadcaster.com/reports/) module.
+Basic text log reports in CSV format for players are generated with server [Player Monitoring](http://support.openbroadcaster.com/server/#logging-and-monitoring) on demand.  More detailed information using the [Reports](http://support.openbroadcaster.com/reports/) module. 
 
-# Audio Logging
+# Player Audio Logging
 
 ![ Audio Logging](img/audio-logging.png ){: .audio_logging} 
 
@@ -38,13 +37,13 @@ Users are able to record and capture off-air audio logs that can be used for CRT
 
 __Pulse must be the audio mode for your system.__
 
-# Onboard Recording with Line in 
+# Onboard Recording with Line in as source
 
 ![ Input source](img/input_source.png ){: .input_source} 
 
-Use the onboard "line-in" of sound card, plug an analog FM tuner, monitoring your stations signal. 
+Use the onboard "line-in" of sound card, plug an analog FM tuner, monitor your stations signal. 
 
-Select Input source to record displaying USB XLR device
+Select Input source to record (ie USB XLR device)
 
 One hour off air recordings are available in `Dashboard>Downloads` or `./openbroadcaster/linein-logs`
 
@@ -66,7 +65,7 @@ The example below uses a  [NooElec NESDR Nano RTL2832U receiver](https://openbro
 
 One hour off air recordings are available in `Dashboard>Downloads` or `./openbroadcaster/off-air-recordings`
 
-# Monitoring Over the Air FM Transmission
+# Monitoring Over the Air FM Transmission with SDR
 
 When SDR radio is enabled, a local mount point is created in HTML5 pop-up dashboard media player and local icecast server.
 
