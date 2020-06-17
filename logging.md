@@ -38,7 +38,7 @@ Users are able to record and capture off-air audio logs that can be used for CRT
 
 __Pulse must be the audio mode for your system.__
 
-## Onboard Recording with Line in ###
+# Onboard Recording with Line in 
 
 ![ Input source](img/input_source.png ){: .input_source} 
 
@@ -66,11 +66,13 @@ The example below uses a  [NooElec NESDR Nano RTL2832U receiver](https://openbro
 
 One hour off air recordings are available in `Dashboard>Downloads` or `./openbroadcaster/off-air-recordings`
 
-## Monitoring Over the Air Monitoring FM Transmission
+# Monitoring Over the Air FM Transmission
 
-When SDR radio is enabled, a local mount point is created in dashboard media player and local icecast server.
+When SDR radio is enabled, a local mount point is created in HTML5 pop-up dashboard media player and local icecast server.
 
-### Pulse Mixer
+<br/>
+
+## Pulse Mixer
 
 ![ Pulse Mixer Monitor](img/pulse_mixer.png ){: .pulse_mixer}
 
