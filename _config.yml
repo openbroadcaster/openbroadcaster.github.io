@@ -4,5 +4,10 @@ exclude:
 project_title: foo-bar
 # Google services
 google_analytics: UA-56313059-3
+
+
+url: "http://support.openbroadcaster.com" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
 gems:
   - jekyll-sitemap
