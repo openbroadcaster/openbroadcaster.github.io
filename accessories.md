@@ -225,22 +225,3 @@ Enable __Streaming__ Save. Restart.
 Mount point will show up in [//localhost:8000]
 
 ![ BARIX IceCast Screenshot](img/BARIX_ICECAST_CONFIG.png ){: .BARIX} 
-
-## IceCast Streaming Server
-{:.no_toc}
-
-To allow the stream coming from OBPlayer set incoming password in local IceCast server editing config file.  This will be the same password that was setup in the dashboard. 
-
-~~~~
-sudo nano /etc/icecast2/icecast.xml
-~~~~
-        Sources log in with username 'source'
-        <source-password>hackme</source-password>
-        Relays log in with username 'relay'
-        <relay-password>hackme</relay-password>
-
-        Admin logs in with the username given below
-        <admin-user>admin</admin-user>
-        <admin-password>hackme</admin-password>
-
-Restart computer for IceCast service to enable saved settings or restart ICECast service from CLI
