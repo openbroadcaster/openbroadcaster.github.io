@@ -75,7 +75,11 @@ Files containing user and machine settings are located in the .openbroadcaster f
 
 The __data.db__ contains a copy of media scheduled for the period identified by the sync buffer (default 24 hours). `Delete data.db and Restart` to purge the Player and force a refresh of the database, schedules and media according to the current sync settings. Useful when changing backend services.
 
-__settings.db__ contain the player settings in an sqlite db.  Lost passwords may be recovered by editing this file.
+__settings.db__ contain the player settings in an sqlite db.  
+
+### Resetting Lost or Admin Password
+
+To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
 
 ### Command Line Interface
 
@@ -100,6 +104,8 @@ obplayer -H starts headless, no desktop GUI
 obplayer -m starts screen minimized
 
 obplayer -r restarts fresh, clearing out Playlist\Schedule\Media cache
+
+obplayer --disable-updater disables the OS updater
 
 ## Audio
 
