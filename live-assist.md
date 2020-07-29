@@ -8,9 +8,13 @@ permalink: /LIVE-Assist
 
 Mobile HTML5 Interface of OBPlayer
 
-Accessed at IP and Port
+Accessed at IP and Port 23456 (default)
 
 	http://IP_of_the_OBPlayer_at_Studio:23456
+
+Enable `Live Assist` in Dashboard. Save and restart player to make active.
+
+![Live Assist Dashboard](/img/LA_Dashboard.png){: .screen shot} 
 
 ### Screen Elements
 {:.no_toc}
