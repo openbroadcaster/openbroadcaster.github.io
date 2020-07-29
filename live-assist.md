@@ -21,9 +21,9 @@ Enable `Live Assist` in Dashboard. Save and restart player to make active.
 
 **Hot Buttons**
 
-![Hot Buttons](/img/hot_buttons.png){: .screen shot} 
+Created in Server as Live Assist PL (consisting of media items to appear as buttons) and dragged to bottom of Play List. Each PL added creates a column of buttons in LA interface.
 
-Created in Server as PL (consisting of media items to appear as buttons) and dragged to bottom of LA Play List. Each PL added creates a column of buttons in LA interface.
+![Hot Buttons](/img/hot_buttons.png){: .screen shot} 
 
 <br/>
 
