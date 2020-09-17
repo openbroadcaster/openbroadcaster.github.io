@@ -17,15 +17,14 @@ After install, log in as user with Admin privileges and Run updates.
     http://Your_Server_IP/updates 
 ~~~~
 
-Fix for OB Sites in config
-
-add a FQDN (Fully Qualified Domain Name) 
+Fix for OB Sites in config by adding a FQDN (Fully Qualified Domain Name) 
 
 ~~~~
     nano /etc/hosts 
 ~~~~
 
 "This file format is not supported" and "Cannot upload media"
+
 ~~~~
     ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
 
@@ -140,7 +139,7 @@ Use the __test signal__ to confirm your audio setup is working correctly.
 
 To test the __on-board__ sound card:
 
-1. Disconnect USB adapter.
+1. Disconnect any USB adapter.
 1. Connect headphones or studio monitor to 1/8" audio output.
 1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
 1. On the [Sources](#Sources) Tab disable Audio In Source
@@ -149,7 +148,7 @@ To test the __on-board__ sound card:
 
 To test an external __USB__ sound card:
 
-1. Connect the USB adapter.
+1. Connect any USB adapter.
 1. Connect the XLR outputs to sound board, amp or studio monitors.
 1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
 1. On the [Sources](#Sources) Tab disable Audio In Source
@@ -252,7 +251,7 @@ Select video system in drop down menu in >Video>Sources.  Restart service.   Whe
 
 ## Reimaging the Player/Server
 
-To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/account/user-downloads) user account.
+To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/user-downloads) user account.
 
 1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image.
 
