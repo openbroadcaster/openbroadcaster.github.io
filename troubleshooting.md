@@ -11,7 +11,7 @@ permalink: /Troubleshooting
 
 ## Post Installation Server Troubleshooting ##
 
-After install, log in as user with Admin privileges and Run updates as Admin user at
+After install, log in as user with Admin privileges and Run updates.
 
 ~~~~
     http://Your_Server_IP/updates 
@@ -19,7 +19,7 @@ After install, log in as user with Admin privileges and Run updates as Admin use
 
 Fix for OB Sites in config
 
-add a FQDN (Fully Qualified Domain Name)
+add a FQDN (Fully Qualified Domain Name) 
 
 ~~~~
     nano /etc/hosts 
