@@ -9,6 +9,29 @@ permalink: /Troubleshooting
 
 <a name="troubleshooting"></a>
 
+## Post Installation Server Troubleshooting ##
+
+After install, log in as user with Admin privileges and Run updates as Admin user at
+
+~~~~
+    http://Your_Server_IP/updates 
+~~~~
+
+Fix for OB Sites in config
+
+add a FQDN (Fully Qualified Domain Name)
+
+~~~~
+    nano /etc/hosts 
+~~~~
+
+"This file format is not supported" and "Cannot upload media"
+~~~~
+    ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
+
+    ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
+~~~~
+
 ## Player Start Up
 
 ### Networking
@@ -91,21 +114,23 @@ Script bash "obplayer_check" starts the player and checks for existing instances
 
 Script bash "obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
 
-Add this switches to for extra functionality
+Add these switches for extra functionality
 
-obplayer -d prints log messages to console
+obplayer -d prints log messages to stdout console
 
-obplayer -f or obplayer--fullscreen on startup. (obplayer_loop -f also works)
+obplayer -f or obplayer--fullscreen on startup. obplayer_loop -f also works.
 
-obplayer -h help (displays command-line options)
-
-obplayer -H starts headless, no desktop GUI
+obplayer -H starts headless, no desktop GUI (audio only)
 
 obplayer -m starts screen minimized
 
-obplayer -r restarts fresh, clearing out Playlist\Schedule\Media cache
+obplayer -r restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
 
-obplayer --disable-updater disables the OS updater
+obplayer  -c CONFIGDIR, --configdir Specifies an alternate data directory (default: ['~/.openbroadcaster'])
+
+obplayer -- disable-updater   Disables the OS updater
+
+obplayer -- disable-http  Disables the http admin dashboard
 
 ## Audio
 
