@@ -74,7 +74,7 @@ permalink: /Links
 
 [AMARC Europe](https://amarceurope.eu/ "World Association of Community Radio Broadcasters")
 
-[AMARC Asia pacific]("https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
+[AMARC Asia pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
 
 [CMFE](http://cmfe.eu/ "Community Media Forum Europe")
 
@@ -132,7 +132,7 @@ permalink: /Links
 
 ### Canada
 
-[National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx
+[National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx)
 
 [Pelmorex](https://pelmorex.com  "Canada’s NAAD distributing CAP-CP alerts")
 
