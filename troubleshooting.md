@@ -174,9 +174,9 @@ Disable the test signal once audio setup is working. Enable __Audio In Source__,
 
 <a name="pulse"></a>
 
-Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players. [Pulse](#pulse) and [JACK](#jack) are both supported audio modes, either will produce sound quality suitable for broadcast.
+Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players. [ALSA](ALSA#) [Esound](#Esound)  [OSS](OSS) [JACK](#jack) [Pulse](#pulse) are supported audio modes, and will produce sound quality suitable for broadcast. Optionaly can set to [No Input](No Input) to disable on board audio play back.
 
-Setting __Audio Mode__ to Pulse and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
+Setting __Audio Mode__ and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
 
 ### Adjusting Audio Levels 
 
@@ -185,13 +185,19 @@ Setting __Audio Mode__ to Pulse and restarting will bring up a slider control to
 ### Pulse Audio
 {:.no_toc}
 
-Pulse is the default and recommended audio to use with OBPlayer. When audio mode settings are changed, __Reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
+Pulse is the default and recommended audio system to use with OBPlayer. When audio mode settings are changed, __Reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
 
 * On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
 
 * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
 ![ Input Source](img/input_source.png ){: .Input}
+
+#### Recording with silence detection
+
+When enabled, will automatically record only if signal present on line in
+
+![ Silence Detection](img/silence_detection.png ){: .Silence Detection}
 
 #### Jack Audio
 {:.no_toc}
