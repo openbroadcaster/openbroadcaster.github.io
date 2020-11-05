@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Accessories
-permalink: /Accessories
+permalink: /accessories
 ---
 
 Guide for setting up external devices
