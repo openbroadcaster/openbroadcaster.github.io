@@ -56,7 +56,7 @@ __REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO RE
 
 Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu
 
-![Update Player Utilities](/img/updater.png ){: .updater} 
+![Update Player Utilities](/img/observer-install-check.png ){: .updater} 
 
 __NOTE: Utilities for displaying current version and updating the Player are on the Admin Page of the [Dashboard](#dash).__ 
 
