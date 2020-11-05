@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Logging
-permalink: /Logging
+permalink: /logging
 ---
 Logging and Monitoring
 * TOC
