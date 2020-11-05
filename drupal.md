@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Drupal
-permalink: /Drupal
+permalink: /drupal
 ---
 
 Drupal Modules
