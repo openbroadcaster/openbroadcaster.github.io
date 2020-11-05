@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Embed Code Snippets
-permalink: /Embed-Code-Snippets
+permalink: /embed-code-snippets
 ---
 Embed Code Snippets
 
