@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
-permalink: /Troubleshooting
+permalink: /troubleshooting
 ---
 
 * TOC
