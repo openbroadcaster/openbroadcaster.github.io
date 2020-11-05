@@ -74,7 +74,7 @@ To use the XLR cable with the Alert Player:
 ### Restart the Player
 {:toc}
 
-If no audio output is heard, refer to [Troubleshooting](http://support.openbroadcaster.com/Troubleshooting ).
+If no audio output is heard, refer to [Troubleshooting](https://support.openbroadcaster.com/troubleshooting ).
 
 ### Improving Sound Quality
 {:toc}
@@ -93,7 +93,7 @@ In-line attenuators are available [Here](https://openbroadcaster.com/catalog/).
  
 ![ XLR Pad](/img/pad.jpeg ){: .xlrpad} 
 
-Instructions for DIY "H" or "T" pads may be found on the [DIY-Broadcast-Projects](http://support.openbroadcaster.com/diy-broadcast-projects).
+Instructions for DIY "H" or "T" pads may be found on the [DIY-Broadcast](https://support.openbroadcaster.com/diy-broadcast).
 
 <a name="phase"></a>
 
