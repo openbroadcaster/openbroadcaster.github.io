@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Links
-permalink: /Links
+permalink: /links
 ---
 
 ## Software
