@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LIVE Remote Broadcasting
-permalink: /Remote-Broadcasting
+permalink: /live-remote-broadcasting
 ---
 
 LIVE Remote Broadcasting
