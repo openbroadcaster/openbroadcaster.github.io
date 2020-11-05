@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Player Training
-permalink: /Player-Training
+permalink: /player-training
 ---
 ## Player Training Syllabus
 {:.no_toc}
