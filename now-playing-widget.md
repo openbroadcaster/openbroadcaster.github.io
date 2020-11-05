@@ -10,4 +10,4 @@ Provide "now playing" information on page at http://IP_of_Server/modules/now_pla
 
 This code can be embedded into a Web page, Facebook or web property.
 
-![What's Playing](/server/img/now_playing-widget.png){: .screenshot}
+![Now Playing](/server/img/now_playing-widget.png){: .screenshot}
