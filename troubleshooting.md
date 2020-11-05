@@ -174,7 +174,19 @@ Disable the test signal once audio setup is working. Enable __Audio In Source__,
 
 <a name="pulse"></a>
 
-Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players. [ALSA](ALSA#) [Esound](#Esound)  [OSS](OSS) [JACK](#jack) [Pulse](#pulse) are supported audio modes, and will produce sound quality suitable for broadcast. Optionaly can set to [No Input](No Input) to disable on board audio play back.
+Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
+
+Addional supported audio modes each with the uses
+
+• ALSA
+
+• Esound  
+
+• OSS
+
+• JACK   
+
+Set to `No Input` to disable on board audio play back.
 
 Setting __Audio Mode__ and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
 
