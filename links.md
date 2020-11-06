@@ -10,17 +10,17 @@ permalink: /links
 
 #### Audio
 
-[Audacity](http://www.audacityteam.org/  "Audio Editing of Ogg, Flac and Wav") - Audio editor
+[Audacity](https://www.audacityteam.org/  "Audio Editing of Ogg, Flac and Wav") - Audio editor
 
 [Handbrake](https://handbrake.fr/  "Analyzing and Transcoding tool") - Transcoding tool
 
-[Icecast](http://icecast.org/  "Streaming Media Server") - Media server
+[Icecast](https://icecast.org/  "Streaming Media Server") - Media server
 
-[VLC](http://videolan.org/  "All Purpose Multimedia Player") - Multimedia Player
+[VLC](https://videolan.org/  "All Purpose Multimedia Player") - Multimedia Player
 
 #### Utilities
 
-[Clonezilla](http://clonezilla.org/  "Disk cloning, Captures disk images, data recovery") - Disk cloning
+[Clonezilla](https://clonezilla.org/  "Disk cloning, Captures disk images, data recovery") - Disk cloning
 
 [Etcher](https://etcher.io/ "Writes Boot IMG ISO to SD Card") - IMG to SD Card
 
@@ -30,9 +30,9 @@ permalink: /links
 
 #### Canada
 
-[ARCQ](http://arcq.qc.ca/ "Association des radiodiffuseurs communautaires du Québec")
+[ARCQ](https://arcq.qc.ca/ "Association des radiodiffuseurs communautaires du Québec")
 
-[NCRA](http://ncra.ca/ "National Community Radio Association")
+[NCRA](https://ncra.ca/ "National Community Radio Association")
 
 [CACTUS](https://www.cactusmedia.ca/ "Canadian Association of Community Television Users and Stations")
 
@@ -52,23 +52,23 @@ permalink: /links
 
 #### New Zealand 
 
-[ACAB](http://www.acab.org.nz/  "Association of Community Access Broadcasters")
+[ACAB](https://www.acab.org.nz/  "Association of Community Access Broadcasters")
 
 #### South Africa
 
-[NCRF](http://ncrf.org.za/  "National Community Radio Forum")
+[NCRF](https://ncrf.org.za/  "National Community Radio Forum")
 
 #### United Kingdom
 
-[CMA](http://commedia.org.uk/  "Community Media Association")
+[CMA](https://commedia.org.uk/  "Community Media Association")
 
 #### United States of America
 
-[ACM](http://allcommunitymedia.org/  "Alliance for Community Media")
+[ACM](https://allcommunitymedia.org/  "Alliance for Community Media")
 
-[NFCB](http://nfcb.org/  "National Federation of Community Broadcasters")
+[NFCB](https://nfcb.org/  "National Federation of Community Broadcasters")
 
-[Prometheus Radio](http://prometheusradio.org/  "Prometheus Radio Project")
+[Prometheus Radio](https://prometheusradio.org/  "Prometheus Radio Project")
 
 #### International 
 
@@ -76,13 +76,13 @@ permalink: /links
 
 [AMARC Asia pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
 
-[CMFE](http://cmfe.eu/ "Community Media Forum Europe")
+[CMFE](https://cmfe.eu/ "Community Media Forum Europe")
 
-[Developing Radio Partners](http://developingradiopartners.org  "Developing Radio Partners")
+[Developing Radio Partners](https://developingradiopartners.org  "Developing Radio Partners")
 
-[Farm Radio](http://farmradio.org/  "Farm Radio International")
+[Farm Radio](https://farmradio.org/  "Farm Radio International")
 
-[WACC](http://waccglobal.org/ "World Association for Christian Communication")
+[WACC](https://waccglobal.org/ "World Association for Christian Communication")
 
 ## Regulators
 
@@ -110,13 +110,13 @@ permalink: /links
 
 #### Canada
 
-[SOCAN](http://socan.ca/  "Society of Composers, Authors and Music Publishers")
+[SOCAN](https://socan.ca/  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
 [ASCAP](https://ascap.com/  "American Society of Composers, Authors and Publishers")
 
-[BMI](http://bmi.com/  "Collects license fees on behalf of its songwriters, composers and music publishers")
+[BMI](https://bmi.com/  "Collects license fees on behalf of its songwriters, composers and music publishers")
 
 [SoundExchange](https://soundexchange.com/  "Collects and distributes royalties on the behalf of sound recording copyright owners")
 
@@ -146,13 +146,13 @@ permalink: /links
 
 [Aviva Community](https://www.avivacommunityfund.org/)
 
-[Canada Council](http://canadacouncil.ca/)
+[Canada Council](https://canadacouncil.ca/)
 
 [Canadian Media Fund](https://cmf-fmc.ca/)
 
 [Creative BC](https://www.creativebc.com/)
 
-[Community Radio Fund of Canada](http://crfc-fcrc.ca)
+[Community Radio Fund of Canada](https://crfc-fcrc.ca)
 
 [Terry Reksten Memorial Fund](https://friendsofbcarchives.wordpress.com/terry-reksten-memorial-fund/)
 
@@ -166,7 +166,7 @@ permalink: /links
 
 ### Canada
 
-[Air Checker](http://www.airchecker.ca)
+[Air Checker](https://www.airchecker.ca)
 
 [Broadcast Dialogue](https://broadcastdialogue.com)
 
@@ -174,13 +174,13 @@ permalink: /links
 
 [Broadcasters' Desktop Resource](https://www.thebdr.net)
 
-[Broadcasting World](http://forums.broadcastingworld.com/ "Broadcasting World")
+[Broadcasting World](https://forums.broadcastingworld.com/ "Broadcasting World")
 
 [Hobby Broadcaster](https://www.hobbybroadcaster.net/)
 
 ### International
 
-[The Asia-Pacific Broadcasting Union (ABU)](http://www.abu.org.my)
+[The Asia-Pacific Broadcasting Union (ABU)](https//www.abu.org.my)
 
 
 
