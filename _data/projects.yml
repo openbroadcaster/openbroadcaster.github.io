@@ -9,11 +9,7 @@
 - name: Ad Manager
   github: https://github.com/openbroadcaster/ad-manager
   brief: Manage ADs and PSA
-  
-- name: Bulk Import
-  github: https://github.com/openbroadcaster/bulk-import
-  brief: Bulk import and metadata ingest
-  
+    
 - name: Drupal Broadcast Media
   github: https://github.com/openbroadcaster/drupal-broadcast-media
   brief: Drupal Broadcast Media Modules 
@@ -25,10 +21,6 @@
 - name: Ob2Ob
   github: https://github.com/openbroadcaster/ob2ob
   brief: Transfer multiple media items between OpenBroadcaster Server installations retaining metadata.
-  
-- name: Payments
-  github: https://github.com/openbroadcaster/payments
-  brief: Payments
   
 - name: PEX Program Manager Module
   github: https://github.com/openbroadcaster/pex
@@ -53,10 +45,6 @@
 - name: SVG Slide editor
   github: https://github.com/openbroadcaster/svg-editor
   brief: Inline SVG Slide editor
-  
-- name: Task Tracker
-  github: https://github.com/openbroadcaster/task-tracker
-  brief: Log analysis and royality reports for Sound Exchange, SOCAN
     
 - name: Translations
   github: https://github.com/openbroadcaster/translations
