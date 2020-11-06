@@ -1,23 +1,69 @@
 - name: OpenBroadcaster Server
   github: https://github.com/openbroadcaster/observer
-  brief: Media Server Platform
+  brief: Command and Control Media Server Platform
 
 - name: OpenBroadcaster Player
   github: https://github.com/openbroadcaster/obplayer
-  brief: Playout Device
+  brief: Managed Playout Device
+  
+- name: Ad Manager
+  github: https://github.com/openbroadcaster/ad-manager
+  brief: Manage ADs and PSA
+  
+- name: Bulk Import
+  github: https://github.com/openbroadcaster/bulk-import
+  brief: Bulk import and metadata ingest
   
 - name: Drupal Broadcast Media
   github: https://github.com/openbroadcaster/drupal-broadcast-media
   brief: Drupal Broadcast Media Modules 
+  
+- name: Mapping 
+  github: https://github.com/openbroadcaster/mapping
+  brief: Infrastructure status EAS NAAD NOAA events
+  
+- name: Ob2Ob
+  github: https://github.com/openbroadcaster/ob2ob
+  brief: Transfer multiple media items between OpenBroadcaster Server installations retaining metadata.
+  
+- name: Payments
+  github: https://github.com/openbroadcaster/payments
+  brief: Payments
+  
+- name: PEX Program Manager Module
+  github: https://github.com/openbroadcaster/pex
+  brief: PEX manages, schedules and distributes media as a collection (e.g. weekly program, serial episodes, festival)
+  
+- name: Reports
+  github: https://github.com/openbroadcaster/reports
+  brief: Log analysis and royality reports for Sound Exchange, SOCAN
 
-- name: eBusker
-  github: https://github.com/openbroadcaster/eBuskerApp.git
-  brief: Pitch Money to Artists in realtime
-
-- name: OpenBroadcaster RDS
+- name: RDS
   github: https://github.com/openbroadcaster/rds.git
   brief: RDS Support for PIRA encoder hardware 
+
+- name: Statistics
+  github: https://github.com/openbroadcaster/statistics
+  brief: Charts and Graphs of Media Info and Usage
+  
+- name: Status
+  github: https://github.com/openbroadcaster/status
+  brief: System status and back ups
+
+- name: SVG Slide editor
+  github: https://github.com/openbroadcaster/svg-editor
+  brief: Inline SVG Slide editor
+  
+- name: Task Tracker
+  github: https://github.com/openbroadcaster/task-tracker
+  brief: Log analysis and royality reports for Sound Exchange, SOCAN
     
-- name: OpenBroadcaster Mapping
-  github: https://github.com/openbroadcaster/mapping.git
-  brief: Infrastructure status EAS NAAD NOAA events
+- name: Translations
+  github: https://github.com/openbroadcaster/translations
+  brief: Translations
+
+- name: Terms of use
+  github: https://github.com/openbroadcaster/terms-of-use
+  brief: New users agree to TOU at signup
+  
+- 
