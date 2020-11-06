@@ -48,7 +48,7 @@ permalink: /links
 
 #### Nepal
 
-[ACABN](http://acorab.org.np/  "Association of Community Access Broadcasters Nepal")
+[ACABN]  "Association of Community Access Broadcasters Nepal")
 
 #### New Zealand 
 
@@ -56,7 +56,7 @@ permalink: /links
 
 #### South Africa
 
-[NCRF](https://ncrf.org.za/  "National Community Radio Forum")
+[NCRF]  "National Community Radio Forum")
 
 #### United Kingdom
 
@@ -64,7 +64,7 @@ permalink: /links
 
 #### United States of America
 
-[ACM](https://allcommunitymedia.org/  "Alliance for Community Media")
+[ACM] "Alliance for Community Media")
 
 [NFCB](https://nfcb.org/  "National Federation of Community Broadcasters")
 
@@ -76,7 +76,7 @@ permalink: /links
 
 [AMARC Asia pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
 
-[CMFE](https://cmfe.eu/ "Community Media Forum Europe")
+[CMFE] "Community Media Forum Europe")
 
 [Developing Radio Partners](https://developingradiopartners.org  "Developing Radio Partners")
 
@@ -94,7 +94,7 @@ permalink: /links
  
 ####  New Zealand
 
-[BSA](https://bsa.govt.nz/  "Broadcasting Standards Authority")
+[BSA] "Broadcasting Standards Authority")
 
 #### United Kingdom
 
@@ -110,7 +110,7 @@ permalink: /links
 
 #### Canada
 
-[SOCAN](https://socan.ca/  "Society of Composers, Authors and Music Publishers")
+[SOCAN]  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
@@ -166,7 +166,7 @@ permalink: /links
 
 ### Canada
 
-[Air Checker](https://www.airchecker.ca)
+[Air Checker]
 
 [Broadcast Dialogue](https://broadcastdialogue.com)
 
@@ -180,7 +180,7 @@ permalink: /links
 
 ### International
 
-[The Asia-Pacific Broadcasting Union (ABU)](https//www.abu.org.my)
+[The Asia-Pacific Broadcasting Union ABU](https//www.abu.org.my)
 
 
 
