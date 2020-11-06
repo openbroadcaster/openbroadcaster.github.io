@@ -52,7 +52,7 @@ permalink: /links
 
 #### New Zealand 
 
-[ACAB](https://www.acab.org.nz/  "Association of Community Access Broadcasters")
+[ACAB] "Association of Community Access Broadcasters")
 
 #### South Africa
 
