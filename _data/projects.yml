@@ -1,6 +1,6 @@
 - name: OpenBroadcaster Server
   github: https://github.com/openbroadcaster/observer
-  brief: Command and Control Media Server Platform
+  brief: Command and Control Media Server 
 
 - name: OpenBroadcaster Player
   github: https://github.com/openbroadcaster/obplayer
@@ -16,27 +16,27 @@
   
 - name: Mapping 
   github: https://github.com/openbroadcaster/mapping
-  brief: Infrastructure status EAS NAAD NOAA events
+  brief:  EAS NAAD NOAA events
   
 - name: Ob2Ob
   github: https://github.com/openbroadcaster/ob2ob
-  brief: Transfer multiple media items between OpenBroadcaster Server installations retaining metadata.
+  brief: Transfer media retaining metadata.
   
 - name: PEX Program Manager Module
   github: https://github.com/openbroadcaster/pex
-  brief: PEX manages, schedules and distributes media as a collection (e.g. weekly program, serial episodes, festival)
+  brief: Distributes media as a collection 
   
 - name: Reports
   github: https://github.com/openbroadcaster/reports
-  brief: Log analysis and royality reports for Sound Exchange, SOCAN
+  brief: Reports for Sound Exchange and SOCAN
 
 - name: RDS
   github: https://github.com/openbroadcaster/rds.git
-  brief: RDS Support for PIRA encoder hardware 
+  brief: RDS for PIRA hardware encoder  
 
 - name: Statistics
   github: https://github.com/openbroadcaster/statistics
-  brief: Charts and Graphs of Media Info and Usage
+  brief: Charts and Graphs 
   
 - name: Status
   github: https://github.com/openbroadcaster/status
@@ -52,6 +52,6 @@
 
 - name: Terms of use
   github: https://github.com/openbroadcaster/terms-of-use
-  brief: New users agree to TOU at signup
+  brief: TOU at signup
   
  
