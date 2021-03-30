@@ -19,12 +19,13 @@ Guide for setting up external devices
 | Manufacturer               | Protocol         | Notes            |
 | -------------------------- |------------------| -----------------|
 | Allen and Heath            | USB Audio        |                  |
-| Arrikis                    | USB Audio        |                  |
+| Arrakis                    | USB Audio        |                  |
 | AXIA\Telos                 | RTP\Livewire     |                  |
 | M-Audio                    | USB Audio        |                  |
-| Scarlette                  | USB Audio        |  6i6             |
+| Scarlette                  | USB Audio        | 6i6,18i20,solo  |
 | SoundCraft                 | USB Audio        |                  |
 | Stellar Labs\USB XLR       | USB Audio        | PCM2902 chipset  |
+| Wheatstone                 | GPIO             |                  |
 
 ### Video
 
