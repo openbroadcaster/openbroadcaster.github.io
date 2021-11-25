@@ -6,7 +6,7 @@ permalink: /now-playing-widget
 
 ## Now Playing
 
-Provide dynamic "now playing" information on page with metadata streaming. This is a default module included with the core OBServer. 
+Provide dynamic "now playing" information on page with metadata streaming. This is module included with the core OBServer. 
 
 * Artist
 * Title
@@ -23,9 +23,9 @@ https://IP_of_Server/modules/now_playing/now_playing.php?i=[device-ID-of-player]
 
 ### Prerequisites
 
-1) Module must be installed in OBServer
+1) Module must be installed in OBServer (default=no)
 
-2) `Enable Playlog Sync`must be enabled in OBPlayer
+2) `Playlog Sync` must be enabled in OBPlayer sync tab (default=no)
 
 This code can be embedded into a Web page, Facebook or web property.
 
