@@ -21,8 +21,9 @@ Guide for setting up external devices
 | Allen and Heath            | USB Audio        |                  |
 | Arrakis                    | USB Audio        |                  |
 | AXIA\Telos                 | RTP\Livewire     |                  |
+| AXIA\Telos                 | GPIO             |                  |   
 | M-Audio                    | USB Audio        |                  |
-| Scarlette                  | USB Audio        | 6i6,18i20,solo  |
+| Scarlette                  | USB Audio        | 6i6,18i20,solo   |
 | SoundCraft                 | USB Audio        |                  |
 | Stellar Labs\USB XLR       | USB Audio        | PCM2902 chipset  |
 | Wheatstone                 | GPIO             |                  |
@@ -32,6 +33,7 @@ Guide for setting up external devices
 | Manufacturer     | Protocol      | Notes |
 | ---------------- |---------------| ------|
 | Black Magic      | HDMI          |       |
+| Black Magic      | GPIO          |       |
 | CISCO DCM        | MPEG-TS       |       |
 
 Please [Report](mailto:support@openbroadcaster.com) successful manufacturers of hardware devices that are not listed 
