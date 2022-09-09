@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Emergency Training
-permalink: /emergency-training
+permalink: /emergency101
 ---
 ## Emergency Training Syllabus
 {:.no_toc}
