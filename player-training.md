@@ -123,27 +123,5 @@ Install into /opt/
 
 Using - switches in the terminal 
 
-## Lesson 4 - OBPlayer Emergency Alerting Setup
-{:toc}
 
-|Learning Outcomes
-|:-|:--|
-|Outline|How to Setup Emergency Alerting Player|
-|Skill|Advanced|
-|Prerequisites|None|
-|Time required|3 Hours|
-|Description|Manage and operate the Emergency Alerting Player.|
-|Challenge|Certificate upon passing grade of 80% of computer administered test.| 
-
-***
-
-Emergency CAP Alerting
-
-### Audio and Video setup
-
-### Entering SGC Codes
-
-### Configuring Emergency Options
-
-### Injecting Test Alerts
 
