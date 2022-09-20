@@ -207,16 +207,16 @@ Open Source licencing on recycled bare metal hardware, low cost Raspberry Pi com
 
 Find and locate a SGC Code for Canada
 
-View active Polygons on [Alert Hub] ( https://cap.alert-hub.org)
+View active Polygons on [Alert Hub]( https://cap.alert-hub.org)
 
 Examine Valid CAP message
 
 #### Reference
 {:toc}
 
-[GitHub Source Code] (https://github.com/openbroadcaster/obplayer)
+[GitHub Source Code](https://github.com/openbroadcaster/obplayer)
 
-[Alert Player Support Site] (https://support.openbroadcaster.com/player/#alerts)
+[Alert Player Support Site](https://support.openbroadcaster.com/player/#alerts)
 
 ## Module 7 - Radio Station in a Box (RIAB)
 {:toc}
