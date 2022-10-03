@@ -10,11 +10,15 @@ Embed Code Snippets
 
 # Embed Code Snippets #
 
-Easily create galleries and filters. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
+Easily create galleries and HTML5 inline media player. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
 
 Includes a HLS HTML5 Streaming media player that supports forward\backward navigation with Album Art and pop up Metadata info button
 
 Turn on and off asset access in the back end with the Public field custom actions.
+
+[LIVE Embed Examples](https://eng.widget.openbroadcaster.pro/)
+
+[Demo Sitres](https://openbroadcaster.com/resource/demo-sites/)
 
 ## Installation ## 
 
