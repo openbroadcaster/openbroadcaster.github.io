@@ -3,7 +3,7 @@ layout: default
 title: Emergency Training 101
 permalink: /emergency101
 ---
-## Emergency Training 101 Syllabus
+## Emergency Communications Training 101
 {:.no_toc}
 
 |Learning Outcomes
@@ -49,7 +49,9 @@ Use Handie Talkies to communicate with group effectively
 #### Reference
 {:toc}
 
-[Nova Scotia Shooter, Worse Mass Killing in Canada](https://en.wikipedia.org/wiki/2020_Nova_Scotia_attacks)
+[Hurricane Fiona](https://en.wikipedia.org/wiki/Hurricane_Fiona)
+
+[Nova Scotia Shooter](https://en.wikipedia.org/wiki/2020_Nova_Scotia_attacks)
 
 [Quebec Ice Storm](https://en.wikipedia.org/wiki/January_1998_North_American_ice_storm)
 
