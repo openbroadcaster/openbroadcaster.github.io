@@ -3,7 +3,7 @@ layout: default
 title: Emergency Training 101
 permalink: /emergency101
 ---
-## Emergency Communications Training 101
+## Emergency Communications 101
 {:.no_toc}
 
 |Learning Outcomes
