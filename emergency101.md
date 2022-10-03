@@ -6,12 +6,23 @@ permalink: /emergency101
 ## Emergency Training Syllabus
 {:.no_toc}
 
+|Learning Outcomes
+|:-|:--|
+|Outline|How to manage, maintain and configure systems to provide community emergency alerts using Open Source Software|
+|Skill|Advanced|
+|Prerequisites|None|
+|Time required|3 - 6 Hours per module|
+|Description|How to operate an over the air FM Radio Station with CAP Alerts.|
+|Challenge|Certificate upon passing grade of 80% of computer administered test.| 
+
+***
+
 * TOC
 {:toc}
 
 <a name="emergency101"></a>
 
-## Module 1 - Communication Breakdown
+## Module 1 Communication Breakdown
 {:toc}
 
 Telecom - Mobile and wire line phones
@@ -42,10 +53,10 @@ Use Handie Talkies to communicate with group effectively
 
 [Nation Wide Data Outage](https://en.wikipedia.org/wiki/2022_Rogers_Communications_outage)
 
-## Module 2 - Comms
+## Module 2 Comms
 {:toc}
 
-## Module 3 - Energy
+## Module 3 Energy
 {:toc}
 
 AC/DC Explained
@@ -69,7 +80,7 @@ Alt Power; Solar,Wind and Other
 #### Block Diagram
 {:toc}
 
-## Module 4 - Data
+## Module 4 Data
 {:toc}
 
 Security
@@ -90,7 +101,7 @@ Find lost password
 
 Create ISO from corrupted storage and recover data
 
-## Module 5- Networking and IT Management
+## Module 5 Networking and IT Management
 {:toc}
 
 Communications Protocols TCP/IP
@@ -135,7 +146,7 @@ USB Open Source Utilities
 
 CLI Cheat Sheet
 
-## Module 6 - CAP Alert Player for Radio and Television
+## Module 6 CAP Alert Player for Radio and Television
 {:toc}
  
 |Learning Outcomes|
@@ -218,7 +229,7 @@ Examine Valid CAP message
 
 [Alert Player Support Site](https://support.openbroadcaster.com/player/#alerts)
 
-## Module 7 - Radio Station in a Box (RIAB)
+## Module 7 Radio Station in a Box (RIAB)
 {:toc}
 
 Licencing and Regulatory
@@ -271,7 +282,7 @@ BARIX Exstreamer
 RIAB Operating Manual
 
 
-## Module 8 - Field Repairs and Troubleshooting
+## Module 8 Field Repairs and Troubleshooting
 {:toc}
 
 Shorts and Voltage
