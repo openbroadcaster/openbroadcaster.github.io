@@ -155,8 +155,6 @@ CLI Cheat Sheet
 |:-|:--|
 |Outline|How to manage, maintain and configure systems to provide community emergency alerts using Open Source Software.|
 |Skill|Beginner|
-|Prerequisites|None|
-|Time required|6 Hours|
 |Description|Manage and operate a CAP Alert Player for broadcast.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
