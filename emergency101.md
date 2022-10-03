@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Emergency Training
+title: Emergency Training 101
 permalink: /emergency101
 ---
-## Emergency Training Syllabus
+## Emergency Training 101 Syllabus
 {:.no_toc}
 
 |Learning Outcomes
@@ -14,6 +14,8 @@ permalink: /emergency101
 |Time required|3 - 6 Hours per module|
 |Description|How to operate an over the air FM Radio Station with CAP Alerts.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
+
+<a name="emergency training"></a>
 
 ***
 
@@ -39,7 +41,7 @@ Handy Talkie\Portable radio operation - Full Duplex\Half Duplex\Simplex
 
 Radio communication etiquette
 
-#### Reference
+#### Interactive Exercise
 {:toc}
 
 Use Handie Talkies to communicate with group effectively
