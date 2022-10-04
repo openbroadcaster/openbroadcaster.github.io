@@ -80,7 +80,6 @@ Alt Power; Solar,Wind and Other
 #### Interactive Exercise
 {:toc}
 
-
 #### Block Diagram
 {:toc}
 
@@ -91,19 +90,19 @@ Security
 
 Archive and restore backups
 
-#### Resource
-{:toc}
-
-Block Diagram
-
-USB Data Tools
-
 #### Interactive Exercise
 {:toc}
 
 Find lost password
 
 Create ISO from corrupted storage and recover data
+
+#### Resource
+{:toc}
+
+Block Diagram
+
+USB Data Tools
 
 ## Module 5 Networking and IT Management
 {:toc}
@@ -215,7 +214,7 @@ POLLY TTS Languages
 
 Open Source licencing on recycled bare metal hardware, low cost Raspberry Pi computers and virtual environments
 
-#### Interactive Exercise
+### Interactive Exercise
 {:toc}
 
 Find and locate a SGC Code for Canada
@@ -224,7 +223,7 @@ View active Polygons on [Alert Hub]( https://cap.alert-hub.org)
 
 Examine Valid CAP message
 
-#### Reference
+### Reference
 {:toc}
 
 [GitHub Source Code](https://github.com/openbroadcaster/obplayer)
@@ -236,53 +235,50 @@ Examine Valid CAP message
 
 Licencing and Regulatory
 
-RF Propagation - Antennae Types
-
 LPFM vs Hi Power
 
-STL (Studio Transmitter Link)
+RF Propagation - Antennae Types
 
 Safety Code 6 harmful RF
 
-RF Interference
-
 Selecting Frequency and Spectrum AM/FM/DAB
 
-## Transmitter operation
+RF Interference and Over Modulation
 
-Over Modulation
+### Key Components and uses
+
+- Mixer
+
+- Microphones
+
+- Headphone Amplifier
+
+- Speaker Monitors
+
+- BARIX Exstreamer 
+
+- STL (Studio Transmitter Link)
+
+### Transmitter operation
 
 LIVE Broadcasting
-
-Online Streaming
 
 Monitoring Off Air Feed
 
 CAP Alerting
 
-## Station duties and daily operation
+Online Streaming
+
+### Station duties and daily operation
 
 Logging and Monitoring compliance
 
 Sustainability
 
-## Key Components and uses
-
-Mixer
-
-Microphones
-
-Headphone Amplifier
-
-Speaker Monitors
-
-BARIX Exstreamer 
-
 #### Resources
 {:toc}
 
 RIAB Operating Manual
-
 
 ## Module 8 Field Repairs and Troubleshooting
 {:toc}
