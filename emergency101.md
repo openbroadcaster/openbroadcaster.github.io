@@ -3,7 +3,7 @@ layout: default
 title: Emergency Training 101
 permalink: /emergency101
 ---
-## Emergency Communications 101
+# Emergency Communications 101
 {:.no_toc}
 
 |Learning Outcomes
@@ -275,7 +275,7 @@ Logging and Monitoring compliance
 
 Sustainability
 
-#### Resources
+### Resource
 {:toc}
 
 RIAB Operating Manual
