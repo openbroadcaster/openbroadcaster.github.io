@@ -48,15 +48,15 @@ permalink: /links
 
 #### Nepal
 
-[ACABN]  "Association of Community Access Broadcasters Nepal")
+[ACABN](https://www.acorab.org.np "Association of Community Access Broadcasters Nepal")
 
 #### New Zealand 
 
-[ACAB] "Association of Community Access Broadcasters")
+[ACAB](https://cama.nz/ "Association of Community Access Broadcasters")
 
 #### South Africa
 
-[NCRF]  "National Community Radio Forum")
+[NCRF](https://ncrfonline.co.za  "National Community Radio Forum")
 
 #### United Kingdom
 
@@ -64,7 +64,7 @@ permalink: /links
 
 #### United States of America
 
-[ACM] "Alliance for Community Media")
+[ACM](https://www.allcommunitymedia.org/ "Alliance for Community Media")
 
 [NFCB](https://nfcb.org/  "National Federation of Community Broadcasters")
 
@@ -76,7 +76,7 @@ permalink: /links
 
 [AMARC Asia pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
 
-[CMFE] "Community Media Forum Europe")
+[CMFE](https://www.cmfe.eu/ "Community Media Forum Europe")
 
 [Developing Radio Partners](https://developingradiopartners.org  "Developing Radio Partners")
 
@@ -91,10 +91,18 @@ permalink: /links
 ####  Canada
 
 [CRTC](https://crtc.gc.ca/ "Canadian Radio and Telecommunications Committee")
- 
+
+#### Australia
+
+[ACMA](https://www.acma.gov.au/ "Australian Communications and Media Authority")
+
 ####  New Zealand
 
-[BSA] "Broadcasting Standards Authority")
+[BSA](https://www.bsa.govt.nz/ "Broadcasting Standards Authority")
+
+#### Nigeria
+
+[National Broadcasting Commission](https://www.nbc.gov.ng/)
 
 #### United Kingdom
 
@@ -110,7 +118,7 @@ permalink: /links
 
 #### Canada
 
-[SOCAN]  "Society of Composers, Authors and Music Publishers")
+[SOCAN](https://www.socan.com/  "Society of Composers, Authors and Music Publishers")
 
 #### USA
 
@@ -128,18 +136,27 @@ permalink: /links
 
 [Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
 
-## Emergency Alerting Authorities
+## CAP Emergency Alerting 
 
 ### Canada
 
+[Alert Ready](https://www.alertready.ca/ "Alert Ready is Canada’s emergency alerting system")
+
 [National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx)
 
-[Pelmorex](https://pelmorex.com  "Canada’s NAAD distributing CAP-CP alerts")
+[Pelmorex](https://pelmorex.com  "Canada’s NAAD distributer of CAP-CP alerts")
+
 
 ### USA
 
 [HomeLand Security](https://www.cisa.gov/emergency-communications-division "Coordinates emergency communications planning, preparation and evaluation")
 
+[IPAWS](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system "Integrated Public Alert & Warning System" )
+
+
+### International
+
+[CAP Commitee](
 ## Funders
 
 ### Canada
@@ -166,8 +183,6 @@ permalink: /links
 
 ### Canada
 
-[Air Checker]
-
 [Broadcast Dialogue](https://broadcastdialogue.com)
 
 ### USA 
@@ -180,7 +195,9 @@ permalink: /links
 
 ### International
 
-[The Asia-Pacific Broadcasting Union ABU](https://www.abu.org.my)
+[AIBD](https://aibd.org.my/ "Asia-Pacific Institue of Broadcasting Development")
+
+[ABU](https://www.abu.org.my "Asia-Pacific Broadcasting Union ABU")
 
 
 
