@@ -228,7 +228,7 @@ Examine Valid CAP message
 
 [GitHub Source Code](https://github.com/openbroadcaster/obplayer)
 
-[Alert Player Support Site](https://support.openbroadcaster.com/player/#alerts)
+[Alert Player Support Site](https://support.openbroadcaster.com/obplayer/#alerts)
 
 ## Module 7 Radio Station in a Box (RIAB)
 {:toc}
