@@ -41,8 +41,6 @@ Grey system button (Top Right) Remote RTP when clicked allows playing of live st
 
 ### System Buttons
 
-![LIVE Assist System Buttons.png](/img/LA_system_buttons.png ){: .screenshot} 
-
 System buttons allow playing 
 
 - line in of local machine
