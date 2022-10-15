@@ -9,7 +9,7 @@ Logging and Monitoring
 
 # Server Play Logs
 
-Basic text log reports in CSV format for players are generated with server [Player Monitoring](http://support.openbroadcaster.com/server/#logging-and-monitoring) on demand.  More detailed information using the [Reports](http://support.openbroadcaster.com/reports/) module. 
+Basic text log reports in CSV format for players are generated with server [Player Monitoring](http://support.openbroadcaster.com/observer/#logging-and-monitoring) on demand.  More detailed information using the [Reports](http://support.openbroadcaster.com/reports/) module. 
 
 # Player Audio Logging
 
