@@ -29,4 +29,4 @@ https://IP_of_Server/modules/now_playing/now_playing.php?i=[device-ID-of-player]
 
 This code can be embedded into a Web page, Facebook or web property.
 
-![Now Playing Widget](/server/img/now-playing-widget.png){: .screenshot}
+![Now Playing Widget](/img/now-playing-widget.png){: .screenshot}
