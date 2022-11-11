@@ -39,7 +39,7 @@ VHF UHF Terrestrial radio repeaters
 
 Handy Talkie\Portable radio operation - Full Duplex\Half Duplex\Simplex
 
-Radio communication etiquette
+2 Way Radio communication etiquette
 
 #### Interactive Exercise
 {:toc}
@@ -83,29 +83,10 @@ Alt Power; Solar,Wind and Other
 #### Block Diagram
 {:toc}
 
-## Module 4 Data
+## Module 4 Networking and IT Management
 {:toc}
 
-Security
-
-Archive and restore backups
-
-#### Interactive Exercise
-{:toc}
-
-Find lost password
-
-Create ISO from corrupted storage and recover data
-
-#### Resource
-{:toc}
-
-Block Diagram
-
-USB Data Tools
-
-## Module 5 Networking and IT Management
-{:toc}
+Introductory Networking
 
 Communications Protocols TCP/IP
 
@@ -119,19 +100,11 @@ Mail and Web services
 
 GPS time Server
 
-Introductory Networking
-
 Intranet\Internet\Cloud
 
-Routers, switches and firewalls
-
-Wireless Router Security
+Routers and switches
 
 Point to Point long range microwave wireless bridge
-
-SSH Keys and 2 factor authentication
-
-Virus Malware Ransomware protection strategy
 
 #### Interactive Exercise
 {:toc}
@@ -148,6 +121,37 @@ Hook up a network printer
 USB Open Source Utilities
 
 CLI Cheat Sheet
+
+## Module 5 Cyber Security
+{:toc}
+
+Hacking your network
+
+Virus Malware Ransomware protection strategy
+
+Wireless Router Security
+
+SSH Keys and 2 factor authentication
+
+Firewalls
+
+Archive and restore backups
+
+#### Interactive Exercise
+{:toc}
+
+Configure Firewall
+
+Find lost password
+
+Create ISO from corrupted storage and recover data
+
+#### Resource
+{:toc}
+
+Block Diagram
+
+USB Data Tools
 
 ## Module 6 CAP Alert Player for Radio and Television
 {:toc}
