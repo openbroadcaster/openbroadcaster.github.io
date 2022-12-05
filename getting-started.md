@@ -13,7 +13,7 @@ permalink: /getting-started
 ## BEFORE YOU BEGIN
 {:toc}
 
-This guide will assist in the initial setup of both OBPlayer and OBServer backend applicaion infrastructure.  Applies to 5X series; OBPlayer, Alert Player and OpenBox. __Open Box__ installation contains both __OBServer__ and __OBPlayer__ components.  Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
+This guide will assist in the initial setup of both OBPlayer and OBServer backend application infrastructure.  Applies to 5X series; OBPlayer, Alert Player and OpenBox. __Open Box__ installation contains both __OBServer__ and __OBPlayer__ components.  Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
 
 ### Install OBPlayer
 {:toc}
@@ -120,7 +120,7 @@ Change the default password for the Player dashboard.   A RED screen will notifi
 ### Install OBServer
 {:toc}
 
-OpenBroadcaster - Server Installation Instructions
+OBServer Installation Instructions
 
 These instructions are an alternative to using [ob.installer.sh](https://github.com/openbroadcaster/observer/blob/main/ob.installer.sh)
 
@@ -152,7 +152,7 @@ Note: When using special characters in the password, they need to use single quo
 8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
    verify your installation and run any required updates.
 
-[Install.txt(https://github.com/openbroadcaster/observer/blob/main/install.txt)
+[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
 #### Dependencies
 {:.no_toc}
