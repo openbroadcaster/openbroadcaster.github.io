@@ -133,17 +133,19 @@ CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most curren
 1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt)
  for player dependencies (Debian 10/Ubuntu 20.04 & above)
 
-2. Run bash "obplayer_check" or bash "obplayer_loop -f". "bash obplayer_check -h" for help
+2. Run "bash obplayer_check" or "bash obplayer_loop -d" or "bash obplayer_check -h" for help
 
-3. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
+3. Config files settings.db generated on first run in ~/.openbroadcaster
 
-NOTE: User required to change login passwords on first login with the defaults.
+4. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
 
-4. Configure tabbed menus
+5. Configure tabbed menus
 
 5. Restart the player
 
- Connect RJ45 to a network with a router handing out DHCP IP addresses.
+__NOTE:__ _User required to change login passwords on first login with the defaults._
+
+Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
 _Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
 
@@ -154,69 +156,69 @@ _Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/in
 ntp python3 python3-pycurl python3-openssl python3-apsw python3-magic python3-dateutil python3-requests python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-gdkpixbuf-2.0 gir1.2-pango-1.0 python3-gst-1.0 gir1.2-gstreamer-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gst-rtsp-server-1.0 gstreamer1.0-tools gstreamer1.0-libav gstreamer1.0-alsa gstreamer1.0-pulseaudio gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly ffmpeg
 ~~~~
 
-Ubuntu
+__Ubuntu
 
 ~~~~
 ubuntu-restricted-addons ubuntu-restricted-extras 
 ~~~~
 
-Extras
+__Extras__ _(not installed with Apt)
+
+Needed for SSL dashboard
 
 ~~~~
 pip3 install passlib[bcrypt] 
 ~~~~
-Needed for SSL dashboard
+
+Needed in case it wasn't installed with Apt
 
 ~~~~
 pip3 install apsw
 ~~~~
-Needed in case it wasn't installed with Apt
 
-Recommended for CATV Video Playout
+__Recommended for CATV Video Playout
 
 ~~~~
 gstreamer1.0-vaapi mesa-vdpau-drivers
 ~~~~
 
-CAP Alerting
-
-Include if using alerts module:
+__CAP Alerting onboard TTS
 
 ~~~~
 espeak mbrola mbrola-en1 mbrola-us1 mbrola-us2 mbrola-us3 mbrola-fr1 mbrola-fr4
 ~~~~
 
-Include if using POLLY AWS Voices in the alerts module:
+__POLLY AWS Voices in the alerts module:
 
 ~~~~
 pip3 install boto3 
 ~~~~
 
-Include if using RS-232 trigger option in the alerts module:
+__RS-232 trigger option in the alerts module:
 
 ~~~~
 python3-serial
 ~~~~
 
-Include if sharing multiple OpenBroadcaster players with a local media library:
+__Sharing multiple OBPlayers with a local media library:
 
 ~~~~
 cifs-utils
 ~~~~
 
-Command Line tool for PulseAudio:
+__Command Line tool for PulseAudio:
 
 ~~~
 pip3 install pulsectl         
 ~~~~
 
-Off-air audio log and SDR FM Receiver USB Dongle:
+__Off-air audio log and SDR FM Receiver USB Dongle:
 
 ~~~~
 pip3 install pyrtlsdr         
 ~~~~
 
-Include if using the news feed override:
+__Include if using the news feed override:
 
 ~~~~
 pip3 install inotify
