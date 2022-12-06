@@ -26,7 +26,7 @@ Processor | 1GHz 64 bit CPU. ARM, Intel or Pi
 Memory | 4GB of RAM
 Storage | 128GB 
 Display |	No display is required for the web server
-Framework |	PHP, MySQL,Nginx and Gstreamer 
+Framework |	PHP, MySQL, Nginx and Gstreamer 
 
 Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
 
@@ -85,7 +85,7 @@ __Note:__ When using special characters in the password, they need to use single
 8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
    verify your installation and run any required updates.
 
-_Source_[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
+_Source: _[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
 #### Dependencies
 {:toc}
@@ -145,7 +145,7 @@ NOTE: User required to change login passwords on first login with the defaults.
 
  Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
-_Source_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
+_Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
 
 #### Dependencies
 {:toc}
@@ -240,5 +240,5 @@ Player is up to date
 
 [Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting)
 
-__TechTip__ Resetting Lost or Admin passwords cannot be retrieved easily. User must change the default password for the Player dashboard. Config files containing user and machine settings are located in the hidden ~/.openbroadcaster folder within the users home directory.  To reset admin or lost passwords may be recovered by editing the sqlite DB file `settings.db` or simply deleting it and restarting obplayer. On restart obplayer will recreate this DB with default values and prompts for new passwords.
+__TechTip__ Resetting Lost or Admin passwords cannot be retrieved easily. Config files containing user and machine settings are located in the hidden ~/.openbroadcaster folder within the users home directory.  To reset admin or lost passwords may be recovered by editing the sqlite DB file `settings.db` or simply deleting it and restarting obplayer. On restart obplayer will recreate this DB with default values and prompts for new passwords.
 {: .alert .alert-info}
