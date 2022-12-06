@@ -22,27 +22,27 @@ This guide will assist in the initial setup of both OBPlayer and OBServer backen
 
 Item 	  |    Description
 ------------ | -------------
-Processor | 1GHz 64 bit CPU. ARM or Intel 
+Processor | 1GHz 64 bit CPU. ARM, Intel or Pi 
 Memory | 4GB of RAM
-Storage | 128GB (Recommended)
-Display |	No display is required for the server
-Framework |	PHP, MySQL and Gstreamer 
+Storage | 128GB 
+Display |	No display is required for the web server
+Framework |	PHP, MySQL,Nginx and Gstreamer 
 
-Should be a /*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
+Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
 
 #### OBPlayer
 
 Item 	  |    Description
 ------------ | -------------
-Processor |	1GHz 64 bit CPU. ARM or Intel 
+Processor |	1GHz 64 bit CPU. ARM, Intel or Pi 
 Memory |	4GB RAM
-Storage |	128GB (Recommended)
+Storage |	128GB 
 Display |	None required unless displaying Video or Images
 Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
 Video |	Minimum 640x480 screen resolution
 Framework |	Python and Gstreamer 
 
-Should be a /*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. Desktop is optional. 
+Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. Desktop is optional. 
 
 [Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
