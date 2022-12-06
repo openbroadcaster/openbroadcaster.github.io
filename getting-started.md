@@ -85,7 +85,7 @@ __Note:__ When using special characters in the password, they need to use single
 8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
    verify your installation and run any required updates.
 
-_Source: _[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
+_Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
 #### Dependencies
 {:toc}
