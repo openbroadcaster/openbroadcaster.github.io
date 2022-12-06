@@ -13,14 +13,52 @@ permalink: /getting-started
 ## BEFORE YOU BEGIN
 {:toc}
 
-This guide will assist in the initial setup of both OBPlayer and OBServer backend application infrastructure.  Applies to 5X series; OBPlayer, Alert Player and OpenBox. __Open Box__ installation contains both __OBServer__ and __OBPlayer__ components.  Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
+This guide will assist in the initial setup of both OBPlayer and OBServer backend application infrastructure. Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
+
+### Minimum System Requirements
+{:toc}
+
+#### OBServer
+
+Item 	  |    Description
+------------ | -------------
+Processor | 1GHz 64 bit CPU. ARM or Intel architecture
+Memory | 1GB of RAM
+Storage | 30GB (Recommended)
+Display |	No display is required for the server
+Framework |	PHP, MySQL and Gstreamer 
+
+Should be a nix system. Debian or Ubuntu 18.04 LTS. Runs as a process on CLI. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
+
+#### OBPlayer
+
+Item 	  |    Description
+------------ | -------------
+Processor 	1GHz 64 bit CPU. ARM or Intel architecture
+Memory |	1 GB RAM
+Storage |	30GB (Recommended)
+Display |	None required unless displaying Video or Images
+Audio |	Analog Input\Output, USB Interfaces or Digital HDMI
+Video |	Minimum 640x480 screen resolution
+Framework |	Python and Gstreamer 
+
+Should be a nix system. Debian or Ubuntu 16.04 LTS. Runs as a process on CLI. Desktop is optional. 
+
+Unknown if these work on other flavors of linux, BSD or on another OS. Anyone? 
+
+[Compatible and Supported](https://support.openbroadcaster.com/accessories#supported-hardware) Hardware
+
+[ALSA Supported Soundcards](https://www.alsa-project.org/main/index.php/Matrix:Main)
+
+
 
 ### Install OBPlayer
 {:toc}
 
  OBPlayer Installation Instructions
 
-1. See dependencies.txt for player dependencies (Debian 10/Ubuntu 18.04 & above)
+1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt)
+ for player dependencies (Debian 10/Ubuntu 18.04 & above)
 
 2. Run bash "obplayer_check" or bash "obplayer_loop -f". "bash obplayer_check -h" for help
 
@@ -101,7 +139,6 @@ pip3 install inotify
 Note: pip3 pkg not included in apt-get; must be installed using pip3
 
 
-[Dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt)
 
 #### OBPlayer Software Updates
 {:toc}
@@ -130,8 +167,8 @@ Administrator login is no longer supported for OB updates since July 2020.
 
 Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
 
-1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but 
-   a few things to support transcoding and media identification. 
+1. See [dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
+ for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
 
 2. Copy server files to a web environment (web document root).
 
@@ -155,7 +192,7 @@ Note: When using special characters in the password, they need to use single quo
 [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
 #### Dependencies
-{:.no_toc}
+{:toc}
 
 ~~~~
 apache2 apg festival imagemagick libav-tools libavcodec-extra libavfilter-extra mysql-server php7.0 php7.0-mysql php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-imagick vorbis-tools
@@ -168,15 +205,27 @@ ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
 ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 ~~~~
 
-[Dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
-
 #### OBServer Software Updates
 {:toc}
+
+
+![Update OBServer Web Utilities](/img/observer-install-check.png ){: .updater} 
+
+Shows updated system
+
+![Update OBServer CLI Utilities](/img/observer-install-check.png ){: .updater} 
+
+Shows no errors
+
+<a name="observer"></a>
+
+#### OBPlayer Software Updates
+{:toc}
+
+![Update Player Utilities](/img/observer-install-check.png ){: .updater} 
+
 
 __REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
 
 Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu
 
-![Update Player Utilities](/img/observer-install-check.png ){: .updater} 
-
-<a name="observer"></a>
