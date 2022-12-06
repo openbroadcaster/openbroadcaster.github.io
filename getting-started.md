@@ -108,20 +108,14 @@ ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 
 Shows updated system and configuration. Apply updates if available.
 
+#### Command Line Updates
+{:toc}
+
 ![Update CLI Utilities](/img/ob_cli_check.png){: .cli install check} 
 
 Command Line Tool shows no errors
 
-#### Command Line Updates
-{:toc}
-
 CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most current version is running
-
-Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu. 
-
-![Update Dashboard Utilities](/img/oplayer-updates.png){: .obplayer updates} 
-
-Player is up to date
 
 ### 2. Install OBPlayer
 {:toc}
@@ -229,9 +223,11 @@ __Note:__ _pip3 pkg not included in apt-get; must be installed using pip3_
 
 __NOTE__ _Utilities for displaying current version and updating the Player are on the Admin Page of the [Dashboard](#dash)._
 
-After updating the Player, restart the Player to the load changes to the Dashboard layout.
+Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu. After updating the Player, restart the Player to the load changes to the Dashboard.
 
-#### Change default passwords
-{:.no_toc}
+![Update Dashboard Utilities](/img/obplayer-updates.png){: .obplayer updates} 
 
-Change the default password for the Player dashboard.   A RED screen will notifiy default passwords are still being used (security risk). 
+Player is up to date
+
+__TechTip__ Resetting Lost or Admin passwords cannot be retrieved easily. User must change the default password for the Player dashboard. Config files containing user and machine settings are located in the hidden ~/.openbroadcaster folder within the users home directory.  To reset admin or lost passwords may be recovered by editing the sqlite DB file `settings.db` or simply deleting it and restarting obplayer. On restart obplayer will recreate this DB with default values and prompts for new passwords.
+{: .alert .alert-info}
