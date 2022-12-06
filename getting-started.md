@@ -94,7 +94,7 @@ _Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/in
 apache2 apg festival imagemagick libav-tools libavcodec-extra libavfilter-extra mysql-server php7.0 php7.0-mysql php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-imagick vorbis-tools
 ~~~~
 
-** If libav-tools package is not available, install ffmpeg package instead, and symlink the following:
+__**__ If libav-tools package is not available, install ffmpeg package instead, and symlink the following:
 
 ~~~~
 ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
@@ -156,13 +156,13 @@ _Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/in
 ntp python3 python3-pycurl python3-openssl python3-apsw python3-magic python3-dateutil python3-requests python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-gdkpixbuf-2.0 gir1.2-pango-1.0 python3-gst-1.0 gir1.2-gstreamer-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gst-rtsp-server-1.0 gstreamer1.0-tools gstreamer1.0-libav gstreamer1.0-alsa gstreamer1.0-pulseaudio gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly ffmpeg
 ~~~~
 
-__Ubuntu
+__Ubuntu__
 
 ~~~~
 ubuntu-restricted-addons ubuntu-restricted-extras 
 ~~~~
 
-__Extras__ _(not installed with Apt)
+__Extras__ _(not installed with Apt)_
 
 Needed for SSL dashboard
 
@@ -176,49 +176,49 @@ Needed in case it wasn't installed with Apt
 pip3 install apsw
 ~~~~
 
-__Recommended for CATV Video Playout
+__Recommended for CATV Video Playout__
 
 ~~~~
 gstreamer1.0-vaapi mesa-vdpau-drivers
 ~~~~
 
-__CAP Alerting onboard TTS
+__CAP Alerting onboard TTS__
 
 ~~~~
 espeak mbrola mbrola-en1 mbrola-us1 mbrola-us2 mbrola-us3 mbrola-fr1 mbrola-fr4
 ~~~~
 
-__POLLY AWS Voices in the alerts module:
+__POLLY AWS Voices in the alerts module__
 
 ~~~~
 pip3 install boto3 
 ~~~~
 
-__RS-232 trigger option in the alerts module:
+__RS-232 trigger option in the alerts module__
 
 ~~~~
 python3-serial
 ~~~~
 
-__Sharing multiple OBPlayers with a local media library:
+__Sharing multiple OBPlayers with a local media library__
 
 ~~~~
 cifs-utils
 ~~~~
 
-__Command Line tool for PulseAudio:
+__Command Line tool for PulseAudio__
 
 ~~~
 pip3 install pulsectl         
 ~~~~
 
-__Off-air audio log and SDR FM Receiver USB Dongle:
+__Off-air audio log and SDR FM Receiver USB Dongle__
 
 ~~~~
 pip3 install pyrtlsdr         
 ~~~~
 
-__Include if using the news feed override:
+__Include if using the news feed override__
 
 ~~~~
 pip3 install inotify
