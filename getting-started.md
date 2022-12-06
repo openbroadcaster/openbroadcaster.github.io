@@ -208,22 +208,22 @@ ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 #### OBServer Software Updates
 {:toc}
 
+![Update Web Utilities](/img/observer-install-check.png ){: .updater} 
 
-![Update OBServer Web Utilities](/img/observer-install-check.png ){: .updater} 
+Shows updated system and configuration
 
-Shows updated system
+![Update CLI Utilities](/img/ob_cli_check.png ){: .updater} 
 
-![Update OBServer CLI Utilities](/img/observer-install-check.png ){: .updater} 
-
-Shows no errors
+Command Line Tool shows no errors
 
 <a name="observer"></a>
 
 #### OBPlayer Software Updates
 {:toc}
 
-![Update Player Utilities](/img/observer-install-check.png ){: .updater} 
+![Update Dashboard Utilities](/img/oplayer-updates.png ){: .updater} 
 
+Player is up to date
 
 __REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
 
