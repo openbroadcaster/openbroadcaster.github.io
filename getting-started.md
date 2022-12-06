@@ -22,9 +22,9 @@ This guide will assist in the initial setup of both OBPlayer and OBServer backen
 
 Item 	  |    Description
 ------------ | -------------
-Processor | 1GHz 64 bit CPU. ARM or Intel architecture
+Processor | 1GHz 64 bit CPU. ARM or Intel 
 Memory | 1GB of RAM
-Storage | 30GB (Recommended)
+Storage | 128GB (Recommended)
 Display |	No display is required for the server
 Framework |	PHP, MySQL and Gstreamer 
 
@@ -34,31 +34,104 @@ Should be a nix system. Debian or Ubuntu 18.04 LTS. Runs as a process on CLI. Th
 
 Item 	  |    Description
 ------------ | -------------
-Processor 	1GHz 64 bit CPU. ARM or Intel architecture
-Memory |	1 GB RAM
-Storage |	30GB (Recommended)
+Processor |	1GHz 64 bit CPU. ARM or Intel 
+Memory |	1GB RAM
+Storage |	128GB (Recommended)
 Display |	None required unless displaying Video or Images
-Audio |	Analog Input\Output, USB Interfaces or Digital HDMI
+Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
 Video |	Minimum 640x480 screen resolution
 Framework |	Python and Gstreamer 
 
-Should be a nix system. Debian or Ubuntu 16.04 LTS. Runs as a process on CLI. Desktop is optional. 
+Should be a nix system. Debian or Ubuntu 20.04 LTS. Runs as a process on CLI. Desktop is optional. 
 
-Unknown if these work on other flavors of linux, BSD or on another OS. Anyone? 
-
-[Compatible and Supported](https://support.openbroadcaster.com/accessories#supported-hardware) Hardware
+[Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
 [ALSA Supported Soundcards](https://www.alsa-project.org/main/index.php/Matrix:Main)
 
-
-
-### Install OBPlayer
+### 1. Install OBServer
 {:toc}
+
+<a name="observer"></a>
+
+OBServer Installation Instructions
+
+These instructions are an alternative to using [ob.installer.sh](https://github.com/openbroadcaster/observer/blob/main/ob.installer.sh)
+
+*** After install, set OB_UPDATES_USER and OB_UPDATES_PW in config.php and then run https://YOUR_IP/updates ***
+
+_Administrator login is no longer supported for OB updates since July 2020._
+
+__Note:__ _When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string _
+
+1. See [dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
+ for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
+
+2. Copy server files to a web environment (web document root).
+
+3. Import db/dbclean.sql to a database.
+
+4. Copy config.sample.php to config.php, and edit as necessary.
+
+5. Ensure media storage directories are writable by the web server.
+
+6. In the web document root, create 'assets' and 'assets/uploads' directories.  
+   These directories should be writable by the web server.
+
+7. The database import includes one user.  The username is admin.  The password
+   must be updated:
+
+   php tools/password_change.php admin newpassword
+
+8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
+   verify your installation and run any required updates.
+
+_Source_[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
+
+#### Dependencies
+{:toc}
+
+~~~~
+apache2 apg festival imagemagick libav-tools libavcodec-extra libavfilter-extra mysql-server php7.0 php7.0-mysql php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-imagick vorbis-tools
+~~~~
+
+** If libav-tools package is not available, install ffmpeg package instead, and symlink the following:
+
+~~~~
+ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
+ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
+~~~~
+
+#### Web Updates
+{:toc}
+
+![Update Web Utilities](/img/observer-install-check.png){: .web install check} 
+
+Shows updated system and configuration. Apply updates if available.
+
+![Update CLI Utilities](/img/ob_cli_check.png){: .cli install check} 
+
+Command Line Tool shows no errors
+
+#### Command Line Updates
+{:toc}
+
+CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most current version is running
+
+Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu. 
+
+![Update Dashboard Utilities](/img/oplayer-updates.png){: .obplayer updates} 
+
+Player is up to date
+
+### 2. Install OBPlayer
+{:toc}
+
+<a name="obplayer"></a>
 
  OBPlayer Installation Instructions
 
 1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt)
- for player dependencies (Debian 10/Ubuntu 18.04 & above)
+ for player dependencies (Debian 10/Ubuntu 20.04 & above)
 
 2. Run bash "obplayer_check" or bash "obplayer_loop -f". "bash obplayer_check -h" for help
 
@@ -72,7 +145,7 @@ NOTE: User required to change login passwords on first login with the defaults.
 
  Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
-[install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
+_Source_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
 
 #### Dependencies
 {:toc}
@@ -84,8 +157,20 @@ ntp python3 python3-pycurl python3-openssl python3-apsw python3-magic python3-da
 Ubuntu
 
 ~~~~
-ubuntu-restricted-addons ubuntu-restricted-extras pip3 install passlib[bcrypt] pip3 install apsw
+ubuntu-restricted-addons ubuntu-restricted-extras 
 ~~~~
+
+Extras
+
+~~~~
+pip3 install passlib[bcrypt] 
+~~~~
+Needed for SSL dashboard
+
+~~~~
+pip3 install apsw
+~~~~
+Needed in case it wasn't installed with Apt
 
 Recommended for CATV Video Playout
 
@@ -136,96 +221,17 @@ Include if using the news feed override:
 ~~~~
 pip3 install inotify
 ~~~~ 
-Note: pip3 pkg not included in apt-get; must be installed using pip3
 
+__Note:__ _pip3 pkg not included in apt-get; must be installed using pip3_
 
-
-#### OBPlayer Software Updates
+#### Web Updates
 {:toc}
 
-__NOTE: Utilities for displaying current version and updating the Player are on the Admin Page of the [Dashboard](#dash).__ 
+__NOTE__ _Utilities for displaying current version and updating the Player are on the Admin Page of the [Dashboard](#dash)._
 
 After updating the Player, restart the Player to the load changes to the Dashboard layout.
-
-<a name="obplayer"></a>
 
 #### Change default passwords
 {:.no_toc}
 
 Change the default password for the Player dashboard.   A RED screen will notifiy default passwords are still being used (security risk). 
-
-### Install OBServer
-{:toc}
-
-OBServer Installation Instructions
-
-These instructions are an alternative to using [ob.installer.sh](https://github.com/openbroadcaster/observer/blob/main/ob.installer.sh)
-
-*** After install, set OB_UPDATES_USER and OB_UPDATES_PW in config.php and then run https://YOUR_IP/updates ***
-
-Administrator login is no longer supported for OB updates since July 2020.
-
-Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
-
-1. See [dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
- for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
-
-2. Copy server files to a web environment (web document root).
-
-3. Import db/dbclean.sql to a database.
-
-4. Copy config.sample.php to config.php, and edit as necessary.
-
-5. Ensure media storage directories are writable by the web server.
-
-6. In the web document root, create 'assets' and 'assets/uploads' directories.  
-   These directories should be writable by the web server.
-
-7. The database import includes one user.  The username is admin.  The password
-   must be updated:
-
-   php tools/password_change.php admin newpassword
-
-8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
-   verify your installation and run any required updates.
-
-[Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
-
-#### Dependencies
-{:toc}
-
-~~~~
-apache2 apg festival imagemagick libav-tools libavcodec-extra libavfilter-extra mysql-server php7.0 php7.0-mysql php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-imagick vorbis-tools
-~~~~
-
-** If libav-tools package is not available, install ffmpeg package instead, and symlink the following:
-
-~~~~
-ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
-ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
-~~~~
-
-#### OBServer Software Updates
-{:toc}
-
-![Update Web Utilities](/img/observer-install-check.png ){: .updater} 
-
-Shows updated system and configuration
-
-![Update CLI Utilities](/img/ob_cli_check.png ){: .updater} 
-
-Command Line Tool shows no errors
-
-<a name="observer"></a>
-
-#### OBPlayer Software Updates
-{:toc}
-
-![Update Dashboard Utilities](/img/oplayer-updates.png ){: .updater} 
-
-Player is up to date
-
-__REMEMBER TO CHECK FOR [UPDATES](#update) BEFORE INITIAL SETUP, AND PRIOR TO REPORTING ISSUES TO ENSURE THE MOST CURRENT VERSION IS RUNNING.__
-
-Updating the software ensures the most current version of the application is running. To obtain and install updates, click the Update button in the dashboard Admin menu
-
