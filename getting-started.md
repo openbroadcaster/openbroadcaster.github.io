@@ -23,26 +23,26 @@ This guide will assist in the initial setup of both OBPlayer and OBServer backen
 Item 	  |    Description
 ------------ | -------------
 Processor | 1GHz 64 bit CPU. ARM or Intel 
-Memory | 1GB of RAM
+Memory | 4GB of RAM
 Storage | 128GB (Recommended)
 Display |	No display is required for the server
 Framework |	PHP, MySQL and Gstreamer 
 
-Should be a nix system. Debian or Ubuntu 18.04 LTS. Runs as a process on CLI. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
+Should be a /*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
 
 #### OBPlayer
 
 Item 	  |    Description
 ------------ | -------------
 Processor |	1GHz 64 bit CPU. ARM or Intel 
-Memory |	1GB RAM
+Memory |	4GB RAM
 Storage |	128GB (Recommended)
 Display |	None required unless displaying Video or Images
 Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
 Video |	Minimum 640x480 screen resolution
 Framework |	Python and Gstreamer 
 
-Should be a nix system. Debian or Ubuntu 20.04 LTS. Runs as a process on CLI. Desktop is optional. 
+Should be a /*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. Desktop is optional. 
 
 [Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
@@ -51,17 +51,17 @@ Should be a nix system. Debian or Ubuntu 20.04 LTS. Runs as a process on CLI. De
 ### 1. Install OBServer
 {:toc}
 
-<a name="observer"></a>
+<a name="observer-install"></a>
 
 OBServer Installation Instructions
 
 These instructions are an alternative to using [ob.installer.sh](https://github.com/openbroadcaster/observer/blob/main/ob.installer.sh)
 
-*** After install, set OB_UPDATES_USER and OB_UPDATES_PW in config.php and then run https://YOUR_IP/updates ***
+*** After install, set `OB_UPDATES_USER` and `OB_UPDATES_PW` in __config.php__ and then run https://YOUR_IP/updates ***
 
 _Administrator login is no longer supported for OB updates since July 2020._
 
-__Note:__ _When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string _
+__Note:__ When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string
 
 1. See [dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
  for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
@@ -104,23 +104,29 @@ ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 #### Web Updates
 {:toc}
 
-![Update Web Utilities](/img/observer-install-check.png){: .web install check} 
+![Web Utilities](/img/observer-install-check.png){: .web install check} 
 
 Shows updated system and configuration. Apply updates if available.
 
-#### Command Line Updates
+#### Command Line Check
 {:toc}
 
-![Update CLI Utilities](/img/ob_cli_check.png){: .cli install check} 
+![CLI Utilities](/img/ob_cli_check.png){: .cli install check} 
 
 Command Line Tool shows no errors
 
 CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most current version is running
 
+
+#### Advanced Configuration
+{:toc}
+
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting)
+
 ### 2. Install OBPlayer
 {:toc}
 
-<a name="obplayer"></a>
+<a name="obplayer-install"></a>
 
  OBPlayer Installation Instructions
 
@@ -228,6 +234,11 @@ Updating the software ensures the most current version of the application is run
 ![Update Dashboard Utilities](/img/obplayer-updates.png){: .obplayer updates} 
 
 Player is up to date
+
+#### Advanced Configuration
+{:toc}
+
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting)
 
 __TechTip__ Resetting Lost or Admin passwords cannot be retrieved easily. User must change the default password for the Player dashboard. Config files containing user and machine settings are located in the hidden ~/.openbroadcaster folder within the users home directory.  To reset admin or lost passwords may be recovered by editing the sqlite DB file `settings.db` or simply deleting it and restarting obplayer. On restart obplayer will recreate this DB with default values and prompts for new passwords.
 {: .alert .alert-info}
