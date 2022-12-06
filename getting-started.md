@@ -11,7 +11,7 @@ permalink: /getting-started
 {:toc}
 
 ## BEFORE YOU BEGIN
-{:toc}
+{:.no_toc}
 
 This guide will assist in the initial setup of both OBPlayer and OBServer backend application infrastructure. Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
 
@@ -222,7 +222,7 @@ Include if using the news feed override:
 pip3 install inotify
 ~~~~ 
 
-__Note:__ _pip3 pkg not included in apt-get; must be installed using pip3_
+__Note:__ pip3 pkg not included in apt-get; must be installed using pip3
 
 #### Web Updates
 {:toc}
