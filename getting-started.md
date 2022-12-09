@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Getting Started
-permalink: /getting-started
+title: Install
+permalink: /install
 ---
 
-## Getting-Started
+## Installation
 {:.no_toc}
 
 * TOC
