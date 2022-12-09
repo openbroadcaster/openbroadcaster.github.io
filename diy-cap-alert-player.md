@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DIY-Alert-Player
-permalink: /diy-alert-player
+permalink: /diy-cap-alert-player
 ---
 
 ## Standalone Emergency Alerting CAP Player
