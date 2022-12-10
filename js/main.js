@@ -8,7 +8,7 @@ $(document).ready(function () {
         $.getJSON(urlToGetOpenPlayerSecurity, function (allIssues) {
         if (allIssues.length ==0) $(ply_security).append("No open issues</br>");
         $.each(allIssues, function (i, issue) {
-            $(ply_bugs)
+            $(ply_security)
                 .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
 //                .append("created at: " + issue.created_at + "</br>")
 //                .append(issue.body + "</br></br></br>");
@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.getJSON(urlToGetOpenServerSecurity, function (allIssues) {
         if (allIssues.length ==0) $(srv_security).append("No open issues</br>");
         $.each(allIssues, function (i, issue) {
-            $(srv_bugs)
+            $(srv_security)
                 .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
 //                .append("created at: " + issue.created_at + "</br>")
 //                .append(issue.body + "</br></br></br>");
