@@ -125,7 +125,7 @@ CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most curren
 
 __Web Server__
 
-Assuming your DNS is configured, you should be able adjust ob.apache.conf to your system and copy it to the appropriate spot for your machine, restart apache, and browse to //Your_IP/ to access your server. Login in with username admin and the password you set for the OpenBroadcaster Admin user. 
+Assuming your DNS is configured, you should be able adjust ob.apache.conf to your system and copy it to the appropriate spot for your machine, restart apache, and browse to //Your_IP/ to access your server. Login in with username admin and the password you set for the Admin user. 
 
 __Setup and Configure Email__
 
