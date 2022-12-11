@@ -8,11 +8,11 @@ permalink: /diy-cap-alert-player
 
 OBPlayer can be set up as a standalone CAP alert broadcaster. Install OBPlayer in-line with your broadcast audio\video chain and it will automatically interrupt the regular broadcast when it receives a valid CAP-CP formated alert. Use the DIY RS232 GPIO to trigger relays to cut into scheduled programming.
 
-Start OBPlayer and login to Dashboard
+[Install](https://support.openbroadcaster.com/install) OBPlayer and login to Dashboard
 
 __Sync/Media Tab__
 
-Uncheck 'Enable Scheduler', and 'Enable Fallback Media Player'. This disables all other media settings.
+Uncheck `Enable Scheduler`, and `Enable Fallback Media Player`. This disables all other media and sync settings from OBServer.
 
 __Audio/Visualizations Tab__
 
@@ -24,7 +24,7 @@ Only change these audio settings if you know what you are doing.
 
 __Video/Image Tab__
 
-Leave this unchecked when using in a radio\audio application
+Leave this unchecked when using in a radio application
 
 __Emergency Alerts Tab__
 
@@ -38,25 +38,25 @@ __SGC Code__
 
 Enter SGC code for your region availble from [Statistic Canada](https://www.statcan.gc.ca/en/subjects/standard/sgc/2011/index) or [Standard_Geographical_Classification_code](http://en.wikipedia.org/wiki/Standard_Geographical_Classification_code_%28Canada%29). More than one SGC can be entered, separated by commas.
 
-* Alert Repeat Duration = Default 30 minutes.
+* Alert Repeat Duration `Default = 30 minutes`
 
 * NAAD Streams. Enter in 2 of your Countries NAAD Streams and Archive URL
 
-* Truncate long messages. Default = No Emergency messages should be issued by Pelmorex with all the concise info contained in first line. Selecting this, could mean reading out the entire message with unrecognizable TTS translations of websites and URLs. The long message might go on several minutes.
+* Truncate long messages. `Default = No` Emergency messages should be issued by Pelmorex with all the concise info contained in first line. Selecting this, could mean reading out the entire message with unrecognizable TTS translations of websites and URLs. The long message might go on several minutes.
 
-* Play Moderate and Advisory Alerts. Check if you want these to play. Default = No
+* Play Moderate and Advisory Alerts. `Default = No` Check if you want these to play. 
 
-* Play Test Alerts. Enable this for playing test alerts. Default = No Normally the play test messages option is for playing messages marked as Test, which normally shouldn't be played to the public. The test messages for public distribution do not have the status value "Test". They are like normal alerts
+* Play Test Alerts.`Default = No`  Enable this for playing test alerts. Normally the play test messages option is for playing messages marked as Test, which normally shouldn't be played to the public. The test messages for public distribution do not have the status value "Test". They are like normal alerts
 
 __On board CAP Alert Testing__
 
-1. Simple Test. Generates an internal CAP-CP formated message and plays using TTS
+1. `Simple Test` Generates an internal CAP-CP formated message and plays using TTS
 
-2. Embedded Audio Test. Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
+2. `Embedded Audio Test` Generates an internal CAP-CP message and plays a supplied MP3 file instead of TTS.
 
-3. External Audio Test. Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
+3. `External Audio Test` Generates an internal CAP-CP alert message, fetches and plays a test MP3 file from Pelmorex.
 
-4. Embedded Audio and Image Test. Generates an internal CAP-CP test the displays a JPG image and plays audio recording.
+4. `Embedded Audio and Image Test` Generates an internal CAP-CP test the displays a JPG image and plays audio recording.
 
 __NOTE__ _English and French are presently the only supported language for on board testing with Audio and Visual alerting_
 
@@ -64,7 +64,7 @@ __Configuring Audio Line In__
 
 Status Tab VU Meter shows levels of line in source signal
 
-When using USB/XLR adapter, disable on board audio from BIOS. Go to Pulse Audio Settings>Configuration On board audio = "Off"
+When using USB/XLR adapter, disable on board audio from BIOS. Go to Settings>Configuration On board audio = "Off"
 
 __Monitoring Dual NAAD Feeds with Duplicates__
 
