@@ -6,7 +6,7 @@ var urlToGetOpenServerSecurity = "https://api.github.com/repos/openbroadcaster/o
 
 $(document).ready(function () {
         $.getJSON(urlToGetOpenPlayerSecurity, function (allIssues) {
-        if (allIssues.length ==0) $(ply_security).append("No open issues</br>");
+        if (allIssues.length ==0) $(ply_security).append("No OBPLayer Security Issues</br>");
         $.each(allIssues, function (i, issue) {
             $(ply_security)
                 .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     $.getJSON(urlToGetOpenServerSecurity, function (allIssues) {
-        if (allIssues.length ==0) $(srv_security).append("No open issues</br>");
+        if (allIssues.length ==0) $(srv_security).append("No OBServer Security Issues</br>");
         $.each(allIssues, function (i, issue) {
             $(srv_security)
                 .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
