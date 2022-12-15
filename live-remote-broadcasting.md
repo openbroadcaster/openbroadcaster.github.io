@@ -4,10 +4,13 @@ title: LIVE Remote Broadcasting
 permalink: /remote-broadcasting
 ---
 
-LIVE Remote Broadcasting
-
-### Live Streaming from LA Laptop
+#LIVE Remote Broadcasting#
 {:.no_toc}
+
+* TOC
+{:toc}
+
+## Live Streaming from LIVE Assist Laptop
 
 1. Install [OBPlayer](https://github.com/openbroadcaster/obplayer) on laptop and make sure dependencies are met
 
@@ -25,12 +28,12 @@ cd /opt/obplayer/tools
 
 Use with -h (Help) to list optional commands
 
-### System Buttons
+## System Buttons
 {:.no_toc}
 
-**Local Streamer** is a RTP sender application. It sends audio packets over UDP from the laptop on which it is run to the player computer. Run the local streamer application and the pavucontrol program on the laptop from which you're sending. Clicking the start button on the local streamer, will add an entry on the Recording tab of the volume control. Select additional USB audio adaptors in `Pulse Audio volume control` **Configuration**.
+`Local Streamer` is a RTP sender application. It sends audio packets over UDP from the laptop on which it is run to the player computer. Run the local streamer application and the pavucontrol program on the laptop from which you're sending. Clicking the start button on the local streamer, will add an entry on the Recording tab of the volume control. Select additional USB audio adaptors in `Pulse Audio volume control` **Configuration**.
 
-### Launcher
+## Launcher
 {:.no_toc}
 
 Right click on desktop to **Create Launcher** (shortcut named LIVE Mic) using this sample info below
