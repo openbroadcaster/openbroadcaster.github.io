@@ -3,12 +3,11 @@ layout: default
 title: Embed Code Snippets
 permalink: /embed-code-snippets
 ---
-Embed Code Snippets
+# Embed Code Snippets #
+{:.no_toc}
 
 * TOC
 {:toc}
-
-# Embed Code Snippets #
 
 Easily create galleries and HTML5 inline media player. Makes it easy to share embed links to your digital asset.  Copy a few lines of Embed snippet code directly in your own external website to embed media resources such as; audio, images and videos.
 
