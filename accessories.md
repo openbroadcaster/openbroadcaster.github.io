@@ -4,7 +4,9 @@ title: Accessories
 permalink: /accessories
 ---
 
-Guide for setting up external devices
+# Accessories and Hardware
+Guides for setting up external devices
+{:.no_toc}
 
 * TOC
 {:toc}
@@ -77,7 +79,7 @@ To use the XLR cable with the Alert Player:
 ### Restart the Player
 {:toc}
 
-If no audio output is heard, refer to [Troubleshooting](https://support.openbroadcaster.com/troubleshooting ).
+If no audio output is heard, refer to [Troubleshooting](https://support.openbroadcaster.com/troubleshooting).
 
 ### Improving Sound Quality
 {:toc}
@@ -126,7 +128,6 @@ GPIO Trigger with RS-232 DTR on CAP-CP Alerts. When enabled and a matching CAP m
 "Trigger RS-232 DTR on Alerts" checkbox, when checked, will show the "RS-232 Device Filename" option. The device filename should be something like /dev/ttyS0, or /dev/ttyUSB0 if using a USB-to-Serial adapter. For initial setup, disable all RS-232 ports so there is only one available.
 
 The "Trigger Icecast Stream on Alerts" setting will start and stop the icecast streamer module (in the streaming tab) the same as the serial port. In addition to this setting, you must also uncheck the "Play Stream on Startup" option on the streaming tab, or else the streamer will start playing when obplayer starts.
-
 
 ![ Relay Box](img/relay_box.jpg ){: .usb-xlr} 
 
