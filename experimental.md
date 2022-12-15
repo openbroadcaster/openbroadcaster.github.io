@@ -3,10 +3,11 @@ layout: default
 title: experimental
 ---
 
+## Experimental Features ##
+{:.no_toc}
+
 * TOC
 {:toc}
-
-## Experimental Features ##
 
 ## OBPlayer ##
 
