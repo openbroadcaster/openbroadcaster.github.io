@@ -3,7 +3,9 @@ layout: default
 title: Logging
 permalink: /logging
 ---
-Logging and Monitoring
+# Logging and Monitoring
+{:.no_toc}
+
 * TOC
 {:toc}
 
