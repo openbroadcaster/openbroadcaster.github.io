@@ -4,9 +4,10 @@ title: Accessories
 permalink: /accessories
 ---
 
+
 # Accessories and Hardware
-Guides for setting up external devices
 {:.no_toc}
+Guides for setting up external devices
 
 * TOC
 {:toc}
