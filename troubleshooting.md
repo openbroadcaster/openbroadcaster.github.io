@@ -4,6 +4,9 @@ title: Troubleshooting
 permalink: /troubleshooting
 ---
 
+# Troubleshooting #
+{:.no_toc}
+
 * TOC
 {:toc}
 
@@ -83,7 +86,7 @@ In this example both obplayer and Icecast are highlighted
 
 Ensure the player device is able to access the internet Terminal "ping google.com" and can reach the management server as specified in sync settings under the Sync tab. The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" Do not forget to include the trailing /remote.php.
 
-Check the sync url exisits by pasting into browser and you should see the 
+Check the sync url exisits by pasting into browser and you should see screen asking for Device Id.  This isn't accesible or do anything, but you can verify the server is expecting a sync for that ID
 
 ![ Sync Connect Screenshot](/img/sync-connect.png ){: .sync-connect}
 
@@ -199,7 +202,7 @@ Setting __Audio Mode__ and restarting will bring up a slider control to set leve
 
 Pulse is the default and recommended audio system to use with OBPlayer. When audio mode settings are changed, __Reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
 
-* On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From __Sources__Tab enable the __Audio In Source__ setting audio mode to PULSE.
+* On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From `Sources Tab` enable the `Audio In Source` setting audio mode to "PULSE".
 
 * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
@@ -214,7 +217,7 @@ When enabled, will automatically record only if signal present on line in
 #### Jack Audio
 {:.no_toc}
 
-There are no input level GUI controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the openbroadcaster ports, the jack-mixer control and system output. 
+There are no input level GUI controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the OpenBroadcaster ports, the jack-mixer control and system output. 
 
 - If using Jack, check that the file `~/.jack.plumbing` ( or `/etc/jack.plumbing`) contains the correct connection definitions.
 - If using Pulse, check the file `~/.pulse/client.conf` is set to enable Pulse to autospawn.
@@ -241,14 +244,14 @@ If Jack is already running, it will load the new configuration. Open the jack-mi
 
 If Jack is not running ensure it is configured in the Dashboard, and reboot the Player, and open the jack-mixer control from desktop.
 
-__NB:__ When using jack mixer, the jack-mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, the output will stop playing. The control must be visible and indicating signal bars for output signal to be audible. The mixer control must be reopened after a reboot, or no sound will be produced. 
+__EG__ When using jack mixer, the jack-mixer control must be opened manually from the Panel Icon to activate the control. Once the control is closed, the output will stop playing. The control must be visible and indicating signal bars for output signal to be audible. The mixer control must be reopened after a reboot, or no sound will be produced. 
 
 <br/>
 To open the jack mixer control in headless mode), use the command:
 
  `jack_mixer -c ~/.openbroadcaster/init_mix_vol --no-lash`.
 
- __To restore the original configuration of jack.plumbing, without the jack-mixer control, edit ~/.jack.plumbing file to define the following connections:__
+__To restore the original configuration of jack.plumbing, without the jack-mixer control, edit ~/.jack.plumbing file to define the following connections:__
 
 ~~~~
    #obsuser@obsource:~$ nano ~/.jack.plumbing
@@ -260,7 +263,6 @@ To open the jack mixer control in headless mode), use the command:
    #Connect Openbroadcaster Outputs to Audio Outputs
    (connect "openbroadcasterout:out_audiosink_1" "system:playback_1")
    (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
-
 ~~~~
 
 ## Video
@@ -269,7 +271,7 @@ Select video system in drop down menu in >Video>Sources.  Restart service.   Whe
 
 ## Reimaging the Player/Server
 
-To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/user-downloads) user account.
+To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/store) Contact us for access.
 
 1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image.
 
