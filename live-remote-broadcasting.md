@@ -57,3 +57,6 @@ Connect\Disconnect buttons turn on\off the live mic\monitor.
 You can now begin speaking into mic and set the level. You may also toggle MUTE.
 
 When finished show, click Disconnect on LA and Stop on the floating window
+
+<a class="top-link hide" href="#top">↑</a>
+<a name="top"></a>
