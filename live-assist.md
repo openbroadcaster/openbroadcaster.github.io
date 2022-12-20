@@ -6,7 +6,7 @@ permalink: /live-assist
 # LIVE Assist
 {:.no_toc}
 
-TOC
+* TOC
 {:toc}
 
 Mobile HTML5 Interface of OBPlayer
