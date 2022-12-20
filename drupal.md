@@ -4,12 +4,11 @@ title: Drupal
 permalink: /drupal
 ---
 
-Drupal Modules
+# Drupal Modules
+{:.no_toc}
 
 * TOC
 {:toc}
-
-## Drupal Radio Modules
 
 There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) and a custom radio Theme template for Drupal 7.X CMS.
 
