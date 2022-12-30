@@ -3,6 +3,9 @@ layout: default
 title: LIVE Remote Broadcasting
 permalink: /remote-broadcasting
 ---
+<br/>
+
+![Local Streamer Launcher](/img/local_streamer_launcher.png ){: .screen shot} 
 
 # LIVE Remote Broadcasting #
 {:.no_toc}
@@ -38,13 +41,11 @@ Use with -h (Help) to list optional commands
 
 Right click on desktop to **Create Launcher** (shortcut named LIVE Mic) using this sample info below
 
-![Local Streamer Launcher](/img/local_streamer_launcher.png ){: .screen shot} 
-
 With the proper options set, this will create a floating window with **Start and Stop** buttons to turn on live streaming
 
 ## Using Live Streaming
 
-Create and schedule a LA play list on server
+Create and schedule a LA play list on server.
 
 Click `Streamer Launcher` button to begin Live streaming source material from your laptop
 
