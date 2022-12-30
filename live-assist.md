@@ -5,7 +5,7 @@ permalink: /live-assist
 ---
 <br/>
 
-![Live Assist System Buttons](/img/system_buttons.png){: .screen shot} 
+![LIVE Assist System Buttons](https://user-images.githubusercontent.com/4603894/210113420-7ba91d2a-b136-4785-afb0-8c99f6c030c0.png)
 
 # LIVE Assist
 {:.no_toc}
