@@ -3,6 +3,10 @@ layout: default
 title: LIVE-Assist
 permalink: /live-assist
 ---
+<br/>
+
+![Live Assist System Buttons](/img/system_buttons.png){: .screen shot} 
+
 # LIVE Assist
 {:.no_toc}
 
@@ -23,9 +27,6 @@ Enable `Live Assist` in Dashboard. Save and restart player to make active.
 
 ## Screen Elements
 
-
-
-
 ## Hot Buttons
 
 Created in Server as Live Assist PL (consisting of media items to appear as buttons) and dragged to bottom of Play List. Each PL added creates a column of buttons in LA interface.
@@ -40,9 +41,7 @@ Grey system button (Top Right) Line In audio source is local input on the player
 
 ## Remote RTP Incoming
 
-![System Buttons](/img/system_buttons.png){: .screen shot} 
-
-Grey system button (Top Right) Remote RTP when clicked allows playing of live streaming media. Use `local_streamer` tool to receive incoming streams from laptop in field. On remote laptop, audio is encoded from source material, either from local media or from captured LIVE material.
+Grey system button (Top Right) Remote RTP when clicked allows playing of live streaming media. Use `local_streamer` tool to send streams from laptop in field. On remote laptop, audio is encoded from source material, either from local media or from captured LIVE material.
 
 <br/>
 
