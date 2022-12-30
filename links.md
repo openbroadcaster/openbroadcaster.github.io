@@ -4,9 +4,16 @@ title: Links
 permalink: /links
 ---
 
+# Links #
+{:.no_toc}
+
+* TOC
+{:toc}
+
+
 ## Software
 
-### These free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)
+**Free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)
 
 #### Audio
 
@@ -26,9 +33,17 @@ permalink: /links
 
 [Ventoy](https://www.ventoy.net "Boot mulitple IMG/ISO from a single USB Stick") - Boot Stick
 
+#### Reference Materials
+
+[Sample Video](https://kodi.wiki/view/Samples)
+
+#### Licencing Tools
+
+[Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
+
 ## Community  Media Organizations
 
-### Umbrella groups of community broadcasters
+**Umbrella groups of community broadcasters
 
 #### Canada
 
@@ -86,9 +101,7 @@ permalink: /links
 
 [WACC](https://waccglobal.org/ "World Association for Christian Communication")
 
-## Regulators
-
-### Radio Television Regulators
+## Regulators Radio Television 
 
 ####  Canada
 
@@ -114,9 +127,7 @@ permalink: /links
 
 [FCC](https://fcc.gov/  "Federal Communications Commission")
  
-## Royalties, Copyright and Licencing
-
-### Music Licencing
+## Royalties, Copyright and Music Licencing
 
 #### Canada
 
@@ -134,10 +145,6 @@ permalink: /links
 
 [Copyright Collection Societies](https://en.wikipedia.org/wiki/List_of_copyright_collection_societies  "Copyright Collection Societies")
 
-#### Licencing Tools
-
-[Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
-
 ## CAP Emergency Alerting 
 
 ### Canada
@@ -148,17 +155,16 @@ permalink: /links
 
 [Pelmorex](https://pelmorex.com  "Canada’s NAAD distributer of CAP-CP alerts")
 
-
 ### USA
 
 [HomeLand Security](https://www.cisa.gov/emergency-communications-division "Coordinates emergency communications planning, preparation and evaluation")
 
 [IPAWS](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system "Integrated Public Alert & Warning System" )
 
-
 ### International
 
-[CAP Commitee](
+[CAP Commitee](https://preparecenter.org/)
+
 ## Funders
 
 ### Canada
