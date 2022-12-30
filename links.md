@@ -13,7 +13,7 @@ permalink: /links
 
 ## Software
 
-**Free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)
+**Free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)**
 
 #### Audio
 
@@ -42,8 +42,6 @@ permalink: /links
 [Creative Commons](https://creativecommons.org/ "FREE Licencing tools")
 
 ## Community  Media Organizations
-
-**Umbrella groups of community broadcasters
 
 #### Canada
 
