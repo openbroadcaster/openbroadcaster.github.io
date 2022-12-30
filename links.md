@@ -13,7 +13,7 @@ permalink: /links
 
 ## Software
 
-**Free to use Open Source tools are Multi-Platform compatible (Windows, Mac and Linux)**
+Open Source tools are compatible with Windows, Mac and Linux
 
 #### Audio
 
