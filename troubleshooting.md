@@ -69,9 +69,9 @@ Open local `Terminal` or ssh into target machine. Cd to dir where player files a
 
 __Do not run as root or Sudo__
 
-Script "bash obplayer_check" starts the player and checks for existing instances and not start if already running
+Script `bash obplayer_check` starts the player and checks for existing instances and not start if already running
 
-Script "bash obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
+Script `bash obplayer_loop` runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
 
 Add these switches for extra functionality
 
@@ -129,7 +129,7 @@ From __Terminal__
 ps -ef | grep python
 ~~~~
 
-Lists all Python process including OBPlayer.  If this is not showing then obplayer is not running.
+Lists all Python process including OBPlayer.  If this is not showing then OBPlayer is not running.
 
 ![ PS FAX Python Screenshot](/img/ps-fax-python.png ){: .psfax-python}
 
@@ -145,22 +145,20 @@ In this example both OBPlayer and Icecast are highlighted
 
 ### Sync
 
-1. Ensure OBPlayer device is able to access the internet.  
+Ensure OBPlayer device is able to access the internet.  
 
-1. Open a Terminal and "ping google.com" to reach the management server as specified in sync settings under the Sync tab. 
+From the local machine, open a Terminal and "ping google.com" to reach the management server as specified in sync settings under the Sync tab. 
 
-The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" 
-
-Do not forget to include the trailing `/remote.php`
+The format of the sync url can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" Do not forget to include the trailing `/remote.php`
 {: .alert .alert-info}
 
-1. Check the sync url exisits by pasting into browser and you should see screen asking for Device Id.  This isn't accesible or do anything, but you can verify the server is expecting a sync for that ID
+Check the sync url exisits by pasting into browser and you should see screen asking for Device Id.  This isn't accesible or do anything, but you can verify the server is expecting a sync for that ID
 
 ![ Sync Connect Screenshot](/img/sync-connect.png ){: .sync-connect}
 
-1. Confirm/Re-enter passwords and Device to match player in >Player Manager in the OBServer 
+Confirm/Re-enter passwords and Device to match player in >Player Manager in the OBServer 
 
-1. From >Admin Tab `Restart DB and Reset` forces a reset of a fresh sync of media and schedules
+From >Admin Tab `Restart DB and Reset` forces a reset of a fresh sync of media and schedules
 
 ### Resetting Lost Password
 
