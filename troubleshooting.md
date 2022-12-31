@@ -148,6 +148,27 @@ Add these switches for extra functionality
 
 `obplayer -- disable-http`  Disables the http admin dashboard
 
+### Audio Settings
+{:.toc}
+
+<a name="pulse"></a>
+
+[Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
+
+Addional supported audio modes
+
+• ALSA
+
+• Esound  
+
+• OSS
+
+• JACK   
+
+Set to `No Input` to disable on board audio play back.
+
+Setting __Audio Mode__ and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
+
 ### No Audio Test Signal 
 
 Use the __test signal__ to confirm your audio setup is working correctly.
@@ -172,7 +193,7 @@ To test an external __USB__ sound card with XLR balanced audio output:
 
 If <span style="color: darkred">no audio output</span> is produced, check the Status page for errors in the log and observe VU meter for activity:
 
-1. Be sure mode is properly configured.
+1. Be sure `audio mode` is properly configured.
 1. There are `gstreamer` errors indicating problems with audio mode settings. 
 1. Adjust slider control or adjust from CLI `pulsemixer`
 1. No PulseAudio Sources Present in dashboard press F5 to refresh browser.
@@ -180,30 +201,6 @@ If <span style="color: darkred">no audio output</span> is produced, check the St
 Disable the test signal once audio setup is working. Enable __Audio In Source__, if necessary.
 
 <br /><a name="mixer"></a>
-
-## Advanced Topics
-{:.toc}
-
-### Audio Settings
-{:.toc}
-
-<a name="pulse"></a>
-
-[Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
-
-Addional supported audio modes
-
-• ALSA
-
-• Esound  
-
-• OSS
-
-• JACK   
-
-Set to `No Input` to disable on board audio play back.
-
-Setting __Audio Mode__ and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
 
 ### Adjusting Audio Levels 
 
@@ -220,13 +217,13 @@ Pulse is the default and recommended audio system to use with OBPlayer. When aud
 
 ![ Input Source](img/input_source.png ){: .Input}
 
-#### Recording with silence detection
+### Recording with silence detection
 
 When enabled, will automatically record only if signal present on line in
 
 ![ Silence Detection](img/silence_detection.png ){: .Silence Detection}
 
-#### Jack Audio
+### Jack Audio
 {:.no_toc}
 
 There are no input level GUI controls "out-of-the-box" with Jack audio, so if further control over the input level is desired, the configuration must be updated to include jack-mixer. Using jack-mixer programs requires a modified __jack.plumbing__ configuration with connections defined between the OpenBroadcaster ports, the jack-mixer control and system output. 
