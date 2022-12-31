@@ -30,7 +30,7 @@ After install, run CLI Tool
     passwd <username>     change password for user         
 
 
-**Legacy Updates
+**Legacy Updates**
 
 After install, log in as user `updates` privileges and Run updates with GUI tool.
 
