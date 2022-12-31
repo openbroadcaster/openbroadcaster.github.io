@@ -53,37 +53,42 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
 <a name="observer-install"></a>
 
-OBServer Installation Instructions
+   OpenBroadcaster - OBServer Installation Instructions
 
-These instructions are an alternative to using [ob.installer.sh](https://github.com/openbroadcaster/observer/blob/main/ob.installer.sh)
+   These instructions are an alternative to using ob.installer.sh
 
-*** After install, set `OB_UPDATES_USER` and `OB_UPDATES_PW` in __config.php__ and then run https://YOUR_IP/updates ***
+   Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
 
-_Administrator login is no longer supported for OB updates since July 2020._
+   1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
+   
+   2. Copy server files to a web environment (web document root).
 
-__Note:__ When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string
+   3. Import db/dbclean.sql to a database.
 
-1. See [dependencies.txt](https://github.com/openbroadcaster/observer/blob/main/dependencies.txt)
- for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
+   4. Copy config.sample.php to config.php, Edit as necessary.
 
-2. Copy server files to a web environment (web document root).
+   5. Ensure media storage directories are writable by the web server.
 
-3. Import db/dbclean.sql to a database.
+   6. In the web document root, create 'assets' and 'assets/uploads' directories. These directories should be writable by the web server.
+   
+   7. The database import includes one user. The username is admin. The password must be updated:
 
-4. Copy config.sample.php to config.php, and edit as necessary.
+       /var/www/observer/tools/cli/ob passwd <username> 
+   
+   8. Check for available updates to verify your installation and apply any required updates.
 
-5. Ensure media storage directories are writable by the web server.
+       /var/www/observer/tools/cli/ob updates run
+   
+   OpenBroadcaster CLI Tool. Run ob <command>.
 
-6. In the web document root, create 'assets' and 'assets/uploads' directories.  
-   These directories should be writable by the web server.
-
-7. The database import includes one user.  The username is admin.  The password
-   must be updated:
-
-   php tools/password_change.php admin newpassword
-
-8. Log into OpenBroadcaster as admin, and access http://ob_install_url/updates/ to
-   verify your installation and run any required updates.
+      Commands:
+      check                 check installation for errors                             
+      cron run              run scheduled tasks                                       
+      updates list          list available updates                                    
+      updates run           run available updates                                     
+      passwd <username>     change password for user
+   
+   For advanced instructions see https://support.openbroadcaster.com/install
 
 _Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
@@ -104,10 +109,6 @@ ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 #### Web Updates
 {:toc}
 
-![Web Utilities](/img/observer-install-check.png){: .web install check} 
-
-Shows updated system and configuration. Apply updates if available.
-
 #### Command Line Check
 {:toc}
 
@@ -121,7 +122,7 @@ CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most curren
 #### Advanced Configuration
 {:toc}
 
-[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting)
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-observer-troubleshooting)
 
 __Web Server__
 
@@ -167,24 +168,23 @@ EXAMPLE
 
 <a name="obplayer-install"></a>
 
- OBPlayer Installation Instructions
+    OBPlayer Installation Instructions
 
-1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt)
- for player dependencies (Debian 10/Ubuntu 20.04 & above)
+    1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt) for player dependencies (Debian 10/Ubuntu 20.04 & above)
 
-2. Run "bash obplayer_check" or "bash obplayer_loop -d" or "bash obplayer_check -h" for help
+    2. Run "bash obplayer_check" or "bash obplayer_loop -d" or "bash obplayer_check -h" for help
 
-3. Config files settings.db generated on first run in ~/.openbroadcaster
+    3. Config files settings.db generated on first run in ~/.openbroadcaster
 
-4. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
+    4. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
 
-5. Configure tabbed menus
+    5. Configure tabbed menus
 
-5. Restart the player
+    6. Restart the player
 
-__NOTE:__ _User required to change login passwords on first login with the defaults._
+    __NOTE:__ _User required to change login passwords on first login using the defaults._
 
-Connect RJ45 to a network with a router handing out DHCP IP addresses.
+    Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
 _Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
 
