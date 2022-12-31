@@ -29,6 +29,13 @@ After install, run CLI Tool
     updates run           run available updates                                     
     passwd <username>     change password for user         
 
+### Resetting Lost Password
+
+Use CLI tool 
+
+~~~~
+/var/www/observer/tools/cli/ob passwd <username> 
+~~~~
 
 **Legacy Updates**
 
@@ -114,7 +121,7 @@ Confirm/Re-enter passwords and Device to match player in Player Manager in Serve
 
 Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
 
-### Resetting Lost or Admin Password
+### Resetting Lost Password
 
 Files containing user and machine settings are located in the hidden `.openbroadcaster` folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.  To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
 
@@ -148,7 +155,7 @@ Add these switches for extra functionality
 
 `obplayer -- disable-http`  Disables the http admin dashboard
 
-### Audio Settings
+## Audio Settings
 {:.toc}
 
 <a name="pulse"></a>
@@ -280,7 +287,7 @@ Select video system in drop down menu in >Video>Sources.  Restart service.   Whe
 
 ## Reimaging the Player/Server
 
-To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/store) Contact us for access.
+To restore the original factory configuration, obtain the disk image for your supported Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/store) Contact us for access.
 
 1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 8Gb) from the disk image.
 
