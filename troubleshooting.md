@@ -295,6 +295,40 @@ __To restore the original configuration of jack.plumbing, without the jack-mixer
 
 Select video system in drop down menu in `>Sources>Video`  Restart OBPlayer dashboard.   When the new video system is enabled, it will automatically detect the video capabilities of the onboard detected video processing.
 
+## Email Configuration_
+
+Setup outgoing mail service using __exim4__ :
+
+1. Open a `Terminal Emulation` console
+2. Run the command `sudo apt-get update; sudo apt-get install exim4
+3. Run the command `sudo dpkg-reconfigure exim4-config
+4. Choose 'Smarthost with no local mail', accept the defaults up to smarthost, enter a valid mail server (you'll need a mail account there) as the outgoing smarthost, then accept the defaults to the end. The Mail Transfer Agent will restart.
+5. Edit the exim4 password file `sudo nano /etc/exim4/passwd.client` and enter a valid outgoing email account, using the format "target.mail.server.example:login:password"
+
+__Sample Notification Email__ 
+
+    From: noreply@openbroadcaster.com Subject: OpenBroadcaster OBPlayer Warning This is a warning that Player "CALLSIGN XXX.X FM" has not connected for "schedule" in the last hour. Please take steps to ensure this device is functioning properly. 
+
+__Email notifications of problems__
+
+Email Notification Alerts
+
+When a playlog, schedule or media sync hasn’t been received from a remote Player in 60 minutes, an advisory email will be sent to the Admin user address from the server indicating there is a problem that needs attention.  There is no interface for configuring it (as long as the cron is being run). You have to add some rows to the 'notices' table (phpMyAdmin would make this pretty straightforward). Add rows as follows:
+
+    ID: (this is automatic, leave blank) event: device_last_connect_schedule_warning, device_last_connect_playlog_warning, or device_last_connect_emergency_warning.
+
+These are three different event types - the system will look for a failure to connect in the last hour based on these three different requests (schedule, playlog, or emergency data). So you will probably want one row for each.
+
+device_id: the ID of the device you want email notifications for email: the email address where the notifications should be sent to toggled: set to 0; this is what prevents multiple warnings from going out. As soon as there is a failure, this gets set to '1' and an email is sent out. as soon as the system looks to be backup and running, this gets set back to '0' automatically.
+
+The idea here is that there is one email going out per failure.
+EXAMPLE
+
+    INSERT INTO notices (event, device_id, email, toggled) VALUES ('device_last_connect_schedule_warning', 1, 'admin1@dom.com', 0);
+    INSERT INTO notices (event, device_id, email, toggled) VALUES ('device_last_connect_playlog_warning', 1, 'admin1@dom.com', 0);
+    INSERT INTO notices (event, device_id, email, toggled) VALUES ('device_last_connect_emergency_warning', 1, 'admin1@dom.com', 0);
+    INSERT INTO notices (event, device_id, email, toggled) VALUES ('device_last_connect_emergency_warning', 1, 'admin2@dom.com', 0);
+
 ## Reimaging the Player/Server
 {:.no_toc}
 
@@ -305,3 +339,5 @@ To restore the original factory configuration, obtain the disk image for your su
 1. Insert the USB drive into the OBPlayer, and  power up the unit. The imaging process will start auotmatically. A progress bar will display. Be patient at 88% for a few minutes, it really is copying data. Observe activity on USB boot device.
 
 1. When the process has completed, a window will prompt to power off. Remove the USB drive and reboot.
+
+
