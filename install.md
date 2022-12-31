@@ -59,7 +59,7 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
 
-    1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
+    1. See dependencies.txt for server dependencies. Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
    
     2. Copy server files to a web environment (web document root).
 
@@ -71,7 +71,7 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     6. In the web document root, create 'assets' and 'assets/uploads' directories. These directories should be writable by the web server.
    
-    7. The database import includes one user. The username is admin. The password must be updated:
+    7. The database import includes one user. username is admin. The password must be updated.
 
     /var/www/observer/tools/cli/ob passwd <username> 
    
@@ -176,7 +176,7 @@ EXAMPLE
 
     3. Config files settings.db generated on first run in ~/.openbroadcaster
 
-    4. Admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
+    4. Admin panel http://<IP_of_Player>:23233 default user = admin default password = admin
 
     5. Configure tabbed menus
 
