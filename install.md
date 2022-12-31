@@ -122,7 +122,7 @@ CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most curren
 #### Advanced Configuration
 {:toc}
 
-[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-obplayer-troubleshooting)
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-observer-troubleshooting)
 
 __Web Server__
 
