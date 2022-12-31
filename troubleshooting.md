@@ -12,9 +12,27 @@ permalink: /troubleshooting
 
 <a name="troubleshooting"></a>
 
-## Post Installation Server Troubleshooting ##
+## Post Installation OBServer Troubleshooting ##
 
-After install, log in as user with Admin privileges and Run updates.
+New process for updates with CLI Tool
+{: .alert .alert-info}
+
+After install, run CLI Tool
+
+    obsuser@observer:/var/www/observer$ tools/cli/ob 
+    OpenBroadcaster CLI Tool (alpha). Run ob <command>.
+
+    Commands:
+    check                 check installation for errors                             
+    cron run              run scheduled tasks                                       
+    updates list          list available updates                                    
+    updates run           run available updates                                     
+    passwd <username>     change password for user         
+
+
+**Legacy Updates
+
+After install, log in as user `updates` privileges and Run updates with GUI tool.
 
 ~~~~
     http://Your_Server_IP/updates 
@@ -28,13 +46,15 @@ Fix for OB Sites in config by adding a FQDN (Fully Qualified Domain Name)
 
 "This file format is not supported" and "Cannot upload media"
 
+Make sure format is enabled `>Admin>Media Settings`
+
 ~~~~
     ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
 
     ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 ~~~~
 
-## Player Start Up
+## Post Installation OBPlayer Troubleshooting ##
 
 ### Networking
 
