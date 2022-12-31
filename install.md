@@ -172,19 +172,19 @@ EXAMPLE
 
     1. See [dependencies.txt](https://github.com/openbroadcaster/obplayer/blob/main/dependencies.txt) for player dependencies (Debian 10/Ubuntu 20.04 & above)
 
-    2. Run "bash obplayer_check" or "bash obplayer_loop -d" or "bash obplayer_check -h" for help
+2. Run "bash obplayer_check" or "bash obplayer_loop -d" or "bash obplayer_check -h" for help
 
-    3. Config files settings.db generated on first run in ~/.openbroadcaster
+3. Config files settings.db generated on first run in ~/.openbroadcaster
 
-    4. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
+4. Http admin panel http://<IP_of_Player_Device>:23233 default user = admin default password = admin
 
-    5. Configure tabbed menus
+5. Configure tabbed menus
 
-    6. Restart the player
+6. Restart the player
 
-    __NOTE:__ _User required to change login passwords on first login using the defaults._
+__NOTE:__ _User required to change login passwords on first login using the defaults._
 
-    Connect RJ45 to a network with a router handing out DHCP IP addresses.
+Connect RJ45 to a network with a router handing out DHCP IP addresses.
 
 _Source:_ [install.txt](https://github.com/openbroadcaster/obplayer/blob/main/install.txt)
 
