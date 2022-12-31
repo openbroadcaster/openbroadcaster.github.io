@@ -14,7 +14,7 @@ permalink: /troubleshooting
 
 ## Post Installation OBServer Troubleshooting ##
 
-New process for updates with CLI Tool
+New process for updates with CLI Tool >5.3
 {: .alert .alert-info}
 
 After install, run CLI Tool
@@ -114,68 +114,60 @@ Confirm/Re-enter passwords and Device to match player in Player Manager in Serve
 
 Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
 
-## __Backend Troubleshooting__
-
-Files containing user and machine settings are located in the .openbroadcaster folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.
-
-The __data.db__ contains a copy of media scheduled for the period identified by the sync buffer (default 24 hours). `Delete data.db and Restart` to purge the Player and force a refresh of the database, schedules and media according to the current sync settings. Useful when changing backend services.
-
-__settings.db__ contain the player settings in an sqlite db.  
-
 ### Resetting Lost or Admin Password
 
-To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
+Files containing user and machine settings are located in the hidden `.openbroadcaster` folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.  To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
 
-### Command Line Interface
+__data.db__ contains a copy of media and schedule for the period identified by the sync buffer (default 24 hours). From OBPlayer dashboard >Admin `Delete data.db and Restart` to purge db forces a refresh of schedules and media according to the current sync settings. Useful when changing backend services.
 
-Open local `Terminal` or ssh into target machine. Cd to dir where player files are /usr/share/obplayer
+### Startup 
+
+Open local `Terminal` or ssh into target machine. Cd to dir where player files are installed eg `/usr/share/obplayer`
 
 __Do not run as root or Sudo__
 
-Script bash "obplayer_check" starts the player and checks for existing instances and not start if already running
+Script "bash obplayer_check" starts the player and checks for existing instances and not start if already running
 
-Script bash "obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
+Script "bash obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
 
 Add these switches for extra functionality
 
-obplayer -d prints log messages to stdout console
+`obplayer -d` Prints log messages to stdout console
 
-obplayer -f or obplayer--fullscreen on startup. obplayer_loop -f also works.
+`obplayer -f or --fullscreen` Starts GTK full screen on startup. obplayer_loop -f also works.
 
-obplayer -H starts headless, no desktop GUI (audio only)
+`obplayer -H` Starts headless, no desktop GUI (audio only)
 
-obplayer -m starts screen minimized
+`obplayer -m` Starts screen minimized
 
-obplayer -r restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
+`obplayer -r` Restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
 
-obplayer  -c CONFIGDIR, --configdir Specifies an alternate data directory (default: ['~/.openbroadcaster'])
+`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory (default: ['~/.openbroadcaster'])
 
-obplayer -- disable-updater   Disables the OS updater
+`obplayer -- disable-updater`   Disables the OS updater
 
-obplayer -- disable-http  Disables the http admin dashboard
+`obplayer -- disable-http`  Disables the http admin dashboard
 
-## Audio
-
-### Test Signal 
+### No Audio Test Signal 
 
 Use the __test signal__ to confirm your audio setup is working correctly.
 
 To test the __on-board__ sound card:
 
-1. Disconnect any USB adapter.
-1. Connect headphones or studio monitor to 1/8" audio output.
+1. Disconnect all external USB adapter.
+1. Connect headphones or studio monitor to onboard audio output.
 1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
 1. On the [Sources](#Sources) Tab disable Audio In Source
-1. Save changes & reboot the Player 
-1. The Test Signal (440 Hz tone) should be audible.
+1. Save changes & restart OBPlayer 
+1. Test Signal (440 Hz tone) should be audible with levels present on VU meter.
 
-To test an external __USB__ sound card:
+To test an external __USB__ sound card with XLR balanced audio output:
 
-1. Connect any USB adapter.
+1. Connect [supported](https://support.openbroadcaster.com/accessories#supported-hardware) USB adapter.
 1. Connect the XLR outputs to sound board, amp or studio monitors.
 1. On the [Outputs](#Outputs) Tab, Select __Audio Mode__ PULSE. Enable Test Signal.
 1. On the [Sources](#Sources) Tab disable Audio In Source
-1. Save changes & reboot the Player 
+1. Save changes & restart OBPlayer 
 1. The Test Signal (440 Hz tone) should be audible. 
 
 If <span style="color: darkred">no audio output</span> is produced, check the Status page for errors in the log and observe VU meter for activity:
@@ -189,17 +181,17 @@ Disable the test signal once audio setup is working. Enable __Audio In Source__,
 
 <br /><a name="mixer"></a>
 
-## __Advanced Topics__
+## Advanced Topics
 {:.toc}
 
-### __Audio Settings__
+### Audio Settings
 {:.toc}
 
 <a name="pulse"></a>
 
-Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
+[Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
 
-Addional supported audio modes each with the uses
+Addional supported audio modes
 
 • ALSA
 
@@ -293,8 +285,8 @@ Select video system in drop down menu in >Video>Sources.  Restart service.   Whe
 
 To restore the original factory configuration, obtain the disk image for your Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/store) Contact us for access.
 
-1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 4Gb) from the disk image.
+1. Use [Etcher](https://www.balena.io/etcher/) or similar utility to create a bootable USB drive (min. 8Gb) from the disk image.
 
 1. Insert the USB drive into the OBPlayer, and  power up the unit. The imaging process will start auotmatically. A progress bar will display. Be patient at 88% for a few minutes, it really is copying data. Observe activity on USB boot device.
 
-1. When the process has completed, remove the USB drive and reboot.
+1. When the process has completed, a window will prompt to power off. Remove the USB drive and reboot.
