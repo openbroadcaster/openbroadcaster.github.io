@@ -182,7 +182,7 @@ EXAMPLE
 
     6. Restart the player
 
-    __NOTE:__ _User required to change login passwords on first login using the defaults._
+    NOTE:User required to change login passwords on first login using the defaults.
 
     Connect RJ45 to a network with a router handing out DHCP IP addresses.
     
