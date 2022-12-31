@@ -57,7 +57,7 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     These instructions are an alternative to using ob.installer.sh
 
-    Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
+    Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string. 
 
     1. See dependencies.txt for server dependencies. Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
    
@@ -69,7 +69,7 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     5. Ensure media storage directories are writable by the web server.
 
-    6. In the web document root, create 'assets' and 'assets/uploads' directories. These directories should be writable by the web server.
+    6. In the web document root, create 'assets' and 'assets/uploads' directories writable by the web server.
    
     7. The database import includes one user. username is admin. The password must be updated.
 
