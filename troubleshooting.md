@@ -17,7 +17,7 @@ permalink: /troubleshooting
 New process for updates with CLI Tool >5.3
 {: .alert .alert-info}
 
-After install, run CLI Tool
+After install, run CLI Tool, change passwd for `admin`
 
     obsuser@observer:/var/www/observer$ tools/cli/ob 
     OpenBroadcaster CLI Tool (alpha) Run ob <command>
@@ -91,7 +91,7 @@ Add these switches for extra functionality
 
 `obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory 
 
-(default: ['~/.openbroadcaster'])
+Default directory '~/.openbroadcaster'
 
 ### Networking
 
@@ -160,7 +160,8 @@ From >Admin Tab `Restart DB and Reset` forces a reset of a fresh sync of media a
 
 ### Resetting Lost Password
 
-Files containing user and machine settings are located in the hidden `.openbroadcaster` folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.  To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
+Files containing user and machine settings are located in the hidden Default directory '~/.openbroadcaster' folder within the users home directory. 
+__Admin Tab__ provides utilities for backup and restoration of user settings.  To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting OBPlayer.  On restart OBPlayer will recreate this DB with default values.
 
 __data.db__ contains a copy of media and schedule for the period identified by the sync buffer (default 24 hours). From OBPlayer dashboard >Admin `Delete data.db and Restart` to purge db forces a refresh of schedules and media according to the current sync settings. Useful when changing backend services.
 
@@ -225,9 +226,9 @@ Disable the test signal once audio setup is working. Enable __Audio In Source__,
 ### Pulse Audio
 {:.no_toc}
 
-Pulse is the default and recommended audio system to use with OBPlayer. When audio mode settings are changed, __Reboot.__ Once rebooted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
+Pulse is the default and recommended audio system to use with OBPlayer. When audio mode settings are changed, __Restart.__ Once restarted, audio slider controls will be present in the dashboard under PULSE to set input and output levels. 
 
-* On the __Outputs__ Tab, set audio output mode to PULSE. Disable the *Test Signal*   From `Sources Tab` enable the `Audio In Source` setting audio mode to "PULSE".
+* On the `Outputs Tab` set audio output mode to PULSE. Disable the *Test Signal*   From `Sources Tab` enable the `Audio In Source` setting audio mode to "PULSE".
 
 * If using the GPIO switching Relay, connect a serial cable from the Player to the Switching Relay. On the Emergency Alerts tab, under Advanced Settings, enable the RS-232 DTR Alert signal. The RS-232 Device Filename should be set to the serial port (/dev/ttyS0 for Port 1, /dev/ttyS1 for Port 2).
 
