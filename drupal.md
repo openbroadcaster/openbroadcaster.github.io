@@ -4,19 +4,25 @@ title: Drupal
 permalink: /drupal
 ---
 
+<br/>
+
+![API Module](/img/OB_API_Module.png ){: .screen shot} 
+
 # Drupal Modules
 {:.no_toc}
 
 * TOC
 {:toc}
 
-There are 3 [modules available](https://github.com/openbroadcaster/DrupalRadio) and a custom radio Theme template for Drupal 7.X CMS.
+Support to be replaced with API embed code maintaining and increasing these plugins functionality.
+
+HELP WANTED if anyone wishes to take over or maintain this repo for DRUPAL 8.0 development.
+
+There are 3 [modules available](https://github.com/openbroadcaster/drupal-broadcast-media ) and a custom radio Theme template for Drupal 7.X CMS.
 
 <br/>
 
 ## API Bridge
-
-![API Module](/img/OB_API_Module.png ){: .screen shot} 
 
 Takes info from the backend of an OBServer and presents this for display on a front end Drupal site.  
 
