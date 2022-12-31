@@ -55,11 +55,11 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     OpenBroadcaster - OBServer Installation Instructions
 
-These instructions are an alternative to using ob.installer.sh
+    These instructions are an alternative to using ob.installer.sh
 
-Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
+    Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string 
 
-1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
+    1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
    
 2. Copy server files to a web environment (web document root).
 
