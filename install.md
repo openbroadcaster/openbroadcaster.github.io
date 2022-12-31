@@ -122,7 +122,7 @@ CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most curren
 #### Advanced Configuration
 {:toc}
 
-[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-observer-troubleshooting)
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-obplayer-troubleshooting)
 
 __Web Server__
 
@@ -246,7 +246,7 @@ Player is up to date
 #### Advanced Configuration
 {:toc}
 
-[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting)
+[Toubleshooting Guide](https://support.openbroadcaster.com/troubleshooting#post-installation-obplayer-troubleshooting)
 
 __Example Installation__
 
@@ -296,7 +296,7 @@ OBPlayer is now setup with latest code ready to use
 
 ## Running OBPlayer for first time
 
-From the install directory ie. /usr/share/obplayer run:
+From the install directory __EG__ `/usr/share/obplayer`
 
 ~~~~
 bash obplayer_check
