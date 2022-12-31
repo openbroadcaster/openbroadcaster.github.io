@@ -20,7 +20,7 @@ New process for updates with CLI Tool >5.3
 After install, run CLI Tool
 
     obsuser@observer:/var/www/observer$ tools/cli/ob 
-    OpenBroadcaster CLI Tool (alpha). Run ob <command>.
+    OpenBroadcaster CLI Tool (alpha) Run ob <command>
 
     Commands:
     check                 check installation for errors                             
@@ -83,17 +83,15 @@ Add these switches for extra functionality
 
 `obplayer -m` Starts screen minimized
 
-`obplayer -r` Restart 
-
-Clears out Playlist\Schedule\Media\Priority broadcast cache
-
-`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory 
-
-(default: ['~/.openbroadcaster'])
+`obplayer -r` Restart. Clears out media & broadcast cache
 
 `obplayer -- disable-updater`   Disables the OS updater
 
 `obplayer -- disable-http`  Disables the http admin dashboard
+
+`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory 
+
+(default: ['~/.openbroadcaster'])
 
 ### Networking
 
