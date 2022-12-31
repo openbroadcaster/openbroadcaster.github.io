@@ -77,15 +77,19 @@ Add these switches for extra functionality
 
 `obplayer -d` Prints log messages to stdout console
 
-`obplayer -f or --fullscreen` Starts GTK full screen on startup. obplayer_loop -f also works.
+`obplayer -f or --fullscreen` Starts GTK full screen on startup
 
 `obplayer -H` Starts headless, no desktop GUI (audio only)
 
 `obplayer -m` Starts screen minimized
 
-`obplayer -r` Restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
+`obplayer -r` Restart 
 
-`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory (default: ['~/.openbroadcaster'])
+Clears out Playlist\Schedule\Media\Priority broadcast cache
+
+`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory 
+
+(default: ['~/.openbroadcaster'])
 
 `obplayer -- disable-updater`   Disables the OS updater
 
@@ -93,7 +97,9 @@ Add these switches for extra functionality
 
 ### Networking
 
-On headless machines the Player is accessed from a web dasboard accecible from another machine on the same network from an IP address that is issued with DHCP.  To determine the local IP of Player from terminal issue "ip addr show"  Your IP will appear like 192.168.1.100.  127.0.0.1 is a local loop back IP. You might also get into your router and look at the DHCP Client list and see the players IP that way.  Recomended that Players be setup with a static IP address as DHCP can often change.
+On headless machines OBPlayer is accessed from a web dasboard accessible from another machine on the same network from an IP address that is issued with DHCP.  To determine the local IP of Player from terminal issue `ip addr show`  Your IP will appear like 192.168.1.100.  127.0.0.1 is a local loop back IP internal to your machine. You might also get into your router and look at the DHCP Client list and see the players IP that way.  
+
+**Recomended that OBPlayers be setup with a static IP address as DHCP can often change.**
 
 From a web browser type 
 
@@ -101,7 +107,7 @@ From a web browser type
 http://ip-of-server:23233
 ~~~~
 
-a login window will prompt for user and password. If there is a timeout and/or network unreachable message try these steps to resolve.
+Login window will prompt for user and password. If there is a timeout and/or network unreachable message try these steps to resolve.
 
 __Networking Tests__
 
@@ -109,13 +115,13 @@ From __Terminal__ Ping "localhost" replies indicate internal networking working
 
 From __Terminal__ Ping "IP-of_Router/Gateway" replies indicate networking working to router.
 
-From __Terminal__ Ping "IP-of-Other-Device-on-Network" replies indicate Player and router are able to communicate to other Devices.
+From __Terminal__ Ping "IP-of-Other-Device-on-Network" replies indicate OBPlayer and router are able to communicate to other Devices.
 
 From __Terminal__ Ping "google.com" replies indicate network is able to communicate through router to the real world internet.
 
 ### Checking Player is running
 
-If you are unable to access the player dashboard, do not have local access or running in a virtual service, you'll want to verify the Player appears as a process.
+If you are unable to access the player dashboard, do not have local access or running in a virtual service, you'll want to verify OBPlayer appears as a process.
 
 From __Terminal__ 
 
@@ -123,31 +129,38 @@ From __Terminal__
 ps -ef | grep python
 ~~~~
 
-Lists all Python process including the obplayer.  If this is not showing then obplayer is not running.
+Lists all Python process including OBPlayer.  If this is not showing then obplayer is not running.
 
 ![ PS FAX Python Screenshot](/img/ps-fax-python.png ){: .psfax-python}
 
-To check all running processes, including obplayer and Icecast 
+To check all running processes, including OBPlayer and Icecast 
 
 ~~~~
 ps fax
 ~~~~ 
 
-In this example both obplayer and Icecast are highlighted
+In this example both OBPlayer and Icecast are highlighted
 
 ![ PS FAX Screenshot](/img/ps-fax.png ){: .psfax}
 
 ### Sync
 
-Ensure the player device is able to access the internet Terminal "ping google.com" and can reach the management server as specified in sync settings under the Sync tab. The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" Do not forget to include the trailing /remote.php.
+1. Ensure OBPlayer device is able to access the internet.  
 
-Check the sync url exisits by pasting into browser and you should see screen asking for Device Id.  This isn't accesible or do anything, but you can verify the server is expecting a sync for that ID
+1. Open a Terminal and "ping google.com" to reach the management server as specified in sync settings under the Sync tab. 
+
+The format can be "localhost/remote.php", "127.0.0.1/remote.php" or http(s)://IP-of-Server/remote.php" 
+
+Do not forget to include the trailing `/remote.php`
+{: .alert .alert-info}
+
+1. Check the sync url exisits by pasting into browser and you should see screen asking for Device Id.  This isn't accesible or do anything, but you can verify the server is expecting a sync for that ID
 
 ![ Sync Connect Screenshot](/img/sync-connect.png ){: .sync-connect}
 
-Confirm/Re-enter passwords and Device to match player in Player Manager in Server 
+1. Confirm/Re-enter passwords and Device to match player in >Player Manager in the OBServer 
 
-Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
+1. From >Admin Tab `Restart DB and Reset` forces a reset of a fresh sync of media and schedules
 
 ### Resetting Lost Password
 
@@ -160,9 +173,9 @@ __data.db__ contains a copy of media and schedule for the period identified by t
 
 <a name="pulse"></a>
 
-[Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series players and will produce sound quality suitable for broadcast. 
+[Pulse](#pulse) is the default tool for adjustment of output levels for all installed sound cards in Ver 5.X Series OBPlayers and will produce sound quality suitable for broadcast. 
 
-Addional supported audio modes
+Addional supported audio modes:
 
 • ALSA
 
@@ -174,9 +187,9 @@ Addional supported audio modes
 
 Set to `No Input` to disable on board audio play back.
 
-Setting __Audio Mode__ and restarting will bring up a slider control to set levels for both input and output in dashboard to control signal levels 
+Setting __Audio Mode__ and restarting will bring up a visual slider control to set levels for both input and output in dashboard to control signal levels 
 
-### No Audio Test Signal 
+### Audio Test Signal 
 
 Use the __test signal__ to confirm your audio setup is working correctly.
 
