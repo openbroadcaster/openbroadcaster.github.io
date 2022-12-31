@@ -61,36 +61,34 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
     1. See dependencies.txt for server dependencies.  Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
    
-2. Copy server files to a web environment (web document root).
+    2. Copy server files to a web environment (web document root).
 
-3. Import db/dbclean.sql to a database.
+    3. Import db/dbclean.sql to a database.
 
-4. Copy config.sample.php to config.php, Edit as necessary.
+    4. Copy config.sample.php to config.php, Edit as necessary.
 
-5. Ensure media storage directories are writable by the web server.
+    5. Ensure media storage directories are writable by the web server.
 
-6. In the web document root, create 'assets' and 'assets/uploads' directories. These directories should be writable by the web server.
+    6. In the web document root, create 'assets' and 'assets/uploads' directories. These directories should be writable by the web server.
    
-7. The database import includes one user. The username is admin. The password must be updated:
+    7. The database import includes one user. The username is admin. The password must be updated:
 
-/var/www/observer/tools/cli/ob passwd <username> 
+    /var/www/observer/tools/cli/ob passwd <username> 
    
-8. Check for available updates to verify your installation and apply any required updates.
+    8. Check for available updates to verify your installation and apply any required updates.
 
-/var/www/observer/tools/cli/ob updates run
+    /var/www/observer/tools/cli/ob updates run
 
-OpenBroadcaster CLI Tool. Run ob <command>.
+    OpenBroadcaster CLI Tool. Run ob <command>.
 
-Commands:
-check                 check installation for errors                             
-cron run              run scheduled tasks                                       
-updates list          list available updates                                    
-updates run           run available updates                                     
-passwd <username>     change password for user
+    Commands:
+    check                 check installation for errors                             
+    cron run              run scheduled tasks                                       
+    updates list          list available updates                                    
+    updates run           run available updates                                     
+    passwd <username>     change password for user
    
-For advanced instructions see https://support.openbroadcaster.com/install
-   
-   EOF    
+    For advanced instructions see https://support.openbroadcaster.com/install
 
 _Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
