@@ -37,7 +37,7 @@ Use CLI tool
 /var/www/observer/tools/cli/ob passwd <username> 
 ~~~~
 
-**Legacy Updates**
+**Legacy Updates pre 5.3**
 
 After install, log in as user `updates` privileges and Run updates with GUI tool.
 
@@ -62,6 +62,34 @@ Make sure format is enabled `>Admin>Media Settings`
 ~~~~
 
 ## Post Installation OBPlayer Troubleshooting ##
+
+### Startup 
+
+Open local `Terminal` or ssh into target machine. Cd to dir where player files are installed eg `/usr/share/obplayer`
+
+__Do not run as root or Sudo__
+
+Script "bash obplayer_check" starts the player and checks for existing instances and not start if already running
+
+Script "bash obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
+
+Add these switches for extra functionality
+
+`obplayer -d` Prints log messages to stdout console
+
+`obplayer -f or --fullscreen` Starts GTK full screen on startup. obplayer_loop -f also works.
+
+`obplayer -H` Starts headless, no desktop GUI (audio only)
+
+`obplayer -m` Starts screen minimized
+
+`obplayer -r` Restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
+
+`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory (default: ['~/.openbroadcaster'])
+
+`obplayer -- disable-updater`   Disables the OS updater
+
+`obplayer -- disable-http`  Disables the http admin dashboard
 
 ### Networking
 
@@ -126,34 +154,6 @@ Restart DB and Reset from Admin Tab.  Forces a reset of media sync.
 Files containing user and machine settings are located in the hidden `.openbroadcaster` folder within the users home directory. The __Admin Tab__ provides utilities for backup and restoration of user settings.  To reset admin or lost passwords may be recovered by editing the sqlite DB file  __settings.db__  or simply deleting it and restarting obplayer.  On restart obplayer will recreate this DB with default values.
 
 __data.db__ contains a copy of media and schedule for the period identified by the sync buffer (default 24 hours). From OBPlayer dashboard >Admin `Delete data.db and Restart` to purge db forces a refresh of schedules and media according to the current sync settings. Useful when changing backend services.
-
-### Startup 
-
-Open local `Terminal` or ssh into target machine. Cd to dir where player files are installed eg `/usr/share/obplayer`
-
-__Do not run as root or Sudo__
-
-Script "bash obplayer_check" starts the player and checks for existing instances and not start if already running
-
-Script "bash obplayer_loop" runs in an infinite loop to restart in case it unexpectedly terminates (crashes) or is shutdown via the web dashboard
-
-Add these switches for extra functionality
-
-`obplayer -d` Prints log messages to stdout console
-
-`obplayer -f or --fullscreen` Starts GTK full screen on startup. obplayer_loop -f also works.
-
-`obplayer -H` Starts headless, no desktop GUI (audio only)
-
-`obplayer -m` Starts screen minimized
-
-`obplayer -r` Restarts fresh, clearing out Playlist\Schedule\Media cache and priority broadcast databases
-
-`obplayer  -c CONFIGDIR, --configdir` Specifies an alternate data directory (default: ['~/.openbroadcaster'])
-
-`obplayer -- disable-updater`   Disables the OS updater
-
-`obplayer -- disable-http`  Disables the http admin dashboard
 
 ## Audio Settings
 {:.toc}
@@ -281,11 +281,12 @@ __To restore the original configuration of jack.plumbing, without the jack-mixer
    (connect "openbroadcasterout:out_audiosink_2" "system:playback_2")
 ~~~~
 
-## Video
+## Video Settings
 
-Select video system in drop down menu in >Video>Sources.  Restart service.   When the new video system is enabled, it will automatically detect the video capabilities of the onboard detected video processing.
+Select video system in drop down menu in `>Sources>Video`  Restart OBPlayer dashboard.   When the new video system is enabled, it will automatically detect the video capabilities of the onboard detected video processing.
 
 ## Reimaging the Player/Server
+{:.no_toc}
 
 To restore the original factory configuration, obtain the disk image for your supported Player/Server from your [OpenBroadcaster Downloads] (https://openbroadcaster.com/store) Contact us for access.
 
