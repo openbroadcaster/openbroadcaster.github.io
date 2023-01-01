@@ -109,15 +109,18 @@ ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
 #### Web Updates
 {:toc}
 
-#### Command Line Check
+#### Command Line Tool
 {:toc}
+
+![observer-run-updates](https://user-images.githubusercontent.com/4603894/210158404-a5fa134c-c868-4f3b-aeb4-70bc65190c8b.png)
+
+CLI Running Updates
 
 ![CLI Utilities](/img/ob_cli_check.png){: .cli install check} 
 
-Command Line Tool shows no errors
+CLI Check without errors
 
 CHECK FOR [UPDATES](#update) Prior to reporting issues to ensure the most current version is running
-
 
 #### Advanced Configuration
 {:toc}
