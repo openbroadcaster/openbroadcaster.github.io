@@ -8,7 +8,17 @@ permalink: /emergency101
 
 |Learning Outcomes
 |:-|:--|
-|Outline|How to manage, maintain and configure systems to provide community emergency alerts using Open Source Software|
+|Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software include the following topics:
+• Understanding the basics of Open Source Software
+• Evaluating Open Source Software for emergency alerting needs
+• Installing and configuring an appropriate Open Source Software for emergency alerting
+• Setting up a user-friendly interface for emergency alerting
+• Integrating Open Source Software with existing alerting systems
+• Building a system for real-time alerting
+• Developing a test plan to ensure system reliability
+• Evaluating and monitoring system performance
+• Troubleshooting and resolving system issues
+• Developing a plan for maintaining and updating the system|
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 - 6 Hours per module|
