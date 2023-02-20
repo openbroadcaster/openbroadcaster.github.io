@@ -89,6 +89,10 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
     passwd <username>     change password for user
    
     For advanced instructions see https://support.openbroadcaster.com/install
+    
+    Pre 5.3 Branch Instructions    
+    
+    *** After install, set OB_UPDATES_USER and OB_UPDATES_PW in config.php and then run https://YOUR_IP/updates ***
 
 _Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
 
