@@ -1,26 +1,29 @@
 ---
 layout: default
-title: Server Training
+title: Observer Training
 permalink: /server-training
 ---
-## Server Training Syllabus
+![ Observer Training](img/observer-training-advanced.png ){: .Observer Training}
+
+
+# Observer Training Syllabus
 {:.no_toc}
 
 * TOC
 {:toc}
 
-<a name="server"></a>
+<a name="observer"></a>
 
-## Lesson 1 - Server Operation
+## Lesson 1 - Observer Operation
 {:toc}
  
 |Learning Outcomes|
 |:-|:--|
-|Outline|How to manage and operate a OpenBroadcaster server installation.|
+|Outline|How to manage and operate a OpenBroadcaster Observer installation.|
 |Skill|Beginner|
 |Prerequisites|None|
 |Time required|6 Hours|
-|Description|Manage and operate a OpenBroadcaster server installation.|
+|Description|Manage and operate a OpenBroadcaster Observer installation.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
