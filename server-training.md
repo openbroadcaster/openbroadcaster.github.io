@@ -147,6 +147,8 @@ Go to __schedules__ > __schedule permissions__ and select __Add Permissions__ fr
 Log out with user and demo adding media with their permissions
 Admin
 
+![ Observer Advanced Training](img/observer-training-advanced.png ){: .Observer Advanced Training}
+
 ## Lesson 2 - Advance Server
 
 |Learning Outcomes|
