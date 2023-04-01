@@ -37,7 +37,7 @@ permalink: /emergency101
 • Developing a test plan to ensure system reliability
 • Evaluating and monitoring system performance
 • Troubleshooting and resolving system issues
-• Developing a plan for maintaining and updating the system|
+• Developing a plan for maintaining and updating the system
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 - 6 Hours per module|
