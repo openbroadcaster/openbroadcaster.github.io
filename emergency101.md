@@ -21,28 +21,35 @@ permalink: /emergency101
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
-
-
-
-
 |Learning Outcomes
 |:-|:--|
 |Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software|
-• Understanding the basics of Open Source Software
-• Evaluating Open Source Software for emergency alerting needs
-• Installing and configuring an appropriate Open Source Software for emergency alerting
-• Setting up a user-friendly interface for emergency alerting
-• Integrating Open Source Software with existing alerting systems
-• Building a system for real-time alerting
-• Developing a test plan to ensure system reliability
-• Evaluating and monitoring system performance
-• Troubleshooting and resolving system issues
-• Developing a plan for maintaining and updating the system
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 - 6 Hours per module|
 |Description|How to operate an over the air FM Radio Station with CAP Alerts.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
+
+• Understanding the basics of Open Source Software
+
+• Evaluating Open Source Software for emergency alerting needs
+
+• Installing and configuring an appropriate Open Source Software for emergency alerting
+
+• Setting up a user-friendly interface for emergency alerting
+
+• Integrating Open Source Software with existing alerting systems
+
+• Building a system for real-time alerting
+
+• Developing a test plan to ensure system reliability
+
+• Evaluating and monitoring system performance
+
+• Troubleshooting and resolving system issues
+
+• Developing a plan for maintaining and updating the system
+
 
 <a name="emergency training"></a>
 
