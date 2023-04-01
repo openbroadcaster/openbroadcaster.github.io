@@ -3,7 +3,7 @@ layout: default
 title: Observer Training
 permalink: /server-training
 ---
-![ Observer Training](img/observer-training-advanced.png ){: .Observer Training}
+![ Observer Training](img/training-observer.png ){: .Observer Training}
 
 
 # Observer Training Syllabus
