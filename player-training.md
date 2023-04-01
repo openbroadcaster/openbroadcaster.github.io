@@ -121,7 +121,7 @@ Install into /opt/
 
 ### CLI Debug Tools
 
-Using - switches in the terminal 
+Using - switches in the terminal  
 
 
 
