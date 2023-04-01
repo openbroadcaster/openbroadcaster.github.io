@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Player Training
+title: Obplayer Training
 permalink: /player-training
 ---
-## Player Training Syllabus
+
+![ Obplayer Training](img/obplayer-training.png){: .Obplayer Training}
+
+# Obplayer Training Syllabus
 {:.no_toc}
 
 * TOC
@@ -16,16 +19,16 @@ permalink: /player-training
 
 |Learning Outcomes
 |:-|:--|
-|Outline|How to manage and operate OpenBroadcaster Player|
+|Outline|How to manage and operate OpenBroadcaster Obplayer|
 |Skill|Advanced|
 |Prerequisites|None|
 |Time required|3 Hours|
-|Description|Manage and operate the OpenBroadcaster Player.|
+|Description|Manage and operate the OpenBroadcaster Obplayer.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
 ***
 
-### OBPlayer Overview
+### Obplayer Overview
 {:toc}
 
 Terminology
