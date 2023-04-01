@@ -18,6 +18,8 @@ permalink: /emergency101
 |Description|How to operate an over the air FM Radio Station with CAP Alerts.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
+***
+
 • Understanding the basics of Open Source Software
 
 • Evaluating Open Source Software for emergency alerting needs
@@ -37,8 +39,6 @@ permalink: /emergency101
 • Troubleshooting and resolving system issues
 
 • Developing a plan for maintaining and updating the system
-
-***
 
 <a name="emergency training"></a>
 
