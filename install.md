@@ -3,6 +3,7 @@ layout: default
 title: Install
 permalink: /install
 ---
+![ Install](img/install.png )
 
 ## Installation
 {:.no_toc}
