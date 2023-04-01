@@ -3,12 +3,31 @@ layout: default
 title: Emergency Training 101
 permalink: /emergency101
 ---
+
+![ Emergency Communications 101](img/Emergency-Communications-101.png ){: .Emergency Communications 101}
+
 # Emergency Communications 101
 {:.no_toc}
 
+
+
 |Learning Outcomes
 |:-|:--|
-|Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software include the following topics:|
+|Outline|How to manage and operate OpenBroadcaster Player|
+|Skill|Advanced|
+|Prerequisites|None|
+|Time required|3 Hours|
+|Description|Manage and operate the OpenBroadcaster Player.|
+|Challenge|Certificate upon passing grade of 80% of computer administered test.| 
+
+***
+
+
+
+
+|Learning Outcomes
+|:-|:--|
+|Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software|
 • Understanding the basics of Open Source Software
 • Evaluating Open Source Software for emergency alerting needs
 • Installing and configuring an appropriate Open Source Software for emergency alerting
@@ -329,4 +348,4 @@ HF Antenna with copper wire and ABS Insulator rings
 
 Patch cable RJ45
 
-## Appendicies
+## Appendicies 
