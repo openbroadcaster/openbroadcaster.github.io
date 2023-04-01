@@ -9,19 +9,7 @@ permalink: /emergency101
 # Emergency Communications 101
 {:.no_toc}
 
-
-
-|Learning Outcomes
-|:-|:--|
-|Outline|How to manage and operate OpenBroadcaster Player|
-|Skill|Advanced|
-|Prerequisites|None|
-|Time required|3 Hours|
-|Description|Manage and operate the OpenBroadcaster Player.|
-|Challenge|Certificate upon passing grade of 80% of computer administered test.| 
-
-***
-|Learning Outcomes
+|Learning Outcomes|
 |:-|:--|
 |Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software|
 |Skill|Advanced|
@@ -50,6 +38,7 @@ permalink: /emergency101
 
 • Developing a plan for maintaining and updating the system
 
+***
 
 <a name="emergency training"></a>
 
