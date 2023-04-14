@@ -14,7 +14,7 @@ permalink: /emergency101
 |Outline|Training on how to manage, maintain, and configure systems to provide community emergency alerts using Open Source Software|
 |Skill|Advanced|
 |Prerequisites|None|
-|Time required|3 - 6 Hours per module|
+|Time required|2 - 6 Hours per module|
 |Description|How to operate an over the air FM Radio Station with CAP Alerts.|
 |Challenge|Certificate upon passing grade of 80% of computer administered test.| 
 
@@ -90,7 +90,7 @@ Use Handie Talkies to communicate with group effectively
 
 AC/DC Explained
 
-Backup and Alerternative Power
+Backup and Alternative Power
 
 Battery Technology \ Super Capacitors
 
@@ -204,7 +204,7 @@ Monitoring Canadian Pelmorex TCP/IP Heart Beats with  with Alert Player
 ### Configuration 
 {:toc}
 
-Specify alerting location Geocode
+Specify alerting location Geocode (SGC) 
 
 Audio and Video Settings
 
@@ -342,6 +342,6 @@ Pringles can extended wifi antennae
 
 HF Antenna with copper wire and ABS Insulator rings
 
-Patch cable RJ45
+Cross Over Patch cable RJ45
 
 ## Appendicies 
