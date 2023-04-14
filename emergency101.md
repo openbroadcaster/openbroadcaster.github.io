@@ -199,7 +199,7 @@ Broadcast Intrusive (BI) Alerts and non mandatory advisories
 
 Open Source Alert Player application web dashboard
 
-Monitoring Canadian Pelmorex TCP/IP Heart Beats with  with Alert Player 
+Monitoring Canadian Pelmorex TCP/IP Heart Beats with Alert Player 
 
 ### Configuration 
 {:toc}
