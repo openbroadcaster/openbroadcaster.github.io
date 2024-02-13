@@ -165,16 +165,29 @@ Admin
 ### Saved Search Filters
 {:toc}
 
-Advanced Search
+Advanced Search and filtering
 
 Saved Searches
 
 Default saved searched
 
+Create a Dynamic Playlist based on searches
+
+### Advanced Metadata
+{:toc}
+
+Viewing extended Metadata
+
+Types of Metadata fields
+
+Create custom metadata fields
+
+Create a Dynamic Playlist based on metadata searches
+
 ### Server Management
 {:toc}
 
-Add remove users
+Add and remove users
 
 Users and Permissions Administration
 
@@ -182,24 +195,15 @@ MOTD (Message of the Day)
 
 Module Management
 
-Add/Delete Genres and Categories
+Add/Delete/Customize Categories and Genres
 
 Create a Permissions Matrix
 
-Logging tool
+Logging and Monitoring tool
 
 Device management
 
 Show media formats
-
-Add/Customize Categories and Genres
-
-### Advanced Media
-{:toc}
-
-Extended Metadata
-
-My PL and My Media
 
 #### Provision Player on server 
 {:.no_toc}
