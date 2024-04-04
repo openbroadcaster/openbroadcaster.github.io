@@ -29,7 +29,7 @@ Storage | 128GB
 Display |	No display is required for the web server
 Framework |	PHP, MySQL, Nginx and Gstreamer 
 
-Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. The exact requirements will depend on the specific way OBServer is used, and the load from users. 
+Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 18.04/22.04 
 
 #### OBPlayer
 
@@ -43,7 +43,7 @@ Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
 Video |	Minimum 640x480 screen resolution
 Framework |	Python and Gstreamer 
 
-Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a process on CLI in a VM. Desktop is optional. 
+Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 18.04/22.04
 
 [Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
@@ -54,7 +54,7 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
 <a name="observer-install"></a>
 
-    OpenBroadcaster - Server Installation Instructions
+OpenBroadcaster - Server Installation Instructions
     
 Dependencies
 
@@ -88,37 +88,37 @@ Install the following Ubuntu / Debian packages, or the equivalent for your opera
 
 Installation Steps
 
-    Copy the OpenBroadcaster Server files to your web server's document root directory.
+Copy the OpenBroadcaster Server files to your web server's document root directory.
 
-    Navigate to the cloned repository directory within the web document root and run the following command to install PHP and JavaScript dependencies.
+Navigate to the cloned repository directory within the web document root and run the following command to install PHP and JavaScript dependencies.
 
 ~~~~
 composer install && npm install
 ~~~~
 
-    Create a new MySQL or MariaDB database for OpenBroadcaster and import the db/clean.sql file to set up the initial database structure.
+Create a new MySQL or MariaDB database for OpenBroadcaster and import the db/clean.sql file to set up the initial database structure.
 
-    Copy the config.sample.php file to config.php and open it in a text editor. Set the required configuration items, such as database connection details and other settings specific to your environment.
+Copy the config.sample.php file to config.php and open it in a text editor. Set the required configuration items, such as database connection details and other settings specific to your environment.
 
-    Run the following command to validate your configuration file. Correct any errors displayed in red.
+Run the following command to validate your configuration file. Correct any errors displayed in red.
 
 ~~~~
 tools/cli/ob check
 ~~~~
 
-    Run the following command to install database updates. This may take a few minutes to complete.
+Run the following command to install database updates. This may take a few minutes to complete.
     
 ~~~~
 tools/cli/ob updates run all
 ~~~~
 
-    Set the password for the default admin user by running the following command. Enter a secure password when prompted.
+Set the password for the default admin user by running the following command. Enter a secure password when prompted.
 
 ~~~~
 tools/cli/ob passwd admin
 ~~~~
 
-    Set up a cron job to run the cron.php script regularly. This script is responsible for clearing old cache and unused upload files. The following is an example crontab entry.
+Set up a cron job to run the cron.php script regularly. This script is responsible for clearing old cache and unused upload files. The following is an example crontab entry.
 
 ~~~~
 */30 * * * * /path/to/openbroadcaster/tools/cli/ob cron run
