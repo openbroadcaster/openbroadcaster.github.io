@@ -54,62 +54,77 @@ Recommended. Should be a \*nix system. Debian 10 or Ubuntu 20.04 LTS. Runs as a 
 
 <a name="observer-install"></a>
 
-    OpenBroadcaster - OBServer Installation Instructions
-
-    These instructions are an alternative to using ob.installer.sh
-
-    Note: When using special characters in the password, they need to use single quotes instead of double quotes when they echo the string. 
-
-    1. See dependencies.txt for server dependencies. Mostly PHP/MySQL related, but a few things to support transcoding and media identification. 
-   
-    2. Copy server files to a web environment (web document root).
-
-    3. Import db/dbclean.sql to a database.
-
-    4. Copy config.sample.php to config.php, Edit as necessary.
-
-    5. Ensure media storage directories are writable by the web server.
-
-    6. In the web document root, create 'assets' and 'assets/uploads' directories writable by the web server.
-   
-    7. The database import includes one user. username is admin. The password must be updated.
-
-    /var/www/observer/tools/cli/ob passwd <username> 
-   
-    8. Check for available updates to verify your installation and apply any required updates.
-
-    /var/www/observer/tools/cli/ob updates run
-
-    OpenBroadcaster CLI Tool. Run ob <command>.
-
-    Commands:
-    check                 check installation for errors                             
-    cron run              run scheduled tasks                                       
-    updates list          list available updates                                    
-    updates run           run available updates                                     
-    passwd <username>     change password for user
-   
-    For advanced instructions see https://support.openbroadcaster.com/install
+    OpenBroadcaster - Server Installation Instructions
     
-    Pre 5.3 Branch Instructions    
+Dependencies
+
+    A web server with a web environment available (e.g., Apache, Nginx)
+    PHP 8.2 or higher
+    MySQL or MariaDB database server
+    Composer (PHP dependency manager)
+    Node.js and npm (Node Package Manager)
+
+Required PHP Modules
+
+Make sure the following PHP modules are installed and enabled:
+
+    mysql (for MySQL database connectivity)
+    mbstring (for multi-byte string handling)
+    xml (for XML parsing)
+    gd (for image manipulation)
+    curl (for making HTTP requests)
+    imagick (for advanced image processing)
+
+Required Packages
+
+Install the following Ubuntu / Debian packages, or the equivalent for your operating system.
+
+    festival (for text-to-speech functionality)
+    imagemagick (for image manipulation)
+    ffmpeg (for audio/video processing)
+    libavcodec-extra (extra codecs for ffmpeg)
+    libavfilter-extra (extra filters for ffmpeg)
+    vorbis-tools (for Ogg Vorbis audio encoding)
+
+Installation Steps
+
+    Copy the OpenBroadcaster Server files to your web server's document root directory.
+
+    Navigate to the cloned repository directory within the web document root and run the following command to install PHP and JavaScript dependencies.
+
+~~~~
+composer install && npm install
+~~~~
+
+    Create a new MySQL or MariaDB database for OpenBroadcaster and import the db/clean.sql file to set up the initial database structure.
+
+    Copy the config.sample.php file to config.php and open it in a text editor. Set the required configuration items, such as database connection details and other settings specific to your environment.
+
+    Run the following command to validate your configuration file. Correct any errors displayed in red.
+
+~~~~
+tools/cli/ob check
+~~~~
+
+    Run the following command to install database updates. This may take a few minutes to complete.
     
-    *** After install, set OB_UPDATES_USER and OB_UPDATES_PW in config.php and then run https://YOUR_IP/updates ***
-
-_Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/main/install.txt)
-
-#### Dependencies
-{:toc}
-
 ~~~~
-apache2 apg festival imagemagick libav-tools libavcodec-extra libavfilter-extra mysql-server php7.0 php7.0-mysql php7.0-mbstring php7.0-xml php7.0-gd php7.0-curl php7.0-imagick vorbis-tools
+tools/cli/ob updates run all
 ~~~~
 
-__**__ If libav-tools package is not available, install ffmpeg package instead, and symlink the following:
+    Set the password for the default admin user by running the following command. Enter a secure password when prompted.
 
 ~~~~
-ln -s /usr/bin/ffmpeg /usr/local/bin/avconv
-ln -s /usr/bin/ffprobe /usr/local/bin/avprobe
+tools/cli/ob passwd admin
 ~~~~
+
+    Set up a cron job to run the cron.php script regularly. This script is responsible for clearing old cache and unused upload files. The following is an example crontab entry.
+
+~~~~
+*/30 * * * * /path/to/openbroadcaster/tools/cli/ob cron run
+~~~~
+
+_Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/v5.3.2/INSTALL.md)
 
 #### Web Updates
 {:toc}
