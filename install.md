@@ -29,7 +29,7 @@ Storage | 128GB
 Display |	No display is required for the web server
 Framework |	PHP, MySQL, Nginx and Gstreamer 
 
-Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 18.04/22.04 
+Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 22.04/24.04 
 
 #### OBPlayer
 
@@ -43,7 +43,7 @@ Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
 Video |	Minimum 640x480 screen resolution
 Framework |	Python and Gstreamer 
 
-Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 18.04/22.04
+Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 22.04/24.04
 
 [Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
@@ -124,7 +124,7 @@ Set up a cron job to run the cron.php script regularly. This script is responsib
 */30 * * * * /path/to/openbroadcaster/tools/cli/ob cron run
 ~~~~
 
-_Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/v5.3.2/INSTALL.md)
+_Source:_ [Install.txt](https://github.com/openbroadcaster/observer/blob/v5.3.3/INSTALL.md)
 
 #### Web Updates
 {:toc}
@@ -233,6 +233,12 @@ __Sharing multiple OBPlayers with a local media library__
 
 ~~~~
 cifs-utils
+~~~~
+
+Better
+
+~~~~
+autofs
 ~~~~
 
 __Command Line tool for PulseAudio__
