@@ -32,6 +32,10 @@ From within a playlist, Click VT Icon button at bottom
                
 First using the drop down menu, select available recording device.  It might show up as an onboard dedvice or you can plug in a USB recorder and use that device's microphone
 
+### Recording
+
+Once mic is selected, click the Record button and begin speaking. Click again to Pause. If you click record again it will prompt to over write
+
 <img width="700" height="442" alt="Voice-Tracking-Record" src="https://github.com/user-attachments/assets/f1c222ec-4881-4180-b0f7-ff8cd451cfb0" />
 
 ### Saving Edits 
