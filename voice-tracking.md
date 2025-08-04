@@ -24,9 +24,11 @@ Easily create Voice recordings using built in recording device within the observ
 
 Voicetracks must be followed by a media item.
 
+VT Will prompt browser to give access to local microphone
+
 ## Accessing VT Tool in Play List
 
-From within a playlist, Click VT Icon button at bottom
+From within a playlist, Click VT Icon button at bottom menu.
 
 ### Selecting Device 
                
@@ -40,7 +42,7 @@ Once mic is selected, click the Record button and begin speaking. Click again to
 
 ### Editing Recording
 
-Set trim points, using mouse or use keyboard to adjust advanced levels
+Set trim points, using mouse or use keyboard to adjust advanced levels. Click Play Icon to preview.
 
 ### Saving Edits 
 
@@ -50,7 +52,7 @@ Click Save Edit Icon.  This saves the edited recording to media sidebard as a co
       
 ### Saving Embedded Recording 
 
-Click SAVE button to return to PL.  To review and edit levels, click on VT in PL, Advanced menu adjust levels and save. Note VT recordings in Sidebar available as regualr media item.   May change genres\category i.e. VT to Station ID
+Click SAVE button to return to PL.  To review and edit levels, click on VT Media in PL, Advanced menu adjust levels and save. Note VT recordings in Sidebar available as regualr media item.   Possible to change genres\category i.e. VT to Station ID and the metadata of the recorded media.
 
 <img width="1420" height="903" alt="Voice-Tracking-Saved-VT-and-Recording-in-sidebar" src="https://github.com/user-attachments/assets/1cd55505-eb08-4075-83dd-0497620691a3" />
            
@@ -58,7 +60,7 @@ Click SAVE button to return to PL.  To review and edit levels, click on VT in PL
 
 From Main Menu >Schedules>Alerts
 
-Select which device or schedule the alert should play
+Select which station or schedule the alert should play
 
 ### Create New Alert
 
@@ -70,11 +72,11 @@ Once mic is selected, click the Record button and begin speaking. Click again to
                                 
 ### Editing Recording
 
-Set trim points, using mouse or use keyboard to adjust advance levels
+Set trim points, using mouse or use keyboard to adjust advance levels. Click Play Icon to preview.
 
 Give the Alert a friendly display name
 
-Set seconds how often to play
+Set how many seconds for how often to play
 
 Start and Stop Times and Dates
 
@@ -96,9 +98,9 @@ Plays over top of present media allows setting Background Audio Track Volume lev
 
 <img width="700" height="611" alt="Voice-Tracking-Alert-Mode-VT" src="https://github.com/user-attachments/assets/e7302421-9fbf-4bb8-a351-e5c04bd6ebd5" />
 
-### Saving
+### Saving Embedded Recording
 
-Click Save Button and view the Priority Announcements
+Click Save Button and view the Priority Announcements settings
 
 <img width="700" height="266" alt="Voice-Tracking-Alert" src="https://github.com/user-attachments/assets/162a7298-4152-4b09-866e-5db2f1d17b26" />
 
