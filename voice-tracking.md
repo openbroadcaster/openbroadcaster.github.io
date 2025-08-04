@@ -38,6 +38,10 @@ Once mic is selected, click the Record button and begin speaking. Click again to
 
 <img width="700" height="442" alt="Voice-Tracking-Record" src="https://github.com/user-attachments/assets/f1c222ec-4881-4180-b0f7-ff8cd451cfb0" />
 
+### Editing Recording
+
+Set trim points, using mouse or use keyboard to adjust advanced levels
+
 ### Saving Edits 
 
 Click Save Edit Icon.  This saves the edited recording to media sidebard as a copy AND leaves original embedded in PL. 
@@ -66,7 +70,7 @@ Once mic is selected, click the Record button and begin speaking. Click again to
                                 
 ### Editing Recording
 
-Set trim points, using mouse or use keybopard to adjust advance levels
+Set trim points, using mouse or use keyboard to adjust advance levels
 
 Give the Alert a friendly display name
 
