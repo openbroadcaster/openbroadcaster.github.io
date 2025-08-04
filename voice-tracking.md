@@ -22,7 +22,7 @@ Easily create Voice recordings using built in recording device within the observ
 
 *** Fully supported works better in Chrome ***
 
-Voicetracks must be followed by a media item.
+Voice tracks must be followed by a media item.
 
 VT Will prompt browser to give access to local microphone
 
@@ -32,7 +32,7 @@ From within a playlist, Click VT Icon button at bottom menu.
 
 ### Selecting Device 
                
-First using the drop down menu, select available recording device.  It might show up as an onboard dedvice or you can plug in a USB recorder and use that device's microphone
+First using the drop down menu, select available recording device.  It might show up as an onboard device or you can plug in a USB recorder and use that device's microphone
 
 ### Recording
 
@@ -52,9 +52,13 @@ Click Save Edit Icon.  This saves the edited recording to media sidebard as a co
       
 ### Saving Embedded Recording 
 
-Click SAVE button to return to PL.  To review and edit levels, click on VT Media in PL, Advanced menu adjust levels and save. Note VT recordings in Sidebar available as regualr media item.   Possible to change genres\category i.e. VT to Station ID and the metadata of the recorded media.
+Click SAVE button to return to PL.  To review and edit levels, click on VT Media in PL, Advanced menu adjust levels and save. 
 
-<img width="1420" height="903" alt="Voice-Tracking-Saved-VT-and-Recording-in-sidebar" src="https://github.com/user-attachments/assets/1cd55505-eb08-4075-83dd-0497620691a3" />
+Possible to change genres\category i.e. VT to Station ID and the metadata of the recorded media.
+
+Note VT recordings in Sidebar available as regular media item.   
+
+<img width="700" height="445" alt="Voice-Tracking-Saved-VT-and-Recording-in-sidebar" src="https://github.com/user-attachments/assets/6d331962-fcc7-4d14-a00c-73e755648ddb" />
            
 ## Accessing VT Tool in Alerts
 
@@ -64,7 +68,7 @@ Select which station or schedule the alert should play
 
 ### Create New Alert
 
-First using the drop down menu, select available recording device.  It might show up as an onboard dedvice or you can plug in a USB recorder and use that device's microphone
+First using the drop down menu, select available recording device.  It might show up as an onboard device or you can plug in a USB recorder and use that device's microphone
 
 ### Recording
 
@@ -86,7 +90,7 @@ Click Save Edit Audio Icon
 
 ### Modes
 
-#### Interupt
+#### Interrupt
 
 Pauses present media and plays Alert resuming where it left off in timeline
 
