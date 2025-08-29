@@ -22,13 +22,13 @@ Easily create Voice recordings using built in recording device within the observ
 
 Voice Tracking tool will prompt browser to give access to local microphone.
 
-Works with Basic Play List
+Support for Basic Play List type.
 
-Recording can be recorded and embedded directly into PL or saved as a regular media available in sidebar.
+Recording can be captured and embedded directly into PL or saved as a regular media available in sidebar.
 
-Once recorded in sidebar, user can change genres\category i.e. VT recording saved as a Station ID with metadata of the recorded media.
+Once recorded in sidebar, user can change Genres\Category i.e. VT recording saved as a Station ID with metadata.
 
-Best to use the default Tanzanite theme for full display
+Works best with the default `Tanzanite` theme and Chrome browser.
 
 ## Accessing VT Tool in Play List
 
@@ -38,9 +38,11 @@ From within any basic playlist, Click VT Icon button at bottom menu.
                
 First using the drop down menu, select available recording device. Select onboard device or plug in a USB mic or recorder and use that device.
 
+Default recording device can also be set in users profile `>Account Settings`
+
 ### Recording
 
-Once mic is selected, click the Record button and begin speaking. Click again to Pause. If you click record again it will prompt to over write.
+Once mic is selected, click the `Record` button and begin speaking. Click again to Pause. If you click record again it will prompt to over write.
 
 <img width="700" height="442" alt="Voice-Tracking-Record" src="https://github.com/user-attachments/assets/f1c222ec-4881-4180-b0f7-ff8cd451cfb0" />
 
@@ -50,23 +52,29 @@ Set trim points, using mouse or use keyboard. Click Play Icon to preview.
 
 ### Saving Edits 
 
-Click Save Edit Icon.  This saves the edited recording to media sidebard as a copy AND leaves original embedded in PL. 
+Click `Save Edit` Icon.  This saves the edited recording to media sidebard as a copy leaving original embedded in PL. 
 
 <img width="700" height="440" alt="Voice-Tracking-Save-Edits" src="https://github.com/user-attachments/assets/6946a111-d9ed-479f-b20a-a9e7a291ebc8" />
       
 ### Saving Recording into PL 
 
-Click SAVE button to return to PL.  To review and edit levels, click on VT Media in PL, expand Advanced menu adjust levels and save.
+Click `SAVE` button to return to PL.  To review and edit levels, click on VT Media in PL, expand Advanced menu adjust levels and save.
+
+Once VT is saved in PL it can be updated with new recording by double clicking
+
+Make sure to `SAVE` playlist otherwise your VT embedded recordings will be lost
 
 <img width="700" height="302" alt="VT_Saved_Edits" src="https://github.com/user-attachments/assets/b97494c0-8839-4a2b-81fc-4fa93b8f93fe" />
 
-Note VT recordings in Sidebar available as regular media item.   
+### Saving Recording into Media Sidebar
+
+When Saving any VT recordings, automatically creates a copy in `Media Sidebar` available as regular media item.   
 
 <img width="700" height="445" alt="Voice-Tracking-Saved-VT-and-Recording-in-sidebar" src="https://github.com/user-attachments/assets/6d331962-fcc7-4d14-a00c-73e755648ddb" />
            
 ## Accessing VT Tool in Alerts
 
-From Main Menu >Schedules>Alerts
+From Main Menu `>Schedules>Alerts`
 
 Select which station or schedule the alert should play
 
@@ -90,7 +98,7 @@ Start and Stop Times and Dates
 
 ### Save Edits
 
-Click Save Edit Audio Icon
+Click `Save Edit` Audio Icon
 
 ### Modes
 
@@ -108,13 +116,13 @@ Plays over top of present media allows setting Background Audio Track Volume lev
 
 ### Saving Embedded Recording
 
-Click Save Button and view the Priority Announcements settings
+Click `Save` Button and view the Priority Announcements settings
 
 <img width="700" height="266" alt="Voice-Tracking-Alert" src="https://github.com/user-attachments/assets/162a7298-4152-4b09-866e-5db2f1d17b26" />
 
 ## Default Settings
 
-Admin>Media Settings>Recording Defaults
+`Admin>Media Settings>Recording Defaults`
 
 <img width="700" height="487" alt="VT_Settings" src="https://github.com/user-attachments/assets/5f382a65-ce4f-4d3b-8c2c-9b6764963d04" />
 
