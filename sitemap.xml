@@ -1,188 +1,197 @@
-<!--
- created with Free Online Sitemap Generator www.xml-sitemaps.com 
--->
-<urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://support.openbroadcaster.com/</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://support.openbroadcaster.com/</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/quick-start/</loc>
-<lastmod>2022-10-15T03:02:41+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/install</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/observer/</loc>
-<lastmod>2022-10-15T02:21:12+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/quick-start/</loc>
+  <lastmod>2023-01-24T20:20:56+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://support.openbroadcaster.com/observer/</loc>
+  <lastmod>2026-01-08T23:08:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/getting-started
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/obplayer/</loc>
+  <lastmod>2024-05-08T19:04:21+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/drupal</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/embed-code-snippets</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/embed-code-snippets
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/live-assist</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/live-assist</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/logging</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/logging</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/pyrate/</loc>
+  <lastmod>2023-01-24T20:18:21+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/pyrate/</loc>
-<lastmod>2022-10-15T00:43:33+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/remote-broadcasting</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/remote-broadcasting
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/alert-languages/</loc>
+  <lastmod>2023-07-13T21:45:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/alert-languages/
-</loc>
-<lastmod>2022-10-15T01:28:26+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/ad-manager/</loc>
+  <lastmod>2023-01-24T02:01:29+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/ad-manager/</loc>
-<lastmod>2022-10-15T01:12:04+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/bulk-import/</loc>
+  <lastmod>2023-04-01T19:45:08+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/bulk-import/</loc>
-<lastmod>2022-10-15T00:32:23+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/drupal</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/mapping/</loc>
-<lastmod>2022-10-15T01:12:31+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/invoice-wizard/</loc>
+  <lastmod>2023-07-13T21:44:39+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/ob2ob/</loc>
-<lastmod>2022-10-15T01:13:11+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/mapping/</loc>
+  <lastmod>2023-01-24T01:27:41+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/payments/</loc>
-<lastmod>2022-10-15T01:14:01+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/now-playing-widget</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/reports/</loc>
-<lastmod>2022-10-15T01:13:34+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/ob2ob/</loc>
+  <lastmod>2023-01-23T23:41:51+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/reviews/</loc>
-<lastmod>2022-10-04T22:28:22+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/payments/</loc>
+  <lastmod>2023-07-13T21:45:54+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/statistics/</loc>
-<lastmod>2022-10-15T01:16:46+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/reports/</loc>
+  <lastmod>2023-01-24T01:31:17+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/status/</loc>
-<lastmod>2022-10-15T01:16:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/reviews/</loc>
+  <lastmod>2023-01-24T01:32:44+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/svg-editor/</loc>
-<lastmod>2022-10-15T01:15:39+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/statistics/</loc>
+  <lastmod>2023-01-24T01:36:07+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/task-tracker/</loc>
-<lastmod>2022-10-15T01:15:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/status/</loc>
+  <lastmod>2023-01-24T01:37:55+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/terms-of-use/</loc>
-<lastmod>2022-10-15T01:15:14+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/svg-editor/</loc>
+  <lastmod>2023-01-24T01:42:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/translations/</loc>
-<lastmod>2022-10-15T00:18:47+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/task-tracker/</loc>
+  <lastmod>2023-04-01T19:34:32+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/accessories</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/terms-of-use/</loc>
+  <lastmod>2023-04-01T19:20:43+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/diy-broadcast/</loc>
-<lastmod>2022-10-15T00:20:09+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/translations/</loc>
+  <lastmod>2023-04-01T19:16:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/now-playing-widget
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/accessories</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/troubleshooting
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/diy-broadcast/</loc>
+  <lastmod>2023-01-24T20:22:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/player-training
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/diy-cap-alert-player</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://support.openbroadcaster.com/server-training
-</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/troubleshooting</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/emergency101</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/emergency101</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/links</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/player-training</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://support.openbroadcaster.com/projects</loc>
-<lastmod>2022-10-15T03:13:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://support.openbroadcaster.com/server-training</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://support.openbroadcaster.com/links</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://support.openbroadcaster.com/projects</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://support.openbroadcaster.com/experimental</loc>
+  <lastmod>2025-08-29T20:18:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
