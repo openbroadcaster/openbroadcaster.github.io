@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects
 ---
 
-<h2>Our Projects</h2>
+# Projects
 <p>OpenBroadcaster open source media distribution and play out platform is released under the Affero GPLv3 license. Access to source code repositories at Github is provided below.</p>
 
 <div class="row">
