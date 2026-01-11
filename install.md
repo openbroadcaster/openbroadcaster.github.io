@@ -5,7 +5,7 @@ permalink: /install
 ---
 ![ Install](img/install.png )
 
-## Installation
+# Installation
 {:.no_toc}
 
 * TOC
