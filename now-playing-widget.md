@@ -8,7 +8,7 @@ permalink: /now-playing-widget
 
 ![Now Playing Widget](/img/now-playing-widget.png){: .screenshot}
 
-## Now Playing
+# Now Playing
 
 Provide dynamic "now playing" information on page with metadata streaming. This module is included with the core OBServer. 
 
