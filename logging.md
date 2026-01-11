@@ -11,7 +11,7 @@ permalink: /logging
 
 # Server Play Logs
 
-Basic text log reports in CSV format for players are generated with server [Player Monitoring](http://support.openbroadcaster.com/observer/#logging-and-monitoring) on demand.  More detailed information using the [Reports](http://support.openbroadcaster.com/reports/) module. 
+Basic text log reports in CSV format for players are generated with server [Player Monitoring](https://support.openbroadcaster.com/observer/#logging-and-monitoring) on demand.  More detailed information using the [Reports](https://support.openbroadcaster.com/reports/) module. 
 
 # Player Audio Logging
 
@@ -55,7 +55,7 @@ One hour off air recordings are available in `Dashboard>Downloads` or `./openbro
 
 An inexpensive FM signal monitoring solution can be acheived using SDR (software defined radio) and a DVB-T USB Tuner based on the Realtek RTL2832U chip. Some [clever reverse-engineering](http://rtlsdr.org/#history_and_discovery_of_rtlsdr) exposed the capability of these dongles as FM receivers. 
 
-The example below uses a  [NooElec NESDR Nano RTL2832U receiver](https://openbroadcaster.com/broadcast-hardware) USB Stick software defined radio (SDR) receiver.
+The example below uses a  [NooElec NESDR Nano RTL2832U receiver](https://www.openbroadcaster.com/broadcast-hardware) USB Stick software defined radio (SDR) receiver.
 
 - Insert USB Dongle and attach an external FM antennae
 
@@ -78,4 +78,5 @@ When SDR radio is enabled, a local mount point is created in HTML5 pop-up dashbo
 ![ Pulse Mixer Monitor](img/pulse_mixer.png ){: .pulse_mixer}
 
 __Pro Tip__ Gstreamer Source to record. Go to command line of local box and type `pulsemixer` Select the Input source, press enter to select as default.
+
 
