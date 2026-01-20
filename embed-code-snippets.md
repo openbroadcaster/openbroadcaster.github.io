@@ -14,7 +14,7 @@ Turn on and off asset access in the back end with the Public field custom action
 
 [LIVE Embed Examples](https://eng.widget.openbroadcaster.pro/)
 
-[Demo Sites](https://openbroadcaster.com/resource/demo-sites/)
+[Demo Sites](https://www.openbroadcaster.com/resource/live-demo-sites/)
 
 ## Installation ## 
 
