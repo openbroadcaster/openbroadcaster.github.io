@@ -21,7 +21,7 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [Handbrake](https://handbrake.fr/  "Analyzing and Transcoding tool") - Transcoding tool
 
-[Icecast](https://icecast.org/  "Streaming Media Server") - Media server
+[Icecast](https://icecast.org/ "Streaming Media Server") - Media server
 
 [VLC](https://videolan.org/  "All Purpose Multimedia Player") - Multimedia Player
 
@@ -133,7 +133,7 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 #### USA
 
-[ASCAP](https://ascap.com/  "American Society of Composers, Authors and Publishers")
+[ASCAP](https://www.ascap.com/  "American Society of Composers, Authors and Publishers")
 
 [BMI](https://bmi.com/  "Collects license fees on behalf of its songwriters, composers and music publishers")
 
@@ -177,6 +177,8 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [Community Radio Fund of Canada](https://crfc-fcrc.ca)
 
+[First Peoples' Cultural Council] (https://fpcc.ca/ "First Peoples)
+
 [Terry Reksten Memorial Fund](https://friendsofbcarchives.wordpress.com/terry-reksten-memorial-fund/)
 
 [Northern Aboriginal Broadcasting](https://www.canada.ca/en/canadian-heritage/services/funding/aboriginal-peoples/northern-broadcasting.html)
@@ -196,8 +198,6 @@ Open Source tools are compatible with Windows, Mac and Linux
 [Broadcasters' Desktop Resource](https://www.thebdr.net)
 
 [Broadcasting World](https://forums.broadcastingworld.com/ "Broadcasting World")
-
-[Hobby Broadcaster](https://www.hobbybroadcaster.net/)
 
 ### International
 
