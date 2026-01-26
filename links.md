@@ -151,6 +151,8 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx)
 
+[CAP-CP Profile](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx "CAP Profile")
+
 [Pelmorex](https://pelmorex.com  "Canada’s NAAD distributer of CAP-CP alerts")
 
 ### USA
@@ -177,7 +179,7 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [Community Radio Fund of Canada](https://crfc-fcrc.ca)
 
-[First Peoples' Cultural Council] (https://fpcc.ca/ "First Peoples)
+[First Peoples' Cultural Council](https://fpcc.ca/ "First Peoples")
 
 [Terry Reksten Memorial Fund](https://friendsofbcarchives.wordpress.com/terry-reksten-memorial-fund/)
 
