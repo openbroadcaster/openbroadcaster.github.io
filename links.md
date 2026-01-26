@@ -89,7 +89,7 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [AMARC Europe](https://amarceurope.eu/ "World Association of Community Radio Broadcasters")
 
-[AMARC Asia pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
+[AMARC Asia Pacific](https://amarc-ap.org/ "World Association of Community Radio Broadcasters")
 
 [CMFE](https://www.cmfe.eu/ "Community Media Forum Europe")
 
@@ -151,7 +151,7 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [National Public Alerting System Common Guidelines](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx)
 
-[CAP-CP Profile](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx "CAP Profile")
+[CLFG Blueprint](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-en.aspx "CLFG")
 
 [Pelmorex](https://pelmorex.com  "Canada’s NAAD distributer of CAP-CP alerts")
 
@@ -193,13 +193,11 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 ### Canada
 
-[Broadcast Dialogue](https://broadcastdialogue.com)
+[Broadcast Dialogue](https://broadcastdialogue.com "Broadcast Dialogue")
 
 ### USA 
 
-[Broadcasters' Desktop Resource](https://www.thebdr.net)
-
-[Broadcasting World](https://forums.broadcastingworld.com/ "Broadcasting World")
+[Broadcasters' Desktop Resource](https://www.thebdr.net "The BDR")
 
 ### International
 
@@ -207,10 +205,4 @@ Open Source tools are compatible with Windows, Mac and Linux
 
 [ABU](https://www.abu.org.my "Asia-Pacific Broadcasting Union ABU")
 
-
-
-
-
-
-
-
+[Cultural Survival](https://www.culturalsurvival.org/ "Cultural Survival")
