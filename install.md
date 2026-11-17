@@ -17,33 +17,19 @@ permalink: /install
 This guide will assist in the initial setup of both OBPlayer and OBServer backend application infrastructure. Once these applications are setup and running, proceed to the [Quick Start](https://support.openbroadcaster.com/quick-start/) for provisioning instructions.
 
 ### Minimum System Requirements
-{:toc}
 
-#### OBServer
+| Requirement | OBServer | OBPlayer |
+|---|---|---|
+| **Processor** | 64-bit with 2 or more cores: x86-64, or Raspberry Pi 4/5 | Same as OBServer |
+| **Memory** | 4 GB | 4 GB |
+| **Storage** | 128 GB | 128 GB; more for video |
+| **Display** | None; managed through a browser | Required only for video or images: HDMI, 640 × 480 or higher |
+| **Audio** | None | Analog line input/output, USB audio interface, or HDMI/DisplayPort audio; supported by ALSA |
+| **Operating system** | Ubuntu 24.04 or 26.04 LTS, Debian 12 or newer, or Raspberry Pi OS 64-bit | Same as OBServer |
+| **Software** | nginx, PHP, MySQL or MariaDB, FFmpeg, ImageMagick | Python 3, GStreamer 1.x |
 
-Item 	  |    Description
------------- | -------------
-Processor | 1GHz 64 bit CPU. ARM, Intel or Pi 
-Memory | 4GB of RAM
-Storage | 128GB 
-Display |	No display is required for the web server
-Framework |	PHP, MySQL, Nginx and Gstreamer 
+For both together with video, basic 1080p playback is a reasonable target, but test hardware decoding, playlist transitions and sustained operation. **16 GB RAM and a larger SSD are preferable**, particularly if OBServer processes videos while OBPlayer is playing.
 
-Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 22.04/24.04 
-
-#### OBPlayer
-
-Item 	  |    Description
------------- | -------------
-Processor |	1GHz 64 bit CPU. ARM, Intel or Pi 
-Memory |	4GB RAM
-Storage |	128GB 
-Display |	None required unless displaying Video or Images
-Audio |	Analog Input\Output, USB Interfaces or Digital HDMI\DisplayPort
-Video |	Minimum 640x480 screen resolution
-Framework |	Python and Gstreamer 
-
-Recommended. Should be a \*nix system. Debian 10+, Raspberry PI OS or Ubuntu-Server/ Desktop 22.04/24.04
 
 [Compatible Hardware](https://support.openbroadcaster.com/accessories#supported-hardware) 
 
